@@ -1,0 +1,111 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+plasmo
+</name>
+</assembly>
+<members>
+<member name="T:plasmo.My.Resources.Resources">
+<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.ResourceManager">
+<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Culture">
+<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.eye">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.eye_off">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.log_out__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Plasmo_Logo">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="T:plasmo.newdataset">
+<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+<member name="T:plasmo.newdataset.TableDataTable">
+<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member>
+<member name="T:plasmo.newdataset.TableRow">
+<summary>
+Represents strongly named DataRow class.
+</summary>
+</member>
+<member name="T:plasmo.newdataset.TableRowChangeEvent">
+<summary>
+Row event argument class
+</summary>
+</member>
+<member name="T:plasmo.newdatasetTableAdapters.TableTableAdapter">
+<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member>
+<member name="T:plasmo.newdatasetTableAdapters.TableAdapterManager">
+<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member>
+<member name="M:plasmo.newdatasetTableAdapters.TableAdapterManager.UpdateUpdatedRows(plasmo.newdataset,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Update rows in top-down order.
+</summary>
+</member>
+<member name="M:plasmo.newdatasetTableAdapters.TableAdapterManager.UpdateInsertedRows(plasmo.newdataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Insert rows in top-down order.
+</summary>
+</member>
+<member name="M:plasmo.newdatasetTableAdapters.TableAdapterManager.UpdateDeletedRows(plasmo.newdataset,System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Delete rows in bottom-up order.
+</summary>
+</member>
+<member name="M:plasmo.newdatasetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member>
+<member name="M:plasmo.newdatasetTableAdapters.TableAdapterManager.UpdateAll(plasmo.newdataset)">
+<summary>
+Update all changes to the dataset.
+</summary>
+</member>
+<member name="T:plasmo.newdatasetTableAdapters.TableAdapterManager.UpdateOrderOption">
+<summary>
+Update Order Option
+</summary>
+</member>
+<member name="T:plasmo.newdatasetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member>
+</members>
+</doc>
