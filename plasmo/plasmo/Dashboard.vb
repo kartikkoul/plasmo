@@ -1,4 +1,6 @@
-﻿Public Class Dashboard
+﻿Imports System.Data
+Imports System.Data.SqlClient
+Public Class Dashboard
     Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
 
     End Sub
@@ -31,6 +33,17 @@
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles Guna2Button5.Click
         Donor_form.Show()
+
+    End Sub
+
+
+
+    Private Sub Guna2CircleProgressBar4_ValueChanged(sender As Object, e As EventArgs) Handles Guna2CircleProgressBar4.ValueChanged
+
+
+
+
+
 
     End Sub
 End Class

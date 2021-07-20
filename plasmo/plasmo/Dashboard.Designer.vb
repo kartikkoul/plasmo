@@ -240,7 +240,7 @@ Partial Class Dashboard
         Me.Guna2CircleProgressBar4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CircleProgressBar4.ShadowDecoration.Parent = Me.Guna2CircleProgressBar4
         Me.Guna2CircleProgressBar4.ShowPercentage = True
-        Me.Guna2CircleProgressBar4.Value = 50
+        Me.Guna2CircleProgressBar4.Value = 21
         '
         'Guna2CircleProgressBar1
         '
