@@ -82,6 +82,16 @@ plasmo
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:plasmo.My.Resources.Resources.log_out__2_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.log_out__3_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:plasmo.My.Resources.Resources.Plasmo_Logo">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

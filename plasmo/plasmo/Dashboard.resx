@@ -171,28 +171,6 @@
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="Guna2PictureBox3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
-  </data>
-  <data name="Guna2PictureBox3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 71</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Guna2PictureBox3.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox3.Name" xml:space="preserve">
-    <value>Guna2PictureBox3</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox3.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox3.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox3.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
   <data name="Guna2CircleButton2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
   </data>
@@ -202,6 +180,7 @@
   <data name="Guna2CircleButton2.Size" type="System.Drawing.Size, System.Drawing">
     <value>40, 40</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Guna2CircleButton2.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
   </data>
@@ -215,7 +194,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2CircleButton2.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>0</value>
   </data>
   <data name="CloseButton.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 9pt</value>
@@ -239,7 +218,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;CloseButton.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>1</value>
   </data>
   <data name="Guna2CircleProgressBar5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
@@ -266,7 +245,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2CircleProgressBar5.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>2</value>
   </data>
   <data name="Guna2CircleProgressBar2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
@@ -293,7 +272,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2CircleProgressBar2.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>3</value>
   </data>
   <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -327,7 +306,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>4</value>
   </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -360,7 +339,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>5</value>
   </data>
   <data name="Guna2CircleProgressBar6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
@@ -387,7 +366,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2CircleProgressBar6.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>6</value>
   </data>
   <data name="Guna2CircleProgressBar7.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
@@ -414,7 +393,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2CircleProgressBar7.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>7</value>
   </data>
   <data name="Guna2CircleProgressBar1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
@@ -441,7 +420,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2CircleProgressBar1.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>8</value>
   </data>
   <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -474,7 +453,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="Guna2CircleProgressBar3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
@@ -501,7 +480,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2CircleProgressBar3.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -534,7 +513,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -567,7 +546,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>12</value>
   </data>
   <data name="Guna2CircleProgressBar8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
@@ -594,7 +573,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2CircleProgressBar8.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>13</value>
   </data>
   <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -627,7 +606,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>14</value>
   </data>
   <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -660,7 +639,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>15</value>
   </data>
   <data name="Guna2CircleProgressBar4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
@@ -687,7 +666,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2CircleProgressBar4.ZOrder" xml:space="preserve">
-    <value>17</value>
+    <value>16</value>
   </data>
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -720,7 +699,28 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>18</value>
+    <value>17</value>
+  </data>
+  <data name="Guna2PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1356, 25</value>
+  </data>
+  <data name="Guna2PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 33</value>
+  </data>
+  <data name="Guna2PictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="&gt;&gt;Guna2PictureBox2.Name" xml:space="preserve">
+    <value>Guna2PictureBox2</value>
+  </data>
+  <data name="&gt;&gt;Guna2PictureBox2.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Guna2PictureBox2.Parent" xml:space="preserve">
+    <value>Guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;Guna2PictureBox2.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="Guna2Panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>63, 52</value>
@@ -741,7 +741,7 @@
     <value>Guna2Panel1</value>
   </data>
   <data name="&gt;&gt;Guna2Panel2.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <data name="RecieverBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins Medium, 13.2000008pt, style=Bold</value>
@@ -768,7 +768,7 @@
     <value>Guna2Panel1</value>
   </data>
   <data name="&gt;&gt;RecieverBtnMenu.ZOrder" xml:space="preserve">
-    <value>1</value>
+    <value>2</value>
   </data>
   <data name="DonorBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins Medium, 13.2000008pt, style=Bold</value>
@@ -795,7 +795,7 @@
     <value>Guna2Panel1</value>
   </data>
   <data name="&gt;&gt;DonorBtnMenu.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="QueueBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins Medium, 13.2000008pt, style=Bold</value>
@@ -822,7 +822,7 @@
     <value>Guna2Panel1</value>
   </data>
   <data name="&gt;&gt;QueueBtnMenu.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="HistoryBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins Medium, 13.2000008pt, style=Bold</value>
@@ -849,47 +849,6 @@
     <value>Guna2Panel1</value>
   </data>
   <data name="&gt;&gt;HistoryBtnMenu.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="Guna2PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        Qk32AgAAAAAAADYAAAAoAAAADgAAABAAAAABABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEgoTGw8bGw8bGw8bGw8bGw8bGw8bG
-        w8bGw8bGw8bGw8bGw8bGw8YAAAAAAISChP///////////////////////////////////////////8bD
-        xgAAAAAAhIKE////////////////////////////////////////////xsPGAAAAAACEgoT/////////
-        ///////////////////////////////////Gw8YAAAAAAISChP//////////////////////////////
-        /////////////8bDxgAAAAAAhIKE////////////AAD/AAD/////////AAD/AAD/////////xsPGAAAA
-        AACEgoT///////////////8AAP8AAP8AAP8AAP/////////////Gw8YAAAAAAISChP//////////////
-        /////wAA/wAA/////////////////8bDxgAAAAAAhIKE////////////////AAD/AAD/AAD/AAD/////
-        ////////xsPGAAAAAACEgoT///////////8AAP8AAP////////8AAP8AAP/////////Gw8YAAAAAAISC
-        hP///////////////////////////////////////////8bDxgAAAAAAhIKE////////////////////
-        ////////////////////////xsPGAAAAAACEgoT/////////////////////////////////////////
-        ///Gw8YAAAAAAISChP///////////////////////////////////////////8bDxgAAAAAAhIKEhIKE
-        hIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEAAA=
-</value>
-  </data>
-  <data name="Guna2PictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Guna2PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1355, 24</value>
-  </data>
-  <data name="Guna2PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>28, 27</value>
-  </data>
-  <data name="Guna2PictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox2.Name" xml:space="preserve">
-    <value>Guna2PictureBox2</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox2.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
   <data name="DashboardBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
@@ -965,6 +924,30 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Guna2Panel1.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="Guna2PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="Guna2PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 14</value>
+  </data>
+  <data name="Guna2PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>268, 71</value>
+  </data>
+  <data name="Guna2PictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="&gt;&gt;Guna2PictureBox1.Name" xml:space="preserve">
+    <value>Guna2PictureBox1</value>
+  </data>
+  <data name="&gt;&gt;Guna2PictureBox1.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Guna2PictureBox1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;Guna2PictureBox1.ZOrder" xml:space="preserve">
     <value>19</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
@@ -2492,9 +2475,6 @@
         4AD////////////////////////gAP///////////////////////+AA////////////////////////
         4AA=
 </value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value> </value>
   </data>
   <data name="&gt;&gt;Guna2BorderlessForm1.Name" xml:space="preserve">
     <value>Guna2BorderlessForm1</value>
