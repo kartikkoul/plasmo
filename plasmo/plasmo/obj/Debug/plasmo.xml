@@ -22,12 +22,57 @@ plasmo
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:plasmo.My.Resources.Resources.Component_2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Component_21">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Component_3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Component_3__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:plasmo.My.Resources.Resources.eye">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
 <member name="P:plasmo.My.Resources.Resources.eye_off">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Group_124">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Group_125">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Group_126">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Line_10">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Line_9">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

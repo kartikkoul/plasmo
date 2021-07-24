@@ -97,6 +97,12 @@
     <Compile Include="Dashboard.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Details.Designer.vb">
+      <DependentUpon>Details.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Details.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="donor form.Designer.vb">
       <DependentUpon>donor form.vb</DependentUpon>
     </Compile>
@@ -108,6 +114,12 @@
     </Compile>
     <Compile Include="Form1.Designer.vb">
       <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CategoryDetail.Designer.vb">
+      <DependentUpon>CategoryDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryDetail.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Module1.vb" />
@@ -140,8 +152,14 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CategoryDetail.resx">
+      <DependentUpon>CategoryDetail.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Details.resx">
+      <DependentUpon>Details.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="donor form.resx">
       <DependentUpon>donor form.vb</DependentUpon>
@@ -213,6 +231,15 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
+    <None Include="Resources\Line 10.png" />
+    <None Include="Resources\Group 126.png" />
+    <None Include="Resources\Line 9.png" />
+    <None Include="Resources\Component 3 %281%29.png" />
+    <None Include="Resources\Component 3.png" />
+    <None Include="Resources\Component 21.png" />
+    <None Include="Resources\Component 2.png" />
+    <None Include="Resources\Group 125.png" />
+    <None Include="Resources\Group 124.png" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">

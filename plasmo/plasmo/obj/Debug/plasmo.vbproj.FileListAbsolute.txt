@@ -51,3 +51,5 @@ D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.vbproj.CopyComple
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.exe
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.xml
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.pdb
+D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.CategoryDetail.resources
+D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.Details.resources
