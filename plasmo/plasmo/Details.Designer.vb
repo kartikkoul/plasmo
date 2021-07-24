@@ -137,7 +137,7 @@ Partial Class Details
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Location = New System.Drawing.Point(751, 51)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(756, 51)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
         Me.Guna2Panel2.Size = New System.Drawing.Size(86, 4)
@@ -291,6 +291,7 @@ Partial Class Details
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Details"
         Me.Text = "Details"
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

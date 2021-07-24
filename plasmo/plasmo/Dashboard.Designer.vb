@@ -52,12 +52,12 @@ Partial Class Dashboard
         Me.Guna2CircleProgressBar8 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Guna2Transition1 = New Guna.UI2.WinForms.Guna2Transition()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
@@ -449,16 +449,6 @@ Partial Class Dashboard
         Animation1.TransparencyCoeff = 0!
         Me.Guna2Transition1.DefaultAnimation = Animation1
         '
-        'Guna2PictureBox1
-        '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2PictureBox1.FillColor = System.Drawing.Color.Transparent
-        resources.ApplyResources(Me.Guna2PictureBox1, "Guna2PictureBox1")
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.TabStop = False
-        '
         'Guna2CircleButton2
         '
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
@@ -514,14 +504,24 @@ Partial Class Dashboard
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
         '
+        'Guna2PictureBox3
+        '
+        Me.Guna2Transition1.SetDecoration(Me.Guna2PictureBox3, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.Guna2PictureBox3.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
+        Me.Guna2PictureBox3.ImageRotate = 0!
+        resources.ApplyResources(Me.Guna2PictureBox3, "Guna2PictureBox3")
+        Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
+        Me.Guna2PictureBox3.ShadowDecoration.Parent = Me.Guna2PictureBox3
+        Me.Guna2PictureBox3.TabStop = False
+        '
         'Dashboard
         '
         resources.ApplyResources(Me, "$this")
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.Controls.Add(Me.Guna2PictureBox3)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
-        Me.Controls.Add(Me.Guna2PictureBox1)
         Me.Controls.Add(Me.Guna2CircleProgressBar5)
         Me.Controls.Add(Me.Guna2CircleProgressBar2)
         Me.Controls.Add(Me.Label4)
@@ -545,7 +545,7 @@ Partial Class Dashboard
         Me.Name = "Dashboard"
         Me.Guna2Panel1.ResumeLayout(False)
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -578,7 +578,7 @@ Partial Class Dashboard
     Friend WithEvents Guna2Transition1 As Guna.UI2.WinForms.Guna2Transition
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2CircleButton2 As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

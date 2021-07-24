@@ -682,6 +682,7 @@ Partial Class Reciever_form
         Me.Controls.Add(Me.Guna2TextBox2)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Reciever_form"
         Me.Text = "Reciever_form"
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
