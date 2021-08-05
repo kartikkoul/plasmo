@@ -25,42 +25,49 @@ Public Class Dashboard
         con.Open()
         Dim AMinus As Int16 = aminus_cmd.ExecuteNonQuery
         con.Close()
-        APlusCircle.Value = AMinus
+        AMinusCircle.Value = AMinus
 
         If con.State = 1 Then con.Close()
         Dim bplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim BPlus As Int16 = bplus_cmd.ExecuteNonQuery
         con.Close()
-        APlusCircle.Value = BPlus
+        BPlusCircle.Value = BPlus
+
+        If con.State = 1 Then con.Close()
+        Dim bminus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
+        con.Open()
+        Dim BMinus As Int16 = bplus_cmd.ExecuteNonQuery
+        con.Close()
+        BMinusCircle.Value = BMinus
 
         If con.State = 1 Then con.Close()
         Dim abplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim ABPlus As Int16 = abplus_cmd.ExecuteNonQuery
         con.Close()
-        APlusCircle.Value = ABPlus
+        ABPlusCircle.Value = ABPlus
 
         If con.State = 1 Then con.Close()
         Dim abminus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim ABMinus As Int16 = abminus_cmd.ExecuteNonQuery
         con.Close()
-        APlusCircle.Value = ABMinus
+        ABMinusCircle.Value = ABMinus
 
         If con.State = 1 Then con.Close()
         Dim oplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim OPlus As Int16 = oplus_cmd.ExecuteNonQuery
         con.Close()
-        APlusCircle.Value = OPlus
+        OPlusCircle.Value = OPlus
 
         If con.State = 1 Then con.Close()
         Dim ominus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim OMinus As Int16 = ominus_cmd.ExecuteNonQuery
         con.Close()
-        APlusCircle.Value = OMinus
+        OMinusCircle.Value = OMinus
 
     End Sub
 

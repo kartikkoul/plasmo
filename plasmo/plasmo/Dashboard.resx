@@ -227,34 +227,34 @@
   <data name="&gt;&gt;CloseButton.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="Guna2CircleProgressBar5.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="ABMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
-  <data name="Guna2CircleProgressBar5.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ABMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>778, 417</value>
   </data>
-  <data name="Guna2CircleProgressBar5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="ABMinusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="Guna2CircleProgressBar5.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ABMinusCircle.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="Guna2CircleProgressBar5.TabIndex" type="System.Int32, mscorlib">
+  <data name="ABMinusCircle.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
   </data>
-  <data name="Guna2CircleProgressBar5.Text" xml:space="preserve">
+  <data name="ABMinusCircle.Text" xml:space="preserve">
     <value>Guna2CircleProgressBar5</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar5.Name" xml:space="preserve">
-    <value>Guna2CircleProgressBar5</value>
+  <data name="&gt;&gt;ABMinusCircle.Name" xml:space="preserve">
+    <value>ABMinusCircle</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar5.Type" xml:space="preserve">
+  <data name="&gt;&gt;ABMinusCircle.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar5.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ABMinusCircle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar5.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ABMinusCircle.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="BMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
@@ -389,34 +389,34 @@
   <data name="&gt;&gt;OMinusCircle.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="A.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="ABPlusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
-  <data name="A.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="ABPlusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>577, 417</value>
   </data>
-  <data name="A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="ABPlusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="A.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="ABPlusCircle.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="A.TabIndex" type="System.Int32, mscorlib">
+  <data name="ABPlusCircle.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
   </data>
-  <data name="A.Text" xml:space="preserve">
+  <data name="ABPlusCircle.Text" xml:space="preserve">
     <value>Guna2CircleProgressBar7</value>
   </data>
-  <data name="&gt;&gt;A.Name" xml:space="preserve">
-    <value>A</value>
+  <data name="&gt;&gt;ABPlusCircle.Name" xml:space="preserve">
+    <value>ABPlusCircle</value>
   </data>
-  <data name="&gt;&gt;A.Type" xml:space="preserve">
+  <data name="&gt;&gt;ABPlusCircle.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;A.Parent" xml:space="preserve">
+  <data name="&gt;&gt;ABPlusCircle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;A.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;ABPlusCircle.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
   <data name="AMinusCircle.Font" type="System.Drawing.Font, System.Drawing">

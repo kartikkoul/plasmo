@@ -43,10 +43,10 @@ Partial Class Dashboard
         Me.Label2 = New System.Windows.Forms.Label()
         Me.BPlusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Guna2CircleProgressBar5 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.ABMinusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.OMinusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
-        Me.A = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.ABPlusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.OPlusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
@@ -319,26 +319,26 @@ Partial Class Dashboard
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Name = "Label3"
         '
-        'Guna2CircleProgressBar5
+        'ABMinusCircle
         '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2CircleProgressBar5, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2CircleProgressBar5.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar5.FillOffset = 5
-        Me.Guna2CircleProgressBar5.FillThickness = 4
-        resources.ApplyResources(Me.Guna2CircleProgressBar5, "Guna2CircleProgressBar5")
-        Me.Guna2CircleProgressBar5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar5.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2CircleProgressBar5.Minimum = 0
-        Me.Guna2CircleProgressBar5.Name = "Guna2CircleProgressBar5"
-        Me.Guna2CircleProgressBar5.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar5.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar5.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar5.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar5.ProgressThickness = 9
-        Me.Guna2CircleProgressBar5.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar5.ShadowDecoration.Parent = Me.Guna2CircleProgressBar5
-        Me.Guna2CircleProgressBar5.ShowPercentage = True
-        Me.Guna2CircleProgressBar5.Value = 37
+        Me.Guna2Transition1.SetDecoration(Me.ABMinusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.ABMinusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ABMinusCircle.FillOffset = 5
+        Me.ABMinusCircle.FillThickness = 4
+        resources.ApplyResources(Me.ABMinusCircle, "ABMinusCircle")
+        Me.ABMinusCircle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ABMinusCircle.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.ABMinusCircle.Minimum = 0
+        Me.ABMinusCircle.Name = "ABMinusCircle"
+        Me.ABMinusCircle.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.ABMinusCircle.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.ABMinusCircle.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.ABMinusCircle.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.ABMinusCircle.ProgressThickness = 9
+        Me.ABMinusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.ABMinusCircle.ShadowDecoration.Parent = Me.ABMinusCircle
+        Me.ABMinusCircle.ShowPercentage = True
+        Me.ABMinusCircle.Value = 37
         '
         'Label4
         '
@@ -367,26 +367,26 @@ Partial Class Dashboard
         Me.OMinusCircle.ShadowDecoration.Parent = Me.OMinusCircle
         Me.OMinusCircle.ShowPercentage = True
         '
-        'A
+        'ABPlusCircle
         '
-        Me.Guna2Transition1.SetDecoration(Me.A, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.A.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.A.FillOffset = 5
-        Me.A.FillThickness = 4
-        resources.ApplyResources(Me.A, "A")
-        Me.A.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.A.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.A.Minimum = 0
-        Me.A.Name = "A"
-        Me.A.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.A.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.A.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.A.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.A.ProgressThickness = 9
-        Me.A.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.A.ShadowDecoration.Parent = Me.A
-        Me.A.ShowPercentage = True
-        Me.A.Value = 44
+        Me.Guna2Transition1.SetDecoration(Me.ABPlusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.ABPlusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ABPlusCircle.FillOffset = 5
+        Me.ABPlusCircle.FillThickness = 4
+        resources.ApplyResources(Me.ABPlusCircle, "ABPlusCircle")
+        Me.ABPlusCircle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.ABPlusCircle.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.ABPlusCircle.Minimum = 0
+        Me.ABPlusCircle.Name = "ABPlusCircle"
+        Me.ABPlusCircle.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.ABPlusCircle.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.ABPlusCircle.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.ABPlusCircle.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.ABPlusCircle.ProgressThickness = 9
+        Me.ABPlusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.ABPlusCircle.ShadowDecoration.Parent = Me.ABPlusCircle
+        Me.ABPlusCircle.ShowPercentage = True
+        Me.ABPlusCircle.Value = 44
         '
         'Label6
         '
@@ -522,12 +522,12 @@ Partial Class Dashboard
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
-        Me.Controls.Add(Me.Guna2CircleProgressBar5)
+        Me.Controls.Add(Me.ABMinusCircle)
         Me.Controls.Add(Me.BMinusCircle)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.OMinusCircle)
-        Me.Controls.Add(Me.A)
+        Me.Controls.Add(Me.ABPlusCircle)
         Me.Controls.Add(Me.AMinusCircle)
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.BPlusCircle)
@@ -555,12 +555,12 @@ Partial Class Dashboard
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Label5 As Label
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2CircleProgressBar5 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents ABMinusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents BMinusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents OMinusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
-    Friend WithEvents A As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents ABPlusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents AMinusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents Label6 As Label
     Friend WithEvents BPlusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
