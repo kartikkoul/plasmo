@@ -67,12 +67,15 @@ Public Class Donor_form
 
     End Sub
 
+
+
     Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
         Dim anti As Char = Truncate(antibody.SelectedItem, 1)
+        Dim time As Date = Date.UtcNow
 
-        Dim con As New SqlConnection("Server=WHITEDEVIL\SQLEXPRESS;Database=plasmo;Integrated Security=true")
-        Dim cmd1 As New SqlCommand("insert into donor_records(first_name,last_name,age,phone_number,email,city,address,blood_group,sex,anti_body,plasma_id,sold) values('" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & bgroup.SelectedItem & "','" & gen & "','" & anti & "','" & "E0800743" & "','" & "N" & "')", con)
+        Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=true")
+        Dim cmd1 As New SqlCommand("insert into donor_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,anti_body,sold,transaction_time) values('" & "E0800743" & "','" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & bgroup.SelectedItem & "','" & gen & "','" & anti & "','" & "N" & "','" & time & "')", con)
         con.Open()
         cmd1.ExecuteNonQuery()
         MsgBox("Donor Registered")
