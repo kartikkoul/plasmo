@@ -16,20 +16,19 @@ Public Class donor_history
 
     End Sub
 
-    Private Sub CategoryDetail_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub DonorHistory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim li As Integer
-        Dim con As New SqlConnection("server=desktop-5gp20f1\sqlexpress;database=plasmo;integrated security=true")
+        Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         con.Open()
-        Dim cmd As New SqlCommand("select plasma_id, first_name, last_name, age, blood_group, anti_body, transaction_time from donor_records", con)
+        Dim cmd As New SqlCommand("select plasma_id, first_name, second_name, age, blood_group, anti_body, transaction_time from donor_records", con)
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
 
         ListView1.Items.Clear()
         li = 0
         While dr.Read
-            Dim name As String = dr("first_name") + " " + dr("last_name")
-            ListView1.Items.Add(li + 1)
-            ListView1.Items(li).SubItems.Add(dr("plasma_id"))
+            Dim name As String = dr("first_name") + " " + dr("second_name")
+            ListView1.Items.Add(dr("plasma_id"))
             ListView1.Items(li).SubItems.Add(name)
             ListView1.Items(li).SubItems.Add(dr("age"))
             ListView1.Items(li).SubItems.Add(dr("blood_group"))
