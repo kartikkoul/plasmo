@@ -1,6 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
-Public Class Form1
+Public Class login
 
     Private Sub Guna2Button1_Click_1(sender As Object, e As EventArgs) Handles LoginButton.Click
         LoginValidation()
@@ -19,9 +19,9 @@ Public Class Form1
         If UserIDTextBox.Text = "" Or PasswordTextBox.Text = "" Then
             MsgBox("User ID and Password cannot be empty")
         Else
-            conn = New SqlConnection("Data Source = WHITEDEVIL\SQLEXPRESS; Initial Catalog = plasmo; Integrated Security = True;MultipleActiveResultSets=true;")
+            conn = New SqlConnection("Data Source = DESKTOP-5GP20F1\SQLEXPRESS; Initial Catalog = plasmo; Integrated Security = True;MultipleActiveResultSets=true;")
 
-            query = "select admin_id,admin_pass from auth where admin_id = '" & UserIDTextBox.Text & "' and admin_pass = '" & PasswordTextBox.Text & "' "
+            query = "select username,pass from auth where username = '" & UserIDTextBox.Text & "' and pass = '" & PasswordTextBox.Text & "' "
             cmd = New SqlCommand(query, conn)
 
             Try
@@ -104,6 +104,10 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
 
     End Sub
 End Class

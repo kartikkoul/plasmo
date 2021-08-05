@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class login
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -23,7 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(login))
         Me.UserIDTextBox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -66,58 +66,62 @@ Partial Class Form1
         Me.UserIDTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.UserIDTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.UserIDTextBox.FocusedState.Parent = Me.UserIDTextBox
-        Me.UserIDTextBox.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.UserIDTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.UserIDTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.UserIDTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.UserIDTextBox.HoverState.Parent = Me.UserIDTextBox
-        Me.UserIDTextBox.Location = New System.Drawing.Point(114, 360)
-        Me.UserIDTextBox.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
+        Me.UserIDTextBox.Location = New System.Drawing.Point(86, 292)
+        Me.UserIDTextBox.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.UserIDTextBox.Name = "UserIDTextBox"
         Me.UserIDTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.UserIDTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.UserIDTextBox.PlaceholderText = "admin@plasmo"
         Me.UserIDTextBox.SelectedText = ""
         Me.UserIDTextBox.ShadowDecoration.Parent = Me.UserIDTextBox
-        Me.UserIDTextBox.Size = New System.Drawing.Size(436, 65)
+        Me.UserIDTextBox.Size = New System.Drawing.Size(327, 53)
         Me.UserIDTextBox.TabIndex = 2
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Poppins SemiBold", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(99, 159)
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(74, 129)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(283, 70)
+        Me.Label1.Size = New System.Drawing.Size(208, 37)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Admin Login"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Label2.Location = New System.Drawing.Point(108, 218)
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label2.Location = New System.Drawing.Point(81, 177)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(217, 36)
+        Me.Label2.Size = New System.Drawing.Size(153, 20)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Welcome to Plasmo!"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(108, 313)
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Location = New System.Drawing.Point(81, 254)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(82, 36)
+        Me.Label3.Size = New System.Drawing.Size(61, 20)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "User Id"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(111, 463)
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Location = New System.Drawing.Point(83, 376)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(111, 36)
+        Me.Label4.Size = New System.Drawing.Size(78, 20)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Password"
         '
@@ -132,13 +136,14 @@ Partial Class Form1
         Me.LoginButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.LoginButton.DisabledState.Parent = Me.LoginButton
         Me.LoginButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.LoginButton.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoginButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LoginButton.ForeColor = System.Drawing.Color.White
         Me.LoginButton.HoverState.Parent = Me.LoginButton
-        Me.LoginButton.Location = New System.Drawing.Point(196, 637)
+        Me.LoginButton.Location = New System.Drawing.Point(147, 518)
+        Me.LoginButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.ShadowDecoration.Parent = Me.LoginButton
-        Me.LoginButton.Size = New System.Drawing.Size(250, 52)
+        Me.LoginButton.Size = New System.Drawing.Size(188, 42)
         Me.LoginButton.TabIndex = 9
         Me.LoginButton.Text = "LOGIN"
         '
@@ -155,19 +160,19 @@ Partial Class Form1
         Me.PasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.PasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PasswordTextBox.FocusedState.Parent = Me.PasswordTextBox
-        Me.PasswordTextBox.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.PasswordTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PasswordTextBox.HoverState.Parent = Me.PasswordTextBox
-        Me.PasswordTextBox.Location = New System.Drawing.Point(114, 515)
-        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
+        Me.PasswordTextBox.Location = New System.Drawing.Point(86, 418)
+        Me.PasswordTextBox.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.PasswordTextBox.Name = "PasswordTextBox"
         Me.PasswordTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.PasswordTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.PasswordTextBox.PlaceholderText = "  ********"
         Me.PasswordTextBox.SelectedText = ""
         Me.PasswordTextBox.ShadowDecoration.Parent = Me.PasswordTextBox
-        Me.PasswordTextBox.Size = New System.Drawing.Size(436, 65)
+        Me.PasswordTextBox.Size = New System.Drawing.Size(327, 53)
         Me.PasswordTextBox.TabIndex = 10
         Me.PasswordTextBox.UseSystemPasswordChar = True
         '
@@ -194,12 +199,13 @@ Partial Class Form1
         Me.EyeButton.HoverState.FillColor = System.Drawing.Color.Transparent
         Me.EyeButton.HoverState.ForeColor = System.Drawing.Color.Transparent
         Me.EyeButton.HoverState.Parent = Me.EyeButton
-        Me.EyeButton.Location = New System.Drawing.Point(512, 536)
+        Me.EyeButton.Location = New System.Drawing.Point(384, 436)
+        Me.EyeButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.EyeButton.Name = "EyeButton"
         Me.EyeButton.PressedColor = System.Drawing.Color.Transparent
         Me.EyeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.EyeButton.ShadowDecoration.Parent = Me.EyeButton
-        Me.EyeButton.Size = New System.Drawing.Size(24, 24)
+        Me.EyeButton.Size = New System.Drawing.Size(18, 20)
         Me.EyeButton.TabIndex = 16
         Me.EyeButton.Text = "Guna2CircleButton1"
         Me.EyeButton.UseTransparentBackground = True
@@ -236,7 +242,8 @@ Partial Class Form1
         '
         Me.EyeClosed.Image = CType(resources.GetObject("EyeClosed.Image"), System.Drawing.Image)
         Me.EyeClosed.ImageRotate = 0!
-        Me.EyeClosed.Location = New System.Drawing.Point(512, 536)
+        Me.EyeClosed.Location = New System.Drawing.Point(384, 436)
+        Me.EyeClosed.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.EyeClosed.Name = "EyeClosed"
         Me.EyeClosed.ShadowDecoration.Parent = Me.EyeClosed
         Me.EyeClosed.Size = New System.Drawing.Size(24, 24)
@@ -248,7 +255,8 @@ Partial Class Form1
         '
         Me.EyeOpen.Image = CType(resources.GetObject("EyeOpen.Image"), System.Drawing.Image)
         Me.EyeOpen.ImageRotate = 0!
-        Me.EyeOpen.Location = New System.Drawing.Point(512, 536)
+        Me.EyeOpen.Location = New System.Drawing.Point(384, 436)
+        Me.EyeOpen.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.EyeOpen.Name = "EyeOpen"
         Me.EyeOpen.ShadowDecoration.Parent = Me.EyeOpen
         Me.EyeOpen.Size = New System.Drawing.Size(24, 24)
@@ -261,10 +269,11 @@ Partial Class Form1
         '
         Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
         Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(737, 145)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(553, 118)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(619, 460)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(464, 374)
         Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
         Me.Guna2PictureBox2.TabIndex = 8
         Me.Guna2PictureBox2.TabStop = False
@@ -273,10 +282,11 @@ Partial Class Form1
         '
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(34, 20)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 16)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(268, 71)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
         '
@@ -303,12 +313,13 @@ Partial Class Form1
         Me.Guna2CircleButton2.HoverState.Parent = Me.Guna2CircleButton2
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
-        Me.Guna2CircleButton2.Location = New System.Drawing.Point(1326, 12)
+        Me.Guna2CircleButton2.Location = New System.Drawing.Point(994, 10)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CircleButton2.ShadowDecoration.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.Size = New System.Drawing.Size(40, 40)
+        Me.Guna2CircleButton2.Size = New System.Drawing.Size(30, 32)
         Me.Guna2CircleButton2.TabIndex = 66
         '
         'CloseButton
@@ -332,20 +343,21 @@ Partial Class Form1
         Me.CloseButton.HoverState.Parent = Me.CloseButton
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
-        Me.CloseButton.Location = New System.Drawing.Point(1388, 12)
+        Me.CloseButton.Location = New System.Drawing.Point(1041, 10)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
-        Me.CloseButton.Size = New System.Drawing.Size(40, 40)
+        Me.CloseButton.Size = New System.Drawing.Size(30, 32)
         Me.CloseButton.TabIndex = 65
         '
-        'Form1
+        'login
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1440, 768)
+        Me.ClientSize = New System.Drawing.Size(1040, 641)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.EyeButton)
@@ -362,8 +374,8 @@ Partial Class Form1
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Name = "Form1"
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Name = "login"
         Me.Text = "Form1"
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()

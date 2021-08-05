@@ -51,7 +51,7 @@
 
     End Sub
     Private Sub Guna2Button7_Click(sender As Object, e As EventArgs)
-        Form1.Show()
+        login.Show()
         Me.Hide()
     End Sub
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
@@ -70,7 +70,7 @@
 
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
-        Form1.Show()
+        login.Show()
         Me.Hide()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
