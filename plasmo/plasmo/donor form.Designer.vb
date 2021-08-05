@@ -26,7 +26,7 @@ Partial Class Donor_form
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Donor_form))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.gender = New Guna.UI2.WinForms.Guna2ComboBox()
-        Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
+        Me.SubmitButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.address = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -58,6 +58,7 @@ Partial Class Donor_form
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel3.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -81,7 +82,7 @@ Partial Class Donor_form
         Me.gender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.gender.HoverState.Parent = Me.gender
         Me.gender.ItemHeight = 30
-        Me.gender.Items.AddRange(New Object() {"Select Your Gender", "Male", "Female", "Other"})
+        Me.gender.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.gender.ItemsAppearance.Parent = Me.gender
         Me.gender.Location = New System.Drawing.Point(959, 502)
         Me.gender.Name = "gender"
@@ -90,26 +91,26 @@ Partial Class Donor_form
         Me.gender.StartIndex = 0
         Me.gender.TabIndex = 63
         '
-        'Guna2Button1
+        'SubmitButton
         '
-        Me.Guna2Button1.BorderRadius = 6
-        Me.Guna2Button1.CheckedState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.CustomImages.Parent = Me.Guna2Button1
-        Me.Guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button1.DisabledState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button1.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(595, 701)
-        Me.Guna2Button1.Name = "Guna2Button1"
-        Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(250, 52)
-        Me.Guna2Button1.TabIndex = 62
-        Me.Guna2Button1.Text = "SUBMIT"
+        Me.SubmitButton.BorderRadius = 6
+        Me.SubmitButton.CheckedState.Parent = Me.SubmitButton
+        Me.SubmitButton.CustomImages.Parent = Me.SubmitButton
+        Me.SubmitButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.SubmitButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.SubmitButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.SubmitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SubmitButton.DisabledState.Parent = Me.SubmitButton
+        Me.SubmitButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.SubmitButton.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SubmitButton.ForeColor = System.Drawing.Color.White
+        Me.SubmitButton.HoverState.Parent = Me.SubmitButton
+        Me.SubmitButton.Location = New System.Drawing.Point(595, 701)
+        Me.SubmitButton.Name = "SubmitButton"
+        Me.SubmitButton.ShadowDecoration.Parent = Me.SubmitButton
+        Me.SubmitButton.Size = New System.Drawing.Size(250, 52)
+        Me.SubmitButton.TabIndex = 62
+        Me.SubmitButton.Text = "SUBMIT"
         '
         'Label10
         '
@@ -394,7 +395,7 @@ Partial Class Donor_form
         '
         'fname
         '
-        Me.fname.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.fname.BorderColor = System.Drawing.Color.Red
         Me.fname.BorderRadius = 10
         Me.fname.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.fname.DefaultText = ""
@@ -688,19 +689,31 @@ Partial Class Donor_form
         Me.Guna2PictureBox1.TabIndex = 43
         Me.Guna2PictureBox1.TabStop = False
         '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Red
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(206, 300)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(158, 25)
+        Me.Guna2HtmlLabel1.TabIndex = 71
+        Me.Guna2HtmlLabel1.Text = "This field can't be empty"
+        '
         'Donor_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1440, 768)
+        Me.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Controls.Add(Me.Guna2Panel3)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.antibody)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.gender)
-        Me.Controls.Add(Me.Guna2Button1)
+        Me.Controls.Add(Me.SubmitButton)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.address)
         Me.Controls.Add(Me.Label4)
@@ -735,7 +748,7 @@ Partial Class Donor_form
     Friend WithEvents antibody As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Label9 As Label
     Friend WithEvents gender As Guna.UI2.WinForms.Guna2ComboBox
-    Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents SubmitButton As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Label10 As Label
     Friend WithEvents address As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label4 As Label
@@ -765,4 +778,5 @@ Partial Class Donor_form
     Friend WithEvents DashboardBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents LogoutBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

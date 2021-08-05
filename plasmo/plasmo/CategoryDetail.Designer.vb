@@ -34,15 +34,25 @@ Partial Class CategoryDetail
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
-        Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
-        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.Newdataset = New plasmo.newdataset()
+        Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.TableTableAdapter = New plasmo.newdatasetTableAdapters.TableTableAdapter()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.plasma_id = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.reciever_name = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.age = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.reciever_from = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.blood_group = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.anti_body = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.DOE = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        Me.TableLayoutPanel1.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
@@ -70,7 +80,7 @@ Partial Class CategoryDetail
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Location = New System.Drawing.Point(60, 51)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(756, 51)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
         Me.Guna2Panel2.Size = New System.Drawing.Size(80, 4)
@@ -214,37 +224,6 @@ Partial Class CategoryDetail
         Me.Guna2Button9.TabIndex = 10
         Me.Guna2Button9.Text = "LOGOUT"
         '
-        'TableLayoutPanel1
-        '
-        Me.TableLayoutPanel1.ColumnCount = 6
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 169.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 586.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 177.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 55.0!))
-        Me.TableLayoutPanel1.ColumnStyles.Add(New System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 153.0!))
-        Me.TableLayoutPanel1.Controls.Add(Me.DateTimePicker1, 2, 1)
-        Me.TableLayoutPanel1.Location = New System.Drawing.Point(60, 207)
-        Me.TableLayoutPanel1.Name = "TableLayoutPanel1"
-        Me.TableLayoutPanel1.RowCount = 8
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20.83333!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 79.16666!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 47.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 45.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 51.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 48.0!))
-        Me.TableLayoutPanel1.RowStyles.Add(New System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 44.0!))
-        Me.TableLayoutPanel1.Size = New System.Drawing.Size(1310, 503)
-        Me.TableLayoutPanel1.TabIndex = 59
-        '
-        'DateTimePicker1
-        '
-        Me.DateTimePicker1.Location = New System.Drawing.Point(342, 48)
-        Me.DateTimePicker1.Name = "DateTimePicker1"
-        Me.DateTimePicker1.Size = New System.Drawing.Size(245, 22)
-        Me.DateTimePicker1.TabIndex = 0
-        '
         'Guna2PictureBox1
         '
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
@@ -315,14 +294,75 @@ Partial Class CategoryDetail
         Me.CloseButton.Size = New System.Drawing.Size(40, 40)
         Me.CloseButton.TabIndex = 65
         '
+        'Newdataset
+        '
+        Me.Newdataset.DataSetName = "newdataset"
+        Me.Newdataset.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'TableBindingSource
+        '
+        Me.TableBindingSource.DataMember = "Table"
+        Me.TableBindingSource.DataSource = Me.Newdataset
+        '
+        'TableTableAdapter
+        '
+        Me.TableTableAdapter.ClearBeforeFill = True
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.plasma_id, Me.reciever_name, Me.age, Me.reciever_from, Me.blood_group, Me.anti_body, Me.DOE})
+        Me.ListView1.Font = New System.Drawing.Font("Poppins", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(43, 206)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(1323, 479)
+        Me.ListView1.TabIndex = 67
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'plasma_id
+        '
+        Me.plasma_id.Text = "PLASMA ID"
+        Me.plasma_id.Width = 110
+        '
+        'reciever_name
+        '
+        Me.reciever_name.Text = "RECIEVER NAME"
+        Me.reciever_name.Width = 175
+        '
+        'age
+        '
+        Me.age.Text = "AGE"
+        Me.age.Width = 76
+        '
+        'reciever_from
+        '
+        Me.reciever_from.Text = "RECIEVED FROM"
+        Me.reciever_from.Width = 175
+        '
+        'blood_group
+        '
+        Me.blood_group.Text = "BLOOD GROUP"
+        Me.blood_group.Width = 171
+        '
+        'anti_body
+        '
+        Me.anti_body.Text = "ANTIBODY"
+        Me.anti_body.Width = 110
+        '
+        'DOE
+        '
+        Me.DOE.Text = "DATE OF EXCHANGE"
+        Me.DOE.Width = 250
+        '
         'CategoryDetail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1440, 768)
+        Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
-        Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
@@ -331,8 +371,9 @@ Partial Class CategoryDetail
         Me.Text = "Form2"
         Me.Guna2Panel1.ResumeLayout(False)
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        Me.TableLayoutPanel1.ResumeLayout(False)
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -347,8 +388,17 @@ Partial Class CategoryDetail
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents TableLayoutPanel1 As TableLayoutPanel
-    Friend WithEvents DateTimePicker1 As DateTimePicker
     Friend WithEvents Guna2CircleButton2 As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents Newdataset As newdataset
+    Friend WithEvents TableBindingSource As BindingSource
+    Friend WithEvents TableTableAdapter As newdatasetTableAdapters.TableTableAdapter
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents plasma_id As ColumnHeader
+    Friend WithEvents reciever_name As ColumnHeader
+    Friend WithEvents age As ColumnHeader
+    Friend WithEvents reciever_from As ColumnHeader
+    Friend WithEvents blood_group As ColumnHeader
+    Friend WithEvents anti_body As ColumnHeader
+    Friend WithEvents DOE As ColumnHeader
 End Class

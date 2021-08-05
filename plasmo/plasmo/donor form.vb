@@ -1,5 +1,6 @@
-﻿
+﻿Imports System.Data
 Imports System.Data.SqlClient
+Imports System.Data.SqlClient.SqlCommand
 Public Class Donor_form
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs)
         Reciever_form.Show()
@@ -58,12 +59,20 @@ Public Class Donor_form
         End If
     End Function
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+    Private Sub fname_TextChanged(sender As Object, e As EventArgs) Handles fname.TextChanged
+
+    End Sub
+
+    Private Sub gender_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gender.SelectedIndexChanged
+
+    End Sub
+
+    Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
         Dim anti As Char = Truncate(antibody.SelectedItem, 1)
 
         Dim con As New SqlConnection("Server=WHITEDEVIL\SQLEXPRESS;Database=plasmo;Integrated Security=true")
-        Dim cmd1 As New SqlCommand("insert into donor_records(first_name,last_name,age,phone_number,email,city,address,blood_group,sex,anti_body,plasma_id,sold) values('" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & bgroup.SelectedItem & "','" & gen & "','" & anti & "','" & "E0800740" & "','" & "N" & "')", con)
+        Dim cmd1 As New SqlCommand("insert into donor_records(first_name,last_name,age,phone_number,email,city,address,blood_group,sex,anti_body,plasma_id,sold) values('" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & bgroup.SelectedItem & "','" & gen & "','" & anti & "','" & "E0800743" & "','" & "N" & "')", con)
         con.Open()
         cmd1.ExecuteNonQuery()
         MsgBox("Donor Registered")
@@ -71,11 +80,11 @@ Public Class Donor_form
         con.Close()
     End Sub
 
-    Private Sub fname_TextChanged(sender As Object, e As EventArgs) Handles fname.TextChanged
+    Private Sub Label11_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub gender_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gender.SelectedIndexChanged
+    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
 
     End Sub
 End Class

@@ -10,7 +10,16 @@ Public Class Dashboard
     End Sub
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim Aplus As Integer = 0
 
+        Dim con As New SqlConnection("Server=WHITEDEVIL\SQLEXPRESS;Database=plasmo;Integrated Security=true")
+        If con.State = 1 Then con.Close()
+        Dim dashcmd As New SqlCommand("select count(plasma_id) from donor_records where blood_group = A+,sold = N")
+        con.Open()
+        Dim dr As SqlDataReader = dashcmd.ExecuteReader
+        Dim count As Integer = dr("plasma_id")
+        MsgBox(count)
+        con.Close()
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
@@ -36,11 +45,6 @@ Public Class Dashboard
 
 
     Private Sub Guna2CircleProgressBar4_ValueChanged(sender As Object, e As EventArgs) Handles Guna2CircleProgressBar4.ValueChanged
-
-
-
-
-
 
     End Sub
 
