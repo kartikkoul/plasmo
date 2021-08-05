@@ -10,16 +10,58 @@ Public Class Dashboard
     End Sub
 
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'Dim Aplus As Integer = 0
 
-        'Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=true")
-        'If con.State = 1 Then con.Close()
-        'Dim dashcmd As New SqlCommand("select count(plasma_id) from donor_records where blood_group = A+,sold = N", con)
-        'con.Open()
-        'Dim dr As SqlDataReader = dashcmd.ExecuteReader
-        'Dim count As Integer = dr("plasma_id")
-        'MsgBox(count)
-        'con.Close()
+
+        Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=true")
+        If con.State = 1 Then con.Close()
+        Dim aplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
+        con.Open()
+        Dim Aplus As Int16 = aplus_cmd.ExecuteNonQuery
+        con.Close()
+        Guna2CircleProgressBar4.Value = Aplus
+
+        If con.State = 1 Then con.Close()
+        Dim aminus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
+        con.Open()
+        Dim AMinus As Int16 = aminus_cmd.ExecuteNonQuery
+        con.Close()
+        Guna2CircleProgressBar4.Value = AMinus
+
+        If con.State = 1 Then con.Close()
+        Dim bplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
+        con.Open()
+        Dim BPlus As Int16 = bplus_cmd.ExecuteNonQuery
+        con.Close()
+        Guna2CircleProgressBar4.Value = BPlus
+
+        If con.State = 1 Then con.Close()
+        Dim abplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
+        con.Open()
+        Dim ABPlus As Int16 = abplus_cmd.ExecuteNonQuery
+        con.Close()
+        Guna2CircleProgressBar4.Value = ABPlus
+
+        If con.State = 1 Then con.Close()
+        Dim abminus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
+        con.Open()
+        Dim ABMinus As Int16 = abminus_cmd.ExecuteNonQuery
+        con.Close()
+        Guna2CircleProgressBar4.Value = ABMinus
+
+        If con.State = 1 Then con.Close()
+        Dim oplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
+        con.Open()
+        Dim OPlus As Int16 = oplus_cmd.ExecuteNonQuery
+        con.Close()
+        Guna2CircleProgressBar4.Value = OPlus
+
+        If con.State = 1 Then con.Close()
+        Dim ominus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
+        con.Open()
+        Dim OMinus As Int16 = ominus_cmd.ExecuteNonQuery
+        con.Close()
+        Guna2CircleProgressBar4.Value = OMinus
+
     End Sub
 
     Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
@@ -33,7 +75,6 @@ Public Class Dashboard
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
         Me.Hide()
-
     End Sub
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
@@ -86,6 +127,10 @@ Public Class Dashboard
     End Sub
 
     Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
+
+    End Sub
+
+    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
 
     End Sub
 End Class

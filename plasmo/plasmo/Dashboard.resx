@@ -128,10 +128,10 @@
   </metadata>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>8, 16</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1440, 768</value>
+    <value>1040, 624</value>
   </data>
   <metadata name="Guna2Transition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>228, 17</value>
@@ -175,10 +175,14 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="Guna2CircleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1326, 12</value>
+    <value>994, 10</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="Guna2CircleButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2CircleButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+    <value>30, 32</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Guna2CircleButton2.TabIndex" type="System.Int32, mscorlib">
@@ -200,10 +204,13 @@
     <value>Segoe UI, 9pt</value>
   </data>
   <data name="CloseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1388, 12</value>
+    <value>1041, 10</value>
+  </data>
+  <data name="CloseButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="CloseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>40, 40</value>
+    <value>30, 32</value>
   </data>
   <data name="CloseButton.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -221,13 +228,16 @@
     <value>1</value>
   </data>
   <data name="Guna2CircleProgressBar5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 18pt</value>
+    <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="Guna2CircleProgressBar5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1037, 513</value>
+    <value>778, 417</value>
+  </data>
+  <data name="Guna2CircleProgressBar5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2CircleProgressBar5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 157</value>
+    <value>128, 128</value>
   </data>
   <data name="Guna2CircleProgressBar5.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
@@ -248,13 +258,16 @@
     <value>2</value>
   </data>
   <data name="Guna2CircleProgressBar2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 18pt</value>
+    <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="Guna2CircleProgressBar2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1037, 268</value>
+    <value>778, 218</value>
+  </data>
+  <data name="Guna2CircleProgressBar2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2CircleProgressBar2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 157</value>
+    <value>128, 128</value>
   </data>
   <data name="Guna2CircleProgressBar2.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
@@ -278,17 +291,19 @@
     <value>True</value>
   </data>
   <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Light, 24pt</value>
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="Label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1076, 457</value>
+    <value>807, 371</value>
+  </data>
+  <data name="Label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>101, 70</value>
+    <value>70, 37</value>
   </data>
   <data name="Label4.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -312,16 +327,19 @@
     <value>True</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Light, 24pt</value>
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1082, 212</value>
+    <value>812, 172</value>
+  </data>
+  <data name="Label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>75, 70</value>
+    <value>48, 37</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -342,13 +360,16 @@
     <value>5</value>
   </data>
   <data name="Guna2CircleProgressBar6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 18pt</value>
+    <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="Guna2CircleProgressBar6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 513</value>
+    <value>380, 417</value>
+  </data>
+  <data name="Guna2CircleProgressBar6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2CircleProgressBar6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 157</value>
+    <value>128, 128</value>
   </data>
   <data name="Guna2CircleProgressBar6.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
@@ -369,13 +390,16 @@
     <value>6</value>
   </data>
   <data name="Guna2CircleProgressBar7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 18pt</value>
+    <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="Guna2CircleProgressBar7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>769, 513</value>
+    <value>577, 417</value>
+  </data>
+  <data name="Guna2CircleProgressBar7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2CircleProgressBar7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 157</value>
+    <value>128, 128</value>
   </data>
   <data name="Guna2CircleProgressBar7.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
@@ -396,13 +420,16 @@
     <value>7</value>
   </data>
   <data name="Guna2CircleProgressBar1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 18pt</value>
+    <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="Guna2CircleProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>506, 268</value>
+    <value>380, 218</value>
+  </data>
+  <data name="Guna2CircleProgressBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2CircleProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 157</value>
+    <value>128, 128</value>
   </data>
   <data name="Guna2CircleProgressBar1.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
@@ -426,16 +453,19 @@
     <value>True</value>
   </data>
   <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Light, 24pt</value>
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="Label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 457</value>
+    <value>413, 371</value>
+  </data>
+  <data name="Label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>83, 70</value>
+    <value>52, 37</value>
   </data>
   <data name="Label6.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -456,13 +486,16 @@
     <value>9</value>
   </data>
   <data name="Guna2CircleProgressBar3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 18pt</value>
+    <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="Guna2CircleProgressBar3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>769, 268</value>
+    <value>577, 218</value>
+  </data>
+  <data name="Guna2CircleProgressBar3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2CircleProgressBar3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 157</value>
+    <value>128, 128</value>
   </data>
   <data name="Guna2CircleProgressBar3.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
@@ -486,16 +519,19 @@
     <value>True</value>
   </data>
   <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Light, 24pt</value>
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="Label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>808, 457</value>
+    <value>606, 371</value>
+  </data>
+  <data name="Label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>106, 70</value>
+    <value>79, 37</value>
   </data>
   <data name="Label7.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -519,16 +555,19 @@
     <value>True</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Light, 24pt</value>
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>551, 212</value>
+    <value>413, 172</value>
+  </data>
+  <data name="Label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>77, 70</value>
+    <value>49, 37</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -549,13 +588,16 @@
     <value>12</value>
   </data>
   <data name="Guna2CircleProgressBar8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 18pt</value>
+    <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="Guna2CircleProgressBar8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 513</value>
+    <value>180, 417</value>
+  </data>
+  <data name="Guna2CircleProgressBar8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2CircleProgressBar8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 157</value>
+    <value>128, 128</value>
   </data>
   <data name="Guna2CircleProgressBar8.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
@@ -579,16 +621,19 @@
     <value>True</value>
   </data>
   <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Light, 24pt</value>
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>813, 212</value>
+    <value>610, 172</value>
+  </data>
+  <data name="Label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>80, 70</value>
+    <value>57, 37</value>
   </data>
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -612,16 +657,19 @@
     <value>True</value>
   </data>
   <data name="Label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Light, 24pt</value>
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="Label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>284, 457</value>
+    <value>213, 371</value>
+  </data>
+  <data name="Label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>88, 70</value>
+    <value>61, 37</value>
   </data>
   <data name="Label8.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -642,13 +690,16 @@
     <value>15</value>
   </data>
   <data name="Guna2CircleProgressBar4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins, 18pt</value>
+    <value>Microsoft Sans Serif, 18pt</value>
   </data>
   <data name="Guna2CircleProgressBar4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>240, 268</value>
+    <value>180, 218</value>
+  </data>
+  <data name="Guna2CircleProgressBar4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2CircleProgressBar4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>157, 157</value>
+    <value>128, 128</value>
   </data>
   <data name="Guna2CircleProgressBar4.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
@@ -672,16 +723,19 @@
     <value>True</value>
   </data>
   <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Light, 24pt</value>
+    <value>Microsoft Sans Serif, 24pt</value>
   </data>
   <data name="Label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>285, 212</value>
+    <value>214, 172</value>
+  </data>
+  <data name="Label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>82, 70</value>
+    <value>58, 37</value>
   </data>
   <data name="Label5.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -702,10 +756,13 @@
     <value>17</value>
   </data>
   <data name="Guna2PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1356, 25</value>
+    <value>1017, 20</value>
+  </data>
+  <data name="Guna2PictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>26, 33</value>
+    <value>20, 27</value>
   </data>
   <data name="Guna2PictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -723,10 +780,13 @@
     <value>0</value>
   </data>
   <data name="Guna2Panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 52</value>
+    <value>47, 42</value>
+  </data>
+  <data name="Guna2Panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>86, 4</value>
+    <value>64, 3</value>
   </data>
   <data name="Guna2Panel2.TabIndex" type="System.Int32, mscorlib">
     <value>80</value>
@@ -744,13 +804,16 @@
     <value>1</value>
   </data>
   <data name="RecieverBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Medium, 13.2000008pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
   </data>
   <data name="RecieverBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>409, 17</value>
+    <value>307, 14</value>
+  </data>
+  <data name="RecieverBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="RecieverBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 38</value>
+    <value>125, 31</value>
   </data>
   <data name="RecieverBtnMenu.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -771,13 +834,16 @@
     <value>2</value>
   </data>
   <data name="DonorBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Medium, 13.2000008pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
   </data>
   <data name="DonorBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>243, 17</value>
+    <value>182, 14</value>
+  </data>
+  <data name="DonorBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="DonorBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 38</value>
+    <value>125, 31</value>
   </data>
   <data name="DonorBtnMenu.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -798,13 +864,16 @@
     <value>3</value>
   </data>
   <data name="QueueBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Medium, 13.2000008pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
   </data>
   <data name="QueueBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>564, 17</value>
+    <value>423, 14</value>
+  </data>
+  <data name="QueueBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="QueueBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 38</value>
+    <value>125, 31</value>
   </data>
   <data name="QueueBtnMenu.TabIndex" type="System.Int32, mscorlib">
     <value>82</value>
@@ -825,13 +894,16 @@
     <value>4</value>
   </data>
   <data name="HistoryBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Medium, 13.2000008pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
   </data>
   <data name="HistoryBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>723, 17</value>
+    <value>542, 14</value>
+  </data>
+  <data name="HistoryBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="HistoryBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>167, 38</value>
+    <value>125, 31</value>
   </data>
   <data name="HistoryBtnMenu.TabIndex" type="System.Int32, mscorlib">
     <value>81</value>
@@ -852,13 +924,16 @@
     <value>5</value>
   </data>
   <data name="DashboardBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Medium, 13.2000008pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
   </data>
   <data name="DashboardBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 17</value>
+    <value>24, 14</value>
+  </data>
+  <data name="DashboardBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="DashboardBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>217, 38</value>
+    <value>163, 31</value>
   </data>
   <data name="DashboardBtnMenu.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -879,13 +954,16 @@
     <value>6</value>
   </data>
   <data name="LogoutBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins Medium, 13.2000008pt, style=Bold</value>
+    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
   </data>
   <data name="LogoutBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1172, 13</value>
+    <value>879, 11</value>
+  </data>
+  <data name="LogoutBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="LogoutBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 52</value>
+    <value>188, 42</value>
   </data>
   <data name="LogoutBtnMenu.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -906,10 +984,13 @@
     <value>7</value>
   </data>
   <data name="Guna2Panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 90</value>
+    <value>0, 73</value>
+  </data>
+  <data name="Guna2Panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1443, 72</value>
+    <value>1082, 58</value>
   </data>
   <data name="Guna2Panel1.TabIndex" type="System.Int32, mscorlib">
     <value>56</value>
@@ -930,10 +1011,13 @@
     <value>NoControl</value>
   </data>
   <data name="Guna2PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>34, 14</value>
+    <value>26, 11</value>
+  </data>
+  <data name="Guna2PictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="Guna2PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>268, 71</value>
+    <value>201, 58</value>
   </data>
   <data name="Guna2PictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
@@ -2475,6 +2559,9 @@
         4AD////////////////////////gAP///////////////////////+AA////////////////////////
         4AA=
 </value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="&gt;&gt;Guna2BorderlessForm1.Name" xml:space="preserve">
     <value>Guna2BorderlessForm1</value>
