@@ -36,20 +36,20 @@ Partial Class Dashboard
         Me.HistoryBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2CircleProgressBar4 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
-        Me.Guna2CircleProgressBar1 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.APlusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.AMinusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.Guna2CircleProgressBar2 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.BMinusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.Guna2CircleProgressBar3 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.BPlusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Guna2CircleProgressBar5 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Guna2CircleProgressBar6 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
-        Me.Guna2CircleProgressBar7 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.OMinusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.A = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.Label7 = New System.Windows.Forms.Label()
-        Me.Guna2CircleProgressBar8 = New Guna.UI2.WinForms.Guna2CircleProgressBar()
+        Me.OPlusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Guna2Transition1 = New Guna.UI2.WinForms.Guna2Transition()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -214,47 +214,47 @@ Partial Class Dashboard
         Me.LogoutBtnMenu.Name = "LogoutBtnMenu"
         Me.LogoutBtnMenu.ShadowDecoration.Parent = Me.LogoutBtnMenu
         '
-        'Guna2CircleProgressBar4
+        'APlusCircle
         '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2CircleProgressBar4, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2CircleProgressBar4.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar4.FillOffset = 5
-        Me.Guna2CircleProgressBar4.FillThickness = 4
-        resources.ApplyResources(Me.Guna2CircleProgressBar4, "Guna2CircleProgressBar4")
-        Me.Guna2CircleProgressBar4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar4.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2CircleProgressBar4.Minimum = 0
-        Me.Guna2CircleProgressBar4.Name = "Guna2CircleProgressBar4"
-        Me.Guna2CircleProgressBar4.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar4.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar4.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar4.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar4.ProgressThickness = 9
-        Me.Guna2CircleProgressBar4.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar4.ShadowDecoration.Parent = Me.Guna2CircleProgressBar4
-        Me.Guna2CircleProgressBar4.ShowPercentage = True
-        Me.Guna2CircleProgressBar4.Value = 21
+        Me.Guna2Transition1.SetDecoration(Me.APlusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.APlusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.APlusCircle.FillOffset = 5
+        Me.APlusCircle.FillThickness = 4
+        resources.ApplyResources(Me.APlusCircle, "APlusCircle")
+        Me.APlusCircle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.APlusCircle.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.APlusCircle.Minimum = 0
+        Me.APlusCircle.Name = "APlusCircle"
+        Me.APlusCircle.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.APlusCircle.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.APlusCircle.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.APlusCircle.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.APlusCircle.ProgressThickness = 9
+        Me.APlusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.APlusCircle.ShadowDecoration.Parent = Me.APlusCircle
+        Me.APlusCircle.ShowPercentage = True
+        Me.APlusCircle.Value = 21
         '
-        'Guna2CircleProgressBar1
+        'AMinusCircle
         '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2CircleProgressBar1, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2CircleProgressBar1.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar1.FillOffset = 5
-        Me.Guna2CircleProgressBar1.FillThickness = 4
-        resources.ApplyResources(Me.Guna2CircleProgressBar1, "Guna2CircleProgressBar1")
-        Me.Guna2CircleProgressBar1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar1.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2CircleProgressBar1.Minimum = 0
-        Me.Guna2CircleProgressBar1.Name = "Guna2CircleProgressBar1"
-        Me.Guna2CircleProgressBar1.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar1.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar1.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar1.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar1.ProgressThickness = 9
-        Me.Guna2CircleProgressBar1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar1.ShadowDecoration.Parent = Me.Guna2CircleProgressBar1
-        Me.Guna2CircleProgressBar1.ShowPercentage = True
-        Me.Guna2CircleProgressBar1.Value = 25
+        Me.Guna2Transition1.SetDecoration(Me.AMinusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.AMinusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.AMinusCircle.FillOffset = 5
+        Me.AMinusCircle.FillThickness = 4
+        resources.ApplyResources(Me.AMinusCircle, "AMinusCircle")
+        Me.AMinusCircle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.AMinusCircle.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.AMinusCircle.Minimum = 0
+        Me.AMinusCircle.Name = "AMinusCircle"
+        Me.AMinusCircle.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.AMinusCircle.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.AMinusCircle.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.AMinusCircle.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.AMinusCircle.ProgressThickness = 9
+        Me.AMinusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.AMinusCircle.ShadowDecoration.Parent = Me.AMinusCircle
+        Me.AMinusCircle.ShowPercentage = True
+        Me.AMinusCircle.Value = 25
         '
         'Label1
         '
@@ -263,26 +263,26 @@ Partial Class Dashboard
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Name = "Label1"
         '
-        'Guna2CircleProgressBar2
+        'BMinusCircle
         '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2CircleProgressBar2, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2CircleProgressBar2.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar2.FillOffset = 5
-        Me.Guna2CircleProgressBar2.FillThickness = 4
-        resources.ApplyResources(Me.Guna2CircleProgressBar2, "Guna2CircleProgressBar2")
-        Me.Guna2CircleProgressBar2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar2.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2CircleProgressBar2.Minimum = 0
-        Me.Guna2CircleProgressBar2.Name = "Guna2CircleProgressBar2"
-        Me.Guna2CircleProgressBar2.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar2.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar2.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar2.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar2.ProgressThickness = 9
-        Me.Guna2CircleProgressBar2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar2.ShadowDecoration.Parent = Me.Guna2CircleProgressBar2
-        Me.Guna2CircleProgressBar2.ShowPercentage = True
-        Me.Guna2CircleProgressBar2.Value = 2
+        Me.Guna2Transition1.SetDecoration(Me.BMinusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.BMinusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BMinusCircle.FillOffset = 5
+        Me.BMinusCircle.FillThickness = 4
+        resources.ApplyResources(Me.BMinusCircle, "BMinusCircle")
+        Me.BMinusCircle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BMinusCircle.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.BMinusCircle.Minimum = 0
+        Me.BMinusCircle.Name = "BMinusCircle"
+        Me.BMinusCircle.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.BMinusCircle.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.BMinusCircle.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.BMinusCircle.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.BMinusCircle.ProgressThickness = 9
+        Me.BMinusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.BMinusCircle.ShadowDecoration.Parent = Me.BMinusCircle
+        Me.BMinusCircle.ShowPercentage = True
+        Me.BMinusCircle.Value = 2
         '
         'Label2
         '
@@ -291,26 +291,26 @@ Partial Class Dashboard
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Name = "Label2"
         '
-        'Guna2CircleProgressBar3
+        'BPlusCircle
         '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2CircleProgressBar3, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2CircleProgressBar3.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar3.FillOffset = 5
-        Me.Guna2CircleProgressBar3.FillThickness = 4
-        resources.ApplyResources(Me.Guna2CircleProgressBar3, "Guna2CircleProgressBar3")
-        Me.Guna2CircleProgressBar3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar3.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2CircleProgressBar3.Minimum = 0
-        Me.Guna2CircleProgressBar3.Name = "Guna2CircleProgressBar3"
-        Me.Guna2CircleProgressBar3.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar3.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar3.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar3.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar3.ProgressThickness = 9
-        Me.Guna2CircleProgressBar3.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar3.ShadowDecoration.Parent = Me.Guna2CircleProgressBar3
-        Me.Guna2CircleProgressBar3.ShowPercentage = True
-        Me.Guna2CircleProgressBar3.Value = 75
+        Me.Guna2Transition1.SetDecoration(Me.BPlusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.BPlusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BPlusCircle.FillOffset = 5
+        Me.BPlusCircle.FillThickness = 4
+        resources.ApplyResources(Me.BPlusCircle, "BPlusCircle")
+        Me.BPlusCircle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.BPlusCircle.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.BPlusCircle.Minimum = 0
+        Me.BPlusCircle.Name = "BPlusCircle"
+        Me.BPlusCircle.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.BPlusCircle.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.BPlusCircle.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.BPlusCircle.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.BPlusCircle.ProgressThickness = 9
+        Me.BPlusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.BPlusCircle.ShadowDecoration.Parent = Me.BPlusCircle
+        Me.BPlusCircle.ShowPercentage = True
+        Me.BPlusCircle.Value = 75
         '
         'Label3
         '
@@ -347,46 +347,46 @@ Partial Class Dashboard
         Me.Label4.ForeColor = System.Drawing.Color.Black
         Me.Label4.Name = "Label4"
         '
-        'Guna2CircleProgressBar6
+        'OMinusCircle
         '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2CircleProgressBar6, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2CircleProgressBar6.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar6.FillOffset = 5
-        Me.Guna2CircleProgressBar6.FillThickness = 4
-        resources.ApplyResources(Me.Guna2CircleProgressBar6, "Guna2CircleProgressBar6")
-        Me.Guna2CircleProgressBar6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar6.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2CircleProgressBar6.Minimum = 0
-        Me.Guna2CircleProgressBar6.Name = "Guna2CircleProgressBar6"
-        Me.Guna2CircleProgressBar6.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar6.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar6.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar6.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar6.ProgressThickness = 9
-        Me.Guna2CircleProgressBar6.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar6.ShadowDecoration.Parent = Me.Guna2CircleProgressBar6
-        Me.Guna2CircleProgressBar6.ShowPercentage = True
+        Me.Guna2Transition1.SetDecoration(Me.OMinusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.OMinusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.OMinusCircle.FillOffset = 5
+        Me.OMinusCircle.FillThickness = 4
+        resources.ApplyResources(Me.OMinusCircle, "OMinusCircle")
+        Me.OMinusCircle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.OMinusCircle.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.OMinusCircle.Minimum = 0
+        Me.OMinusCircle.Name = "OMinusCircle"
+        Me.OMinusCircle.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.OMinusCircle.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.OMinusCircle.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.OMinusCircle.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.OMinusCircle.ProgressThickness = 9
+        Me.OMinusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.OMinusCircle.ShadowDecoration.Parent = Me.OMinusCircle
+        Me.OMinusCircle.ShowPercentage = True
         '
-        'Guna2CircleProgressBar7
+        'A
         '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2CircleProgressBar7, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2CircleProgressBar7.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar7.FillOffset = 5
-        Me.Guna2CircleProgressBar7.FillThickness = 4
-        resources.ApplyResources(Me.Guna2CircleProgressBar7, "Guna2CircleProgressBar7")
-        Me.Guna2CircleProgressBar7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar7.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2CircleProgressBar7.Minimum = 0
-        Me.Guna2CircleProgressBar7.Name = "Guna2CircleProgressBar7"
-        Me.Guna2CircleProgressBar7.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar7.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar7.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar7.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar7.ProgressThickness = 9
-        Me.Guna2CircleProgressBar7.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar7.ShadowDecoration.Parent = Me.Guna2CircleProgressBar7
-        Me.Guna2CircleProgressBar7.ShowPercentage = True
-        Me.Guna2CircleProgressBar7.Value = 44
+        Me.Guna2Transition1.SetDecoration(Me.A, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.A.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.A.FillOffset = 5
+        Me.A.FillThickness = 4
+        resources.ApplyResources(Me.A, "A")
+        Me.A.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.A.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.A.Minimum = 0
+        Me.A.Name = "A"
+        Me.A.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.A.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.A.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.A.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.A.ProgressThickness = 9
+        Me.A.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.A.ShadowDecoration.Parent = Me.A
+        Me.A.ShowPercentage = True
+        Me.A.Value = 44
         '
         'Label6
         '
@@ -402,26 +402,26 @@ Partial Class Dashboard
         Me.Label7.ForeColor = System.Drawing.Color.Black
         Me.Label7.Name = "Label7"
         '
-        'Guna2CircleProgressBar8
+        'OPlusCircle
         '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2CircleProgressBar8, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2CircleProgressBar8.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar8.FillOffset = 5
-        Me.Guna2CircleProgressBar8.FillThickness = 4
-        resources.ApplyResources(Me.Guna2CircleProgressBar8, "Guna2CircleProgressBar8")
-        Me.Guna2CircleProgressBar8.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2CircleProgressBar8.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.Guna2CircleProgressBar8.Minimum = 0
-        Me.Guna2CircleProgressBar8.Name = "Guna2CircleProgressBar8"
-        Me.Guna2CircleProgressBar8.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar8.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2CircleProgressBar8.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar8.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
-        Me.Guna2CircleProgressBar8.ProgressThickness = 9
-        Me.Guna2CircleProgressBar8.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleProgressBar8.ShadowDecoration.Parent = Me.Guna2CircleProgressBar8
-        Me.Guna2CircleProgressBar8.ShowPercentage = True
-        Me.Guna2CircleProgressBar8.Value = 95
+        Me.Guna2Transition1.SetDecoration(Me.OPlusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
+        Me.OPlusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.OPlusCircle.FillOffset = 5
+        Me.OPlusCircle.FillThickness = 4
+        resources.ApplyResources(Me.OPlusCircle, "OPlusCircle")
+        Me.OPlusCircle.ForeColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.OPlusCircle.InnerColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.OPlusCircle.Minimum = 0
+        Me.OPlusCircle.Name = "OPlusCircle"
+        Me.OPlusCircle.ProgressColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.OPlusCircle.ProgressColor2 = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.OPlusCircle.ProgressEndCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.OPlusCircle.ProgressStartCap = System.Drawing.Drawing2D.LineCap.Round
+        Me.OPlusCircle.ProgressThickness = 9
+        Me.OPlusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.OPlusCircle.ShadowDecoration.Parent = Me.OPlusCircle
+        Me.OPlusCircle.ShowPercentage = True
+        Me.OPlusCircle.Value = 95
         '
         'Label8
         '
@@ -523,20 +523,20 @@ Partial Class Dashboard
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.Guna2CircleProgressBar5)
-        Me.Controls.Add(Me.Guna2CircleProgressBar2)
+        Me.Controls.Add(Me.BMinusCircle)
         Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Guna2CircleProgressBar6)
-        Me.Controls.Add(Me.Guna2CircleProgressBar7)
-        Me.Controls.Add(Me.Guna2CircleProgressBar1)
+        Me.Controls.Add(Me.OMinusCircle)
+        Me.Controls.Add(Me.A)
+        Me.Controls.Add(Me.AMinusCircle)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Guna2CircleProgressBar3)
+        Me.Controls.Add(Me.BPlusCircle)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Guna2CircleProgressBar8)
+        Me.Controls.Add(Me.OPlusCircle)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Guna2CircleProgressBar4)
+        Me.Controls.Add(Me.APlusCircle)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2PictureBox1)
@@ -556,20 +556,20 @@ Partial Class Dashboard
     Friend WithEvents Label5 As Label
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2CircleProgressBar5 As Guna.UI2.WinForms.Guna2CircleProgressBar
-    Friend WithEvents Guna2CircleProgressBar2 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents BMinusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents Label4 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Guna2CircleProgressBar6 As Guna.UI2.WinForms.Guna2CircleProgressBar
-    Friend WithEvents Guna2CircleProgressBar7 As Guna.UI2.WinForms.Guna2CircleProgressBar
-    Friend WithEvents Guna2CircleProgressBar1 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents OMinusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents A As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents AMinusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents Label6 As Label
-    Friend WithEvents Guna2CircleProgressBar3 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents BPlusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents Label7 As Label
     Friend WithEvents Label1 As Label
-    Friend WithEvents Guna2CircleProgressBar8 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents OPlusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents Label3 As Label
     Friend WithEvents Label8 As Label
-    Friend WithEvents Guna2CircleProgressBar4 As Guna.UI2.WinForms.Guna2CircleProgressBar
+    Friend WithEvents APlusCircle As Guna.UI2.WinForms.Guna2CircleProgressBar
     Friend WithEvents LogoutBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DashboardBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DonorBtnMenu As Guna.UI2.WinForms.Guna2Button

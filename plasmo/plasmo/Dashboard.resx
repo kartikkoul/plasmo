@@ -257,34 +257,34 @@
   <data name="&gt;&gt;Guna2CircleProgressBar5.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="Guna2CircleProgressBar2.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="BMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
-  <data name="Guna2CircleProgressBar2.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="BMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>778, 218</value>
   </data>
-  <data name="Guna2CircleProgressBar2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="BMinusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="Guna2CircleProgressBar2.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BMinusCircle.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="Guna2CircleProgressBar2.TabIndex" type="System.Int32, mscorlib">
+  <data name="BMinusCircle.TabIndex" type="System.Int32, mscorlib">
     <value>70</value>
   </data>
-  <data name="Guna2CircleProgressBar2.Text" xml:space="preserve">
+  <data name="BMinusCircle.Text" xml:space="preserve">
     <value>Guna2CircleProgressBar2</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar2.Name" xml:space="preserve">
-    <value>Guna2CircleProgressBar2</value>
+  <data name="&gt;&gt;BMinusCircle.Name" xml:space="preserve">
+    <value>BMinusCircle</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar2.Type" xml:space="preserve">
+  <data name="&gt;&gt;BMinusCircle.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar2.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BMinusCircle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar2.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BMinusCircle.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
   <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
@@ -359,94 +359,94 @@
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="Guna2CircleProgressBar6.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="OMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
-  <data name="Guna2CircleProgressBar6.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="OMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 417</value>
   </data>
-  <data name="Guna2CircleProgressBar6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="OMinusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="Guna2CircleProgressBar6.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="OMinusCircle.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="Guna2CircleProgressBar6.TabIndex" type="System.Int32, mscorlib">
+  <data name="OMinusCircle.TabIndex" type="System.Int32, mscorlib">
     <value>75</value>
   </data>
-  <data name="Guna2CircleProgressBar6.Text" xml:space="preserve">
+  <data name="OMinusCircle.Text" xml:space="preserve">
     <value>Guna2CircleProgressBar6</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar6.Name" xml:space="preserve">
-    <value>Guna2CircleProgressBar6</value>
+  <data name="&gt;&gt;OMinusCircle.Name" xml:space="preserve">
+    <value>OMinusCircle</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar6.Type" xml:space="preserve">
+  <data name="&gt;&gt;OMinusCircle.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar6.Parent" xml:space="preserve">
+  <data name="&gt;&gt;OMinusCircle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar6.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;OMinusCircle.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="Guna2CircleProgressBar7.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="A.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
-  <data name="Guna2CircleProgressBar7.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="A.Location" type="System.Drawing.Point, System.Drawing">
     <value>577, 417</value>
   </data>
-  <data name="Guna2CircleProgressBar7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="A.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="Guna2CircleProgressBar7.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="A.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="Guna2CircleProgressBar7.TabIndex" type="System.Int32, mscorlib">
+  <data name="A.TabIndex" type="System.Int32, mscorlib">
     <value>77</value>
   </data>
-  <data name="Guna2CircleProgressBar7.Text" xml:space="preserve">
+  <data name="A.Text" xml:space="preserve">
     <value>Guna2CircleProgressBar7</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar7.Name" xml:space="preserve">
-    <value>Guna2CircleProgressBar7</value>
+  <data name="&gt;&gt;A.Name" xml:space="preserve">
+    <value>A</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar7.Type" xml:space="preserve">
+  <data name="&gt;&gt;A.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar7.Parent" xml:space="preserve">
+  <data name="&gt;&gt;A.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar7.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;A.ZOrder" xml:space="preserve">
     <value>7</value>
   </data>
-  <data name="Guna2CircleProgressBar1.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="AMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
-  <data name="Guna2CircleProgressBar1.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="AMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 218</value>
   </data>
-  <data name="Guna2CircleProgressBar1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="AMinusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="Guna2CircleProgressBar1.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="AMinusCircle.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="Guna2CircleProgressBar1.TabIndex" type="System.Int32, mscorlib">
+  <data name="AMinusCircle.TabIndex" type="System.Int32, mscorlib">
     <value>66</value>
   </data>
-  <data name="Guna2CircleProgressBar1.Text" xml:space="preserve">
+  <data name="AMinusCircle.Text" xml:space="preserve">
     <value>Guna2CircleProgressBar1</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar1.Name" xml:space="preserve">
-    <value>Guna2CircleProgressBar1</value>
+  <data name="&gt;&gt;AMinusCircle.Name" xml:space="preserve">
+    <value>AMinusCircle</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar1.Type" xml:space="preserve">
+  <data name="&gt;&gt;AMinusCircle.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar1.Parent" xml:space="preserve">
+  <data name="&gt;&gt;AMinusCircle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar1.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;AMinusCircle.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
   <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
@@ -485,34 +485,34 @@
   <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
-  <data name="Guna2CircleProgressBar3.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="BPlusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
-  <data name="Guna2CircleProgressBar3.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="BPlusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>577, 218</value>
   </data>
-  <data name="Guna2CircleProgressBar3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="BPlusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="Guna2CircleProgressBar3.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="BPlusCircle.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="Guna2CircleProgressBar3.TabIndex" type="System.Int32, mscorlib">
+  <data name="BPlusCircle.TabIndex" type="System.Int32, mscorlib">
     <value>68</value>
   </data>
-  <data name="Guna2CircleProgressBar3.Text" xml:space="preserve">
+  <data name="BPlusCircle.Text" xml:space="preserve">
     <value>Guna2CircleProgressBar3</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar3.Name" xml:space="preserve">
-    <value>Guna2CircleProgressBar3</value>
+  <data name="&gt;&gt;BPlusCircle.Name" xml:space="preserve">
+    <value>BPlusCircle</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar3.Type" xml:space="preserve">
+  <data name="&gt;&gt;BPlusCircle.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar3.Parent" xml:space="preserve">
+  <data name="&gt;&gt;BPlusCircle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar3.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;BPlusCircle.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
   <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
@@ -587,34 +587,34 @@
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
     <value>12</value>
   </data>
-  <data name="Guna2CircleProgressBar8.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="OPlusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
-  <data name="Guna2CircleProgressBar8.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="OPlusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>180, 417</value>
   </data>
-  <data name="Guna2CircleProgressBar8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="OPlusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="Guna2CircleProgressBar8.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="OPlusCircle.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="Guna2CircleProgressBar8.TabIndex" type="System.Int32, mscorlib">
+  <data name="OPlusCircle.TabIndex" type="System.Int32, mscorlib">
     <value>73</value>
   </data>
-  <data name="Guna2CircleProgressBar8.Text" xml:space="preserve">
+  <data name="OPlusCircle.Text" xml:space="preserve">
     <value>Guna2CircleProgressBar8</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar8.Name" xml:space="preserve">
-    <value>Guna2CircleProgressBar8</value>
+  <data name="&gt;&gt;OPlusCircle.Name" xml:space="preserve">
+    <value>OPlusCircle</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar8.Type" xml:space="preserve">
+  <data name="&gt;&gt;OPlusCircle.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar8.Parent" xml:space="preserve">
+  <data name="&gt;&gt;OPlusCircle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar8.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;OPlusCircle.ZOrder" xml:space="preserve">
     <value>13</value>
   </data>
   <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
@@ -689,34 +689,34 @@
   <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="Guna2CircleProgressBar4.Font" type="System.Drawing.Font, System.Drawing">
+  <data name="APlusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 18pt</value>
   </data>
-  <data name="Guna2CircleProgressBar4.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="APlusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>180, 218</value>
   </data>
-  <data name="Guna2CircleProgressBar4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="APlusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="Guna2CircleProgressBar4.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="APlusCircle.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
-  <data name="Guna2CircleProgressBar4.TabIndex" type="System.Int32, mscorlib">
+  <data name="APlusCircle.TabIndex" type="System.Int32, mscorlib">
     <value>64</value>
   </data>
-  <data name="Guna2CircleProgressBar4.Text" xml:space="preserve">
+  <data name="APlusCircle.Text" xml:space="preserve">
     <value>Guna2CircleProgressBar4</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar4.Name" xml:space="preserve">
-    <value>Guna2CircleProgressBar4</value>
+  <data name="&gt;&gt;APlusCircle.Name" xml:space="preserve">
+    <value>APlusCircle</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar4.Type" xml:space="preserve">
+  <data name="&gt;&gt;APlusCircle.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2CircleProgressBar, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar4.Parent" xml:space="preserve">
+  <data name="&gt;&gt;APlusCircle.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="&gt;&gt;Guna2CircleProgressBar4.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;APlusCircle.ZOrder" xml:space="preserve">
     <value>16</value>
   </data>
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">

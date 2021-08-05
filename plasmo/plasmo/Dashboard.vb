@@ -18,49 +18,49 @@ Public Class Dashboard
         con.Open()
         Dim Aplus As Int16 = aplus_cmd.ExecuteNonQuery
         con.Close()
-        Guna2CircleProgressBar4.Value = Aplus
+        APlusCircle.Value = Aplus
 
         If con.State = 1 Then con.Close()
         Dim aminus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim AMinus As Int16 = aminus_cmd.ExecuteNonQuery
         con.Close()
-        Guna2CircleProgressBar4.Value = AMinus
+        APlusCircle.Value = AMinus
 
         If con.State = 1 Then con.Close()
         Dim bplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim BPlus As Int16 = bplus_cmd.ExecuteNonQuery
         con.Close()
-        Guna2CircleProgressBar4.Value = BPlus
+        APlusCircle.Value = BPlus
 
         If con.State = 1 Then con.Close()
         Dim abplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim ABPlus As Int16 = abplus_cmd.ExecuteNonQuery
         con.Close()
-        Guna2CircleProgressBar4.Value = ABPlus
+        APlusCircle.Value = ABPlus
 
         If con.State = 1 Then con.Close()
         Dim abminus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim ABMinus As Int16 = abminus_cmd.ExecuteNonQuery
         con.Close()
-        Guna2CircleProgressBar4.Value = ABMinus
+        APlusCircle.Value = ABMinus
 
         If con.State = 1 Then con.Close()
         Dim oplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim OPlus As Int16 = oplus_cmd.ExecuteNonQuery
         con.Close()
-        Guna2CircleProgressBar4.Value = OPlus
+        APlusCircle.Value = OPlus
 
         If con.State = 1 Then con.Close()
         Dim ominus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group = A+,sold = N", con)
         con.Open()
         Dim OMinus As Int16 = ominus_cmd.ExecuteNonQuery
         con.Close()
-        Guna2CircleProgressBar4.Value = OMinus
+        APlusCircle.Value = OMinus
 
     End Sub
 
@@ -85,7 +85,7 @@ Public Class Dashboard
 
 
 
-    Private Sub Guna2CircleProgressBar4_ValueChanged(sender As Object, e As EventArgs) Handles Guna2CircleProgressBar4.ValueChanged
+    Private Sub Guna2CircleProgressBar4_ValueChanged(sender As Object, e As EventArgs) Handles APlusCircle.ValueChanged
 
     End Sub
 
@@ -131,6 +131,10 @@ Public Class Dashboard
     End Sub
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
+
+    End Sub
+
+    Private Sub Guna2CircleProgressBar8_ValueChanged(sender As Object, e As EventArgs) Handles OPlusCircle.ValueChanged
 
     End Sub
 End Class
