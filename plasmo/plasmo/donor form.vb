@@ -71,7 +71,7 @@ Public Class Donor_form
 
     Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
-        Dim anti As Char = Truncate(antibody.SelectedItem, 1)
+        Dim anti As Char = Truncate(antibody.SelectedItem, 2)
         Dim time As Date = Date.UtcNow
 
         Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=true")
