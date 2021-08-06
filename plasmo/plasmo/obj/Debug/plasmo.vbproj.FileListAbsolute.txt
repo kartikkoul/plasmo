@@ -79,3 +79,4 @@ D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.donor_history.res
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.login.resources
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.reciever_history.resources
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.assign.resources
+D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.assign.resources

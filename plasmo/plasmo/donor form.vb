@@ -107,7 +107,6 @@ Public Class Donor_form
         con.Open()
         cmd1.ExecuteNonQuery()
         MsgBox("Donor Registered")
-        Me.Refresh()
         con.Close()
     End Sub
 
