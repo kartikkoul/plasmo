@@ -25,7 +25,7 @@ Public Class donor_history
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
 
-        ListView1.Items.Clear()
+        Guna2DataGridView1.Rows.Clear()
         li = 0
         While dr.Read
 
@@ -59,13 +59,7 @@ Public Class donor_history
 
 
             Dim name As String = dr("first_name") + " " + dr("second_name")
-            ListView1.Items.Add(dr("plasma_id"))
-            ListView1.Columns.Add(name)
-            ListView1.Columns.Add(dr("age"))
-            ListView1.Columns.Add(blood_group)
-            ListView1.Columns.Add(dr("anti_body"))
-            ListView1.Columns.Add(dr("transaction_time"))
-            li = li + 1
+            Guna2DataGridView1.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
         End While
         con.Close()
 
@@ -75,7 +69,7 @@ Public Class donor_history
 
     End Sub
 
-    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs) Handles ListView1.SelectedIndexChanged
+    Private Sub ListView1_SelectedIndexChanged(sender As Object, e As EventArgs)
 
     End Sub
 
@@ -102,6 +96,10 @@ Public Class donor_history
     End Sub
 
     Private Sub Guna2HtmlLabel2_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel2.Click
+
+    End Sub
+
+    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
     End Sub
 End Class
