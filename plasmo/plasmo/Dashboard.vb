@@ -19,90 +19,90 @@ Public Class Dashboard
 
         If con.State = 1 Then con.Close()
 
-        Dim aplus_cmd As New SqlCommand("select * as availableCount from donor_records  where blood_group=A+,sold=N", con)
+        Dim aplus_cmd As New SqlCommand("select * from donor_records where blood_group='AP'", con)
         con.Open()
         adapter.SelectCommand = aplus_cmd
         adapter.Fill(ds, "donor_records")
         Dim Aplus As Integer = ds.Tables(0).Rows.Count
         adapter.Dispose()
-        ds.Dispose()
+        ds.Clear()
         con.Close()
         APlusCircle.Value = Aplus
 
         If con.State = 1 Then con.Close()
-        Dim aminus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records where blood_group=A-,sold=N", con)
+        Dim aminus_cmd As New SqlCommand("select * from donor_records where blood_group='AM'", con)
         con.Open()
-        adapter.SelectCommand = aplus_cmd
+        adapter.SelectCommand = aminus_cmd
         adapter.Fill(ds, "donor_records")
         Dim AMinus As Integer = ds.Tables(0).Rows.Count
         adapter.Dispose()
-        ds.Dispose()
+        ds.Clear()
         con.Close()
         AMinusCircle.Value = AMinus
 
         If con.State = 1 Then con.Close()
-        Dim bplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records  where blood_group=B+,sold=N", con)
+        Dim bplus_cmd As New SqlCommand("select * from donor_records  where blood_group='BP'", con)
         con.Open()
-        adapter.SelectCommand = aplus_cmd
+        adapter.SelectCommand = bplus_cmd
         adapter.Fill(ds, "donor_records")
         Dim BPlus As Integer = ds.Tables(0).Rows.Count
         adapter.Dispose()
-        ds.Dispose()
+        ds.Clear()
         con.Close()
         BPlusCircle.Value = BPlus
 
         If con.State = 1 Then con.Close()
-        Dim bminus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records  where blood_group=B-,sold=N", con)
+        Dim bminus_cmd As New SqlCommand("select * from donor_records  where blood_group='BM'", con)
         con.Open()
-        adapter.SelectCommand = aplus_cmd
+        adapter.SelectCommand = bminus_cmd
         adapter.Fill(ds, "donor_records")
         Dim BMinus As Integer = ds.Tables(0).Rows.Count
         adapter.Dispose()
-        ds.Dispose()
+        ds.Clear()
         con.Close()
         BMinusCircle.Value = BMinus
 
         If con.State = 1 Then con.Close()
-        Dim abplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records  where blood_group=AB+,sold=N", con)
+        Dim abplus_cmd As New SqlCommand("select * from donor_records  where blood_group='ABP'", con)
         con.Open()
-        adapter.SelectCommand = aplus_cmd
+        adapter.SelectCommand = abplus_cmd
         adapter.Fill(ds, "donor_records")
         Dim ABPlus As Integer = ds.Tables(0).Rows.Count
         adapter.Dispose()
-        ds.Dispose()
+        ds.Clear()
         con.Close()
         ABPlusCircle.Value = ABPlus
 
         If con.State = 1 Then con.Close()
-        Dim abminus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records  where blood_group=AB-,sold=N", con)
+        Dim abminus_cmd As New SqlCommand("select * from donor_records where blood_group='ABM'", con)
         con.Open()
-        adapter.SelectCommand = aplus_cmd
+        adapter.SelectCommand = abminus_cmd
         adapter.Fill(ds, "donor_records")
         Dim ABMinus As Integer = ds.Tables(0).Rows.Count
         adapter.Dispose()
-        ds.Dispose()
+        ds.Clear()
         con.Close()
         ABMinusCircle.Value = ABMinus
 
         If con.State = 1 Then con.Close()
-        Dim oplus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records  where blood_group=O+,sold=N", con)
+        Dim oplus_cmd As New SqlCommand("select * from donor_records  where blood_group='OP'", con)
         con.Open()
-        adapter.SelectCommand = aplus_cmd
+        adapter.SelectCommand = oplus_cmd
         adapter.Fill(ds, "donor_records")
         Dim OPlus As Integer = ds.Tables(0).Rows.Count
         adapter.Dispose()
-        ds.Dispose()
+        ds.Clear()
         con.Close()
         OPlusCircle.Value = OPlus
 
         If con.State = 1 Then con.Close()
-        Dim ominus_cmd As New SqlCommand("select count(plasma_id) as availableCount from donor_records  where blood_group=O-,sold=N", con)
+        Dim ominus_cmd As New SqlCommand("select * from donor_records where blood_group='OM'", con)
         con.Open()
-        adapter.SelectCommand = aplus_cmd
+        adapter.SelectCommand = ominus_cmd
         adapter.Fill(ds, "donor_records")
         Dim OMinus As Integer = ds.Tables(0).Rows.Count
         adapter.Dispose()
-        ds.Dispose()
+        ds.Clear()
         con.Close()
         OMinusCircle.Value = OMinus
 

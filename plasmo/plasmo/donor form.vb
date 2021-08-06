@@ -74,8 +74,36 @@ Public Class Donor_form
         Dim anti As Char = Truncate(antibody.SelectedItem, 1)
         Dim time As Date = Date.UtcNow
 
-        Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=true")
-        Dim cmd1 As New SqlCommand("insert into donor_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,anti_body,sold,transaction_time) values('" & "E0800743" & "','" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & bgroup.SelectedItem & "','" & gen & "','" & anti & "','" & "N" & "','" & time & "')", con)
+        Dim selected_blood_group As String = bgroup.SelectedItem
+        Dim blood_group As String = "AP"
+
+        Select Case selected_blood_group
+            Case "A+"
+                blood_group = "AP"
+
+            Case "A-"
+                blood_group = "AM"
+
+            Case "B+"
+                blood_group = "BP"
+
+            Case "B-"
+                blood_group = "BM"
+
+            Case "AB+"
+                blood_group = "ABP"
+
+            Case "AB-"
+                blood_group = "ABM"
+
+            Case "O+"
+                blood_group = "OP"
+            Case "O-"
+                blood_group = "OM"
+        End Select
+
+        Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
+        Dim cmd1 As New SqlCommand("insert into donor_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,anti_body,sold,transaction_time) values('" & "E0800745" & "','" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & anti & "','" & "N" & "','" & time & "')", con)
         con.Open()
         cmd1.ExecuteNonQuery()
         MsgBox("Donor Registered")

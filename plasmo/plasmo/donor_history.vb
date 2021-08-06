@@ -27,11 +27,39 @@ Public Class donor_history
         ListView1.Items.Clear()
         li = 0
         While dr.Read
+
+            Dim blood_group As String = dr("blood_group")
+
+            Select Case dr("blood_group")
+                Case "AP"
+                    blood_group = "A+"
+
+                Case "AM"
+                    blood_group = "A-"
+
+                Case "BP"
+                    blood_group = "B+"
+
+                Case "BM"
+                    blood_group = "B-"
+
+                Case "ABP"
+                    blood_group = "AB+"
+
+                Case "ABM"
+                    blood_group = "AB-"
+
+                Case "OP"
+                    blood_group = "O+"
+                Case "OM"
+                    blood_group = "O-"
+            End Select
+
             Dim name As String = dr("first_name") + " " + dr("second_name")
             ListView1.Items.Add(dr("plasma_id"))
             ListView1.Items(li).SubItems.Add(name)
             ListView1.Items(li).SubItems.Add(dr("age"))
-            ListView1.Items(li).SubItems.Add(dr("blood_group"))
+            ListView1.Items(li).SubItems.Add(blood_group)
             ListView1.Items(li).SubItems.Add(dr("anti_body"))
             ListView1.Items(li).SubItems.Add(dr("transaction_time"))
             li = li + 1
