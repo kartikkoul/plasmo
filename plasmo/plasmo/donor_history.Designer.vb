@@ -44,12 +44,12 @@ Partial Class donor_history
         Me.anti_body = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.DOE = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.Guna2ToggleSwitch1 = New Guna.UI2.WinForms.Guna2ToggleSwitch()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -73,21 +73,21 @@ Partial Class donor_history
         Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox2)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button8)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button9)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 77)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 91)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1443, 71)
         Me.Guna2Panel1.TabIndex = 58
         '
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Location = New System.Drawing.Point(567, 41)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(756, 50)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.Size = New System.Drawing.Size(60, 3)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(80, 4)
         Me.Guna2Panel2.TabIndex = 80
         '
         'Guna2Button5
@@ -104,11 +104,11 @@ Partial Class donor_history
         Me.Guna2Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button5.ForeColor = System.Drawing.Color.White
         Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Location = New System.Drawing.Point(182, 14)
-        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button5.Location = New System.Drawing.Point(243, 17)
+        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Size = New System.Drawing.Size(125, 31)
+        Me.Guna2Button5.Size = New System.Drawing.Size(167, 38)
         Me.Guna2Button5.TabIndex = 83
         Me.Guna2Button5.Text = "RECEIVER"
         '
@@ -126,11 +126,11 @@ Partial Class donor_history
         Me.Guna2Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button4.ForeColor = System.Drawing.Color.White
         Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Location = New System.Drawing.Point(423, 14)
-        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button4.Location = New System.Drawing.Point(564, 17)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Size = New System.Drawing.Size(125, 31)
+        Me.Guna2Button4.Size = New System.Drawing.Size(167, 38)
         Me.Guna2Button4.TabIndex = 82
         Me.Guna2Button4.Text = "QUEUE"
         '
@@ -148,11 +148,11 @@ Partial Class donor_history
         Me.Guna2Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button6.ForeColor = System.Drawing.Color.White
         Me.Guna2Button6.HoverState.Parent = Me.Guna2Button6
-        Me.Guna2Button6.Location = New System.Drawing.Point(304, 14)
-        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button6.Location = New System.Drawing.Point(405, 17)
+        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.ShadowDecoration.Parent = Me.Guna2Button6
-        Me.Guna2Button6.Size = New System.Drawing.Size(125, 31)
+        Me.Guna2Button6.Size = New System.Drawing.Size(167, 38)
         Me.Guna2Button6.TabIndex = 84
         Me.Guna2Button6.Text = "DONOR"
         '
@@ -170,11 +170,11 @@ Partial Class donor_history
         Me.Guna2Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button7.ForeColor = System.Drawing.Color.White
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Location = New System.Drawing.Point(542, 14)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button7.Location = New System.Drawing.Point(723, 17)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Size = New System.Drawing.Size(125, 31)
+        Me.Guna2Button7.Size = New System.Drawing.Size(167, 38)
         Me.Guna2Button7.TabIndex = 81
         Me.Guna2Button7.Text = "HISTORY"
         '
@@ -192,13 +192,13 @@ Partial Class donor_history
         Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button8.ForeColor = System.Drawing.Color.White
         Me.Guna2Button8.HoverState.Parent = Me.Guna2Button8
-        Me.Guna2Button8.Location = New System.Drawing.Point(24, 14)
-        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button8.Location = New System.Drawing.Point(32, 17)
+        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Button8.Name = "Guna2Button8"
         Me.Guna2Button8.ShadowDecoration.Parent = Me.Guna2Button8
-        Me.Guna2Button8.Size = New System.Drawing.Size(163, 31)
+        Me.Guna2Button8.Size = New System.Drawing.Size(217, 38)
         Me.Guna2Button8.TabIndex = 11
-        Me.Guna2Button8.Text = "AVAILABILITY"
+        Me.Guna2Button8.Text = "DASHBOARD"
         '
         'Guna2Button9
         '
@@ -214,11 +214,11 @@ Partial Class donor_history
         Me.Guna2Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.Guna2Button9.ForeColor = System.Drawing.Color.White
         Me.Guna2Button9.HoverState.Parent = Me.Guna2Button9
-        Me.Guna2Button9.Location = New System.Drawing.Point(879, 11)
-        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Button9.Location = New System.Drawing.Point(1172, 14)
+        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2Button9.Name = "Guna2Button9"
         Me.Guna2Button9.ShadowDecoration.Parent = Me.Guna2Button9
-        Me.Guna2Button9.Size = New System.Drawing.Size(188, 42)
+        Me.Guna2Button9.Size = New System.Drawing.Size(251, 52)
         Me.Guna2Button9.TabIndex = 10
         Me.Guna2Button9.Text = "LOGOUT"
         '
@@ -238,13 +238,14 @@ Partial Class donor_history
         '
         'ListView1
         '
+        Me.ListView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.plasma_id, Me.donor_name, Me.age, Me.blood_group, Me.anti_body, Me.DOE})
         Me.ListView1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ListView1.HideSelection = False
-        Me.ListView1.Location = New System.Drawing.Point(31, 187)
-        Me.ListView1.Margin = New System.Windows.Forms.Padding(2)
+        Me.ListView1.Location = New System.Drawing.Point(60, 232)
+        Me.ListView1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.ListView1.Name = "ListView1"
-        Me.ListView1.Size = New System.Drawing.Size(993, 390)
+        Me.ListView1.Size = New System.Drawing.Size(1323, 479)
         Me.ListView1.TabIndex = 67
         Me.ListView1.UseCompatibleStateImageBehavior = False
         Me.ListView1.View = System.Windows.Forms.View.Details
@@ -288,16 +289,45 @@ Partial Class donor_history
         Me.Guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.Guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.Guna2ToggleSwitch1.CheckedState.Parent = Me.Guna2ToggleSwitch1
-        Me.Guna2ToggleSwitch1.Location = New System.Drawing.Point(523, 154)
+        Me.Guna2ToggleSwitch1.Location = New System.Drawing.Point(695, 190)
+        Me.Guna2ToggleSwitch1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.Guna2ToggleSwitch1.Name = "Guna2ToggleSwitch1"
         Me.Guna2ToggleSwitch1.ShadowDecoration.Parent = Me.Guna2ToggleSwitch1
-        Me.Guna2ToggleSwitch1.Size = New System.Drawing.Size(39, 18)
+        Me.Guna2ToggleSwitch1.Size = New System.Drawing.Size(52, 22)
         Me.Guna2ToggleSwitch1.TabIndex = 68
         Me.Guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
         Me.Guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
         Me.Guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
         Me.Guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
         Me.Guna2ToggleSwitch1.UncheckedState.Parent = Me.Guna2ToggleSwitch1
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.AutoSize = False
+        Me.Guna2HtmlLabel1.AutoSizeHeightOnly = True
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(599, 190)
+        Me.Guna2HtmlLabel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(95, 21)
+        Me.Guna2HtmlLabel1.TabIndex = 69
+        Me.Guna2HtmlLabel1.Text = "DONOR"
+        '
+        'Guna2HtmlLabel2
+        '
+        Me.Guna2HtmlLabel2.AutoSize = False
+        Me.Guna2HtmlLabel2.AutoSizeHeightOnly = True
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(769, 190)
+        Me.Guna2HtmlLabel2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(149, 21)
+        Me.Guna2HtmlLabel2.TabIndex = 70
+        Me.Guna2HtmlLabel2.Text = "RECIEVER"
         '
         'Guna2CircleButton2
         '
@@ -322,13 +352,13 @@ Partial Class donor_history
         Me.Guna2CircleButton2.HoverState.Parent = Me.Guna2CircleButton2
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
-        Me.Guna2CircleButton2.Location = New System.Drawing.Point(994, 10)
-        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2CircleButton2.Location = New System.Drawing.Point(1320, 12)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CircleButton2.ShadowDecoration.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.Size = New System.Drawing.Size(30, 32)
+        Me.Guna2CircleButton2.Size = New System.Drawing.Size(40, 39)
         Me.Guna2CircleButton2.TabIndex = 66
         '
         'CloseButton
@@ -352,12 +382,12 @@ Partial Class donor_history
         Me.CloseButton.HoverState.Parent = Me.CloseButton
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
-        Me.CloseButton.Location = New System.Drawing.Point(1041, 10)
-        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.CloseButton.Location = New System.Drawing.Point(1382, 12)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
-        Me.CloseButton.Size = New System.Drawing.Size(30, 32)
+        Me.CloseButton.Size = New System.Drawing.Size(40, 39)
         Me.CloseButton.TabIndex = 65
         '
         'Guna2PictureBox2
@@ -365,11 +395,11 @@ Partial Class donor_history
         Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
         Me.Guna2PictureBox2.ImageRotate = 0!
         Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1355, 25)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(28, 27)
         Me.Guna2PictureBox2.TabIndex = 80
         Me.Guna2PictureBox2.TabStop = False
         '
@@ -377,41 +407,20 @@ Partial Class donor_history
         '
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 11)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(34, 14)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(268, 71)
         Me.Guna2PictureBox1.TabIndex = 5
         Me.Guna2PictureBox1.TabStop = False
         '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(440, 154)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(58, 18)
-        Me.Guna2HtmlLabel1.TabIndex = 69
-        Me.Guna2HtmlLabel1.Text = "DONOR"
-        '
-        'Guna2HtmlLabel2
-        '
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(577, 154)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(79, 18)
-        Me.Guna2HtmlLabel2.TabIndex = 70
-        Me.Guna2HtmlLabel2.Text = "RECIEVER"
-        '
         'donor_history
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1380, 768)
+        Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        Me.ClientSize = New System.Drawing.Size(1440, 768)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Controls.Add(Me.Guna2ToggleSwitch1)
@@ -422,8 +431,9 @@ Partial Class donor_history
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2)
+        Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "donor_history"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.Guna2Panel1.ResumeLayout(False)
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).EndInit()
@@ -431,7 +441,6 @@ Partial Class donor_history
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
-        Me.PerformLayout()
 
     End Sub
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm

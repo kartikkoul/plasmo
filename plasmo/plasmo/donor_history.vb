@@ -17,54 +17,55 @@ Public Class donor_history
     End Sub
 
     Private Sub DonorHistory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim li As Integer
-        Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
-        con.Open()
-        Dim cmd As New SqlCommand("select plasma_id, first_name, second_name, age, blood_group, anti_body, transaction_time from donor_records", con)
-        Dim dr As SqlDataReader
-        dr = cmd.ExecuteReader
+        Guna2ToggleSwitch1.Checked = False
+        'Dim li As Integer
+        'Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
+        'con.Open()
+        'Dim cmd As New SqlCommand("select plasma_id, first_name, second_name, age, blood_group, anti_body, transaction_time from donor_records", con)
+        'Dim dr As SqlDataReader
+        'dr = cmd.ExecuteReader
 
-        ListView1.Items.Clear()
-        li = 0
-        While dr.Read
+        'ListView1.Items.Clear()
+        'li = 0
+        'While dr.Read
 
-            Dim blood_group As String = dr("blood_group")
+        '    Dim blood_group As String = dr("blood_group")
 
-            Select Case dr("blood_group")
-                Case "AP"
-                    blood_group = "A+"
+        '    Select Case dr("blood_group")
+        '        Case "AP"
+        '            blood_group = "A+"
 
-                Case "AM"
-                    blood_group = "A-"
+        '        Case "AM"
+        '            blood_group = "A-"
 
-                Case "BP"
-                    blood_group = "B+"
+        '        Case "BP"
+        '            blood_group = "B+"
 
-                Case "BM"
-                    blood_group = "B-"
+        '        Case "BM"
+        '            blood_group = "B-"
 
-                Case "ABP"
-                    blood_group = "AB+"
+        '        Case "ABP"
+        '            blood_group = "AB+"
 
-                Case "ABM"
-                    blood_group = "AB-"
+        '        Case "ABM"
+        '            blood_group = "AB-"
 
-                Case "OP"
-                    blood_group = "O+"
-                Case "OM"
-                    blood_group = "O-"
-            End Select
+        '        Case "OP"
+        '            blood_group = "O+"
+        '        Case "OM"
+        '            blood_group = "O-"
+        '    End Select
 
-            Dim name As String = dr("first_name") + " " + dr("second_name")
-            ListView1.Items.Add(dr("plasma_id"))
-            ListView1.Items(li).SubItems.Add(name)
-            ListView1.Items(li).SubItems.Add(dr("age"))
-            ListView1.Items(li).SubItems.Add(blood_group)
-            ListView1.Items(li).SubItems.Add(dr("anti_body"))
-            ListView1.Items(li).SubItems.Add(dr("transaction_time"))
-            li = li + 1
-        End While
-        con.Close()
+        '    Dim name As String = dr("first_name") + " " + dr("second_name")
+        '    ListView1.Items.Add(dr("plasma_id"))
+        '    ListView1.Items(li).SubItems.Add(name)
+        '    ListView1.Items(li).SubItems.Add(dr("age"))
+        '    ListView1.Items(li).SubItems.Add(blood_group)
+        '    ListView1.Items(li).SubItems.Add(dr("anti_body"))
+        '    ListView1.Items(li).SubItems.Add(dr("transaction_time"))
+        '    li = li + 1
+        'End While
+        'con.Close()
 
 
     End Sub
@@ -85,8 +86,9 @@ Public Class donor_history
     End Sub
 
     Private Sub Guna2ToggleSwitch1_CheckedChanged_1(sender As Object, e As EventArgs) Handles Guna2ToggleSwitch1.CheckedChanged
-        reciever_history.Show()
+
         Me.Hide()
+        reciever_history.Show()
     End Sub
 
     Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs)

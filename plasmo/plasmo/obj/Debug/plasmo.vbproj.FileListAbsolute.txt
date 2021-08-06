@@ -42,7 +42,6 @@ D:\Desktop Files\plasmo project\plasmo\plasmo\bin\Debug\Guna.UI2.dll
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.vbprojAssemblyReference.cache
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.Dashboard.resources
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.Donor_form.resources
-D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.Form1.resources
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.Resources.resources
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.Reciever_form.resources
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.vbproj.GenerateResource.cache
@@ -51,7 +50,6 @@ D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.vbproj.CopyComple
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.exe
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.xml
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.pdb
-D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.CategoryDetail.resources
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.Details.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\bin\Debug\Database1.mdf
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\bin\Debug\Database1_log.ldf
@@ -77,3 +75,7 @@ D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.pdb
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.donor_history.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.login.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.reciever_history.resources
+D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.donor_history.resources
+D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.login.resources
+D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.reciever_history.resources
+D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.assign.resources
