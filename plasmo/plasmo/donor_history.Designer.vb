@@ -47,6 +47,7 @@ Partial Class donor_history
         Me.blood_group = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.anti_body = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
         Me.DOE = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Guna2ToggleSwitch1 = New Guna.UI2.WinForms.Guna2ToggleSwitch()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -362,11 +363,32 @@ Partial Class donor_history
         Me.DOE.Text = "DONATED ON"
         Me.DOE.Width = 250
         '
+        'Guna2ToggleSwitch1
+        '
+        Me.Guna2ToggleSwitch1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ToggleSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.Guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.Guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Guna2ToggleSwitch1.CheckedState.Parent = Me.Guna2ToggleSwitch1
+        Me.Guna2ToggleSwitch1.Location = New System.Drawing.Point(522, 140)
+        Me.Guna2ToggleSwitch1.Name = "Guna2ToggleSwitch1"
+        Me.Guna2ToggleSwitch1.ShadowDecoration.Parent = Me.Guna2ToggleSwitch1
+        Me.Guna2ToggleSwitch1.Size = New System.Drawing.Size(39, 22)
+        Me.Guna2ToggleSwitch1.TabIndex = 68
+        Me.Guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
+        Me.Guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
+        Me.Guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.Guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.Guna2ToggleSwitch1.UncheckedState.Parent = Me.Guna2ToggleSwitch1
+        '
         'donor_history
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1040, 624)
+        Me.Controls.Add(Me.Guna2ToggleSwitch1)
         Me.Controls.Add(Me.ListView1)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
@@ -408,4 +430,5 @@ Partial Class donor_history
     Friend WithEvents blood_group As ColumnHeader
     Friend WithEvents anti_body As ColumnHeader
     Friend WithEvents DOE As ColumnHeader
+    Friend WithEvents Guna2ToggleSwitch1 As Guna.UI2.WinForms.Guna2ToggleSwitch
 End Class

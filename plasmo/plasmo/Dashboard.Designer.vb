@@ -184,6 +184,7 @@ Partial Class Dashboard
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Name = "HistoryBtnMenu"
         Me.HistoryBtnMenu.ShadowDecoration.Parent = Me.HistoryBtnMenu
+        Me.HistoryBtnMenu.Tile = True
         Me.HistoryBtnMenu.UseWaitCursor = True
         '
         'DashboardBtnMenu

@@ -65,6 +65,8 @@ Public Class donor_history
             li = li + 1
         End While
         con.Close()
+
+
     End Sub
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
 
@@ -76,5 +78,14 @@ Public Class donor_history
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
 
+    End Sub
+
+    Private Sub Guna2ToggleSwitch1_CheckedChanged(sender As Object, e As EventArgs)
+
+    End Sub
+
+    Private Sub Guna2ToggleSwitch1_CheckedChanged_1(sender As Object, e As EventArgs) Handles Guna2ToggleSwitch1.CheckedChanged
+        reciever_history.Show()
+        Me.Hide()
     End Sub
 End Class
