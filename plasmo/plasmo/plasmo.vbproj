@@ -153,6 +153,12 @@
     <Compile Include="Reciever form.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="reciever_history.Designer.vb">
+      <DependentUpon>reciever_history.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reciever_history.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="donor_history.resx">
@@ -178,6 +184,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Reciever form.resx">
       <DependentUpon>Reciever form.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="reciever_history.resx">
+      <DependentUpon>reciever_history.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

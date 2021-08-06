@@ -39,12 +39,12 @@ Partial Class login
         Me.TableAdapterManager = New plasmo.newdatasetTableAdapters.TableAdapterManager()
         Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2BorderlessForm3 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
+        Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.EyeClosed = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.EyeOpen = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EyeClosed, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -140,7 +140,7 @@ Partial Class login
         Me.LoginButton.ForeColor = System.Drawing.Color.White
         Me.LoginButton.HoverState.Parent = Me.LoginButton
         Me.LoginButton.Location = New System.Drawing.Point(147, 518)
-        Me.LoginButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LoginButton.Margin = New System.Windows.Forms.Padding(2)
         Me.LoginButton.Name = "LoginButton"
         Me.LoginButton.ShadowDecoration.Parent = Me.LoginButton
         Me.LoginButton.Size = New System.Drawing.Size(188, 42)
@@ -200,7 +200,7 @@ Partial Class login
         Me.EyeButton.HoverState.ForeColor = System.Drawing.Color.Transparent
         Me.EyeButton.HoverState.Parent = Me.EyeButton
         Me.EyeButton.Location = New System.Drawing.Point(384, 436)
-        Me.EyeButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.EyeButton.Margin = New System.Windows.Forms.Padding(2)
         Me.EyeButton.Name = "EyeButton"
         Me.EyeButton.PressedColor = System.Drawing.Color.Transparent
         Me.EyeButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
@@ -238,58 +238,6 @@ Partial Class login
         '
         Me.Guna2BorderlessForm3.ContainerControl = Me
         '
-        'EyeClosed
-        '
-        Me.EyeClosed.Image = CType(resources.GetObject("EyeClosed.Image"), System.Drawing.Image)
-        Me.EyeClosed.ImageRotate = 0!
-        Me.EyeClosed.Location = New System.Drawing.Point(384, 436)
-        Me.EyeClosed.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.EyeClosed.Name = "EyeClosed"
-        Me.EyeClosed.ShadowDecoration.Parent = Me.EyeClosed
-        Me.EyeClosed.Size = New System.Drawing.Size(24, 24)
-        Me.EyeClosed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.EyeClosed.TabIndex = 15
-        Me.EyeClosed.TabStop = False
-        '
-        'EyeOpen
-        '
-        Me.EyeOpen.Image = CType(resources.GetObject("EyeOpen.Image"), System.Drawing.Image)
-        Me.EyeOpen.ImageRotate = 0!
-        Me.EyeOpen.Location = New System.Drawing.Point(384, 436)
-        Me.EyeOpen.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.EyeOpen.Name = "EyeOpen"
-        Me.EyeOpen.ShadowDecoration.Parent = Me.EyeOpen
-        Me.EyeOpen.Size = New System.Drawing.Size(24, 24)
-        Me.EyeOpen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
-        Me.EyeOpen.TabIndex = 14
-        Me.EyeOpen.TabStop = False
-        Me.EyeOpen.Visible = False
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(553, 118)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(464, 374)
-        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Guna2PictureBox2.TabIndex = 8
-        Me.Guna2PictureBox2.TabStop = False
-        '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 16)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
-        Me.Guna2PictureBox1.TabIndex = 0
-        Me.Guna2PictureBox1.TabStop = False
-        '
         'Guna2CircleButton2
         '
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
@@ -314,7 +262,7 @@ Partial Class login
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
         Me.Guna2CircleButton2.Location = New System.Drawing.Point(994, 10)
-        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
@@ -344,12 +292,64 @@ Partial Class login
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
         Me.CloseButton.Location = New System.Drawing.Point(1041, 10)
-        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
         Me.CloseButton.Size = New System.Drawing.Size(30, 32)
         Me.CloseButton.TabIndex = 65
+        '
+        'EyeClosed
+        '
+        Me.EyeClosed.Image = CType(resources.GetObject("EyeClosed.Image"), System.Drawing.Image)
+        Me.EyeClosed.ImageRotate = 0!
+        Me.EyeClosed.Location = New System.Drawing.Point(384, 436)
+        Me.EyeClosed.Margin = New System.Windows.Forms.Padding(2)
+        Me.EyeClosed.Name = "EyeClosed"
+        Me.EyeClosed.ShadowDecoration.Parent = Me.EyeClosed
+        Me.EyeClosed.Size = New System.Drawing.Size(24, 24)
+        Me.EyeClosed.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.EyeClosed.TabIndex = 15
+        Me.EyeClosed.TabStop = False
+        '
+        'EyeOpen
+        '
+        Me.EyeOpen.Image = CType(resources.GetObject("EyeOpen.Image"), System.Drawing.Image)
+        Me.EyeOpen.ImageRotate = 0!
+        Me.EyeOpen.Location = New System.Drawing.Point(384, 436)
+        Me.EyeOpen.Margin = New System.Windows.Forms.Padding(2)
+        Me.EyeOpen.Name = "EyeOpen"
+        Me.EyeOpen.ShadowDecoration.Parent = Me.EyeOpen
+        Me.EyeOpen.Size = New System.Drawing.Size(24, 24)
+        Me.EyeOpen.SizeMode = System.Windows.Forms.PictureBoxSizeMode.AutoSize
+        Me.EyeOpen.TabIndex = 14
+        Me.EyeOpen.TabStop = False
+        Me.EyeOpen.Visible = False
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = CType(resources.GetObject("Guna2PictureBox2.Image"), System.Drawing.Image)
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(553, 118)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(464, 374)
+        Me.Guna2PictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.Guna2PictureBox2.TabIndex = 8
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 16)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
+        Me.Guna2PictureBox1.TabIndex = 0
+        Me.Guna2PictureBox1.TabStop = False
         '
         'login
         '
@@ -357,7 +357,7 @@ Partial Class login
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1040, 641)
+        Me.ClientSize = New System.Drawing.Size(1366, 780)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.EyeButton)
@@ -374,8 +374,9 @@ Partial Class login
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "login"
+        Me.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Show
         Me.Text = "Form1"
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
