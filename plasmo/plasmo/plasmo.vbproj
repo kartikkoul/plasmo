@@ -94,22 +94,10 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="assign.Designer.vb">
-      <DependentUpon>assign.vb</DependentUpon>
-    </Compile>
-    <Compile Include="assign.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
     <Compile Include="Dashboard.vb">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Details.Designer.vb">
-      <DependentUpon>Details.vb</DependentUpon>
-    </Compile>
-    <Compile Include="Details.vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="donor form.Designer.vb">
@@ -167,17 +155,11 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="assign.resx">
-      <DependentUpon>assign.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="donor_history.resx">
       <DependentUpon>donor_history.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Dashboard.resx">
       <DependentUpon>Dashboard.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Details.resx">
-      <DependentUpon>Details.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="donor form.resx">
       <DependentUpon>donor form.vb</DependentUpon>
