@@ -30,21 +30,22 @@ Partial Class Reciever_form
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox2 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox1 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox3 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox4 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2TextBox5 = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.Guna2ComboBox1 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.fName = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.lName = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.age = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.email = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.phNumber = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.bloodGroup = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox6 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.city = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Guna2TextBox7 = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.address = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Guna2Button1 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2ComboBox2 = New Guna.UI2.WinForms.Guna2ComboBox()
+        Me.gender = New Guna.UI2.WinForms.Guna2ComboBox()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -52,7 +53,6 @@ Partial Class Reciever_form
         Me.HistoryBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -69,9 +69,10 @@ Partial Class Reciever_form
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(580, 202)
+        Me.Label7.Location = New System.Drawing.Point(435, 164)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(121, 36)
+        Me.Label7.Size = New System.Drawing.Size(96, 28)
         Me.Label7.TabIndex = 26
         Me.Label7.Text = "Last Name"
         '
@@ -79,9 +80,10 @@ Partial Class Reciever_form
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(197, 339)
+        Me.Label8.Location = New System.Drawing.Point(148, 275)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(164, 36)
+        Me.Label8.Size = New System.Drawing.Size(129, 28)
         Me.Label8.TabIndex = 24
         Me.Label8.Text = "Phone Number"
         '
@@ -89,9 +91,10 @@ Partial Class Reciever_form
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(197, 202)
+        Me.Label1.Location = New System.Drawing.Point(148, 164)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(120, 36)
+        Me.Label1.Size = New System.Drawing.Size(96, 28)
         Me.Label1.TabIndex = 18
         Me.Label1.Text = "First Name"
         '
@@ -99,9 +102,10 @@ Partial Class Reciever_form
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(579, 339)
+        Me.Label5.Location = New System.Drawing.Point(434, 275)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(81, 36)
+        Me.Label5.Size = New System.Drawing.Size(64, 28)
         Me.Label5.TabIndex = 20
         Me.Label5.Text = "E-mail"
         '
@@ -109,182 +113,185 @@ Partial Class Reciever_form
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(953, 202)
+        Me.Label6.Location = New System.Drawing.Point(715, 164)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(54, 36)
+        Me.Label6.Size = New System.Drawing.Size(44, 28)
         Me.Label6.TabIndex = 22
         Me.Label6.Text = "Age"
         '
-        'Guna2TextBox2
+        'fName
         '
-        Me.Guna2TextBox2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2TextBox2.BorderRadius = 10
-        Me.Guna2TextBox2.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox2.DefaultText = ""
-        Me.Guna2TextBox2.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.DisabledState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.FocusedState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2TextBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Guna2TextBox2.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox2.HoverState.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Location = New System.Drawing.Point(203, 248)
-        Me.Guna2TextBox2.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
-        Me.Guna2TextBox2.Name = "Guna2TextBox2"
-        Me.Guna2TextBox2.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox2.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox2.PlaceholderText = "  First Name"
-        Me.Guna2TextBox2.SelectedText = ""
-        Me.Guna2TextBox2.ShadowDecoration.Parent = Me.Guna2TextBox2
-        Me.Guna2TextBox2.Size = New System.Drawing.Size(289, 55)
-        Me.Guna2TextBox2.TabIndex = 17
+        Me.fName.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.fName.BorderRadius = 10
+        Me.fName.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.fName.DefaultText = ""
+        Me.fName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.fName.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.fName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.fName.DisabledState.Parent = Me.fName
+        Me.fName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.fName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.fName.FocusedState.Parent = Me.fName
+        Me.fName.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.fName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.fName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.fName.HoverState.Parent = Me.fName
+        Me.fName.Location = New System.Drawing.Point(152, 202)
+        Me.fName.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
+        Me.fName.Name = "fName"
+        Me.fName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.fName.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.fName.PlaceholderText = "  First Name"
+        Me.fName.SelectedText = ""
+        Me.fName.ShadowDecoration.Parent = Me.fName
+        Me.fName.Size = New System.Drawing.Size(217, 45)
+        Me.fName.TabIndex = 17
         '
-        'Guna2TextBox1
+        'lName
         '
-        Me.Guna2TextBox1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2TextBox1.BorderRadius = 10
-        Me.Guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox1.DefaultText = ""
-        Me.Guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.DisabledState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.FocusedState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2TextBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox1.HoverState.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Location = New System.Drawing.Point(575, 248)
-        Me.Guna2TextBox1.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
-        Me.Guna2TextBox1.Name = "Guna2TextBox1"
-        Me.Guna2TextBox1.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox1.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox1.PlaceholderText = "  Last Name"
-        Me.Guna2TextBox1.SelectedText = ""
-        Me.Guna2TextBox1.ShadowDecoration.Parent = Me.Guna2TextBox1
-        Me.Guna2TextBox1.Size = New System.Drawing.Size(289, 55)
-        Me.Guna2TextBox1.TabIndex = 19
+        Me.lName.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.lName.BorderRadius = 10
+        Me.lName.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.lName.DefaultText = ""
+        Me.lName.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.lName.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.lName.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lName.DisabledState.Parent = Me.lName
+        Me.lName.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.lName.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lName.FocusedState.Parent = Me.lName
+        Me.lName.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.lName.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.lName.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.lName.HoverState.Parent = Me.lName
+        Me.lName.Location = New System.Drawing.Point(431, 202)
+        Me.lName.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
+        Me.lName.Name = "lName"
+        Me.lName.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.lName.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.lName.PlaceholderText = "  Last Name"
+        Me.lName.SelectedText = ""
+        Me.lName.ShadowDecoration.Parent = Me.lName
+        Me.lName.Size = New System.Drawing.Size(217, 45)
+        Me.lName.TabIndex = 19
         '
-        'Guna2TextBox3
+        'age
         '
-        Me.Guna2TextBox3.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2TextBox3.BorderRadius = 10
-        Me.Guna2TextBox3.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox3.DefaultText = ""
-        Me.Guna2TextBox3.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.DisabledState.Parent = Me.Guna2TextBox3
-        Me.Guna2TextBox3.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox3.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.FocusedState.Parent = Me.Guna2TextBox3
-        Me.Guna2TextBox3.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2TextBox3.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Guna2TextBox3.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox3.HoverState.Parent = Me.Guna2TextBox3
-        Me.Guna2TextBox3.Location = New System.Drawing.Point(959, 248)
-        Me.Guna2TextBox3.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
-        Me.Guna2TextBox3.Name = "Guna2TextBox3"
-        Me.Guna2TextBox3.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox3.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox3.PlaceholderText = "  Age"
-        Me.Guna2TextBox3.SelectedText = ""
-        Me.Guna2TextBox3.ShadowDecoration.Parent = Me.Guna2TextBox3
-        Me.Guna2TextBox3.Size = New System.Drawing.Size(289, 55)
-        Me.Guna2TextBox3.TabIndex = 21
+        Me.age.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.age.BorderRadius = 10
+        Me.age.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.age.DefaultText = ""
+        Me.age.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.age.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.age.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.age.DisabledState.Parent = Me.age
+        Me.age.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.age.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.age.FocusedState.Parent = Me.age
+        Me.age.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.age.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.age.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.age.HoverState.Parent = Me.age
+        Me.age.Location = New System.Drawing.Point(719, 202)
+        Me.age.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
+        Me.age.Name = "age"
+        Me.age.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.age.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.age.PlaceholderText = "  Age"
+        Me.age.SelectedText = ""
+        Me.age.ShadowDecoration.Parent = Me.age
+        Me.age.Size = New System.Drawing.Size(217, 45)
+        Me.age.TabIndex = 21
         '
-        'Guna2TextBox4
+        'email
         '
-        Me.Guna2TextBox4.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2TextBox4.BorderRadius = 10
-        Me.Guna2TextBox4.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox4.DefaultText = ""
-        Me.Guna2TextBox4.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.DisabledState.Parent = Me.Guna2TextBox4
-        Me.Guna2TextBox4.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox4.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.FocusedState.Parent = Me.Guna2TextBox4
-        Me.Guna2TextBox4.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2TextBox4.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Guna2TextBox4.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox4.HoverState.Parent = Me.Guna2TextBox4
-        Me.Guna2TextBox4.Location = New System.Drawing.Point(575, 385)
-        Me.Guna2TextBox4.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
-        Me.Guna2TextBox4.Name = "Guna2TextBox4"
-        Me.Guna2TextBox4.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox4.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox4.PlaceholderText = "  E-mail"
-        Me.Guna2TextBox4.SelectedText = ""
-        Me.Guna2TextBox4.ShadowDecoration.Parent = Me.Guna2TextBox4
-        Me.Guna2TextBox4.Size = New System.Drawing.Size(289, 55)
-        Me.Guna2TextBox4.TabIndex = 25
+        Me.email.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.email.BorderRadius = 10
+        Me.email.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.email.DefaultText = ""
+        Me.email.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.email.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.email.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.email.DisabledState.Parent = Me.email
+        Me.email.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.email.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.email.FocusedState.Parent = Me.email
+        Me.email.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.email.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.email.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.email.HoverState.Parent = Me.email
+        Me.email.Location = New System.Drawing.Point(431, 313)
+        Me.email.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
+        Me.email.Name = "email"
+        Me.email.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.email.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.email.PlaceholderText = "  E-mail"
+        Me.email.SelectedText = ""
+        Me.email.ShadowDecoration.Parent = Me.email
+        Me.email.Size = New System.Drawing.Size(217, 45)
+        Me.email.TabIndex = 25
         '
-        'Guna2TextBox5
+        'phNumber
         '
-        Me.Guna2TextBox5.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2TextBox5.BorderRadius = 10
-        Me.Guna2TextBox5.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox5.DefaultText = ""
-        Me.Guna2TextBox5.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.DisabledState.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox5.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.FocusedState.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2TextBox5.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Guna2TextBox5.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox5.HoverState.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.Location = New System.Drawing.Point(203, 385)
-        Me.Guna2TextBox5.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
-        Me.Guna2TextBox5.Name = "Guna2TextBox5"
-        Me.Guna2TextBox5.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox5.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox5.PlaceholderText = "  Phone Number"
-        Me.Guna2TextBox5.SelectedText = ""
-        Me.Guna2TextBox5.ShadowDecoration.Parent = Me.Guna2TextBox5
-        Me.Guna2TextBox5.Size = New System.Drawing.Size(289, 55)
-        Me.Guna2TextBox5.TabIndex = 23
+        Me.phNumber.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.phNumber.BorderRadius = 10
+        Me.phNumber.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.phNumber.DefaultText = ""
+        Me.phNumber.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.phNumber.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.phNumber.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.phNumber.DisabledState.Parent = Me.phNumber
+        Me.phNumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.phNumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.phNumber.FocusedState.Parent = Me.phNumber
+        Me.phNumber.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.phNumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.phNumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.phNumber.HoverState.Parent = Me.phNumber
+        Me.phNumber.Location = New System.Drawing.Point(152, 313)
+        Me.phNumber.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
+        Me.phNumber.Name = "phNumber"
+        Me.phNumber.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.phNumber.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.phNumber.PlaceholderText = "  Phone Number"
+        Me.phNumber.SelectedText = ""
+        Me.phNumber.ShadowDecoration.Parent = Me.phNumber
+        Me.phNumber.Size = New System.Drawing.Size(217, 45)
+        Me.phNumber.TabIndex = 23
         '
-        'Guna2ComboBox1
+        'bloodGroup
         '
-        Me.Guna2ComboBox1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox1.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2ComboBox1.BorderRadius = 10
-        Me.Guna2ComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox1.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox1.FocusedState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Font = New System.Drawing.Font("Segoe UI", 10.0!)
-        Me.Guna2ComboBox1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox1.HoverState.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.ItemHeight = 30
-        Me.Guna2ComboBox1.Items.AddRange(New Object() {"A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"})
-        Me.Guna2ComboBox1.ItemsAppearance.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Location = New System.Drawing.Point(959, 396)
-        Me.Guna2ComboBox1.Name = "Guna2ComboBox1"
-        Me.Guna2ComboBox1.ShadowDecoration.Parent = Me.Guna2ComboBox1
-        Me.Guna2ComboBox1.Size = New System.Drawing.Size(289, 36)
-        Me.Guna2ComboBox1.StartIndex = 0
-        Me.Guna2ComboBox1.TabIndex = 27
+        Me.bloodGroup.BackColor = System.Drawing.Color.Transparent
+        Me.bloodGroup.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.bloodGroup.BorderRadius = 10
+        Me.bloodGroup.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.bloodGroup.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.bloodGroup.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.bloodGroup.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.bloodGroup.FocusedState.Parent = Me.bloodGroup
+        Me.bloodGroup.Font = New System.Drawing.Font("Segoe UI", 10.0!)
+        Me.bloodGroup.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.bloodGroup.HoverState.Parent = Me.bloodGroup
+        Me.bloodGroup.ItemHeight = 30
+        Me.bloodGroup.Items.AddRange(New Object() {"A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"})
+        Me.bloodGroup.ItemsAppearance.Parent = Me.bloodGroup
+        Me.bloodGroup.Location = New System.Drawing.Point(719, 322)
+        Me.bloodGroup.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bloodGroup.Name = "bloodGroup"
+        Me.bloodGroup.ShadowDecoration.Parent = Me.bloodGroup
+        Me.bloodGroup.Size = New System.Drawing.Size(218, 36)
+        Me.bloodGroup.StartIndex = 0
+        Me.bloodGroup.TabIndex = 27
         '
         'Label2
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(953, 341)
+        Me.Label2.Location = New System.Drawing.Point(715, 277)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(140, 36)
+        Me.Label2.Size = New System.Drawing.Size(110, 28)
         Me.Label2.TabIndex = 28
         Me.Label2.Text = "Blood Group"
         '
@@ -292,85 +299,88 @@ Partial Class Reciever_form
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(197, 471)
+        Me.Label3.Location = New System.Drawing.Point(148, 383)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 36)
+        Me.Label3.Size = New System.Drawing.Size(43, 28)
         Me.Label3.TabIndex = 29
         Me.Label3.Text = "City" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
-        'Guna2TextBox6
+        'city
         '
-        Me.Guna2TextBox6.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2TextBox6.BorderRadius = 10
-        Me.Guna2TextBox6.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox6.DefaultText = ""
-        Me.Guna2TextBox6.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox6.DisabledState.Parent = Me.Guna2TextBox6
-        Me.Guna2TextBox6.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox6.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox6.FocusedState.Parent = Me.Guna2TextBox6
-        Me.Guna2TextBox6.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2TextBox6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Guna2TextBox6.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox6.HoverState.Parent = Me.Guna2TextBox6
-        Me.Guna2TextBox6.Location = New System.Drawing.Point(203, 517)
-        Me.Guna2TextBox6.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
-        Me.Guna2TextBox6.Name = "Guna2TextBox6"
-        Me.Guna2TextBox6.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox6.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox6.PlaceholderText = "  City"
-        Me.Guna2TextBox6.SelectedText = ""
-        Me.Guna2TextBox6.ShadowDecoration.Parent = Me.Guna2TextBox6
-        Me.Guna2TextBox6.Size = New System.Drawing.Size(289, 55)
-        Me.Guna2TextBox6.TabIndex = 30
+        Me.city.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.city.BorderRadius = 10
+        Me.city.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.city.DefaultText = ""
+        Me.city.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.city.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.city.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.city.DisabledState.Parent = Me.city
+        Me.city.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.city.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.city.FocusedState.Parent = Me.city
+        Me.city.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.city.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.city.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.city.HoverState.Parent = Me.city
+        Me.city.Location = New System.Drawing.Point(152, 420)
+        Me.city.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
+        Me.city.Name = "city"
+        Me.city.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.city.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.city.PlaceholderText = "  City"
+        Me.city.SelectedText = ""
+        Me.city.ShadowDecoration.Parent = Me.city
+        Me.city.Size = New System.Drawing.Size(217, 45)
+        Me.city.TabIndex = 30
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(580, 471)
+        Me.Label4.Location = New System.Drawing.Point(435, 383)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(95, 36)
+        Me.Label4.Size = New System.Drawing.Size(77, 28)
         Me.Label4.TabIndex = 31
         Me.Label4.Text = "Address"
         '
-        'Guna2TextBox7
+        'address
         '
-        Me.Guna2TextBox7.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2TextBox7.BorderRadius = 10
-        Me.Guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.Guna2TextBox7.DefaultText = ""
-        Me.Guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.Guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.Guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox7.DisabledState.Parent = Me.Guna2TextBox7
-        Me.Guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.Guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox7.FocusedState.Parent = Me.Guna2TextBox7
-        Me.Guna2TextBox7.Font = New System.Drawing.Font("Poppins Light", 12.0!)
-        Me.Guna2TextBox7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
-        Me.Guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2TextBox7.HoverState.Parent = Me.Guna2TextBox7
-        Me.Guna2TextBox7.Location = New System.Drawing.Point(575, 517)
-        Me.Guna2TextBox7.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
-        Me.Guna2TextBox7.Name = "Guna2TextBox7"
-        Me.Guna2TextBox7.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.Guna2TextBox7.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.Guna2TextBox7.PlaceholderText = "  Address"
-        Me.Guna2TextBox7.SelectedText = ""
-        Me.Guna2TextBox7.ShadowDecoration.Parent = Me.Guna2TextBox7
-        Me.Guna2TextBox7.Size = New System.Drawing.Size(289, 55)
-        Me.Guna2TextBox7.TabIndex = 32
+        Me.address.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.address.BorderRadius = 10
+        Me.address.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.address.DefaultText = ""
+        Me.address.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.address.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.address.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.address.DisabledState.Parent = Me.address
+        Me.address.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.address.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.address.FocusedState.Parent = Me.address
+        Me.address.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.address.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
+        Me.address.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.address.HoverState.Parent = Me.address
+        Me.address.Location = New System.Drawing.Point(431, 420)
+        Me.address.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
+        Me.address.Name = "address"
+        Me.address.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.address.PlaceholderForeColor = System.Drawing.Color.Silver
+        Me.address.PlaceholderText = "  Address"
+        Me.address.SelectedText = ""
+        Me.address.ShadowDecoration.Parent = Me.address
+        Me.address.Size = New System.Drawing.Size(217, 45)
+        Me.address.TabIndex = 32
         '
         'Label10
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(953, 474)
+        Me.Label10.Location = New System.Drawing.Point(715, 385)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(89, 36)
+        Me.Label10.Size = New System.Drawing.Size(71, 28)
         Me.Label10.TabIndex = 34
         Me.Label10.Text = "Gender"
         '
@@ -388,35 +398,37 @@ Partial Class Reciever_form
         Me.Guna2Button1.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(595, 665)
+        Me.Guna2Button1.Location = New System.Drawing.Point(446, 540)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Size = New System.Drawing.Size(250, 52)
+        Me.Guna2Button1.Size = New System.Drawing.Size(188, 42)
         Me.Guna2Button1.TabIndex = 41
         Me.Guna2Button1.Text = "SUBMIT"
         '
-        'Guna2ComboBox2
+        'gender
         '
-        Me.Guna2ComboBox2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ComboBox2.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
-        Me.Guna2ComboBox2.BorderRadius = 10
-        Me.Guna2ComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
-        Me.Guna2ComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
-        Me.Guna2ComboBox2.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox2.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.Guna2ComboBox2.FocusedState.Parent = Me.Guna2ComboBox2
-        Me.Guna2ComboBox2.Font = New System.Drawing.Font("Poppins", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2ComboBox2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
-        Me.Guna2ComboBox2.HoverState.Parent = Me.Guna2ComboBox2
-        Me.Guna2ComboBox2.ItemHeight = 30
-        Me.Guna2ComboBox2.Items.AddRange(New Object() {"Male", "Female", "Other"})
-        Me.Guna2ComboBox2.ItemsAppearance.Parent = Me.Guna2ComboBox2
-        Me.Guna2ComboBox2.Location = New System.Drawing.Point(959, 527)
-        Me.Guna2ComboBox2.Name = "Guna2ComboBox2"
-        Me.Guna2ComboBox2.ShadowDecoration.Parent = Me.Guna2ComboBox2
-        Me.Guna2ComboBox2.Size = New System.Drawing.Size(289, 36)
-        Me.Guna2ComboBox2.StartIndex = 0
-        Me.Guna2ComboBox2.TabIndex = 42
+        Me.gender.BackColor = System.Drawing.Color.Transparent
+        Me.gender.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
+        Me.gender.BorderRadius = 10
+        Me.gender.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed
+        Me.gender.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList
+        Me.gender.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.gender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.gender.FocusedState.Parent = Me.gender
+        Me.gender.Font = New System.Drawing.Font("Poppins", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.gender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
+        Me.gender.HoverState.Parent = Me.gender
+        Me.gender.ItemHeight = 30
+        Me.gender.Items.AddRange(New Object() {"Male", "Female", "Other"})
+        Me.gender.ItemsAppearance.Parent = Me.gender
+        Me.gender.Location = New System.Drawing.Point(719, 428)
+        Me.gender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gender.Name = "gender"
+        Me.gender.ShadowDecoration.Parent = Me.gender
+        Me.gender.Size = New System.Drawing.Size(218, 36)
+        Me.gender.StartIndex = 0
+        Me.gender.TabIndex = 42
         '
         'Guna2Panel1
         '
@@ -430,19 +442,33 @@ Partial Class Reciever_form
         Me.Guna2Panel1.Controls.Add(Me.HistoryBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.DashboardBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.LogoutBtnMenu)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 91)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 74)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1443, 72)
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel1.TabIndex = 87
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1014, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
+        Me.Guna2PictureBox2.TabIndex = 88
+        Me.Guna2PictureBox2.TabStop = False
         '
         'Guna2Panel2
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Location = New System.Drawing.Point(436, 51)
+        Me.Guna2Panel2.Location = New System.Drawing.Point(327, 41)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.Size = New System.Drawing.Size(86, 4)
+        Me.Guna2Panel2.Size = New System.Drawing.Size(64, 3)
         Me.Guna2Panel2.TabIndex = 80
         '
         'RecieverBtnMenu
@@ -459,10 +485,11 @@ Partial Class Reciever_form
         Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Location = New System.Drawing.Point(409, 17)
+        Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
+        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Size = New System.Drawing.Size(167, 38)
+        Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.RecieverBtnMenu.TabIndex = 84
         Me.RecieverBtnMenu.Text = "RECIEVER"
         '
@@ -480,10 +507,11 @@ Partial Class Reciever_form
         Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Location = New System.Drawing.Point(243, 17)
+        Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
+        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DonorBtnMenu.Name = "DonorBtnMenu"
         Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Size = New System.Drawing.Size(167, 38)
+        Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.DonorBtnMenu.TabIndex = 83
         Me.DonorBtnMenu.Text = "DONOR"
         '
@@ -501,10 +529,11 @@ Partial Class Reciever_form
         Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Location = New System.Drawing.Point(564, 17)
+        Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
+        Me.QueueBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.QueueBtnMenu.Name = "QueueBtnMenu"
         Me.QueueBtnMenu.ShadowDecoration.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Size = New System.Drawing.Size(167, 38)
+        Me.QueueBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.QueueBtnMenu.TabIndex = 82
         Me.QueueBtnMenu.Text = "QUEUE"
         '
@@ -522,10 +551,11 @@ Partial Class Reciever_form
         Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Location = New System.Drawing.Point(723, 17)
+        Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
+        Me.HistoryBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.HistoryBtnMenu.Name = "HistoryBtnMenu"
         Me.HistoryBtnMenu.ShadowDecoration.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Size = New System.Drawing.Size(167, 38)
+        Me.HistoryBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.HistoryBtnMenu.TabIndex = 81
         Me.HistoryBtnMenu.Text = "HISTORY"
         '
@@ -543,10 +573,11 @@ Partial Class Reciever_form
         Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Location = New System.Drawing.Point(32, 17)
+        Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
+        Me.DashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DashboardBtnMenu.Name = "DashboardBtnMenu"
         Me.DashboardBtnMenu.ShadowDecoration.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Size = New System.Drawing.Size(217, 38)
+        Me.DashboardBtnMenu.Size = New System.Drawing.Size(163, 31)
         Me.DashboardBtnMenu.TabIndex = 11
         Me.DashboardBtnMenu.Text = "DASHBOARD"
         '
@@ -564,23 +595,13 @@ Partial Class Reciever_form
         Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.Location = New System.Drawing.Point(1172, 13)
+        Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
+        Me.LogoutBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.LogoutBtnMenu.Name = "LogoutBtnMenu"
         Me.LogoutBtnMenu.ShadowDecoration.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.Size = New System.Drawing.Size(250, 52)
+        Me.LogoutBtnMenu.Size = New System.Drawing.Size(188, 42)
         Me.LogoutBtnMenu.TabIndex = 10
         Me.LogoutBtnMenu.Text = "LOGOUT"
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1352, 24)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(26, 33)
-        Me.Guna2PictureBox2.TabIndex = 88
-        Me.Guna2PictureBox2.TabStop = False
         '
         'Guna2CircleButton2
         '
@@ -605,12 +626,13 @@ Partial Class Reciever_form
         Me.Guna2CircleButton2.HoverState.Parent = Me.Guna2CircleButton2
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
-        Me.Guna2CircleButton2.Location = New System.Drawing.Point(1326, 12)
+        Me.Guna2CircleButton2.Location = New System.Drawing.Point(994, 10)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CircleButton2.ShadowDecoration.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.Size = New System.Drawing.Size(40, 40)
+        Me.Guna2CircleButton2.Size = New System.Drawing.Size(30, 32)
         Me.Guna2CircleButton2.TabIndex = 86
         '
         'CloseButton
@@ -634,55 +656,58 @@ Partial Class Reciever_form
         Me.CloseButton.HoverState.Parent = Me.CloseButton
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
-        Me.CloseButton.Location = New System.Drawing.Point(1388, 12)
+        Me.CloseButton.Location = New System.Drawing.Point(1041, 10)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
-        Me.CloseButton.Size = New System.Drawing.Size(40, 40)
+        Me.CloseButton.Size = New System.Drawing.Size(30, 32)
         Me.CloseButton.TabIndex = 85
         '
         'Guna2PictureBox1
         '
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(34, 14)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 11)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(268, 71)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
         Me.Guna2PictureBox1.TabIndex = 4
         Me.Guna2PictureBox1.TabStop = False
         '
         'Reciever_form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1440, 768)
+        Me.ClientSize = New System.Drawing.Size(1080, 624)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
-        Me.Controls.Add(Me.Guna2ComboBox2)
+        Me.Controls.Add(Me.gender)
         Me.Controls.Add(Me.Guna2Button1)
         Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Guna2TextBox7)
+        Me.Controls.Add(Me.address)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.Guna2TextBox6)
+        Me.Controls.Add(Me.city)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Guna2ComboBox1)
+        Me.Controls.Add(Me.bloodGroup)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Guna2TextBox4)
+        Me.Controls.Add(Me.email)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Guna2TextBox5)
+        Me.Controls.Add(Me.phNumber)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.Guna2TextBox3)
-        Me.Controls.Add(Me.Guna2TextBox1)
-        Me.Controls.Add(Me.Guna2TextBox2)
+        Me.Controls.Add(Me.age)
+        Me.Controls.Add(Me.lName)
+        Me.Controls.Add(Me.fName)
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Reciever_form"
         Me.Text = "Reciever_form"
         Me.Guna2Panel1.ResumeLayout(False)
@@ -694,25 +719,25 @@ Partial Class Reciever_form
     End Sub
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
-    Friend WithEvents Guna2TextBox2 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents fName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label6 As Label
-    Friend WithEvents Guna2TextBox3 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents age As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label5 As Label
-    Friend WithEvents Guna2TextBox1 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents lName As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label7 As Label
-    Friend WithEvents Guna2TextBox4 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents email As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label8 As Label
-    Friend WithEvents Guna2TextBox5 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents phNumber As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label10 As Label
-    Friend WithEvents Guna2TextBox7 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents address As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label4 As Label
-    Friend WithEvents Guna2TextBox6 As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents city As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Label3 As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents Guna2ComboBox1 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents bloodGroup As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2Button1 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2ComboBox2 As Guna.UI2.WinForms.Guna2ComboBox
+    Friend WithEvents gender As Guna.UI2.WinForms.Guna2ComboBox
     Friend WithEvents Guna2CircleButton2 As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel

@@ -27,6 +27,7 @@ Partial Class reciever_history
         Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
@@ -83,7 +84,7 @@ Partial Class reciever_history
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
         Me.Guna2CircleButton2.Location = New System.Drawing.Point(990, 10)
-        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
@@ -113,7 +114,7 @@ Partial Class reciever_history
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
         Me.CloseButton.Location = New System.Drawing.Point(1036, 10)
-        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
@@ -133,7 +134,7 @@ Partial Class reciever_history
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button8)
         Me.Guna2Panel1.Controls.Add(Me.Guna2Button9)
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 74)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
@@ -143,7 +144,7 @@ Partial Class reciever_history
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.White
         Me.Guna2Panel2.Location = New System.Drawing.Point(567, 41)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
         Me.Guna2Panel2.Size = New System.Drawing.Size(60, 3)
@@ -164,7 +165,7 @@ Partial Class reciever_history
         Me.Guna2Button5.ForeColor = System.Drawing.Color.White
         Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
         Me.Guna2Button5.Location = New System.Drawing.Point(182, 14)
-        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button5.Name = "Guna2Button5"
         Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
         Me.Guna2Button5.Size = New System.Drawing.Size(125, 31)
@@ -186,7 +187,7 @@ Partial Class reciever_history
         Me.Guna2Button4.ForeColor = System.Drawing.Color.White
         Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
         Me.Guna2Button4.Location = New System.Drawing.Point(423, 14)
-        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button4.Name = "Guna2Button4"
         Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
         Me.Guna2Button4.Size = New System.Drawing.Size(125, 31)
@@ -208,7 +209,7 @@ Partial Class reciever_history
         Me.Guna2Button6.ForeColor = System.Drawing.Color.White
         Me.Guna2Button6.HoverState.Parent = Me.Guna2Button6
         Me.Guna2Button6.Location = New System.Drawing.Point(304, 14)
-        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button6.Name = "Guna2Button6"
         Me.Guna2Button6.ShadowDecoration.Parent = Me.Guna2Button6
         Me.Guna2Button6.Size = New System.Drawing.Size(125, 31)
@@ -230,7 +231,7 @@ Partial Class reciever_history
         Me.Guna2Button7.ForeColor = System.Drawing.Color.White
         Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
         Me.Guna2Button7.Location = New System.Drawing.Point(542, 14)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button7.Name = "Guna2Button7"
         Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
         Me.Guna2Button7.Size = New System.Drawing.Size(125, 31)
@@ -243,7 +244,7 @@ Partial Class reciever_history
         Me.Guna2PictureBox2.ImageRotate = 0!
         Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
@@ -265,7 +266,7 @@ Partial Class reciever_history
         Me.Guna2Button8.ForeColor = System.Drawing.Color.White
         Me.Guna2Button8.HoverState.Parent = Me.Guna2Button8
         Me.Guna2Button8.Location = New System.Drawing.Point(24, 14)
-        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button8.Name = "Guna2Button8"
         Me.Guna2Button8.ShadowDecoration.Parent = Me.Guna2Button8
         Me.Guna2Button8.Size = New System.Drawing.Size(163, 31)
@@ -287,7 +288,7 @@ Partial Class reciever_history
         Me.Guna2Button9.ForeColor = System.Drawing.Color.White
         Me.Guna2Button9.HoverState.Parent = Me.Guna2Button9
         Me.Guna2Button9.Location = New System.Drawing.Point(879, 11)
-        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button9.Name = "Guna2Button9"
         Me.Guna2Button9.ShadowDecoration.Parent = Me.Guna2Button9
         Me.Guna2Button9.Size = New System.Drawing.Size(188, 42)
@@ -299,7 +300,7 @@ Partial Class reciever_history
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
         Me.Guna2PictureBox1.ImageRotate = 0!
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 11)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
@@ -397,11 +398,19 @@ Partial Class reciever_history
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.ReadOnly = True
         Me.Guna2DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.Guna2DataGridView1.RowHeadersVisible = False
         Me.Guna2DataGridView1.RowHeadersWidth = 42
-        DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
-        Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle5
         Me.Guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
         Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 427)

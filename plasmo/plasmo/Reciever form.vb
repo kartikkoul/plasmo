@@ -1,4 +1,7 @@
-﻿Public Class Reciever_form
+﻿Imports System.Data
+Imports System.Data.SqlClient
+Imports System.Data.SqlClient.SqlCommand
+Public Class Reciever_form
     Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs)
 
     End Sub
@@ -19,15 +22,30 @@
 
     End Sub
 
-    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+    Public Function Truncate(value As String, length As Integer) As String
+        If length > value.Length Then
+            Return value
+        Else
+            Return value.Substring(0, length)
+        End If
+    End Function
 
+    Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
+        Dim gen As Char = Truncate(gender.SelectedItem, 1)
+
+        Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
+        Dim cmd1 As New SqlCommand("insert into reciever_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,recieved) values('" & "R0800745" & "','" & fName.Text & "','" & lName.Text & "','" & age.Text & "','" & phNumber.Text & "','" & email.Text & "','" & city.Text & "','" & address.Text & "','" & bloodGroup.SelectedItem & "','" & gen & "','" & "N" & "')", con)
+        con.Open()
+        cmd1.ExecuteNonQuery()
+        MsgBox("Reciever Registered")
+        con.Close()
     End Sub
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs)
         Me.Show()
     End Sub
 
-    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles Guna2TextBox2.TextChanged
+    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs) Handles fName.TextChanged
 
     End Sub
 
@@ -74,7 +92,7 @@
         Me.Hide()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
-        Details.Show()
+        donor_history.Show()
         Me.Hide()
     End Sub
 End Class

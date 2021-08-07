@@ -31,13 +31,13 @@ Partial Class donor_history
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
+        Me.recieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.queueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.donorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.historyBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
+        Me.dashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.logoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Newdataset = New plasmo.newdataset()
         Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableTableAdapter = New plasmo.newdatasetTableAdapters.TableTableAdapter()
@@ -71,15 +71,15 @@ Partial Class donor_history
         Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button5)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button4)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button6)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button7)
+        Me.Guna2Panel1.Controls.Add(Me.recieverBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.queueBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.donorBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.historyBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button8)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Button9)
+        Me.Guna2Panel1.Controls.Add(Me.dashboardBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.logoutBtnMenu)
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 74)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
@@ -89,99 +89,99 @@ Partial Class donor_history
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.White
         Me.Guna2Panel2.Location = New System.Drawing.Point(567, 41)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
         Me.Guna2Panel2.Size = New System.Drawing.Size(60, 3)
         Me.Guna2Panel2.TabIndex = 80
         '
-        'Guna2Button5
+        'recieverBtnMenu
         '
-        Me.Guna2Button5.BorderRadius = 6
-        Me.Guna2Button5.CheckedState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.CustomImages.Parent = Me.Guna2Button5
-        Me.Guna2Button5.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button5.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button5.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button5.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button5.DisabledState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button5.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button5.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button5.HoverState.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Location = New System.Drawing.Point(182, 14)
-        Me.Guna2Button5.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button5.Name = "Guna2Button5"
-        Me.Guna2Button5.ShadowDecoration.Parent = Me.Guna2Button5
-        Me.Guna2Button5.Size = New System.Drawing.Size(125, 31)
-        Me.Guna2Button5.TabIndex = 83
-        Me.Guna2Button5.Text = "RECEIVER"
+        Me.recieverBtnMenu.BorderRadius = 6
+        Me.recieverBtnMenu.CheckedState.Parent = Me.recieverBtnMenu
+        Me.recieverBtnMenu.CustomImages.Parent = Me.recieverBtnMenu
+        Me.recieverBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.recieverBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.recieverBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.recieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.recieverBtnMenu.DisabledState.Parent = Me.recieverBtnMenu
+        Me.recieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.recieverBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.recieverBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.recieverBtnMenu.HoverState.Parent = Me.recieverBtnMenu
+        Me.recieverBtnMenu.Location = New System.Drawing.Point(182, 14)
+        Me.recieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.recieverBtnMenu.Name = "recieverBtnMenu"
+        Me.recieverBtnMenu.ShadowDecoration.Parent = Me.recieverBtnMenu
+        Me.recieverBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.recieverBtnMenu.TabIndex = 83
+        Me.recieverBtnMenu.Text = "RECEIVER"
         '
-        'Guna2Button4
+        'queueBtnMenu
         '
-        Me.Guna2Button4.BorderRadius = 6
-        Me.Guna2Button4.CheckedState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.CustomImages.Parent = Me.Guna2Button4
-        Me.Guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button4.DisabledState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button4.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button4.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button4.HoverState.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Location = New System.Drawing.Point(423, 14)
-        Me.Guna2Button4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button4.Name = "Guna2Button4"
-        Me.Guna2Button4.ShadowDecoration.Parent = Me.Guna2Button4
-        Me.Guna2Button4.Size = New System.Drawing.Size(125, 31)
-        Me.Guna2Button4.TabIndex = 82
-        Me.Guna2Button4.Text = "QUEUE"
+        Me.queueBtnMenu.BorderRadius = 6
+        Me.queueBtnMenu.CheckedState.Parent = Me.queueBtnMenu
+        Me.queueBtnMenu.CustomImages.Parent = Me.queueBtnMenu
+        Me.queueBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.queueBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.queueBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.queueBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.queueBtnMenu.DisabledState.Parent = Me.queueBtnMenu
+        Me.queueBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.queueBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.queueBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.queueBtnMenu.HoverState.Parent = Me.queueBtnMenu
+        Me.queueBtnMenu.Location = New System.Drawing.Point(423, 14)
+        Me.queueBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.queueBtnMenu.Name = "queueBtnMenu"
+        Me.queueBtnMenu.ShadowDecoration.Parent = Me.queueBtnMenu
+        Me.queueBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.queueBtnMenu.TabIndex = 82
+        Me.queueBtnMenu.Text = "QUEUE"
         '
-        'Guna2Button6
+        'donorBtnMenu
         '
-        Me.Guna2Button6.BorderRadius = 6
-        Me.Guna2Button6.CheckedState.Parent = Me.Guna2Button6
-        Me.Guna2Button6.CustomImages.Parent = Me.Guna2Button6
-        Me.Guna2Button6.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button6.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button6.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button6.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button6.DisabledState.Parent = Me.Guna2Button6
-        Me.Guna2Button6.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button6.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button6.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button6.HoverState.Parent = Me.Guna2Button6
-        Me.Guna2Button6.Location = New System.Drawing.Point(304, 14)
-        Me.Guna2Button6.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button6.Name = "Guna2Button6"
-        Me.Guna2Button6.ShadowDecoration.Parent = Me.Guna2Button6
-        Me.Guna2Button6.Size = New System.Drawing.Size(125, 31)
-        Me.Guna2Button6.TabIndex = 84
-        Me.Guna2Button6.Text = "DONOR"
+        Me.donorBtnMenu.BorderRadius = 6
+        Me.donorBtnMenu.CheckedState.Parent = Me.donorBtnMenu
+        Me.donorBtnMenu.CustomImages.Parent = Me.donorBtnMenu
+        Me.donorBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.donorBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.donorBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.donorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.donorBtnMenu.DisabledState.Parent = Me.donorBtnMenu
+        Me.donorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.donorBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.donorBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.donorBtnMenu.HoverState.Parent = Me.donorBtnMenu
+        Me.donorBtnMenu.Location = New System.Drawing.Point(304, 14)
+        Me.donorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.donorBtnMenu.Name = "donorBtnMenu"
+        Me.donorBtnMenu.ShadowDecoration.Parent = Me.donorBtnMenu
+        Me.donorBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.donorBtnMenu.TabIndex = 84
+        Me.donorBtnMenu.Text = "DONOR"
         '
-        'Guna2Button7
+        'historyBtnMenu
         '
-        Me.Guna2Button7.BorderRadius = 6
-        Me.Guna2Button7.CheckedState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.CustomImages.Parent = Me.Guna2Button7
-        Me.Guna2Button7.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button7.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button7.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button7.DisabledState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button7.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button7.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button7.HoverState.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Location = New System.Drawing.Point(542, 14)
-        Me.Guna2Button7.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button7.Name = "Guna2Button7"
-        Me.Guna2Button7.ShadowDecoration.Parent = Me.Guna2Button7
-        Me.Guna2Button7.Size = New System.Drawing.Size(125, 31)
-        Me.Guna2Button7.TabIndex = 81
-        Me.Guna2Button7.Text = "HISTORY"
+        Me.historyBtnMenu.BorderRadius = 6
+        Me.historyBtnMenu.CheckedState.Parent = Me.historyBtnMenu
+        Me.historyBtnMenu.CustomImages.Parent = Me.historyBtnMenu
+        Me.historyBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.historyBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.historyBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.historyBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.historyBtnMenu.DisabledState.Parent = Me.historyBtnMenu
+        Me.historyBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.historyBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.historyBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.historyBtnMenu.HoverState.Parent = Me.historyBtnMenu
+        Me.historyBtnMenu.Location = New System.Drawing.Point(542, 14)
+        Me.historyBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.historyBtnMenu.Name = "historyBtnMenu"
+        Me.historyBtnMenu.ShadowDecoration.Parent = Me.historyBtnMenu
+        Me.historyBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.historyBtnMenu.TabIndex = 81
+        Me.historyBtnMenu.Text = "HISTORY"
         '
         'Guna2PictureBox2
         '
@@ -189,56 +189,56 @@ Partial Class donor_history
         Me.Guna2PictureBox2.ImageRotate = 0!
         Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
         Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
         Me.Guna2PictureBox2.TabIndex = 80
         Me.Guna2PictureBox2.TabStop = False
         '
-        'Guna2Button8
+        'dashboardBtnMenu
         '
-        Me.Guna2Button8.BorderRadius = 6
-        Me.Guna2Button8.CheckedState.Parent = Me.Guna2Button8
-        Me.Guna2Button8.CustomImages.Parent = Me.Guna2Button8
-        Me.Guna2Button8.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button8.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button8.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button8.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button8.DisabledState.Parent = Me.Guna2Button8
-        Me.Guna2Button8.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button8.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button8.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button8.HoverState.Parent = Me.Guna2Button8
-        Me.Guna2Button8.Location = New System.Drawing.Point(24, 14)
-        Me.Guna2Button8.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button8.Name = "Guna2Button8"
-        Me.Guna2Button8.ShadowDecoration.Parent = Me.Guna2Button8
-        Me.Guna2Button8.Size = New System.Drawing.Size(163, 31)
-        Me.Guna2Button8.TabIndex = 11
-        Me.Guna2Button8.Text = "DASHBOARD"
+        Me.dashboardBtnMenu.BorderRadius = 6
+        Me.dashboardBtnMenu.CheckedState.Parent = Me.dashboardBtnMenu
+        Me.dashboardBtnMenu.CustomImages.Parent = Me.dashboardBtnMenu
+        Me.dashboardBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.dashboardBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.dashboardBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.dashboardBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.dashboardBtnMenu.DisabledState.Parent = Me.dashboardBtnMenu
+        Me.dashboardBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.dashboardBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.dashboardBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.dashboardBtnMenu.HoverState.Parent = Me.dashboardBtnMenu
+        Me.dashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
+        Me.dashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.dashboardBtnMenu.Name = "dashboardBtnMenu"
+        Me.dashboardBtnMenu.ShadowDecoration.Parent = Me.dashboardBtnMenu
+        Me.dashboardBtnMenu.Size = New System.Drawing.Size(163, 31)
+        Me.dashboardBtnMenu.TabIndex = 11
+        Me.dashboardBtnMenu.Text = "DASHBOARD"
         '
-        'Guna2Button9
+        'logoutBtnMenu
         '
-        Me.Guna2Button9.BorderRadius = 6
-        Me.Guna2Button9.CheckedState.Parent = Me.Guna2Button9
-        Me.Guna2Button9.CustomImages.Parent = Me.Guna2Button9
-        Me.Guna2Button9.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button9.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button9.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button9.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button9.DisabledState.Parent = Me.Guna2Button9
-        Me.Guna2Button9.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button9.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
-        Me.Guna2Button9.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button9.HoverState.Parent = Me.Guna2Button9
-        Me.Guna2Button9.Location = New System.Drawing.Point(879, 11)
-        Me.Guna2Button9.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Button9.Name = "Guna2Button9"
-        Me.Guna2Button9.ShadowDecoration.Parent = Me.Guna2Button9
-        Me.Guna2Button9.Size = New System.Drawing.Size(188, 42)
-        Me.Guna2Button9.TabIndex = 10
-        Me.Guna2Button9.Text = "LOGOUT"
+        Me.logoutBtnMenu.BorderRadius = 6
+        Me.logoutBtnMenu.CheckedState.Parent = Me.logoutBtnMenu
+        Me.logoutBtnMenu.CustomImages.Parent = Me.logoutBtnMenu
+        Me.logoutBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.logoutBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.logoutBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.logoutBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.logoutBtnMenu.DisabledState.Parent = Me.logoutBtnMenu
+        Me.logoutBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.logoutBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.logoutBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.logoutBtnMenu.HoverState.Parent = Me.logoutBtnMenu
+        Me.logoutBtnMenu.Location = New System.Drawing.Point(879, 11)
+        Me.logoutBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.logoutBtnMenu.Name = "logoutBtnMenu"
+        Me.logoutBtnMenu.ShadowDecoration.Parent = Me.logoutBtnMenu
+        Me.logoutBtnMenu.Size = New System.Drawing.Size(188, 42)
+        Me.logoutBtnMenu.TabIndex = 10
+        Me.logoutBtnMenu.Text = "LOGOUT"
         '
         'Newdataset
         '
@@ -324,7 +324,7 @@ Partial Class donor_history
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
         Me.Guna2CircleButton2.Location = New System.Drawing.Point(990, 10)
-        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
@@ -354,7 +354,7 @@ Partial Class donor_history
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
         Me.CloseButton.Location = New System.Drawing.Point(1036, 10)
-        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
@@ -366,7 +366,7 @@ Partial Class donor_history
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
         Me.Guna2PictureBox1.ImageRotate = 0!
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 11)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
@@ -375,6 +375,10 @@ Partial Class donor_history
         '
         'Guna2DataGridView1
         '
+        Me.Guna2DataGridView1.AllowUserToAddRows = False
+        Me.Guna2DataGridView1.AllowUserToDeleteRows = False
+        Me.Guna2DataGridView1.AllowUserToResizeColumns = False
+        Me.Guna2DataGridView1.AllowUserToResizeRows = False
         DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
@@ -389,11 +393,11 @@ Partial Class donor_history
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
         DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
-        Me.Guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Guna2DataGridView1.ColumnHeadersHeight = 21
         Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.plasma_id, Me.donor_name, Me.age, Me.blood_group, Me.anti_body, Me.donation_time})
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
@@ -410,6 +414,8 @@ Partial Class donor_history
         Me.Guna2DataGridView1.RowHeadersVisible = False
         DataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         DataGridViewCellStyle4.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
         Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 427)
@@ -425,7 +431,7 @@ Partial Class donor_history
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Font = New System.Drawing.Font("Segoe UI", 10.5!)
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.Black
-        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing
         Me.Guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 21
         Me.Guna2DataGridView1.ThemeStyle.ReadOnly = False
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White
@@ -504,7 +510,7 @@ Partial Class donor_history
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "donor_history"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
@@ -521,13 +527,13 @@ Partial Class donor_history
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Button6 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button5 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button4 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button7 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents donorBtnMenu As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents recieverBtnMenu As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents queueBtnMenu As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents historyBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Button8 As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2Button9 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents dashboardBtnMenu As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents logoutBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2CircleButton2 As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents Newdataset As newdataset

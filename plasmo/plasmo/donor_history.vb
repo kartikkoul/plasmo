@@ -12,7 +12,7 @@ Public Class donor_history
         Application.Exit()
     End Sub
 
-    Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles Guna2Button8.Click
+    Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles dashboardBtnMenu.Click
 
     End Sub
 
@@ -66,6 +66,29 @@ Public Class donor_history
 
     End Sub
     Private Sub DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs)
+
+    End Sub
+
+    Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles dashboardBtnMenu.Click
+        Dashboard.Show()
+    End Sub
+    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles donorBtnMenu.Click
+        Donor_form.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles recieverBtnMenu.Click
+        Reciever_form.Show()
+        Me.Hide()
+    End Sub
+    Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles queueBtnMenu.Click
+
+    End Sub
+    Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles logoutBtnMenu.Click
+        login.Show()
+        Me.Hide()
+    End Sub
+    Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
 
     End Sub
 
