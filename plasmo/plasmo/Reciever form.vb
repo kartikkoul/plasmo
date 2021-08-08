@@ -86,15 +86,18 @@ Public Class Reciever_form
         Dim insertQuery As New SqlCommand("insert into reciever_records(reciever_id,first_name,last_name,age,phone_number,email,city,address,blood_group,sex,recieved) values('" & reciever_id & "','" & fName.Text & "','" & lName.Text & "','" & age.Text & "','" & phNumber.Text & "','" & email.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & "N" & "')", con)
         con.Open()
         insertQuery.ExecuteNonQuery()
-        Dim cmd As New SqlCommand("select plasma_id, price from donor_records where blood_group='" & blood_group & "'", con)
+        Dim cmd As New SqlCommand("select plasma_id, price from donor_records where blood_group='" & blood_group & "', sold='N'", con)
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
 
         If dr.HasRows Then
             Dim plasmaID = dr(0)("plasma_id")
             Dim price = dr(0)("price")
+            Dim time As Date = Date.UtcNow
+            Dim updateQuery As New SqlCommand("UPDATE reciever_records SET plasma_id = '" & plasmaID & "' ,price = '" & price & "', transaction_time = '" & time & "' WHERE reciever_id = '" & reciever_id & "'", con)
         Else
-
+            PlasmaNotAvailable.Show()
+            Me.Show()
         End If
 
 
