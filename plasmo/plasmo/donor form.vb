@@ -152,6 +152,16 @@ Public Class donorForm
         con.Open()
         cmd1.ExecuteNonQuery()
         donor_history.Refresh()
+
+
+
+
+
+
+
+
+
+
         Dashboard.Refresh()
         con.Close()
         donor_success.Show()
