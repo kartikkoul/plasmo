@@ -94,7 +94,14 @@ Public Class Reciever_form
             Dim plasmaID = dr(0)("plasma_id")
             Dim price = dr(0)("price")
             Dim time As Date = Date.UtcNow
-            Dim updateQuery As New SqlCommand("UPDATE reciever_records SET plasma_id = '" & plasmaID & "' ,price = '" & price & "', transaction_time = '" & time & "' WHERE reciever_id = '" & reciever_id & "'", con)
+            Dim updateRecieverQuery As New SqlCommand("UPDATE reciever_records SET plasma_id = '" & plasmaID & "' ,price = '" & price & "', transaction_time = '" & time & "' WHERE reciever_id = '" & reciever_id & "'", con)
+            Dim updateDonorQuery As New SqlCommand("UPDATE donor_records SET sold=Y WHERE plasma_id = '" & plasmaID & "'", con)
+            If con.State = 1 Then
+                conn.Close()
+            End If
+            con.Open()
+            updateRecieverQuery.ExecuteNonQuery()
+            updateDonorQuery.ExecuteNonQuery()
         Else
             PlasmaNotAvailable.Show()
             Me.Show()
