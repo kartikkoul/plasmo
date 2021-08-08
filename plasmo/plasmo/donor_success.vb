@@ -12,7 +12,8 @@
     End Sub
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
-
+        donor_reciept.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Guna2PictureBox5_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox5.Click

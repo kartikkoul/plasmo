@@ -55,4 +55,8 @@ Public Class donor_reciept
         End While
         con.Close()
     End Sub
+
+    Private Sub Namelabel_Click(sender As Object, e As EventArgs) Handles Namelabel.Click
+
+    End Sub
 End Class

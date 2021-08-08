@@ -20,7 +20,7 @@ Public Class donor_history
         Dim li As Integer
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         con.Open()
-        Dim cmd As New SqlCommand("select plasma_id, first_name, second_name, age, blood_group, anti_body, transaction_time from donor_records", con)
+        Dim cmd As New SqlCommand("select plasma_id, first_name, last_name, age, blood_group, anti_body, transaction_time from donor_records", con)
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
 
@@ -57,7 +57,7 @@ Public Class donor_history
 
 
 
-            Dim name As String = dr("first_name") + " " + dr("second_name")
+            Dim name As String = dr("first_name") + " " + dr("last_name")
             Guna2DataGridView1.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
         End While
         con.Close()

@@ -56,6 +56,7 @@ Partial Class donor_reciept
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.SubmitButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -69,7 +70,7 @@ Partial Class donor_reciept
         '
         Me.plasmaIDLabel.BackColor = System.Drawing.Color.Transparent
         Me.plasmaIDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.plasmaIDLabel.Location = New System.Drawing.Point(764, 149)
+        Me.plasmaIDLabel.Location = New System.Drawing.Point(702, 149)
         Me.plasmaIDLabel.Name = "plasmaIDLabel"
         Me.plasmaIDLabel.Size = New System.Drawing.Size(98, 26)
         Me.plasmaIDLabel.TabIndex = 136
@@ -226,7 +227,7 @@ Partial Class donor_reciept
         '
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(422, 149)
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(360, 149)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
         Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(330, 26)
         Me.Guna2HtmlLabel4.TabIndex = 121
@@ -238,9 +239,8 @@ Partial Class donor_reciept
         Me.Namelabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Namelabel.Location = New System.Drawing.Point(278, 237)
         Me.Namelabel.Name = "Namelabel"
-        Me.Namelabel.Size = New System.Drawing.Size(175, 27)
+        Me.Namelabel.Size = New System.Drawing.Size(3, 2)
         Me.Namelabel.TabIndex = 119
-        Me.Namelabel.Text = "Guna2HtmlLabel2"
         '
         'Guna2HtmlLabel1
         '
@@ -432,9 +432,8 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(278, 237)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(175, 27)
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(3, 2)
         Me.Guna2HtmlLabel2.TabIndex = 120
-        Me.Guna2HtmlLabel2.Text = "Guna2HtmlLabel2"
         '
         'Guna2BorderlessForm2
         '
@@ -513,11 +512,34 @@ Partial Class donor_reciept
         Me.Guna2PictureBox1.TabIndex = 114
         Me.Guna2PictureBox1.TabStop = False
         '
+        'SubmitButton
+        '
+        Me.SubmitButton.BorderRadius = 6
+        Me.SubmitButton.CheckedState.Parent = Me.SubmitButton
+        Me.SubmitButton.CustomImages.Parent = Me.SubmitButton
+        Me.SubmitButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.SubmitButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.SubmitButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.SubmitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SubmitButton.DisabledState.Parent = Me.SubmitButton
+        Me.SubmitButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.SubmitButton.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SubmitButton.ForeColor = System.Drawing.Color.White
+        Me.SubmitButton.HoverState.Parent = Me.SubmitButton
+        Me.SubmitButton.Location = New System.Drawing.Point(493, 649)
+        Me.SubmitButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.SubmitButton.Name = "SubmitButton"
+        Me.SubmitButton.ShadowDecoration.Parent = Me.SubmitButton
+        Me.SubmitButton.Size = New System.Drawing.Size(188, 42)
+        Me.SubmitButton.TabIndex = 137
+        Me.SubmitButton.Text = "PRINT"
+        '
         'donor_reciept
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(1080, 768)
+        Me.Controls.Add(Me.SubmitButton)
         Me.Controls.Add(Me.plasmaIDLabel)
         Me.Controls.Add(Me.dateLabel)
         Me.Controls.Add(Me.Guna2HtmlLabel17)
@@ -585,4 +607,5 @@ Partial Class donor_reciept
     Friend WithEvents LogoutBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2BorderlessForm2 As Guna.UI2.WinForms.Guna2BorderlessForm
+    Friend WithEvents SubmitButton As Guna.UI2.WinForms.Guna2Button
 End Class
