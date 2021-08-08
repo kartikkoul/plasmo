@@ -40,9 +40,6 @@ Partial Class donor_history
         Me.Newdataset = New plasmo.newdataset()
         Me.TableBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.TableTableAdapter = New plasmo.newdatasetTableAdapters.TableTableAdapter()
-        Me.Guna2ToggleSwitch1 = New Guna.UI2.WinForms.Guna2ToggleSwitch()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.plasma_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.donor_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -50,6 +47,9 @@ Partial Class donor_history
         Me.blood_group = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.anti_body = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.donation_time = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -58,6 +58,7 @@ Partial Class donor_history
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -241,54 +242,6 @@ Partial Class donor_history
         '
         Me.TableTableAdapter.ClearBeforeFill = True
         '
-        'Guna2ToggleSwitch1
-        '
-        Me.Guna2ToggleSwitch1.Animated = True
-        Me.Guna2ToggleSwitch1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ToggleSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.Guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.Guna2ToggleSwitch1.CheckedState.Parent = Me.Guna2ToggleSwitch1
-        Me.Guna2ToggleSwitch1.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.Guna2ToggleSwitch1.Location = New System.Drawing.Point(521, 154)
-        Me.Guna2ToggleSwitch1.Name = "Guna2ToggleSwitch1"
-        Me.Guna2ToggleSwitch1.ShadowDecoration.Parent = Me.Guna2ToggleSwitch1
-        Me.Guna2ToggleSwitch1.Size = New System.Drawing.Size(39, 18)
-        Me.Guna2ToggleSwitch1.TabIndex = 68
-        Me.Guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
-        Me.Guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
-        Me.Guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.Guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.Guna2ToggleSwitch1.UncheckedState.Parent = Me.Guna2ToggleSwitch1
-        '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.AutoSize = False
-        Me.Guna2HtmlLabel1.AutoSizeHeightOnly = True
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(449, 154)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(71, 18)
-        Me.Guna2HtmlLabel1.TabIndex = 69
-        Me.Guna2HtmlLabel1.Text = "DONOR"
-        '
-        'Guna2HtmlLabel2
-        '
-        Me.Guna2HtmlLabel2.AutoSize = False
-        Me.Guna2HtmlLabel2.AutoSizeHeightOnly = True
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(577, 154)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(112, 17)
-        Me.Guna2HtmlLabel2.TabIndex = 70
-        Me.Guna2HtmlLabel2.Text = "RECIEVER"
-        '
         'Guna2DataGridView1
         '
         Me.Guna2DataGridView1.AllowUserToAddRows = False
@@ -410,6 +363,43 @@ Partial Class donor_history
         Me.donation_time.ReadOnly = True
         Me.donation_time.Width = 156
         '
+        'Guna2HtmlLabel2
+        '
+        Me.Guna2HtmlLabel2.AutoSize = False
+        Me.Guna2HtmlLabel2.AutoSizeHeightOnly = True
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(567, 164)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(83, 18)
+        Me.Guna2HtmlLabel2.TabIndex = 88
+        Me.Guna2HtmlLabel2.Text = "RECIEVER"
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.AutoSize = False
+        Me.Guna2HtmlLabel1.AutoSizeHeightOnly = True
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(459, 164)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(60, 18)
+        Me.Guna2HtmlLabel1.TabIndex = 87
+        Me.Guna2HtmlLabel1.Text = "DONOR"
+        '
+        'Guna2PictureBox3
+        '
+        Me.Guna2PictureBox3.Image = Global.plasmo.My.Resources.Resources.Donor_Switch01
+        Me.Guna2PictureBox3.ImageRotate = 0!
+        Me.Guna2PictureBox3.Location = New System.Drawing.Point(525, 162)
+        Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
+        Me.Guna2PictureBox3.ShadowDecoration.Parent = Me.Guna2PictureBox3
+        Me.Guna2PictureBox3.Size = New System.Drawing.Size(36, 22)
+        Me.Guna2PictureBox3.TabIndex = 89
+        Me.Guna2PictureBox3.TabStop = False
+        '
         'Guna2CircleButton2
         '
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
@@ -502,10 +492,10 @@ Partial Class donor_history
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1076, 624)
-        Me.Controls.Add(Me.Guna2DataGridView1)
+        Me.Controls.Add(Me.Guna2PictureBox3)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.Controls.Add(Me.Guna2ToggleSwitch1)
+        Me.Controls.Add(Me.Guna2DataGridView1)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.Guna2Panel1)
@@ -521,6 +511,7 @@ Partial Class donor_history
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -542,9 +533,6 @@ Partial Class donor_history
     Friend WithEvents Newdataset As newdataset
     Friend WithEvents TableBindingSource As BindingSource
     Friend WithEvents TableTableAdapter As newdatasetTableAdapters.TableTableAdapter
-    Friend WithEvents Guna2ToggleSwitch1 As Guna.UI2.WinForms.Guna2ToggleSwitch
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents plasma_id As DataGridViewTextBoxColumn
     Friend WithEvents donor_name As DataGridViewTextBoxColumn
@@ -552,4 +540,7 @@ Partial Class donor_history
     Friend WithEvents blood_group As DataGridViewTextBoxColumn
     Friend WithEvents anti_body As DataGridViewTextBoxColumn
     Friend WithEvents donation_time As DataGridViewTextBoxColumn
+    Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
