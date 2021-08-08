@@ -89,6 +89,7 @@ Public Class Reciever_form
         Dim cmd As New SqlCommand("select plasma_id, price from donor_records where blood_group='" & blood_group & "', sold='N'", con)
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
+        con.Close()
 
         If dr.HasRows Then
             Dim plasmaID = dr(0)("plasma_id")
@@ -102,14 +103,13 @@ Public Class Reciever_form
             con.Open()
             updateRecieverQuery.ExecuteNonQuery()
             updateDonorQuery.ExecuteNonQuery()
+            con.Close()
+            reciever_reciept.Show()
+            Me.Hide()
         Else
             PlasmaNotAvailable.Show()
             Me.Show()
         End If
-
-
-        MsgBox("Reciever Registered")
-        con.Close()
     End Sub
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs)

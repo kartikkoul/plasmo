@@ -153,6 +153,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>newdataset.xsd</DependentUpon>
     </Compile>
+    <Compile Include="PlasmaNotAvailable.Designer.vb">
+      <DependentUpon>PlasmaNotAvailable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlasmaNotAvailable.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reciever form.Designer.vb">
       <DependentUpon>Reciever form.vb</DependentUpon>
     </Compile>
@@ -163,6 +169,12 @@
       <DependentUpon>reciever_history.vb</DependentUpon>
     </Compile>
     <Compile Include="reciever_history.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="reciever_reciept.Designer.vb">
+      <DependentUpon>reciever_reciept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="reciever_reciept.vb">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>

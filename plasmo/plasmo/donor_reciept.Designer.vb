@@ -241,6 +241,7 @@ Partial Class donor_reciept
         Me.Namelabel.Name = "Namelabel"
         Me.Namelabel.Size = New System.Drawing.Size(3, 2)
         Me.Namelabel.TabIndex = 119
+        Me.Namelabel.Text = Nothing
         '
         'Guna2HtmlLabel1
         '
@@ -434,6 +435,7 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(3, 2)
         Me.Guna2HtmlLabel2.TabIndex = 120
+        Me.Guna2HtmlLabel2.Text = Nothing
         '
         'Guna2BorderlessForm2
         '
@@ -538,7 +540,7 @@ Partial Class donor_reciept
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1080, 768)
+        Me.ClientSize = New System.Drawing.Size(1082, 624)
         Me.Controls.Add(Me.SubmitButton)
         Me.Controls.Add(Me.plasmaIDLabel)
         Me.Controls.Add(Me.dateLabel)
@@ -565,6 +567,7 @@ Partial Class donor_reciept
         Me.Controls.Add(Me.Guna2HtmlLabel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "donor_reciept"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.Guna2Panel1.ResumeLayout(False)
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
