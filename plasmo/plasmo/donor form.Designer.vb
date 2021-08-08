@@ -747,6 +747,7 @@ Partial Class Donor_form
         Me.lNameErrorText.Size = New System.Drawing.Size(137, 21)
         Me.lNameErrorText.TabIndex = 72
         Me.lNameErrorText.Text = "This field can't be empty"
+        Me.lNameErrorText.Visible = False
         '
         'ageErrorText
         '
@@ -760,6 +761,7 @@ Partial Class Donor_form
         Me.ageErrorText.Size = New System.Drawing.Size(152, 21)
         Me.ageErrorText.TabIndex = 73
         Me.ageErrorText.Text = "Age must be between 17-71"
+        Me.ageErrorText.Visible = False
         '
         'phNumberErrorText
         '
@@ -773,6 +775,7 @@ Partial Class Donor_form
         Me.phNumberErrorText.Size = New System.Drawing.Size(194, 21)
         Me.phNumberErrorText.TabIndex = 74
         Me.phNumberErrorText.Text = "Please enter a valid phone number"
+        Me.phNumberErrorText.Visible = False
         '
         'emailErrortext
         '
@@ -786,6 +789,7 @@ Partial Class Donor_form
         Me.emailErrortext.Size = New System.Drawing.Size(191, 21)
         Me.emailErrortext.TabIndex = 75
         Me.emailErrortext.Text = "Please enter a valid email address"
+        Me.emailErrortext.Visible = False
         '
         'cityErrorText
         '
@@ -799,6 +803,7 @@ Partial Class Donor_form
         Me.cityErrorText.Size = New System.Drawing.Size(137, 21)
         Me.cityErrorText.TabIndex = 76
         Me.cityErrorText.Text = "This field can't be empty"
+        Me.cityErrorText.Visible = False
         '
         'addressErrorText
         '
@@ -812,6 +817,7 @@ Partial Class Donor_form
         Me.addressErrorText.Size = New System.Drawing.Size(137, 21)
         Me.addressErrorText.TabIndex = 77
         Me.addressErrorText.Text = "This field can't be empty"
+        Me.addressErrorText.Visible = False
         '
         'Donor_form
         '
