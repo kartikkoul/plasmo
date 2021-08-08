@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Form1
+Partial Class donor_reciept
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -24,8 +24,24 @@ Partial Class Form1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.plasmaIDLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.dateLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel17 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.bloodGroupLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel15 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.emailLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel9 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.addressLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel11 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.phNumberLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel13 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.sexLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.ageLabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Namelabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -33,16 +49,13 @@ Partial Class Form1
         Me.HistoryBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.NameText = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -52,36 +65,193 @@ Partial Class Form1
         '
         Me.Guna2BorderlessForm1.ContainerControl = Me
         '
-        'Guna2Panel1
+        'plasmaIDLabel
         '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
-        Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
-        Me.Guna2Panel1.Controls.Add(Me.RecieverBtnMenu)
-        Me.Guna2Panel1.Controls.Add(Me.DonorBtnMenu)
-        Me.Guna2Panel1.Controls.Add(Me.QueueBtnMenu)
-        Me.Guna2Panel1.Controls.Add(Me.HistoryBtnMenu)
-        Me.Guna2Panel1.Controls.Add(Me.DashboardBtnMenu)
-        Me.Guna2Panel1.Controls.Add(Me.LogoutBtnMenu)
-        Me.Guna2Panel1.Location = New System.Drawing.Point(0, 74)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
-        Me.Guna2Panel1.TabIndex = 95
+        Me.plasmaIDLabel.BackColor = System.Drawing.Color.Transparent
+        Me.plasmaIDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.plasmaIDLabel.Location = New System.Drawing.Point(764, 149)
+        Me.plasmaIDLabel.Name = "plasmaIDLabel"
+        Me.plasmaIDLabel.Size = New System.Drawing.Size(98, 26)
+        Me.plasmaIDLabel.TabIndex = 136
+        Me.plasmaIDLabel.Text = "(E0801001)"
         '
-        'Guna2PictureBox2
+        'dateLabel
         '
-        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1014, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
-        Me.Guna2PictureBox2.TabIndex = 88
-        Me.Guna2PictureBox2.TabStop = False
+        Me.dateLabel.BackColor = System.Drawing.Color.Transparent
+        Me.dateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dateLabel.Location = New System.Drawing.Point(726, 480)
+        Me.dateLabel.Name = "dateLabel"
+        Me.dateLabel.Size = New System.Drawing.Size(187, 27)
+        Me.dateLabel.TabIndex = 135
+        Me.dateLabel.Text = "Guna2HtmlLabel16"
+        '
+        'Guna2HtmlLabel17
+        '
+        Me.Guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel17.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel17.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel17.Location = New System.Drawing.Point(643, 480)
+        Me.Guna2HtmlLabel17.Name = "Guna2HtmlLabel17"
+        Me.Guna2HtmlLabel17.Size = New System.Drawing.Size(66, 27)
+        Me.Guna2HtmlLabel17.TabIndex = 134
+        Me.Guna2HtmlLabel17.Text = "Date :"
+        '
+        'bloodGroupLabel
+        '
+        Me.bloodGroupLabel.BackColor = System.Drawing.Color.Transparent
+        Me.bloodGroupLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bloodGroupLabel.Location = New System.Drawing.Point(360, 480)
+        Me.bloodGroupLabel.Name = "bloodGroupLabel"
+        Me.bloodGroupLabel.Size = New System.Drawing.Size(187, 27)
+        Me.bloodGroupLabel.TabIndex = 133
+        Me.bloodGroupLabel.Text = "Guna2HtmlLabel14"
+        '
+        'Guna2HtmlLabel15
+        '
+        Me.Guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel15.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel15.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(195, 480)
+        Me.Guna2HtmlLabel15.Name = "Guna2HtmlLabel15"
+        Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(148, 27)
+        Me.Guna2HtmlLabel15.TabIndex = 132
+        Me.Guna2HtmlLabel15.Text = "Blood Group :"
+        '
+        'emailLabel
+        '
+        Me.emailLabel.BackColor = System.Drawing.Color.Transparent
+        Me.emailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailLabel.Location = New System.Drawing.Point(726, 410)
+        Me.emailLabel.Name = "emailLabel"
+        Me.emailLabel.Size = New System.Drawing.Size(175, 27)
+        Me.emailLabel.TabIndex = 131
+        Me.emailLabel.Text = "Guna2HtmlLabel8"
+        '
+        'Guna2HtmlLabel9
+        '
+        Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(643, 410)
+        Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(68, 27)
+        Me.Guna2HtmlLabel9.TabIndex = 130
+        Me.Guna2HtmlLabel9.Text = "Email:"
+        '
+        'addressLabel
+        '
+        Me.addressLabel.BackColor = System.Drawing.Color.Transparent
+        Me.addressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addressLabel.Location = New System.Drawing.Point(752, 318)
+        Me.addressLabel.Name = "addressLabel"
+        Me.addressLabel.Size = New System.Drawing.Size(187, 27)
+        Me.addressLabel.TabIndex = 129
+        Me.addressLabel.Text = "Guna2HtmlLabel10"
+        '
+        'Guna2HtmlLabel11
+        '
+        Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(643, 318)
+        Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
+        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(103, 27)
+        Me.Guna2HtmlLabel11.TabIndex = 128
+        Me.Guna2HtmlLabel11.Text = "Address :"
+        '
+        'phNumberLabel
+        '
+        Me.phNumberLabel.BackColor = System.Drawing.Color.Transparent
+        Me.phNumberLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.phNumberLabel.Location = New System.Drawing.Point(814, 237)
+        Me.phNumberLabel.Name = "phNumberLabel"
+        Me.phNumberLabel.Size = New System.Drawing.Size(187, 27)
+        Me.phNumberLabel.TabIndex = 127
+        Me.phNumberLabel.Text = "Guna2HtmlLabel12"
+        '
+        'Guna2HtmlLabel13
+        '
+        Me.Guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel13.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel13.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel13.Location = New System.Drawing.Point(643, 237)
+        Me.Guna2HtmlLabel13.Name = "Guna2HtmlLabel13"
+        Me.Guna2HtmlLabel13.Size = New System.Drawing.Size(165, 27)
+        Me.Guna2HtmlLabel13.TabIndex = 126
+        Me.Guna2HtmlLabel13.Text = "Phone Number:"
+        '
+        'sexLabel
+        '
+        Me.sexLabel.BackColor = System.Drawing.Color.Transparent
+        Me.sexLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sexLabel.Location = New System.Drawing.Point(278, 410)
+        Me.sexLabel.Name = "sexLabel"
+        Me.sexLabel.Size = New System.Drawing.Size(175, 27)
+        Me.sexLabel.TabIndex = 125
+        Me.sexLabel.Text = "Guna2HtmlLabel6"
+        '
+        'Guna2HtmlLabel7
+        '
+        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(195, 410)
+        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(57, 27)
+        Me.Guna2HtmlLabel7.TabIndex = 124
+        Me.Guna2HtmlLabel7.Text = "Sex :"
+        '
+        'ageLabel
+        '
+        Me.ageLabel.BackColor = System.Drawing.Color.Transparent
+        Me.ageLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ageLabel.Location = New System.Drawing.Point(278, 318)
+        Me.ageLabel.Name = "ageLabel"
+        Me.ageLabel.Size = New System.Drawing.Size(175, 27)
+        Me.ageLabel.TabIndex = 123
+        Me.ageLabel.Text = "Guna2HtmlLabel3"
+        '
+        'Guna2HtmlLabel5
+        '
+        Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(195, 318)
+        Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(58, 27)
+        Me.Guna2HtmlLabel5.TabIndex = 122
+        Me.Guna2HtmlLabel5.Text = "Age :"
+        '
+        'Guna2HtmlLabel4
+        '
+        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(422, 149)
+        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(330, 26)
+        Me.Guna2HtmlLabel4.TabIndex = 121
+        Me.Guna2HtmlLabel4.Text = "Thanks for your generous donation"
+        '
+        'Namelabel
+        '
+        Me.Namelabel.BackColor = System.Drawing.Color.Transparent
+        Me.Namelabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Namelabel.Location = New System.Drawing.Point(278, 237)
+        Me.Namelabel.Name = "Namelabel"
+        Me.Namelabel.Size = New System.Drawing.Size(175, 27)
+        Me.Namelabel.TabIndex = 119
+        Me.Namelabel.Text = "Guna2HtmlLabel2"
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(195, 237)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(77, 27)
+        Me.Guna2HtmlLabel1.TabIndex = 118
+        Me.Guna2HtmlLabel1.Text = "Name :"
         '
         'Guna2Panel2
         '
@@ -225,6 +395,51 @@ Partial Class Form1
         Me.LogoutBtnMenu.TabIndex = 10
         Me.LogoutBtnMenu.Text = "LOGOUT"
         '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.Guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
+        Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox2)
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
+        Me.Guna2Panel1.Controls.Add(Me.RecieverBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.DonorBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.QueueBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.HistoryBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.DashboardBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.LogoutBtnMenu)
+        Me.Guna2Panel1.Location = New System.Drawing.Point(-1, 74)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
+        Me.Guna2Panel1.TabIndex = 117
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1014, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
+        Me.Guna2PictureBox2.TabIndex = 88
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'Guna2HtmlLabel2
+        '
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(278, 237)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(175, 27)
+        Me.Guna2HtmlLabel2.TabIndex = 120
+        Me.Guna2HtmlLabel2.Text = "Guna2HtmlLabel2"
+        '
+        'Guna2BorderlessForm2
+        '
+        Me.Guna2BorderlessForm2.ContainerControl = Me
+        '
         'Guna2CircleButton2
         '
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
@@ -248,14 +463,14 @@ Partial Class Form1
         Me.Guna2CircleButton2.HoverState.Parent = Me.Guna2CircleButton2
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
-        Me.Guna2CircleButton2.Location = New System.Drawing.Point(994, 10)
+        Me.Guna2CircleButton2.Location = New System.Drawing.Point(993, 10)
         Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CircleButton2.ShadowDecoration.Parent = Me.Guna2CircleButton2
         Me.Guna2CircleButton2.Size = New System.Drawing.Size(30, 32)
-        Me.Guna2CircleButton2.TabIndex = 94
+        Me.Guna2CircleButton2.TabIndex = 116
         '
         'CloseButton
         '
@@ -278,115 +493,57 @@ Partial Class Form1
         Me.CloseButton.HoverState.Parent = Me.CloseButton
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
-        Me.CloseButton.Location = New System.Drawing.Point(1041, 10)
+        Me.CloseButton.Location = New System.Drawing.Point(1040, 10)
         Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
         Me.CloseButton.Size = New System.Drawing.Size(30, 32)
-        Me.CloseButton.TabIndex = 93
+        Me.CloseButton.TabIndex = 115
         '
         'Guna2PictureBox1
         '
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 11)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(25, 11)
         Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
-        Me.Guna2PictureBox1.TabIndex = 92
+        Me.Guna2PictureBox1.TabIndex = 114
         Me.Guna2PictureBox1.TabStop = False
         '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(139, 195)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(59, 22)
-        Me.Guna2HtmlLabel1.TabIndex = 96
-        Me.Guna2HtmlLabel1.Text = "Name :"
-        '
-        'NameText
-        '
-        Me.NameText.BackColor = System.Drawing.Color.Transparent
-        Me.NameText.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.NameText.Location = New System.Drawing.Point(204, 195)
-        Me.NameText.Name = "NameText"
-        Me.NameText.Size = New System.Drawing.Size(133, 22)
-        Me.NameText.TabIndex = 97
-        Me.NameText.Text = "Guna2HtmlLabel2"
-        '
-        'Guna2HtmlLabel4
-        '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(435, 154)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(282, 22)
-        Me.Guna2HtmlLabel4.TabIndex = 98
-        Me.Guna2HtmlLabel4.Text = "Thanks for your generous donation"
-        '
-        'Guna2HtmlLabel2
-        '
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(204, 240)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(133, 22)
-        Me.Guna2HtmlLabel2.TabIndex = 100
-        Me.Guna2HtmlLabel2.Text = "Guna2HtmlLabel2"
-        '
-        'Guna2HtmlLabel3
-        '
-        Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(139, 240)
-        Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(59, 22)
-        Me.Guna2HtmlLabel3.TabIndex = 99
-        Me.Guna2HtmlLabel3.Text = "Name :"
-        '
-        'Guna2HtmlLabel5
-        '
-        Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(508, 214)
-        Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(133, 22)
-        Me.Guna2HtmlLabel5.TabIndex = 102
-        Me.Guna2HtmlLabel5.Text = "Guna2HtmlLabel2"
-        '
-        'Guna2HtmlLabel6
-        '
-        Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(443, 214)
-        Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
-        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(59, 22)
-        Me.Guna2HtmlLabel6.TabIndex = 101
-        Me.Guna2HtmlLabel6.Text = "Name :"
-        '
-        'Form1
+        'donor_reciept
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(1084, 450)
+        Me.ClientSize = New System.Drawing.Size(1080, 768)
+        Me.Controls.Add(Me.plasmaIDLabel)
+        Me.Controls.Add(Me.dateLabel)
+        Me.Controls.Add(Me.Guna2HtmlLabel17)
+        Me.Controls.Add(Me.bloodGroupLabel)
+        Me.Controls.Add(Me.Guna2HtmlLabel15)
+        Me.Controls.Add(Me.emailLabel)
+        Me.Controls.Add(Me.Guna2HtmlLabel9)
+        Me.Controls.Add(Me.addressLabel)
+        Me.Controls.Add(Me.Guna2HtmlLabel11)
+        Me.Controls.Add(Me.phNumberLabel)
+        Me.Controls.Add(Me.Guna2HtmlLabel13)
+        Me.Controls.Add(Me.sexLabel)
+        Me.Controls.Add(Me.Guna2HtmlLabel7)
+        Me.Controls.Add(Me.ageLabel)
         Me.Controls.Add(Me.Guna2HtmlLabel5)
-        Me.Controls.Add(Me.Guna2HtmlLabel6)
-        Me.Controls.Add(Me.Guna2HtmlLabel2)
-        Me.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Controls.Add(Me.Guna2HtmlLabel4)
-        Me.Controls.Add(Me.NameText)
+        Me.Controls.Add(Me.Namelabel)
         Me.Controls.Add(Me.Guna2HtmlLabel1)
-        Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.Guna2PictureBox1)
+        Me.Controls.Add(Me.Guna2Panel1)
+        Me.Controls.Add(Me.Guna2HtmlLabel2)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
-        Me.Name = "Form1"
-        Me.Text = "Form1"
+        Me.Name = "donor_reciept"
+        Me.Text = "Form2"
         Me.Guna2Panel1.ResumeLayout(False)
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
@@ -396,6 +553,27 @@ Partial Class Form1
     End Sub
 
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
+    Friend WithEvents plasmaIDLabel As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents dateLabel As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel17 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents bloodGroupLabel As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel15 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents emailLabel As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel9 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents addressLabel As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel11 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents phNumberLabel As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel13 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents sexLabel As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents ageLabel As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Public WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Namelabel As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2CircleButton2 As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
@@ -405,14 +583,6 @@ Partial Class Form1
     Friend WithEvents HistoryBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DashboardBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents LogoutBtnMenu As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents Guna2CircleButton2 As Guna.UI2.WinForms.Guna2CircleButton
-    Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
-    Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents NameText As Guna.UI2.WinForms.Guna2HtmlLabel
-    Public WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2BorderlessForm2 As Guna.UI2.WinForms.Guna2BorderlessForm
 End Class

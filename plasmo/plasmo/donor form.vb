@@ -117,7 +117,7 @@ Public Class donorForm
         End If
         Dim time As Date = Date.UtcNow
         Dim donor_id As String = GenerateDonorID()
-
+        donor_reciept.plasmaIDLabel.Text = donor_id
 
         Dim selected_blood_group As String = bgroup.SelectedItem
         Dim blood_group As String = "AP"
