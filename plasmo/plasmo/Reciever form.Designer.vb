@@ -277,7 +277,7 @@ Partial Class Reciever_form
         Me.bloodGroup.Items.AddRange(New Object() {"A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"})
         Me.bloodGroup.ItemsAppearance.Parent = Me.bloodGroup
         Me.bloodGroup.Location = New System.Drawing.Point(719, 322)
-        Me.bloodGroup.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.bloodGroup.Margin = New System.Windows.Forms.Padding(2)
         Me.bloodGroup.Name = "bloodGroup"
         Me.bloodGroup.ShadowDecoration.Parent = Me.bloodGroup
         Me.bloodGroup.Size = New System.Drawing.Size(218, 36)
@@ -399,7 +399,7 @@ Partial Class Reciever_form
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
         Me.Guna2Button1.Location = New System.Drawing.Point(446, 540)
-        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Button1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
         Me.Guna2Button1.Size = New System.Drawing.Size(188, 42)
@@ -423,7 +423,7 @@ Partial Class Reciever_form
         Me.gender.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.gender.ItemsAppearance.Parent = Me.gender
         Me.gender.Location = New System.Drawing.Point(719, 428)
-        Me.gender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.gender.Margin = New System.Windows.Forms.Padding(2)
         Me.gender.Name = "gender"
         Me.gender.ShadowDecoration.Parent = Me.gender
         Me.gender.Size = New System.Drawing.Size(218, 36)
@@ -443,7 +443,7 @@ Partial Class Reciever_form
         Me.Guna2Panel1.Controls.Add(Me.DashboardBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.LogoutBtnMenu)
         Me.Guna2Panel1.Location = New System.Drawing.Point(0, 74)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
@@ -454,7 +454,7 @@ Partial Class Reciever_form
         Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
         Me.Guna2PictureBox2.ImageRotate = 0!
         Me.Guna2PictureBox2.Location = New System.Drawing.Point(1014, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
@@ -465,7 +465,7 @@ Partial Class Reciever_form
         '
         Me.Guna2Panel2.BackColor = System.Drawing.Color.White
         Me.Guna2Panel2.Location = New System.Drawing.Point(327, 41)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
         Me.Guna2Panel2.Size = New System.Drawing.Size(64, 3)
@@ -486,7 +486,7 @@ Partial Class Reciever_form
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
-        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
@@ -508,7 +508,7 @@ Partial Class Reciever_form
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
-        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.DonorBtnMenu.Name = "DonorBtnMenu"
         Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
@@ -530,7 +530,7 @@ Partial Class Reciever_form
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
-        Me.QueueBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.QueueBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.QueueBtnMenu.Name = "QueueBtnMenu"
         Me.QueueBtnMenu.ShadowDecoration.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Size = New System.Drawing.Size(125, 31)
@@ -552,7 +552,7 @@ Partial Class Reciever_form
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
-        Me.HistoryBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HistoryBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.HistoryBtnMenu.Name = "HistoryBtnMenu"
         Me.HistoryBtnMenu.ShadowDecoration.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Size = New System.Drawing.Size(125, 31)
@@ -574,7 +574,7 @@ Partial Class Reciever_form
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
-        Me.DashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.DashboardBtnMenu.Name = "DashboardBtnMenu"
         Me.DashboardBtnMenu.ShadowDecoration.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Size = New System.Drawing.Size(163, 31)
@@ -596,7 +596,7 @@ Partial Class Reciever_form
         Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
-        Me.LogoutBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LogoutBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.LogoutBtnMenu.Name = "LogoutBtnMenu"
         Me.LogoutBtnMenu.ShadowDecoration.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Size = New System.Drawing.Size(188, 42)
@@ -627,7 +627,7 @@ Partial Class Reciever_form
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
         Me.Guna2CircleButton2.Location = New System.Drawing.Point(994, 10)
-        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
@@ -657,7 +657,7 @@ Partial Class Reciever_form
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
         Me.CloseButton.Location = New System.Drawing.Point(1041, 10)
-        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
@@ -669,7 +669,7 @@ Partial Class Reciever_form
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
         Me.Guna2PictureBox1.ImageRotate = 0!
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 11)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
@@ -707,7 +707,7 @@ Partial Class Reciever_form
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Margin = New System.Windows.Forms.Padding(2)
         Me.Name = "Reciever_form"
         Me.Text = "Reciever_form"
         Me.Guna2Panel1.ResumeLayout(False)

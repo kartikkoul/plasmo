@@ -148,7 +148,7 @@ Public Class Donor_form
         donor_history.Refresh()
         Dashboard.Refresh()
         MsgBox("Donor Registered")
-            con.Close()
+        con.Close()
         'End If
 
     End Sub
