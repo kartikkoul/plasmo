@@ -235,6 +235,8 @@
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
     <Content Include="Frame 214.ico" />
+    <None Include="Resources\Reciever Switch.png" />
+    <None Include="Resources\Switch %281%29.png" />
     <None Include="Resources\log-out %283%29.png" />
     <None Include="Resources\log-out %282%29.png" />
     <None Include="Resources\Line 10.png" />

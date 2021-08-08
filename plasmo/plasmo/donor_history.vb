@@ -17,7 +17,6 @@ Public Class donor_history
     End Sub
 
     Private Sub DonorHistory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Guna2ToggleSwitch1.Checked = False
         Dim li As Integer
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         con.Open()
@@ -71,6 +70,7 @@ Public Class donor_history
 
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles dashboardBtnMenu.Click
         Dashboard.Show()
+        Me.Hide()
     End Sub
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles donorBtnMenu.Click
         Donor_form.Show()
@@ -100,15 +100,12 @@ Public Class donor_history
 
     End Sub
 
-    Private Sub Guna2ToggleSwitch1_CheckedChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Guna2ToggleSwitch1_CheckedChanged_1(sender As Object, e As EventArgs) Handles Guna2ToggleSwitch1.CheckedChanged
-
-        Me.Hide()
+    Private Sub Guna2ToggleSwitch1_CheckedChanged(sender As Object, e As EventArgs) Handles Guna2ToggleSwitch1.CheckedChanged
         reciever_history.Show()
+        Me.Hide()
     End Sub
+
+
 
     Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs)
 

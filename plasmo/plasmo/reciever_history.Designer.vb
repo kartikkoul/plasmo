@@ -23,103 +23,43 @@ Partial Class reciever_history
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
-        Dim DataGridViewCellStyle6 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle7 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle8 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle9 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
-        Dim DataGridViewCellStyle10 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle1 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle2 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle3 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle4 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(reciever_history))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
-        Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Button5 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button4 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button6 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button7 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Button8 = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Button9 = New Guna.UI2.WinForms.Guna2Button()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2ToggleSwitch1 = New Guna.UI2.WinForms.Guna2ToggleSwitch()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
         Me.plasma_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.reciever_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.age = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.blood_group = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.recieption_time = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2ToggleSwitch1 = New Guna.UI2.WinForms.Guna2ToggleSwitch()
         Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
         '
         Me.Guna2BorderlessForm1.ContainerControl = Me
-        '
-        'Guna2CircleButton2
-        '
-        Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.BorderColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.CheckedState.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.CustomImages.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2CircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2CircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2CircleButton2.DisabledState.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Guna2CircleButton2.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.HoverState.BorderColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.HoverState.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.HoverState.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.HoverState.ForeColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.HoverState.Image = Global.plasmo.My.Resources.Resources.Line_10
-        Me.Guna2CircleButton2.HoverState.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
-        Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
-        Me.Guna2CircleButton2.Location = New System.Drawing.Point(990, 10)
-        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
-        Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
-        Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.Guna2CircleButton2.ShadowDecoration.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.Size = New System.Drawing.Size(30, 32)
-        Me.Guna2CircleButton2.TabIndex = 77
-        '
-        'CloseButton
-        '
-        Me.CloseButton.BackColor = System.Drawing.Color.Transparent
-        Me.CloseButton.CheckedState.Parent = Me.CloseButton
-        Me.CloseButton.CustomImages.Parent = Me.CloseButton
-        Me.CloseButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.CloseButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.CloseButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.CloseButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.CloseButton.DisabledState.Parent = Me.CloseButton
-        Me.CloseButton.FillColor = System.Drawing.Color.Transparent
-        Me.CloseButton.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.CloseButton.ForeColor = System.Drawing.Color.Transparent
-        Me.CloseButton.HoverState.BorderColor = System.Drawing.Color.Transparent
-        Me.CloseButton.HoverState.CustomBorderColor = System.Drawing.Color.Transparent
-        Me.CloseButton.HoverState.FillColor = System.Drawing.Color.Transparent
-        Me.CloseButton.HoverState.ForeColor = System.Drawing.Color.Transparent
-        Me.CloseButton.HoverState.Image = Global.plasmo.My.Resources.Resources.Component_3__1_
-        Me.CloseButton.HoverState.Parent = Me.CloseButton
-        Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
-        Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
-        Me.CloseButton.Location = New System.Drawing.Point(1036, 10)
-        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
-        Me.CloseButton.Name = "CloseButton"
-        Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
-        Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
-        Me.CloseButton.Size = New System.Drawing.Size(30, 32)
-        Me.CloseButton.TabIndex = 76
         '
         'Guna2Panel1
         '
@@ -238,19 +178,6 @@ Partial Class reciever_history
         Me.Guna2Button7.TabIndex = 81
         Me.Guna2Button7.Text = "HISTORY"
         '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
-        Me.Guna2PictureBox2.TabIndex = 80
-        Me.Guna2PictureBox2.TabStop = False
-        '
         'Guna2Button8
         '
         Me.Guna2Button8.BorderRadius = 6
@@ -295,18 +222,6 @@ Partial Class reciever_history
         Me.Guna2Button9.TabIndex = 10
         Me.Guna2Button9.Text = "LOGOUT"
         '
-        'Guna2PictureBox1
-        '
-        Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 11)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
-        Me.Guna2PictureBox1.TabIndex = 74
-        Me.Guna2PictureBox1.TabStop = False
-        '
         'Guna2HtmlLabel2
         '
         Me.Guna2HtmlLabel2.AutoSize = False
@@ -333,63 +248,41 @@ Partial Class reciever_history
         Me.Guna2HtmlLabel1.TabIndex = 83
         Me.Guna2HtmlLabel1.Text = "DONOR"
         '
-        'Guna2ToggleSwitch1
-        '
-        Me.Guna2ToggleSwitch1.Animated = True
-        Me.Guna2ToggleSwitch1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2ToggleSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
-        Me.Guna2ToggleSwitch1.Checked = True
-        Me.Guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(132, Byte), Integer))
-        Me.Guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.Guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.Guna2ToggleSwitch1.CheckedState.Parent = Me.Guna2ToggleSwitch1
-        Me.Guna2ToggleSwitch1.Location = New System.Drawing.Point(521, 154)
-        Me.Guna2ToggleSwitch1.Name = "Guna2ToggleSwitch1"
-        Me.Guna2ToggleSwitch1.ShadowDecoration.Parent = Me.Guna2ToggleSwitch1
-        Me.Guna2ToggleSwitch1.Size = New System.Drawing.Size(39, 18)
-        Me.Guna2ToggleSwitch1.TabIndex = 82
-        Me.Guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
-        Me.Guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
-        Me.Guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.Guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.Guna2ToggleSwitch1.UncheckedState.Parent = Me.Guna2ToggleSwitch1
-        '
         'Guna2DataGridView1
         '
         Me.Guna2DataGridView1.AllowUserToAddRows = False
         Me.Guna2DataGridView1.AllowUserToDeleteRows = False
         Me.Guna2DataGridView1.AllowUserToResizeColumns = False
         Me.Guna2DataGridView1.AllowUserToResizeRows = False
-        DataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        DataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.Black
-        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle6
+        DataGridViewCellStyle1.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        DataGridViewCellStyle1.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle1.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle1.SelectionForeColor = System.Drawing.Color.Black
+        Me.Guna2DataGridView1.AlternatingRowsDefaultCellStyle = DataGridViewCellStyle1
         Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle7.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle7.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle7.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight
-        DataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText
-        DataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle7
+        DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
+        DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
+        DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.Guna2DataGridView1.ColumnHeadersHeight = 21
         Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.plasma_id, Me.reciever_name, Me.age, Me.blood_group, Me.recieption_time})
         Me.Guna2DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand
-        DataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle8.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        DataGridViewCellStyle8.Font = New System.Drawing.Font("Segoe UI", 10.5!)
-        DataGridViewCellStyle8.ForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle8.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        DataGridViewCellStyle8.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
-        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle8
+        DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        DataGridViewCellStyle3.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlLight
+        DataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
+        DataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.[False]
+        Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Me.Guna2DataGridView1.EditMode = System.Windows.Forms.DataGridViewEditMode.EditProgrammatically
         Me.Guna2DataGridView1.EnableHeadersVisualStyles = False
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
@@ -398,19 +291,19 @@ Partial Class reciever_history
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.ReadOnly = True
         Me.Guna2DataGridView1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
-        DataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
-        DataGridViewCellStyle9.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        DataGridViewCellStyle9.ForeColor = System.Drawing.SystemColors.WindowText
-        DataGridViewCellStyle9.SelectionBackColor = System.Drawing.Color.White
-        DataGridViewCellStyle9.SelectionForeColor = System.Drawing.Color.Black
-        DataGridViewCellStyle9.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
-        Me.Guna2DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle9
+        DataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
+        DataGridViewCellStyle4.BackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText
+        DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
+        DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
+        DataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
+        Me.Guna2DataGridView1.RowHeadersDefaultCellStyle = DataGridViewCellStyle4
         Me.Guna2DataGridView1.RowHeadersVisible = False
         Me.Guna2DataGridView1.RowHeadersWidth = 42
-        DataGridViewCellStyle10.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        DataGridViewCellStyle10.ForeColor = System.Drawing.Color.Black
-        Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle10
+        DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
+        Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle5
         Me.Guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
         Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 427)
@@ -482,6 +375,114 @@ Partial Class reciever_history
         Me.recieption_time.ReadOnly = True
         Me.recieption_time.Width = 156
         '
+        'Guna2CircleButton2
+        '
+        Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.BorderColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.CheckedState.Parent = Me.Guna2CircleButton2
+        Me.Guna2CircleButton2.CustomBorderColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.CustomImages.Parent = Me.Guna2CircleButton2
+        Me.Guna2CircleButton2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.Guna2CircleButton2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.Guna2CircleButton2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.Guna2CircleButton2.DisabledState.Parent = Me.Guna2CircleButton2
+        Me.Guna2CircleButton2.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.Guna2CircleButton2.ForeColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.HoverState.BorderColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.HoverState.CustomBorderColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.HoverState.FillColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.HoverState.ForeColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.HoverState.Image = Global.plasmo.My.Resources.Resources.Line_10
+        Me.Guna2CircleButton2.HoverState.Parent = Me.Guna2CircleButton2
+        Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
+        Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
+        Me.Guna2CircleButton2.Location = New System.Drawing.Point(990, 10)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
+        Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
+        Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.Guna2CircleButton2.ShadowDecoration.Parent = Me.Guna2CircleButton2
+        Me.Guna2CircleButton2.Size = New System.Drawing.Size(30, 32)
+        Me.Guna2CircleButton2.TabIndex = 77
+        '
+        'CloseButton
+        '
+        Me.CloseButton.BackColor = System.Drawing.Color.Transparent
+        Me.CloseButton.CheckedState.Parent = Me.CloseButton
+        Me.CloseButton.CustomImages.Parent = Me.CloseButton
+        Me.CloseButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.CloseButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.CloseButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.CloseButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.CloseButton.DisabledState.Parent = Me.CloseButton
+        Me.CloseButton.FillColor = System.Drawing.Color.Transparent
+        Me.CloseButton.Font = New System.Drawing.Font("Segoe UI", 9.0!)
+        Me.CloseButton.ForeColor = System.Drawing.Color.Transparent
+        Me.CloseButton.HoverState.BorderColor = System.Drawing.Color.Transparent
+        Me.CloseButton.HoverState.CustomBorderColor = System.Drawing.Color.Transparent
+        Me.CloseButton.HoverState.FillColor = System.Drawing.Color.Transparent
+        Me.CloseButton.HoverState.ForeColor = System.Drawing.Color.Transparent
+        Me.CloseButton.HoverState.Image = Global.plasmo.My.Resources.Resources.Component_3__1_
+        Me.CloseButton.HoverState.Parent = Me.CloseButton
+        Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
+        Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
+        Me.CloseButton.Location = New System.Drawing.Point(1036, 10)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
+        Me.CloseButton.Name = "CloseButton"
+        Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
+        Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
+        Me.CloseButton.Size = New System.Drawing.Size(30, 32)
+        Me.CloseButton.TabIndex = 76
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
+        Me.Guna2PictureBox2.TabIndex = 80
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 11)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
+        Me.Guna2PictureBox1.TabIndex = 74
+        Me.Guna2PictureBox1.TabStop = False
+        '
+        'Guna2ToggleSwitch1
+        '
+        Me.Guna2ToggleSwitch1.Animated = True
+        Me.Guna2ToggleSwitch1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2ToggleSwitch1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
+        Me.Guna2ToggleSwitch1.Checked = True
+        Me.Guna2ToggleSwitch1.CheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.Guna2ToggleSwitch1.CheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(132, Byte), Integer), CType(CType(132, Byte), Integer))
+        Me.Guna2ToggleSwitch1.CheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Guna2ToggleSwitch1.CheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.Guna2ToggleSwitch1.CheckedState.Parent = Me.Guna2ToggleSwitch1
+        Me.Guna2ToggleSwitch1.Location = New System.Drawing.Point(521, 154)
+        Me.Guna2ToggleSwitch1.Name = "Guna2ToggleSwitch1"
+        Me.Guna2ToggleSwitch1.ShadowDecoration.Parent = Me.Guna2ToggleSwitch1
+        Me.Guna2ToggleSwitch1.Size = New System.Drawing.Size(39, 18)
+        Me.Guna2ToggleSwitch1.TabIndex = 82
+        Me.Guna2ToggleSwitch1.UncheckedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
+        Me.Guna2ToggleSwitch1.UncheckedState.FillColor = System.Drawing.Color.FromArgb(CType(CType(62, Byte), Integer), CType(CType(121, Byte), Integer), CType(CType(178, Byte), Integer))
+        Me.Guna2ToggleSwitch1.UncheckedState.InnerBorderColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.Guna2ToggleSwitch1.UncheckedState.InnerColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.Guna2ToggleSwitch1.UncheckedState.Parent = Me.Guna2ToggleSwitch1
+        '
         'reciever_history
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -496,14 +497,16 @@ Partial Class reciever_history
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2PictureBox1)
+        Me.ForeColor = System.Drawing.SystemColors.ControlLight
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
+        Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "reciever_history"
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "reciever_history"
         Me.Guna2Panel1.ResumeLayout(False)
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -522,11 +525,11 @@ Partial Class reciever_history
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2ToggleSwitch1 As Guna.UI2.WinForms.Guna2ToggleSwitch
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents plasma_id As DataGridViewTextBoxColumn
     Friend WithEvents reciever_name As DataGridViewTextBoxColumn
     Friend WithEvents age As DataGridViewTextBoxColumn
     Friend WithEvents blood_group As DataGridViewTextBoxColumn
     Friend WithEvents recieption_time As DataGridViewTextBoxColumn
+    Friend WithEvents Guna2ToggleSwitch1 As Guna.UI2.WinForms.Guna2ToggleSwitch
 End Class

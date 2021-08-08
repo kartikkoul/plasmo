@@ -97,6 +97,16 @@ plasmo
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:plasmo.My.Resources.Resources.Reciever_Switch">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Switch__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="T:plasmo.newdataset">
 <summary>
 Represents a strongly typed in-memory cache of data.
