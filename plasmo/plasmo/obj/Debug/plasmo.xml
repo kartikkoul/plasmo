@@ -42,6 +42,11 @@ plasmo
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:plasmo.My.Resources.Resources.Donor_Switch01">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:plasmo.My.Resources.Resources.eye">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -98,6 +103,31 @@ plasmo
 </summary>
 </member>
 <member name="P:plasmo.My.Resources.Resources.Reciever_Switch">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Reciever_Switch01">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Reciever_Switch1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Reciever_Switch11">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Reciever_Switch2">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Reciever_Switch3">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

@@ -391,6 +391,7 @@ Partial Class donor_history
         '
         'Guna2PictureBox3
         '
+        Me.Guna2PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2PictureBox3.Image = Global.plasmo.My.Resources.Resources.Donor_Switch01
         Me.Guna2PictureBox3.ImageRotate = 0!
         Me.Guna2PictureBox3.Location = New System.Drawing.Point(525, 162)

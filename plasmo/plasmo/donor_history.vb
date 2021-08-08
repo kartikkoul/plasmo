@@ -100,10 +100,6 @@ Public Class donor_history
 
     End Sub
 
-    Private Sub Guna2ToggleSwitch1_CheckedChanged(sender As Object, e As EventArgs)
-        reciever_history.Show()
-        Me.Hide()
-    End Sub
 
 
 
@@ -124,7 +120,7 @@ Public Class donor_history
     End Sub
 
     Private Sub Guna2PictureBox3_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox3.Click
-        Reciever_form.Show()
+        reciever_history.Show()
         Me.Hide()
     End Sub
 End Class
