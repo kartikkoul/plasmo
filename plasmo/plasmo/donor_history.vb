@@ -73,7 +73,7 @@ Public Class donor_history
         Me.Hide()
     End Sub
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles donorBtnMenu.Click
-        Donor_form.Show()
+        donorForm.Show()
         Me.Hide()
     End Sub
 

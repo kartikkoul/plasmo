@@ -22,6 +22,26 @@ plasmo
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:plasmo.My.Resources.Resources.arrow_left">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.arrow_left1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.arrow_right">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.arrow_right1">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:plasmo.My.Resources.Resources.Component_2">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -128,6 +148,11 @@ plasmo
 </summary>
 </member>
 <member name="P:plasmo.My.Resources.Resources.Reciever_Switch3">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Success_Circle">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>

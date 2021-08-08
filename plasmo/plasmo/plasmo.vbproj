@@ -244,6 +244,11 @@
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
     <Content Include="Frame 214.ico" />
+    <None Include="Resources\arrow-right1.png" />
+    <None Include="Resources\arrow-right.png" />
+    <None Include="Resources\arrow-left1.png" />
+    <None Include="Resources\arrow-left.png" />
+    <None Include="Resources\Success Circle.png" />
     <None Include="Resources\Donor Switch01.png" />
     <None Include="Resources\Reciever Switch01.png" />
     <None Include="Resources\Reciever Switch11.png" />

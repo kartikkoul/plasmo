@@ -98,7 +98,7 @@ Public Class Reciever_form
         Me.Hide()
     End Sub
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
-        Donor_form.Show()
+        donorForm.Show()
         Me.Hide()
     End Sub
 

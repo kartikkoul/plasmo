@@ -122,7 +122,7 @@ Public Class Dashboard
     End Sub
 
     Private Sub Guna2Button5_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
-        Donor_form.Show()
+        donorForm.Show()
         Me.Hide()
 
     End Sub
@@ -150,7 +150,7 @@ Public Class Dashboard
 
     End Sub
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
-        Donor_form.Show()
+        donorForm.Show()
         Me.Hide()
     End Sub
 

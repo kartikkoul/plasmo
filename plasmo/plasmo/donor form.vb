@@ -1,7 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
-Public Class Donor_form
+Public Class donorForm
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs)
         Reciever_form.Show()
         Me.Hide()
@@ -109,40 +109,46 @@ Public Class Donor_form
         'Else
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
         Dim anti As Char = Truncate(antibody.SelectedItem, 1)
+        Dim price As Integer = 0
+        If anti = "Y" Then
+            price = 5500
+        Else
+            price = 4500
+        End If
         Dim time As Date = Date.UtcNow
         Dim donor_id As String = GenerateDonorID()
 
 
         Dim selected_blood_group As String = bgroup.SelectedItem
-            Dim blood_group As String = "AP"
+        Dim blood_group As String = "AP"
 
-            Select Case selected_blood_group
-                Case "A+"
-                    blood_group = "AP"
+        Select Case selected_blood_group
+            Case "A+"
+                blood_group = "AP"
 
-                Case "A-"
-                    blood_group = "AM"
+            Case "A-"
+                blood_group = "AM"
 
-                Case "B+"
-                    blood_group = "BP"
+            Case "B+"
+                blood_group = "BP"
 
-                Case "B-"
-                    blood_group = "BM"
+            Case "B-"
+                blood_group = "BM"
 
-                Case "AB+"
-                    blood_group = "ABP"
+            Case "AB+"
+                blood_group = "ABP"
 
-                Case "AB-"
-                    blood_group = "ABM"
+            Case "AB-"
+                blood_group = "ABM"
 
-                Case "O+"
-                    blood_group = "OP"
-                Case "O-"
-                    blood_group = "OM"
-            End Select
+            Case "O+"
+                blood_group = "OP"
+            Case "O-"
+                blood_group = "OM"
+        End Select
 
-            Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
-        Dim cmd1 As New SqlCommand("insert into donor_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,anti_body,sold,transaction_time) values('" & donor_id & "','" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & anti & "','" & "N" & "','" & time & "')", con)
+        Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
+        Dim cmd1 As New SqlCommand("insert into donor_records(plasma_id,first_name,last_name,age,phone_number,email,city,address,blood_group,sex,anti_body,price,sold,transaction_time) values('" & donor_id & "','" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & anti & "','" & price & "','" & "N" & "','" & time & "')", con)
         con.Open()
         cmd1.ExecuteNonQuery()
         donor_history.Refresh()
