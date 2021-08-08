@@ -80,7 +80,7 @@ Partial Class donor_reciept
         '
         Me.dateLabel.BackColor = System.Drawing.Color.Transparent
         Me.dateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dateLabel.Location = New System.Drawing.Point(726, 480)
+        Me.dateLabel.Location = New System.Drawing.Point(726, 462)
         Me.dateLabel.Name = "dateLabel"
         Me.dateLabel.Size = New System.Drawing.Size(187, 27)
         Me.dateLabel.TabIndex = 135
@@ -91,7 +91,7 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel17.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel17.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel17.Location = New System.Drawing.Point(643, 480)
+        Me.Guna2HtmlLabel17.Location = New System.Drawing.Point(643, 462)
         Me.Guna2HtmlLabel17.Name = "Guna2HtmlLabel17"
         Me.Guna2HtmlLabel17.Size = New System.Drawing.Size(66, 27)
         Me.Guna2HtmlLabel17.TabIndex = 134
@@ -101,7 +101,7 @@ Partial Class donor_reciept
         '
         Me.bloodGroupLabel.BackColor = System.Drawing.Color.Transparent
         Me.bloodGroupLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bloodGroupLabel.Location = New System.Drawing.Point(360, 480)
+        Me.bloodGroupLabel.Location = New System.Drawing.Point(360, 467)
         Me.bloodGroupLabel.Name = "bloodGroupLabel"
         Me.bloodGroupLabel.Size = New System.Drawing.Size(187, 27)
         Me.bloodGroupLabel.TabIndex = 133
@@ -112,7 +112,7 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel15.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel15.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(195, 480)
+        Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(195, 467)
         Me.Guna2HtmlLabel15.Name = "Guna2HtmlLabel15"
         Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(148, 27)
         Me.Guna2HtmlLabel15.TabIndex = 132
@@ -122,7 +122,7 @@ Partial Class donor_reciept
         '
         Me.emailLabel.BackColor = System.Drawing.Color.Transparent
         Me.emailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.emailLabel.Location = New System.Drawing.Point(726, 410)
+        Me.emailLabel.Location = New System.Drawing.Point(726, 387)
         Me.emailLabel.Name = "emailLabel"
         Me.emailLabel.Size = New System.Drawing.Size(175, 27)
         Me.emailLabel.TabIndex = 131
@@ -133,7 +133,7 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(643, 410)
+        Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(643, 387)
         Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
         Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(68, 27)
         Me.Guna2HtmlLabel9.TabIndex = 130
@@ -143,7 +143,7 @@ Partial Class donor_reciept
         '
         Me.addressLabel.BackColor = System.Drawing.Color.Transparent
         Me.addressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.addressLabel.Location = New System.Drawing.Point(752, 318)
+        Me.addressLabel.Location = New System.Drawing.Point(752, 310)
         Me.addressLabel.Name = "addressLabel"
         Me.addressLabel.Size = New System.Drawing.Size(187, 27)
         Me.addressLabel.TabIndex = 129
@@ -154,7 +154,7 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(643, 318)
+        Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(643, 310)
         Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
         Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(103, 27)
         Me.Guna2HtmlLabel11.TabIndex = 128
@@ -185,7 +185,7 @@ Partial Class donor_reciept
         '
         Me.sexLabel.BackColor = System.Drawing.Color.Transparent
         Me.sexLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.sexLabel.Location = New System.Drawing.Point(278, 410)
+        Me.sexLabel.Location = New System.Drawing.Point(278, 389)
         Me.sexLabel.Name = "sexLabel"
         Me.sexLabel.Size = New System.Drawing.Size(175, 27)
         Me.sexLabel.TabIndex = 125
@@ -196,7 +196,7 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(195, 410)
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(195, 389)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
         Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(57, 27)
         Me.Guna2HtmlLabel7.TabIndex = 124
@@ -206,7 +206,7 @@ Partial Class donor_reciept
         '
         Me.ageLabel.BackColor = System.Drawing.Color.Transparent
         Me.ageLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ageLabel.Location = New System.Drawing.Point(278, 318)
+        Me.ageLabel.Location = New System.Drawing.Point(278, 314)
         Me.ageLabel.Name = "ageLabel"
         Me.ageLabel.Size = New System.Drawing.Size(175, 27)
         Me.ageLabel.TabIndex = 123
@@ -217,7 +217,7 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 15.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(195, 318)
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(195, 314)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
         Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(58, 27)
         Me.Guna2HtmlLabel5.TabIndex = 122

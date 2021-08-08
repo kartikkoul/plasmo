@@ -54,10 +54,50 @@ Public Class Reciever_form
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
         Dim reciever_id As String = GenerateRecieverID()
 
+        Dim selected_blood_group As String = bloodGroup.SelectedItem
+        Dim blood_group As String = "AP"
+
+        Select Case selected_blood_group
+            Case "A+"
+                blood_group = "AP"
+
+            Case "A-"
+                blood_group = "AM"
+
+            Case "B+"
+                blood_group = "BP"
+
+            Case "B-"
+                blood_group = "BM"
+
+            Case "AB+"
+                blood_group = "ABP"
+
+            Case "AB-"
+                blood_group = "ABM"
+
+            Case "O+"
+                blood_group = "OP"
+            Case "O-"
+                blood_group = "OM"
+        End Select
+
         Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
-        Dim cmd1 As New SqlCommand("insert into reciever_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,recieved) values('" & reciever_id & "','" & fName.Text & "','" & lName.Text & "','" & age.Text & "','" & phNumber.Text & "','" & email.Text & "','" & city.Text & "','" & address.Text & "','" & bloodGroup.SelectedItem & "','" & gen & "','" & "N" & "')", con)
+        Dim insertQuery As New SqlCommand("insert into reciever_records(reciever_id,first_name,last_name,age,phone_number,email,city,address,blood_group,sex,recieved) values('" & reciever_id & "','" & fName.Text & "','" & lName.Text & "','" & age.Text & "','" & phNumber.Text & "','" & email.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & "N" & "')", con)
         con.Open()
-        cmd1.ExecuteNonQuery()
+        insertQuery.ExecuteNonQuery()
+        Dim cmd As New SqlCommand("select plasma_id, price from donor_records where blood_group='" & blood_group & "'", con)
+        Dim dr As SqlDataReader
+        dr = cmd.ExecuteReader
+
+        If dr.HasRows Then
+            Dim plasmaID = dr(0)("plasma_id")
+            Dim price = dr(0)("price")
+        Else
+
+        End If
+
+
         MsgBox("Reciever Registered")
         con.Close()
     End Sub
