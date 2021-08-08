@@ -67,54 +67,105 @@ Public Class Donor_form
 
     End Sub
 
+    Public Function GenerateID() As String
+        Dim Generator As System.Random = New System.Random()
+        Return Generator.Next(999, 10000)
+    End Function
+
+    Public Function GenerateDonorID() As String
+        Dim ID = "E080" + GenerateID()
+
+        Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
+        con.Open()
+        Dim cmd As New SqlCommand("select plasma_id from donor_records", con)
+        Dim dr As SqlDataReader
+        dr = cmd.ExecuteReader
+
+
+        While dr.Read
+            If ID = dr("plasma_id") Then
+                Return GenerateDonorID()
+            End If
+        End While
+        Return ID
+    End Function
 
 
     Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
+        'Dim isInvalid As Boolean = fname.Text.Trim.Length == 0 Or lname.Text.Trim.Length = 0 Or (age.Text < 17 Or age.Text > 71 Or age.Text.Trim.Length = 0)
+        'If isInvalid Then
+        '    If fname.Text.Trim.Length = 0 Then
+        '        fNameErrorText.Visible = True
+        '        fname.BorderColor = Color.Red
+
+        '    ElseIf lname.Text.Trim.Length = 0 Then
+        '        lNameErrorText.Visible = True
+        '        lname.BorderColor = Color.Red
+
+        '    ElseIf (age.Text < 17 Or age.Text > 71 Or age.Text.Trim.Length = 0) Then
+        '        ageErrorText.Visible = True
+        '        age.BorderColor = Color.Red
+        '    End If
+        'Else
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
         Dim anti As Char = Truncate(antibody.SelectedItem, 1)
         Dim time As Date = Date.UtcNow
+        Dim donor_id As String = GenerateDonorID()
+
 
         Dim selected_blood_group As String = bgroup.SelectedItem
-        Dim blood_group As String = "AP"
+            Dim blood_group As String = "AP"
 
-        Select Case selected_blood_group
-            Case "A+"
-                blood_group = "AP"
+            Select Case selected_blood_group
+                Case "A+"
+                    blood_group = "AP"
 
-            Case "A-"
-                blood_group = "AM"
+                Case "A-"
+                    blood_group = "AM"
 
-            Case "B+"
-                blood_group = "BP"
+                Case "B+"
+                    blood_group = "BP"
 
-            Case "B-"
-                blood_group = "BM"
+                Case "B-"
+                    blood_group = "BM"
 
-            Case "AB+"
-                blood_group = "ABP"
+                Case "AB+"
+                    blood_group = "ABP"
 
-            Case "AB-"
-                blood_group = "ABM"
+                Case "AB-"
+                    blood_group = "ABM"
 
-            Case "O+"
-                blood_group = "OP"
-            Case "O-"
-                blood_group = "OM"
-        End Select
+                Case "O+"
+                    blood_group = "OP"
+                Case "O-"
+                    blood_group = "OM"
+            End Select
 
-        Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
-        Dim cmd1 As New SqlCommand("insert into donor_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,anti_body,sold,transaction_time) values('" & "E0800746" & "','" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & anti & "','" & "N" & "','" & time & "')", con)
+            Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
+        Dim cmd1 As New SqlCommand("insert into donor_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,anti_body,sold,transaction_time) values('" & donor_id & "','" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & anti & "','" & "N" & "','" & time & "')", con)
         con.Open()
         cmd1.ExecuteNonQuery()
+        donor_history.Refresh()
+        Dashboard.Refresh()
         MsgBox("Donor Registered")
-        con.Close()
+            con.Close()
+        'End If
+
     End Sub
 
     Private Sub Label11_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
+    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles fNameErrorText.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel4_Click(sender As Object, e As EventArgs) Handles phNumberErrorText.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel5_Click(sender As Object, e As EventArgs) Handles emailErrortext.Click
 
     End Sub
 End Class

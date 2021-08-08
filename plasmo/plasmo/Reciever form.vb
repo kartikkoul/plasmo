@@ -18,9 +18,6 @@ Public Class Reciever_form
 
     End Sub
 
-    Private Sub Reciever_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
 
     Public Function Truncate(value As String, length As Integer) As String
         If length > value.Length Then
@@ -30,11 +27,35 @@ Public Class Reciever_form
         End If
     End Function
 
+    Public Function GenerateID() As String
+        Dim Generator As System.Random = New System.Random()
+        Return Generator.Next(999, 10000)
+    End Function
+
+    Public Function GenerateRecieverID() As String
+        Dim ID = "R080" + GenerateID()
+
+        Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
+        con.Open()
+        Dim cmd As New SqlCommand("select reciever_id from reciever_records", con)
+        Dim dr As SqlDataReader
+        dr = cmd.ExecuteReader
+
+
+        While dr.Read
+            If ID = dr("reciever_id") Then
+                Return GenerateRecieverID()
+            End If
+        End While
+        Return ID
+    End Function
+
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles Guna2Button1.Click
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
+        Dim reciever_id As String = GenerateRecieverID()
 
         Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
-        Dim cmd1 As New SqlCommand("insert into reciever_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,recieved) values('" & "R0800745" & "','" & fName.Text & "','" & lName.Text & "','" & age.Text & "','" & phNumber.Text & "','" & email.Text & "','" & city.Text & "','" & address.Text & "','" & bloodGroup.SelectedItem & "','" & gen & "','" & "N" & "')", con)
+        Dim cmd1 As New SqlCommand("insert into reciever_records(plasma_id,first_name,second_name,age,phone_number,email,city,address,blood_group,sex,recieved) values('" & reciever_id & "','" & fName.Text & "','" & lName.Text & "','" & age.Text & "','" & phNumber.Text & "','" & email.Text & "','" & city.Text & "','" & address.Text & "','" & bloodGroup.SelectedItem & "','" & gen & "','" & "N" & "')", con)
         con.Open()
         cmd1.ExecuteNonQuery()
         MsgBox("Reciever Registered")

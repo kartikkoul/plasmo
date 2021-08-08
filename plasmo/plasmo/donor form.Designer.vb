@@ -58,7 +58,13 @@ Partial Class Donor_form
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.fNameErrorText = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.lNameErrorText = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.ageErrorText = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.phNumberErrorText = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.emailErrortext = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.cityErrorText = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.addressErrorText = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel3.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,10 +90,11 @@ Partial Class Donor_form
         Me.gender.ItemHeight = 30
         Me.gender.Items.AddRange(New Object() {"Male", "Female", "Other"})
         Me.gender.ItemsAppearance.Parent = Me.gender
-        Me.gender.Location = New System.Drawing.Point(959, 502)
+        Me.gender.Location = New System.Drawing.Point(719, 401)
+        Me.gender.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.gender.Name = "gender"
         Me.gender.ShadowDecoration.Parent = Me.gender
-        Me.gender.Size = New System.Drawing.Size(289, 36)
+        Me.gender.Size = New System.Drawing.Size(218, 36)
         Me.gender.StartIndex = 0
         Me.gender.TabIndex = 63
         '
@@ -105,10 +112,11 @@ Partial Class Donor_form
         Me.SubmitButton.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SubmitButton.ForeColor = System.Drawing.Color.White
         Me.SubmitButton.HoverState.Parent = Me.SubmitButton
-        Me.SubmitButton.Location = New System.Drawing.Point(595, 701)
+        Me.SubmitButton.Location = New System.Drawing.Point(440, 559)
+        Me.SubmitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.SubmitButton.Name = "SubmitButton"
         Me.SubmitButton.ShadowDecoration.Parent = Me.SubmitButton
-        Me.SubmitButton.Size = New System.Drawing.Size(250, 52)
+        Me.SubmitButton.Size = New System.Drawing.Size(188, 42)
         Me.SubmitButton.TabIndex = 62
         Me.SubmitButton.Text = "SUBMIT"
         '
@@ -116,9 +124,10 @@ Partial Class Donor_form
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(953, 447)
+        Me.Label10.Location = New System.Drawing.Point(715, 356)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(89, 36)
+        Me.Label10.Size = New System.Drawing.Size(71, 28)
         Me.Label10.TabIndex = 61
         Me.Label10.Text = "Gender"
         '
@@ -139,24 +148,25 @@ Partial Class Donor_form
         Me.address.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.address.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.address.HoverState.Parent = Me.address
-        Me.address.Location = New System.Drawing.Point(575, 490)
-        Me.address.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
+        Me.address.Location = New System.Drawing.Point(431, 391)
+        Me.address.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.address.Name = "address"
         Me.address.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.address.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.address.PlaceholderText = "  Address"
         Me.address.SelectedText = ""
         Me.address.ShadowDecoration.Parent = Me.address
-        Me.address.Size = New System.Drawing.Size(289, 55)
+        Me.address.Size = New System.Drawing.Size(217, 45)
         Me.address.TabIndex = 60
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(580, 444)
+        Me.Label4.Location = New System.Drawing.Point(435, 354)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(95, 36)
+        Me.Label4.Size = New System.Drawing.Size(77, 28)
         Me.Label4.TabIndex = 59
         Me.Label4.Text = "Address"
         '
@@ -177,24 +187,25 @@ Partial Class Donor_form
         Me.city.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.city.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.city.HoverState.Parent = Me.city
-        Me.city.Location = New System.Drawing.Point(203, 490)
-        Me.city.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
+        Me.city.Location = New System.Drawing.Point(152, 391)
+        Me.city.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.city.Name = "city"
         Me.city.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.city.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.city.PlaceholderText = "  City"
         Me.city.SelectedText = ""
         Me.city.ShadowDecoration.Parent = Me.city
-        Me.city.Size = New System.Drawing.Size(289, 55)
+        Me.city.Size = New System.Drawing.Size(217, 45)
         Me.city.TabIndex = 58
         '
         'Label3
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(197, 444)
+        Me.Label3.Location = New System.Drawing.Point(148, 354)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(53, 36)
+        Me.Label3.Size = New System.Drawing.Size(43, 28)
         Me.Label3.TabIndex = 57
         Me.Label3.Text = "City" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
@@ -202,9 +213,10 @@ Partial Class Donor_form
         '
         Me.Label2.AutoSize = True
         Me.Label2.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(953, 323)
+        Me.Label2.Location = New System.Drawing.Point(715, 246)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(140, 36)
+        Me.Label2.Size = New System.Drawing.Size(110, 28)
         Me.Label2.TabIndex = 56
         Me.Label2.Text = "Blood Group"
         '
@@ -224,10 +236,11 @@ Partial Class Donor_form
         Me.bgroup.ItemHeight = 30
         Me.bgroup.Items.AddRange(New Object() {"A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-"})
         Me.bgroup.ItemsAppearance.Parent = Me.bgroup
-        Me.bgroup.Location = New System.Drawing.Point(959, 378)
+        Me.bgroup.Location = New System.Drawing.Point(719, 291)
+        Me.bgroup.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.bgroup.Name = "bgroup"
         Me.bgroup.ShadowDecoration.Parent = Me.bgroup
-        Me.bgroup.Size = New System.Drawing.Size(289, 36)
+        Me.bgroup.Size = New System.Drawing.Size(218, 36)
         Me.bgroup.StartIndex = 0
         Me.bgroup.TabIndex = 55
         '
@@ -235,9 +248,10 @@ Partial Class Donor_form
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(579, 320)
+        Me.Label5.Location = New System.Drawing.Point(434, 244)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(81, 36)
+        Me.Label5.Size = New System.Drawing.Size(64, 28)
         Me.Label5.TabIndex = 48
         Me.Label5.Text = "E-mail"
         '
@@ -245,9 +259,10 @@ Partial Class Donor_form
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(197, 320)
+        Me.Label8.Location = New System.Drawing.Point(148, 244)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(164, 36)
+        Me.Label8.Size = New System.Drawing.Size(129, 28)
         Me.Label8.TabIndex = 52
         Me.Label8.Text = "Phone Number"
         '
@@ -255,9 +270,10 @@ Partial Class Donor_form
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(580, 196)
+        Me.Label7.Location = New System.Drawing.Point(435, 143)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(121, 36)
+        Me.Label7.Size = New System.Drawing.Size(96, 28)
         Me.Label7.TabIndex = 54
         Me.Label7.Text = "Last Name"
         '
@@ -278,24 +294,25 @@ Partial Class Donor_form
         Me.mail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.mail.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.mail.HoverState.Parent = Me.mail
-        Me.mail.Location = New System.Drawing.Point(575, 366)
-        Me.mail.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
+        Me.mail.Location = New System.Drawing.Point(431, 281)
+        Me.mail.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.mail.Name = "mail"
         Me.mail.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.mail.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.mail.PlaceholderText = "  E-mail"
         Me.mail.SelectedText = ""
         Me.mail.ShadowDecoration.Parent = Me.mail
-        Me.mail.Size = New System.Drawing.Size(289, 55)
+        Me.mail.Size = New System.Drawing.Size(217, 45)
         Me.mail.TabIndex = 53
         '
         'Label6
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(953, 196)
+        Me.Label6.Location = New System.Drawing.Point(715, 143)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(54, 36)
+        Me.Label6.Size = New System.Drawing.Size(44, 28)
         Me.Label6.TabIndex = 50
         Me.Label6.Text = "Age"
         '
@@ -316,24 +333,25 @@ Partial Class Donor_form
         Me.pnumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.pnumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.pnumber.HoverState.Parent = Me.pnumber
-        Me.pnumber.Location = New System.Drawing.Point(203, 366)
-        Me.pnumber.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
+        Me.pnumber.Location = New System.Drawing.Point(152, 281)
+        Me.pnumber.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.pnumber.Name = "pnumber"
         Me.pnumber.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.pnumber.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.pnumber.PlaceholderText = "  Phone Number"
         Me.pnumber.SelectedText = ""
         Me.pnumber.ShadowDecoration.Parent = Me.pnumber
-        Me.pnumber.Size = New System.Drawing.Size(289, 55)
+        Me.pnumber.Size = New System.Drawing.Size(217, 45)
         Me.pnumber.TabIndex = 51
         '
         'Label1
         '
         Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(197, 196)
+        Me.Label1.Location = New System.Drawing.Point(148, 143)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(120, 36)
+        Me.Label1.Size = New System.Drawing.Size(96, 28)
         Me.Label1.TabIndex = 46
         Me.Label1.Text = "First Name"
         '
@@ -354,15 +372,15 @@ Partial Class Donor_form
         Me.age.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.age.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.age.HoverState.Parent = Me.age
-        Me.age.Location = New System.Drawing.Point(959, 242)
-        Me.age.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
+        Me.age.Location = New System.Drawing.Point(719, 181)
+        Me.age.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.age.Name = "age"
         Me.age.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.age.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.age.PlaceholderText = "  Age"
         Me.age.SelectedText = ""
         Me.age.ShadowDecoration.Parent = Me.age
-        Me.age.Size = New System.Drawing.Size(289, 55)
+        Me.age.Size = New System.Drawing.Size(217, 45)
         Me.age.TabIndex = 49
         '
         'lname
@@ -382,20 +400,20 @@ Partial Class Donor_form
         Me.lname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.lname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.lname.HoverState.Parent = Me.lname
-        Me.lname.Location = New System.Drawing.Point(575, 242)
-        Me.lname.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
+        Me.lname.Location = New System.Drawing.Point(431, 181)
+        Me.lname.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.lname.Name = "lname"
         Me.lname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.lname.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.lname.PlaceholderText = "  Last Name"
         Me.lname.SelectedText = ""
         Me.lname.ShadowDecoration.Parent = Me.lname
-        Me.lname.Size = New System.Drawing.Size(289, 55)
+        Me.lname.Size = New System.Drawing.Size(217, 45)
         Me.lname.TabIndex = 47
         '
         'fname
         '
-        Me.fname.BorderColor = System.Drawing.Color.Red
+        Me.fname.BorderColor = System.Drawing.Color.Black
         Me.fname.BorderRadius = 10
         Me.fname.Cursor = System.Windows.Forms.Cursors.IBeam
         Me.fname.DefaultText = ""
@@ -410,15 +428,15 @@ Partial Class Donor_form
         Me.fname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.fname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.fname.HoverState.Parent = Me.fname
-        Me.fname.Location = New System.Drawing.Point(203, 242)
-        Me.fname.Margin = New System.Windows.Forms.Padding(9, 10, 9, 10)
+        Me.fname.Location = New System.Drawing.Point(152, 181)
+        Me.fname.Margin = New System.Windows.Forms.Padding(7, 8, 7, 8)
         Me.fname.Name = "fname"
         Me.fname.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.fname.PlaceholderForeColor = System.Drawing.Color.Silver
         Me.fname.PlaceholderText = "  First Name"
         Me.fname.SelectedText = ""
         Me.fname.ShadowDecoration.Parent = Me.fname
-        Me.fname.Size = New System.Drawing.Size(289, 55)
+        Me.fname.Size = New System.Drawing.Size(217, 45)
         Me.fname.TabIndex = 45
         '
         'antibody
@@ -437,10 +455,11 @@ Partial Class Donor_form
         Me.antibody.ItemHeight = 30
         Me.antibody.Items.AddRange(New Object() {"Yes", "No"})
         Me.antibody.ItemsAppearance.Parent = Me.antibody
-        Me.antibody.Location = New System.Drawing.Point(203, 626)
+        Me.antibody.Location = New System.Drawing.Point(152, 502)
+        Me.antibody.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.antibody.Name = "antibody"
         Me.antibody.ShadowDecoration.Parent = Me.antibody
-        Me.antibody.Size = New System.Drawing.Size(289, 36)
+        Me.antibody.Size = New System.Drawing.Size(218, 36)
         Me.antibody.StartIndex = 0
         Me.antibody.TabIndex = 65
         '
@@ -448,9 +467,10 @@ Partial Class Donor_form
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(197, 577)
+        Me.Label9.Location = New System.Drawing.Point(148, 462)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(245, 36)
+        Me.Label9.Size = New System.Drawing.Size(197, 28)
         Me.Label9.TabIndex = 64
         Me.Label9.Text = "Did you ever get covid?"
         '
@@ -466,10 +486,11 @@ Partial Class Donor_form
         Me.Guna2Panel3.Controls.Add(Me.HistoryBtnMenu)
         Me.Guna2Panel3.Controls.Add(Me.DashboardBtnMenu)
         Me.Guna2Panel3.Controls.Add(Me.LogoutBtnMenu)
-        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 91)
+        Me.Guna2Panel3.Location = New System.Drawing.Point(0, 74)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel3.Name = "Guna2Panel3"
         Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
-        Me.Guna2Panel3.Size = New System.Drawing.Size(1443, 72)
+        Me.Guna2Panel3.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel3.TabIndex = 69
         '
         'Guna2PictureBox2
@@ -477,20 +498,22 @@ Partial Class Donor_form
         Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
         Me.Guna2PictureBox2.ImageRotate = 0!
         Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1353, 25)
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1015, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(26, 33)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
         Me.Guna2PictureBox2.TabIndex = 90
         Me.Guna2PictureBox2.TabStop = False
         '
         'Guna2Panel4
         '
         Me.Guna2Panel4.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel4.Location = New System.Drawing.Point(280, 51)
+        Me.Guna2Panel4.Location = New System.Drawing.Point(210, 41)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2Panel4.Name = "Guna2Panel4"
         Me.Guna2Panel4.ShadowDecoration.Parent = Me.Guna2Panel4
-        Me.Guna2Panel4.Size = New System.Drawing.Size(86, 4)
+        Me.Guna2Panel4.Size = New System.Drawing.Size(64, 3)
         Me.Guna2Panel4.TabIndex = 80
         '
         'RecieverBtnMenu
@@ -507,10 +530,11 @@ Partial Class Donor_form
         Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Location = New System.Drawing.Point(409, 17)
+        Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
+        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Size = New System.Drawing.Size(167, 38)
+        Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.RecieverBtnMenu.TabIndex = 84
         Me.RecieverBtnMenu.Text = "RECIEVER"
         '
@@ -528,10 +552,11 @@ Partial Class Donor_form
         Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Location = New System.Drawing.Point(243, 17)
+        Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
+        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DonorBtnMenu.Name = "DonorBtnMenu"
         Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Size = New System.Drawing.Size(167, 38)
+        Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.DonorBtnMenu.TabIndex = 83
         Me.DonorBtnMenu.Text = "DONOR"
         '
@@ -549,10 +574,11 @@ Partial Class Donor_form
         Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Location = New System.Drawing.Point(564, 17)
+        Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
+        Me.QueueBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.QueueBtnMenu.Name = "QueueBtnMenu"
         Me.QueueBtnMenu.ShadowDecoration.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Size = New System.Drawing.Size(167, 38)
+        Me.QueueBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.QueueBtnMenu.TabIndex = 82
         Me.QueueBtnMenu.Text = "QUEUE"
         '
@@ -570,10 +596,11 @@ Partial Class Donor_form
         Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Location = New System.Drawing.Point(723, 17)
+        Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
+        Me.HistoryBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.HistoryBtnMenu.Name = "HistoryBtnMenu"
         Me.HistoryBtnMenu.ShadowDecoration.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Size = New System.Drawing.Size(167, 38)
+        Me.HistoryBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.HistoryBtnMenu.TabIndex = 81
         Me.HistoryBtnMenu.Text = "HISTORY"
         '
@@ -591,10 +618,11 @@ Partial Class Donor_form
         Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Location = New System.Drawing.Point(32, 17)
+        Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
+        Me.DashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.DashboardBtnMenu.Name = "DashboardBtnMenu"
         Me.DashboardBtnMenu.ShadowDecoration.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Size = New System.Drawing.Size(217, 38)
+        Me.DashboardBtnMenu.Size = New System.Drawing.Size(163, 31)
         Me.DashboardBtnMenu.TabIndex = 11
         Me.DashboardBtnMenu.Text = "DASHBOARD"
         '
@@ -612,10 +640,11 @@ Partial Class Donor_form
         Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
         Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.Location = New System.Drawing.Point(1172, 13)
+        Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
+        Me.LogoutBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.LogoutBtnMenu.Name = "LogoutBtnMenu"
         Me.LogoutBtnMenu.ShadowDecoration.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.Size = New System.Drawing.Size(250, 52)
+        Me.LogoutBtnMenu.Size = New System.Drawing.Size(188, 42)
         Me.LogoutBtnMenu.TabIndex = 10
         Me.LogoutBtnMenu.Text = "LOGOUT"
         '
@@ -642,12 +671,13 @@ Partial Class Donor_form
         Me.Guna2CircleButton2.HoverState.Parent = Me.Guna2CircleButton2
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
-        Me.Guna2CircleButton2.Location = New System.Drawing.Point(1320, 12)
+        Me.Guna2CircleButton2.Location = New System.Drawing.Point(990, 10)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CircleButton2.ShadowDecoration.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.Size = New System.Drawing.Size(40, 40)
+        Me.Guna2CircleButton2.Size = New System.Drawing.Size(30, 32)
         Me.Guna2CircleButton2.TabIndex = 68
         '
         'CloseButton
@@ -671,42 +701,131 @@ Partial Class Donor_form
         Me.CloseButton.HoverState.Parent = Me.CloseButton
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
-        Me.CloseButton.Location = New System.Drawing.Point(1382, 12)
+        Me.CloseButton.Location = New System.Drawing.Point(1036, 10)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
-        Me.CloseButton.Size = New System.Drawing.Size(40, 40)
+        Me.CloseButton.Size = New System.Drawing.Size(30, 32)
         Me.CloseButton.TabIndex = 67
         '
         'Guna2PictureBox1
         '
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
         Me.Guna2PictureBox1.ImageRotate = 0!
-        Me.Guna2PictureBox1.Location = New System.Drawing.Point(34, 14)
+        Me.Guna2PictureBox1.Location = New System.Drawing.Point(26, 11)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.Size = New System.Drawing.Size(268, 71)
+        Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
         Me.Guna2PictureBox1.TabIndex = 43
         Me.Guna2PictureBox1.TabStop = False
         '
-        'Guna2HtmlLabel1
+        'fNameErrorText
         '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins", 8.0!)
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Red
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(206, 300)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(158, 25)
-        Me.Guna2HtmlLabel1.TabIndex = 71
-        Me.Guna2HtmlLabel1.Text = "This field can't be empty"
+        Me.fNameErrorText.BackColor = System.Drawing.Color.Transparent
+        Me.fNameErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.fNameErrorText.ForeColor = System.Drawing.Color.Red
+        Me.fNameErrorText.Location = New System.Drawing.Point(154, 228)
+        Me.fNameErrorText.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.fNameErrorText.MaximumSize = New System.Drawing.Size(150, 21)
+        Me.fNameErrorText.Name = "fNameErrorText"
+        Me.fNameErrorText.Size = New System.Drawing.Size(137, 21)
+        Me.fNameErrorText.TabIndex = 71
+        Me.fNameErrorText.Text = "This field can't be empty"
+        Me.fNameErrorText.Visible = False
+        '
+        'lNameErrorText
+        '
+        Me.lNameErrorText.BackColor = System.Drawing.Color.Transparent
+        Me.lNameErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.lNameErrorText.ForeColor = System.Drawing.Color.Red
+        Me.lNameErrorText.Location = New System.Drawing.Point(431, 228)
+        Me.lNameErrorText.Margin = New System.Windows.Forms.Padding(2)
+        Me.lNameErrorText.MaximumSize = New System.Drawing.Size(150, 21)
+        Me.lNameErrorText.Name = "lNameErrorText"
+        Me.lNameErrorText.Size = New System.Drawing.Size(137, 21)
+        Me.lNameErrorText.TabIndex = 72
+        Me.lNameErrorText.Text = "This field can't be empty"
+        '
+        'ageErrorText
+        '
+        Me.ageErrorText.BackColor = System.Drawing.Color.Transparent
+        Me.ageErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.ageErrorText.ForeColor = System.Drawing.Color.Red
+        Me.ageErrorText.Location = New System.Drawing.Point(720, 228)
+        Me.ageErrorText.Margin = New System.Windows.Forms.Padding(2)
+        Me.ageErrorText.MaximumSize = New System.Drawing.Size(190, 21)
+        Me.ageErrorText.Name = "ageErrorText"
+        Me.ageErrorText.Size = New System.Drawing.Size(152, 21)
+        Me.ageErrorText.TabIndex = 73
+        Me.ageErrorText.Text = "Age must be between 17-71"
+        '
+        'phNumberErrorText
+        '
+        Me.phNumberErrorText.BackColor = System.Drawing.Color.Transparent
+        Me.phNumberErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.phNumberErrorText.ForeColor = System.Drawing.Color.Red
+        Me.phNumberErrorText.Location = New System.Drawing.Point(152, 331)
+        Me.phNumberErrorText.Margin = New System.Windows.Forms.Padding(2)
+        Me.phNumberErrorText.MaximumSize = New System.Drawing.Size(200, 21)
+        Me.phNumberErrorText.Name = "phNumberErrorText"
+        Me.phNumberErrorText.Size = New System.Drawing.Size(194, 21)
+        Me.phNumberErrorText.TabIndex = 74
+        Me.phNumberErrorText.Text = "Please enter a valid phone number"
+        '
+        'emailErrortext
+        '
+        Me.emailErrortext.BackColor = System.Drawing.Color.Transparent
+        Me.emailErrortext.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.emailErrortext.ForeColor = System.Drawing.Color.Red
+        Me.emailErrortext.Location = New System.Drawing.Point(431, 336)
+        Me.emailErrortext.Margin = New System.Windows.Forms.Padding(2)
+        Me.emailErrortext.MaximumSize = New System.Drawing.Size(200, 21)
+        Me.emailErrortext.Name = "emailErrortext"
+        Me.emailErrortext.Size = New System.Drawing.Size(191, 21)
+        Me.emailErrortext.TabIndex = 75
+        Me.emailErrortext.Text = "Please enter a valid email address"
+        '
+        'cityErrorText
+        '
+        Me.cityErrorText.BackColor = System.Drawing.Color.Transparent
+        Me.cityErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.cityErrorText.ForeColor = System.Drawing.Color.Red
+        Me.cityErrorText.Location = New System.Drawing.Point(152, 439)
+        Me.cityErrorText.Margin = New System.Windows.Forms.Padding(2)
+        Me.cityErrorText.MaximumSize = New System.Drawing.Size(150, 21)
+        Me.cityErrorText.Name = "cityErrorText"
+        Me.cityErrorText.Size = New System.Drawing.Size(137, 21)
+        Me.cityErrorText.TabIndex = 76
+        Me.cityErrorText.Text = "This field can't be empty"
+        '
+        'addressErrorText
+        '
+        Me.addressErrorText.BackColor = System.Drawing.Color.Transparent
+        Me.addressErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.addressErrorText.ForeColor = System.Drawing.Color.Red
+        Me.addressErrorText.Location = New System.Drawing.Point(431, 439)
+        Me.addressErrorText.Margin = New System.Windows.Forms.Padding(2)
+        Me.addressErrorText.MaximumSize = New System.Drawing.Size(150, 21)
+        Me.addressErrorText.Name = "addressErrorText"
+        Me.addressErrorText.Size = New System.Drawing.Size(137, 21)
+        Me.addressErrorText.TabIndex = 77
+        Me.addressErrorText.Text = "This field can't be empty"
         '
         'Donor_form
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
-        Me.ClientSize = New System.Drawing.Size(1440, 768)
-        Me.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.ClientSize = New System.Drawing.Size(1040, 624)
+        Me.Controls.Add(Me.addressErrorText)
+        Me.Controls.Add(Me.cityErrorText)
+        Me.Controls.Add(Me.emailErrortext)
+        Me.Controls.Add(Me.phNumberErrorText)
+        Me.Controls.Add(Me.ageErrorText)
+        Me.Controls.Add(Me.lNameErrorText)
+        Me.Controls.Add(Me.fNameErrorText)
         Me.Controls.Add(Me.Guna2Panel3)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
@@ -734,6 +853,7 @@ Partial Class Donor_form
         Me.Controls.Add(Me.Guna2PictureBox1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Donor_form"
         Me.Text = "Donor_form"
         Me.Guna2Panel3.ResumeLayout(False)
@@ -778,5 +898,11 @@ Partial Class Donor_form
     Friend WithEvents DashboardBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents LogoutBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents fNameErrorText As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents phNumberErrorText As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents ageErrorText As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents lNameErrorText As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents cityErrorText As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents emailErrortext As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents addressErrorText As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class
