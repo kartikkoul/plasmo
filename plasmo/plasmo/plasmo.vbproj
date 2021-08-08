@@ -112,6 +112,12 @@
     <Compile Include="donor_success.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="donor_reciept.Designer.vb">
+      <DependentUpon>donor_reciept.vb</DependentUpon>
+    </Compile>
+    <Compile Include="donor_reciept.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="login.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -172,6 +178,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="donor_success.resx">
       <DependentUpon>donor_success.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="donor_reciept.resx">
+      <DependentUpon>donor_reciept.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>

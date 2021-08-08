@@ -62,7 +62,6 @@ D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\bin\Debug\plasmo.xml
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\bin\Debug\Guna.UI2.dll
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.vbproj.AssemblyReference.cache
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.Dashboard.resources
-D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.Donor_form.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.Resources.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.Reciever_form.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.vbproj.GenerateResource.cache
@@ -79,3 +78,5 @@ D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.login.resources
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.reciever_history.resources
 D:\Desktop Files\plasmo project\plasmo\plasmo\obj\Debug\plasmo.assign.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.donor_success.resources
+D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.donorForm.resources
+D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.Form1.resources
