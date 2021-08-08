@@ -42,15 +42,16 @@ Partial Class reciever_history
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.plasma_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.reciever_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.age = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.blood_group = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.recieption_time = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.reciever_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.reciever_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.age = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.blood_group = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.plasma_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.recieption_time = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -281,14 +282,14 @@ Partial Class reciever_history
         Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Segoe UI", 10.5!)
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText
         DataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.[True]
         Me.Guna2DataGridView1.ColumnHeadersDefaultCellStyle = DataGridViewCellStyle2
         Me.Guna2DataGridView1.ColumnHeadersHeight = 21
-        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.plasma_id, Me.reciever_name, Me.age, Me.blood_group, Me.recieption_time})
+        Me.Guna2DataGridView1.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.reciever_id, Me.reciever_name, Me.age, Me.blood_group, Me.plasma_id, Me.recieption_time})
         Me.Guna2DataGridView1.Cursor = System.Windows.Forms.Cursors.Hand
         DataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle3.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
@@ -317,6 +318,7 @@ Partial Class reciever_history
         Me.Guna2DataGridView1.RowHeadersVisible = False
         Me.Guna2DataGridView1.RowHeadersWidth = 42
         DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
         Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle5
         Me.Guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
@@ -344,51 +346,6 @@ Partial Class reciever_history
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'plasma_id
-        '
-        Me.plasma_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.plasma_id.Frozen = True
-        Me.plasma_id.HeaderText = "PLASMA ID"
-        Me.plasma_id.Name = "plasma_id"
-        Me.plasma_id.ReadOnly = True
-        Me.plasma_id.Width = 157
-        '
-        'reciever_name
-        '
-        Me.reciever_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.reciever_name.Frozen = True
-        Me.reciever_name.HeaderText = "RECIEVER NAME"
-        Me.reciever_name.Name = "reciever_name"
-        Me.reciever_name.ReadOnly = True
-        Me.reciever_name.Width = 156
-        '
-        'age
-        '
-        Me.age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.age.Frozen = True
-        Me.age.HeaderText = "AGE"
-        Me.age.Name = "age"
-        Me.age.ReadOnly = True
-        Me.age.Width = 157
-        '
-        'blood_group
-        '
-        Me.blood_group.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.blood_group.Frozen = True
-        Me.blood_group.HeaderText = "BLOOD GROUP"
-        Me.blood_group.Name = "blood_group"
-        Me.blood_group.ReadOnly = True
-        Me.blood_group.Width = 156
-        '
-        'recieption_time
-        '
-        Me.recieption_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.recieption_time.Frozen = True
-        Me.recieption_time.HeaderText = "RECIEVED ON"
-        Me.recieption_time.Name = "recieption_time"
-        Me.recieption_time.ReadOnly = True
-        Me.recieption_time.Width = 156
         '
         'Guna2PictureBox3
         '
@@ -475,6 +432,56 @@ Partial Class reciever_history
         Me.Guna2PictureBox1.TabIndex = 74
         Me.Guna2PictureBox1.TabStop = False
         '
+        'reciever_id
+        '
+        Me.reciever_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.reciever_id.Frozen = True
+        Me.reciever_id.HeaderText = "RECIEVER ID"
+        Me.reciever_id.Name = "reciever_id"
+        Me.reciever_id.ReadOnly = True
+        Me.reciever_id.Width = 107
+        '
+        'reciever_name
+        '
+        Me.reciever_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.reciever_name.Frozen = True
+        Me.reciever_name.HeaderText = "RECIEVER NAME"
+        Me.reciever_name.Name = "reciever_name"
+        Me.reciever_name.ReadOnly = True
+        Me.reciever_name.Width = 156
+        '
+        'age
+        '
+        Me.age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.age.Frozen = True
+        Me.age.HeaderText = "AGE"
+        Me.age.Name = "age"
+        Me.age.ReadOnly = True
+        Me.age.Width = 157
+        '
+        'blood_group
+        '
+        Me.blood_group.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.blood_group.Frozen = True
+        Me.blood_group.HeaderText = "BLOOD GROUP"
+        Me.blood_group.Name = "blood_group"
+        Me.blood_group.ReadOnly = True
+        Me.blood_group.Width = 156
+        '
+        'plasma_id
+        '
+        Me.plasma_id.HeaderText = "PLASMA ID"
+        Me.plasma_id.Name = "plasma_id"
+        Me.plasma_id.ReadOnly = True
+        '
+        'recieption_time
+        '
+        Me.recieption_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.recieption_time.HeaderText = "RECIEVED ON"
+        Me.recieption_time.Name = "recieption_time"
+        Me.recieption_time.ReadOnly = True
+        Me.recieption_time.Width = 156
+        '
         'reciever_history
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -519,10 +526,11 @@ Partial Class reciever_history
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents plasma_id As DataGridViewTextBoxColumn
+    Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents reciever_id As DataGridViewTextBoxColumn
     Friend WithEvents reciever_name As DataGridViewTextBoxColumn
     Friend WithEvents age As DataGridViewTextBoxColumn
     Friend WithEvents blood_group As DataGridViewTextBoxColumn
+    Friend WithEvents plasma_id As DataGridViewTextBoxColumn
     Friend WithEvents recieption_time As DataGridViewTextBoxColumn
-    Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
 End Class

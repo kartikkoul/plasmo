@@ -70,7 +70,6 @@ Partial Class Dashboard
         Me.Guna2Transition1.SetDecoration(Me.Label5, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.Label5.ForeColor = System.Drawing.Color.Black
         Me.Label5.Name = "Label5"
-        Me.Label5.UseWaitCursor = True
         '
         'Guna2Panel1
         '
@@ -88,7 +87,6 @@ Partial Class Dashboard
         resources.ApplyResources(Me.Guna2Panel1, "Guna2Panel1")
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.UseWaitCursor = True
         '
         'Guna2PictureBox2
         '
@@ -99,7 +97,6 @@ Partial Class Dashboard
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
         Me.Guna2PictureBox2.TabStop = False
-        Me.Guna2PictureBox2.UseWaitCursor = True
         '
         'Guna2Panel2
         '
@@ -108,7 +105,6 @@ Partial Class Dashboard
         resources.ApplyResources(Me.Guna2Panel2, "Guna2Panel2")
         Me.Guna2Panel2.Name = "Guna2Panel2"
         Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.UseWaitCursor = True
         '
         'RecieverBtnMenu
         '
@@ -127,7 +123,6 @@ Partial Class Dashboard
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.UseWaitCursor = True
         '
         'DonorBtnMenu
         '
@@ -146,7 +141,6 @@ Partial Class Dashboard
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Name = "DonorBtnMenu"
         Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.UseWaitCursor = True
         '
         'QueueBtnMenu
         '
@@ -165,7 +159,6 @@ Partial Class Dashboard
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Name = "QueueBtnMenu"
         Me.QueueBtnMenu.ShadowDecoration.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.UseWaitCursor = True
         '
         'HistoryBtnMenu
         '
@@ -185,7 +178,6 @@ Partial Class Dashboard
         Me.HistoryBtnMenu.Name = "HistoryBtnMenu"
         Me.HistoryBtnMenu.ShadowDecoration.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Tile = True
-        Me.HistoryBtnMenu.UseWaitCursor = True
         '
         'DashboardBtnMenu
         '
@@ -204,7 +196,6 @@ Partial Class Dashboard
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Name = "DashboardBtnMenu"
         Me.DashboardBtnMenu.ShadowDecoration.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.UseWaitCursor = True
         '
         'LogoutBtnMenu
         '
@@ -223,10 +214,10 @@ Partial Class Dashboard
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Name = "LogoutBtnMenu"
         Me.LogoutBtnMenu.ShadowDecoration.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.UseWaitCursor = True
         '
         'APlusCircle
         '
+        Me.APlusCircle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2Transition1.SetDecoration(Me.APlusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.APlusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.APlusCircle.FillOffset = 5
@@ -245,11 +236,11 @@ Partial Class Dashboard
         Me.APlusCircle.ShadowDecoration.Parent = Me.APlusCircle
         Me.APlusCircle.ShowPercentage = True
         Me.APlusCircle.TextRenderingHint = System.Drawing.Text.TextRenderingHint.SystemDefault
-        Me.APlusCircle.UseWaitCursor = True
         Me.APlusCircle.Value = 21
         '
         'AMinusCircle
         '
+        Me.AMinusCircle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2Transition1.SetDecoration(Me.AMinusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.AMinusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.AMinusCircle.FillOffset = 5
@@ -267,7 +258,6 @@ Partial Class Dashboard
         Me.AMinusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.AMinusCircle.ShadowDecoration.Parent = Me.AMinusCircle
         Me.AMinusCircle.ShowPercentage = True
-        Me.AMinusCircle.UseWaitCursor = True
         Me.AMinusCircle.Value = 25
         '
         'Label1
@@ -276,10 +266,10 @@ Partial Class Dashboard
         Me.Guna2Transition1.SetDecoration(Me.Label1, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.Label1.ForeColor = System.Drawing.Color.Black
         Me.Label1.Name = "Label1"
-        Me.Label1.UseWaitCursor = True
         '
         'BMinusCircle
         '
+        Me.BMinusCircle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2Transition1.SetDecoration(Me.BMinusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.BMinusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BMinusCircle.FillOffset = 5
@@ -297,7 +287,6 @@ Partial Class Dashboard
         Me.BMinusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.BMinusCircle.ShadowDecoration.Parent = Me.BMinusCircle
         Me.BMinusCircle.ShowPercentage = True
-        Me.BMinusCircle.UseWaitCursor = True
         Me.BMinusCircle.Value = 2
         '
         'Label2
@@ -306,10 +295,10 @@ Partial Class Dashboard
         Me.Guna2Transition1.SetDecoration(Me.Label2, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.Label2.ForeColor = System.Drawing.Color.Black
         Me.Label2.Name = "Label2"
-        Me.Label2.UseWaitCursor = True
         '
         'BPlusCircle
         '
+        Me.BPlusCircle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2Transition1.SetDecoration(Me.BPlusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.BPlusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.BPlusCircle.FillOffset = 5
@@ -327,7 +316,6 @@ Partial Class Dashboard
         Me.BPlusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.BPlusCircle.ShadowDecoration.Parent = Me.BPlusCircle
         Me.BPlusCircle.ShowPercentage = True
-        Me.BPlusCircle.UseWaitCursor = True
         Me.BPlusCircle.Value = 75
         '
         'Label3
@@ -336,10 +324,10 @@ Partial Class Dashboard
         Me.Guna2Transition1.SetDecoration(Me.Label3, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.Label3.ForeColor = System.Drawing.Color.Black
         Me.Label3.Name = "Label3"
-        Me.Label3.UseWaitCursor = True
         '
         'ABMinusCircle
         '
+        Me.ABMinusCircle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2Transition1.SetDecoration(Me.ABMinusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.ABMinusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ABMinusCircle.FillOffset = 5
@@ -357,7 +345,6 @@ Partial Class Dashboard
         Me.ABMinusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.ABMinusCircle.ShadowDecoration.Parent = Me.ABMinusCircle
         Me.ABMinusCircle.ShowPercentage = True
-        Me.ABMinusCircle.UseWaitCursor = True
         Me.ABMinusCircle.Value = 37
         '
         'Label4
@@ -366,10 +353,10 @@ Partial Class Dashboard
         Me.Guna2Transition1.SetDecoration(Me.Label4, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.Label4.ForeColor = System.Drawing.Color.Black
         Me.Label4.Name = "Label4"
-        Me.Label4.UseWaitCursor = True
         '
         'OMinusCircle
         '
+        Me.OMinusCircle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2Transition1.SetDecoration(Me.OMinusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.OMinusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.OMinusCircle.FillOffset = 5
@@ -387,10 +374,10 @@ Partial Class Dashboard
         Me.OMinusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.OMinusCircle.ShadowDecoration.Parent = Me.OMinusCircle
         Me.OMinusCircle.ShowPercentage = True
-        Me.OMinusCircle.UseWaitCursor = True
         '
         'ABPlusCircle
         '
+        Me.ABPlusCircle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2Transition1.SetDecoration(Me.ABPlusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.ABPlusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ABPlusCircle.FillOffset = 5
@@ -408,7 +395,6 @@ Partial Class Dashboard
         Me.ABPlusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.ABPlusCircle.ShadowDecoration.Parent = Me.ABPlusCircle
         Me.ABPlusCircle.ShowPercentage = True
-        Me.ABPlusCircle.UseWaitCursor = True
         Me.ABPlusCircle.Value = 44
         '
         'Label6
@@ -417,7 +403,6 @@ Partial Class Dashboard
         Me.Guna2Transition1.SetDecoration(Me.Label6, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.Label6.ForeColor = System.Drawing.Color.Black
         Me.Label6.Name = "Label6"
-        Me.Label6.UseWaitCursor = True
         '
         'Label7
         '
@@ -425,10 +410,10 @@ Partial Class Dashboard
         Me.Guna2Transition1.SetDecoration(Me.Label7, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.Label7.ForeColor = System.Drawing.Color.Black
         Me.Label7.Name = "Label7"
-        Me.Label7.UseWaitCursor = True
         '
         'OPlusCircle
         '
+        Me.OPlusCircle.Cursor = System.Windows.Forms.Cursors.Hand
         Me.Guna2Transition1.SetDecoration(Me.OPlusCircle, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.OPlusCircle.FillColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.OPlusCircle.FillOffset = 5
@@ -446,7 +431,6 @@ Partial Class Dashboard
         Me.OPlusCircle.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.OPlusCircle.ShadowDecoration.Parent = Me.OPlusCircle
         Me.OPlusCircle.ShowPercentage = True
-        Me.OPlusCircle.UseWaitCursor = True
         Me.OPlusCircle.Value = 95
         '
         'Label8
@@ -455,7 +439,6 @@ Partial Class Dashboard
         Me.Guna2Transition1.SetDecoration(Me.Label8, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.Label8.ForeColor = System.Drawing.Color.Black
         Me.Label8.Name = "Label8"
-        Me.Label8.UseWaitCursor = True
         '
         'Guna2Transition1
         '
@@ -486,7 +469,6 @@ Partial Class Dashboard
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
         Me.Guna2PictureBox1.TabStop = False
-        Me.Guna2PictureBox1.UseWaitCursor = True
         '
         'Guna2CircleButton2
         '
@@ -516,7 +498,6 @@ Partial Class Dashboard
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.Guna2CircleButton2.ShadowDecoration.Parent = Me.Guna2CircleButton2
-        Me.Guna2CircleButton2.UseWaitCursor = True
         '
         'CloseButton
         '
@@ -543,7 +524,6 @@ Partial Class Dashboard
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
-        Me.CloseButton.UseWaitCursor = True
         '
         'Dashboard
         '
@@ -570,11 +550,11 @@ Partial Class Dashboard
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2PictureBox1)
+        Me.Cursor = System.Windows.Forms.Cursors.Default
         Me.Guna2Transition1.SetDecoration(Me, Guna.UI2.AnimatorNS.DecorationType.None)
         Me.ForeColor = System.Drawing.Color.Transparent
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None
         Me.Name = "Dashboard"
-        Me.UseWaitCursor = True
         Me.Guna2Panel1.ResumeLayout(False)
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()

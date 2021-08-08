@@ -231,10 +231,10 @@ Partial Class donor_success
         'Guna2HtmlLabel7
         '
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(542, 463)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(125, 31)
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(125, 50)
         Me.Guna2HtmlLabel7.TabIndex = 99
         Me.Guna2HtmlLabel7.Text = "SUCCESS"
         '
@@ -249,7 +249,7 @@ Partial Class donor_success
         Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Guna2Button2.DisabledState.Parent = Me.Guna2Button2
         Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button2.Font = New System.Drawing.Font("Poppins", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
         Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
         Me.Guna2Button2.Location = New System.Drawing.Point(360, 575)
@@ -259,6 +259,7 @@ Partial Class donor_success
         Me.Guna2Button2.TabIndex = 101
         Me.Guna2Button2.Text = "BACK TO DASHBOARD"
         Me.Guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.Guna2Button2.TextOffset = New System.Drawing.Point(0, 1)
         '
         'Guna2Button1
         '
@@ -271,7 +272,7 @@ Partial Class donor_success
         Me.Guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.Guna2Button1.DisabledState.Parent = Me.Guna2Button1
         Me.Guna2Button1.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2Button1.Font = New System.Drawing.Font("Poppins", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
         Me.Guna2Button1.Location = New System.Drawing.Point(623, 575)
@@ -281,6 +282,7 @@ Partial Class donor_success
         Me.Guna2Button1.TabIndex = 102
         Me.Guna2Button1.Text = "PRINT THE RECIEPT"
         Me.Guna2Button1.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
+        Me.Guna2Button1.TextOffset = New System.Drawing.Point(0, 1)
         '
         'Guna2PictureBox5
         '

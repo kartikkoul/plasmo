@@ -83,30 +83,37 @@ Public Class Reciever_form
         End Select
 
         Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
-        Dim insertQuery As New SqlCommand("insert into reciever_records(reciever_id,first_name,last_name,age,phone_number,email,city,address,blood_group,sex,recieved) values('" & reciever_id & "','" & fName.Text & "','" & lName.Text & "','" & age.Text & "','" & phNumber.Text & "','" & email.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & "N" & "')", con)
+        Dim insertQuery As New SqlCommand("insert into reciever_records(reciever_id,first_name,last_name,age,phone_number,email,city,  address,blood_group,sex,recieved, anti_body) values('" & reciever_id & "','" & fName.Text & "','" & lName.Text & "','" & age.Text & "','" & phNumber.Text & "','" & email.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & "N" & "','" & "N" & "')", con)
         con.Open()
         insertQuery.ExecuteNonQuery()
-        Dim cmd As New SqlCommand("select plasma_id, price from donor_records where blood_group='" & blood_group & "', sold='N'", con)
+        Dim cmd As New SqlCommand("select plasma_id, price from donor_records where blood_group='" & blood_group & "' AND sold='" & "N" & "'", con)
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
-        con.Close()
 
+        Dim plasmaID As String = 0
+        Dim price As Integer = 0
         If dr.HasRows Then
-            Dim plasmaID = dr(0)("plasma_id")
-            Dim price = dr(0)("price")
+            While dr.Read
+                plasmaID = dr("plasma_id")
+                price = dr("price")
+                Exit While
+            End While
             Dim time As Date = Date.UtcNow
-            Dim updateRecieverQuery As New SqlCommand("UPDATE reciever_records SET plasma_id = '" & plasmaID & "' ,price = '" & price & "', transaction_time = '" & time & "' WHERE reciever_id = '" & reciever_id & "'", con)
-            Dim updateDonorQuery As New SqlCommand("UPDATE donor_records SET sold=Y WHERE plasma_id = '" & plasmaID & "'", con)
+
             If con.State = 1 Then
-                conn.Close()
+                con.Close()
             End If
+            Dim updateRecieverQuery As New SqlCommand("UPDATE reciever_records SET plasma_id = '" & plasmaID & "' ,price = '" & price & "',recieved='" & "Y" & "', transaction_time = '" & time & "' WHERE reciever_id = '" & reciever_id & "'", con)
+            Dim updateDonorQuery As New SqlCommand("UPDATE donor_records SET sold='" & "Y" & "' WHERE plasma_id = '" & plasmaID & "'", con)
             con.Open()
             updateRecieverQuery.ExecuteNonQuery()
             updateDonorQuery.ExecuteNonQuery()
             con.Close()
+            reciever_reciept.recieverIDLabel.Text = reciever_id
             reciever_reciept.Show()
             Me.Hide()
         Else
+            con.Close()
             PlasmaNotAvailable.Show()
             Me.Show()
         End If

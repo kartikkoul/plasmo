@@ -35,6 +35,7 @@ Partial Class donor_history
         Me.queueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.donorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.historyBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.dashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.logoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Newdataset = New plasmo.newdataset()
@@ -52,14 +53,13 @@ Partial Class donor_history
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -107,14 +107,14 @@ Partial Class donor_history
         Me.recieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.recieverBtnMenu.DisabledState.Parent = Me.recieverBtnMenu
         Me.recieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.recieverBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.recieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.recieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.recieverBtnMenu.HoverState.Parent = Me.recieverBtnMenu
-        Me.recieverBtnMenu.Location = New System.Drawing.Point(182, 14)
+        Me.recieverBtnMenu.Location = New System.Drawing.Point(286, 14)
         Me.recieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.recieverBtnMenu.Name = "recieverBtnMenu"
         Me.recieverBtnMenu.ShadowDecoration.Parent = Me.recieverBtnMenu
-        Me.recieverBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.recieverBtnMenu.Size = New System.Drawing.Size(133, 31)
         Me.recieverBtnMenu.TabIndex = 83
         Me.recieverBtnMenu.Text = "RECEIVER"
         '
@@ -129,7 +129,7 @@ Partial Class donor_history
         Me.queueBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.queueBtnMenu.DisabledState.Parent = Me.queueBtnMenu
         Me.queueBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.queueBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.queueBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.queueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.queueBtnMenu.HoverState.Parent = Me.queueBtnMenu
         Me.queueBtnMenu.Location = New System.Drawing.Point(423, 14)
@@ -151,10 +151,10 @@ Partial Class donor_history
         Me.donorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.donorBtnMenu.DisabledState.Parent = Me.donorBtnMenu
         Me.donorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.donorBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.donorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.donorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.donorBtnMenu.HoverState.Parent = Me.donorBtnMenu
-        Me.donorBtnMenu.Location = New System.Drawing.Point(304, 14)
+        Me.donorBtnMenu.Location = New System.Drawing.Point(173, 14)
         Me.donorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.donorBtnMenu.Name = "donorBtnMenu"
         Me.donorBtnMenu.ShadowDecoration.Parent = Me.donorBtnMenu
@@ -173,7 +173,7 @@ Partial Class donor_history
         Me.historyBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.historyBtnMenu.DisabledState.Parent = Me.historyBtnMenu
         Me.historyBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.historyBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.historyBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.historyBtnMenu.ForeColor = System.Drawing.Color.White
         Me.historyBtnMenu.HoverState.Parent = Me.historyBtnMenu
         Me.historyBtnMenu.Location = New System.Drawing.Point(542, 14)
@@ -183,6 +183,19 @@ Partial Class donor_history
         Me.historyBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.historyBtnMenu.TabIndex = 81
         Me.historyBtnMenu.Text = "HISTORY"
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
+        Me.Guna2PictureBox2.TabIndex = 80
+        Me.Guna2PictureBox2.TabStop = False
         '
         'dashboardBtnMenu
         '
@@ -195,7 +208,7 @@ Partial Class donor_history
         Me.dashboardBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.dashboardBtnMenu.DisabledState.Parent = Me.dashboardBtnMenu
         Me.dashboardBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.dashboardBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.dashboardBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.dashboardBtnMenu.HoverState.Parent = Me.dashboardBtnMenu
         Me.dashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
@@ -217,7 +230,7 @@ Partial Class donor_history
         Me.logoutBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.logoutBtnMenu.DisabledState.Parent = Me.logoutBtnMenu
         Me.logoutBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.logoutBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.logoutBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.logoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.logoutBtnMenu.HoverState.Parent = Me.logoutBtnMenu
         Me.logoutBtnMenu.Location = New System.Drawing.Point(879, 11)
@@ -368,11 +381,11 @@ Partial Class donor_history
         Me.Guna2HtmlLabel2.AutoSize = False
         Me.Guna2HtmlLabel2.AutoSizeHeightOnly = True
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Poppins SemiBold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(567, 164)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(567, 162)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(83, 18)
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(83, 27)
         Me.Guna2HtmlLabel2.TabIndex = 88
         Me.Guna2HtmlLabel2.Text = "RECIEVER"
         '
@@ -381,11 +394,11 @@ Partial Class donor_history
         Me.Guna2HtmlLabel1.AutoSize = False
         Me.Guna2HtmlLabel1.AutoSizeHeightOnly = True
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.5!, System.Drawing.FontStyle.Bold)
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins SemiBold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(459, 164)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(459, 162)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(60, 18)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(60, 27)
         Me.Guna2HtmlLabel1.TabIndex = 87
         Me.Guna2HtmlLabel1.Text = "DONOR"
         '
@@ -462,19 +475,6 @@ Partial Class donor_history
         Me.CloseButton.Size = New System.Drawing.Size(30, 32)
         Me.CloseButton.TabIndex = 65
         '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
-        Me.Guna2PictureBox2.TabIndex = 80
-        Me.Guna2PictureBox2.TabStop = False
-        '
         'Guna2PictureBox1
         '
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
@@ -509,11 +509,11 @@ Partial Class donor_history
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.Guna2Panel1.ResumeLayout(False)
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 

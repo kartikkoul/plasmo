@@ -19,7 +19,7 @@ Public Class Dashboard
 
         If con.State = 1 Then con.Close()
 
-        Dim aplus_cmd As New SqlCommand("select * from donor_records where blood_group='AP'", con)
+        Dim aplus_cmd As New SqlCommand("select * from donor_records where blood_group='AP' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = aplus_cmd
         adapter.Fill(ds, "donor_records")
@@ -30,7 +30,7 @@ Public Class Dashboard
         APlusCircle.Value = Aplus
 
         If con.State = 1 Then con.Close()
-        Dim aminus_cmd As New SqlCommand("select * from donor_records where blood_group='AM'", con)
+        Dim aminus_cmd As New SqlCommand("select * from donor_records where blood_group='AM' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = aminus_cmd
         adapter.Fill(ds, "donor_records")
@@ -41,7 +41,7 @@ Public Class Dashboard
         AMinusCircle.Value = AMinus
 
         If con.State = 1 Then con.Close()
-        Dim bplus_cmd As New SqlCommand("select * from donor_records  where blood_group='BP'", con)
+        Dim bplus_cmd As New SqlCommand("select * from donor_records  where blood_group='BP' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = bplus_cmd
         adapter.Fill(ds, "donor_records")
@@ -52,7 +52,7 @@ Public Class Dashboard
         BPlusCircle.Value = BPlus
 
         If con.State = 1 Then con.Close()
-        Dim bminus_cmd As New SqlCommand("select * from donor_records  where blood_group='BM'", con)
+        Dim bminus_cmd As New SqlCommand("select * from donor_records  where blood_group='BM' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = bminus_cmd
         adapter.Fill(ds, "donor_records")
@@ -63,7 +63,7 @@ Public Class Dashboard
         BMinusCircle.Value = BMinus
 
         If con.State = 1 Then con.Close()
-        Dim abplus_cmd As New SqlCommand("select * from donor_records  where blood_group='ABP'", con)
+        Dim abplus_cmd As New SqlCommand("select * from donor_records  where blood_group='ABP' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = abplus_cmd
         adapter.Fill(ds, "donor_records")
@@ -74,7 +74,7 @@ Public Class Dashboard
         ABPlusCircle.Value = ABPlus
 
         If con.State = 1 Then con.Close()
-        Dim abminus_cmd As New SqlCommand("select * from donor_records where blood_group='ABM'", con)
+        Dim abminus_cmd As New SqlCommand("select * from donor_records where blood_group='ABM' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = abminus_cmd
         adapter.Fill(ds, "donor_records")
@@ -85,7 +85,7 @@ Public Class Dashboard
         ABMinusCircle.Value = ABMinus
 
         If con.State = 1 Then con.Close()
-        Dim oplus_cmd As New SqlCommand("select * from donor_records  where blood_group='OP'", con)
+        Dim oplus_cmd As New SqlCommand("select * from donor_records  where blood_group='OP' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = oplus_cmd
         adapter.Fill(ds, "donor_records")
@@ -96,7 +96,7 @@ Public Class Dashboard
         OPlusCircle.Value = OPlus
 
         If con.State = 1 Then con.Close()
-        Dim ominus_cmd As New SqlCommand("select * from donor_records where blood_group='OM'", con)
+        Dim ominus_cmd As New SqlCommand("select * from donor_records where blood_group='OM' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = ominus_cmd
         adapter.Fill(ds, "donor_records")
@@ -133,6 +133,12 @@ Public Class Dashboard
 
     End Sub
 
+
+
+    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
+
+    End Sub
+
     Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -140,11 +146,6 @@ Public Class Dashboard
     Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
         Application.Exit()
     End Sub
-
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
-
-    End Sub
-
 
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
 
@@ -179,6 +180,58 @@ Public Class Dashboard
     End Sub
 
     Private Sub Guna2CircleProgressBar8_ValueChanged(sender As Object, e As EventArgs) Handles OPlusCircle.ValueChanged
+
+    End Sub
+
+    Private Sub BMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BMinusCircle.ValueChanged
+
+    End Sub
+
+    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub OMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles OMinusCircle.ValueChanged
+
+    End Sub
+
+    Private Sub ABPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABPlusCircle.ValueChanged
+
+    End Sub
+
+    Private Sub AMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles AMinusCircle.ValueChanged
+
+    End Sub
+
+    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
+
+    End Sub
+
+    Private Sub BPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BPlusCircle.ValueChanged
+
+    End Sub
+
+    Private Sub Label7_Click_1(sender As Object, e As EventArgs) Handles Label7.Click
+
+    End Sub
+
+    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub ABMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABMinusCircle.ValueChanged
 
     End Sub
 End Class

@@ -17,7 +17,7 @@ Public Class donor_history
     End Sub
 
     Private Sub DonorHistory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim li As Integer
+
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         con.Open()
         Dim cmd As New SqlCommand("select plasma_id, first_name, last_name, age, blood_group, anti_body, transaction_time from donor_records", con)
@@ -25,7 +25,7 @@ Public Class donor_history
         dr = cmd.ExecuteReader
 
         Guna2DataGridView1.Rows.Clear()
-        li = 0
+
         While dr.Read
 
             Dim blood_group As String = dr("blood_group")

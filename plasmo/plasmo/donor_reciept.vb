@@ -60,11 +60,78 @@ Public Class donor_reciept
 
     End Sub
 
+
+
+    Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
     Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
         Application.Exit()
     End Sub
 
-    Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
-        Me.WindowState = FormWindowState.Minimized
+    Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
+        Dashboard.Show()
+        Me.Hide()
+    End Sub
+    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
+        donorForm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
+        Reciever_form.Show()
+        Me.Hide()
+    End Sub
+    Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
+
+    End Sub
+    Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
+        login.Show()
+        Me.Hide()
+    End Sub
+    Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
+        donor_history.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Guna2HtmlLabel7_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel7.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel5_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel5.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel15_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel15.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel11_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel11.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel9_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel9.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel13_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel13.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel17_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel17.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel4_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel4.Click
+
+    End Sub
+
+    Private Sub Guna2HtmlLabel3_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel3.Click
+
     End Sub
 End Class

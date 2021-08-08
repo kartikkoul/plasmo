@@ -228,7 +228,7 @@
     <value>1</value>
   </data>
   <data name="ABMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
+    <value>Poppins, 18pt</value>
   </data>
   <data name="ABMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>778, 417</value>
@@ -258,7 +258,7 @@
     <value>2</value>
   </data>
   <data name="BMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
+    <value>Poppins, 18pt</value>
   </data>
   <data name="BMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>778, 218</value>
@@ -291,7 +291,7 @@
     <value>True</value>
   </data>
   <data name="Label4.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+    <value>Poppins, 24pt</value>
   </data>
   <data name="Label4.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -303,7 +303,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="Label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>70, 37</value>
+    <value>84, 56</value>
   </data>
   <data name="Label4.TabIndex" type="System.Int32, mscorlib">
     <value>78</value>
@@ -327,7 +327,7 @@
     <value>True</value>
   </data>
   <data name="Label2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+    <value>Poppins, 24pt</value>
   </data>
   <data name="Label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -339,7 +339,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="Label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>48, 37</value>
+    <value>62, 56</value>
   </data>
   <data name="Label2.TabIndex" type="System.Int32, mscorlib">
     <value>69</value>
@@ -360,7 +360,7 @@
     <value>5</value>
   </data>
   <data name="OMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
+    <value>Poppins, 18pt</value>
   </data>
   <data name="OMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 417</value>
@@ -390,7 +390,7 @@
     <value>6</value>
   </data>
   <data name="ABPlusCircle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
+    <value>Poppins, 18pt</value>
   </data>
   <data name="ABPlusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>577, 417</value>
@@ -420,7 +420,7 @@
     <value>7</value>
   </data>
   <data name="AMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
+    <value>Poppins, 18pt</value>
   </data>
   <data name="AMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>380, 218</value>
@@ -453,7 +453,7 @@
     <value>True</value>
   </data>
   <data name="Label6.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+    <value>Poppins, 24pt</value>
   </data>
   <data name="Label6.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -465,7 +465,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="Label6.Size" type="System.Drawing.Size, System.Drawing">
-    <value>52, 37</value>
+    <value>67, 56</value>
   </data>
   <data name="Label6.TabIndex" type="System.Int32, mscorlib">
     <value>74</value>
@@ -486,7 +486,7 @@
     <value>9</value>
   </data>
   <data name="BPlusCircle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
+    <value>Poppins, 18pt</value>
   </data>
   <data name="BPlusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>577, 218</value>
@@ -519,7 +519,7 @@
     <value>True</value>
   </data>
   <data name="Label7.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+    <value>Poppins, 24pt</value>
   </data>
   <data name="Label7.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -531,7 +531,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="Label7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 37</value>
+    <value>88, 56</value>
   </data>
   <data name="Label7.TabIndex" type="System.Int32, mscorlib">
     <value>76</value>
@@ -555,7 +555,7 @@
     <value>True</value>
   </data>
   <data name="Label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+    <value>Poppins, 24pt</value>
   </data>
   <data name="Label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -567,7 +567,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="Label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>49, 37</value>
+    <value>64, 56</value>
   </data>
   <data name="Label1.TabIndex" type="System.Int32, mscorlib">
     <value>65</value>
@@ -588,7 +588,7 @@
     <value>12</value>
   </data>
   <data name="OPlusCircle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
+    <value>Poppins, 18pt</value>
   </data>
   <data name="OPlusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>180, 417</value>
@@ -621,7 +621,7 @@
     <value>True</value>
   </data>
   <data name="Label3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+    <value>Poppins, 24pt</value>
   </data>
   <data name="Label3.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -633,7 +633,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="Label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>57, 37</value>
+    <value>66, 56</value>
   </data>
   <data name="Label3.TabIndex" type="System.Int32, mscorlib">
     <value>67</value>
@@ -657,7 +657,7 @@
     <value>True</value>
   </data>
   <data name="Label8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+    <value>Poppins, 24pt</value>
   </data>
   <data name="Label8.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -669,7 +669,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="Label8.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 37</value>
+    <value>71, 56</value>
   </data>
   <data name="Label8.TabIndex" type="System.Int32, mscorlib">
     <value>71</value>
@@ -690,7 +690,7 @@
     <value>15</value>
   </data>
   <data name="APlusCircle.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 18pt</value>
+    <value>Poppins, 18pt</value>
   </data>
   <data name="APlusCircle.Location" type="System.Drawing.Point, System.Drawing">
     <value>180, 218</value>
@@ -723,7 +723,7 @@
     <value>True</value>
   </data>
   <data name="Label5.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 24pt</value>
+    <value>Poppins, 24pt</value>
   </data>
   <data name="Label5.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -735,7 +735,7 @@
     <value>2, 0, 2, 0</value>
   </data>
   <data name="Label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>58, 37</value>
+    <value>68, 56</value>
   </data>
   <data name="Label5.TabIndex" type="System.Int32, mscorlib">
     <value>51</value>
@@ -804,16 +804,16 @@
     <value>1</value>
   </data>
   <data name="RecieverBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="RecieverBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>307, 14</value>
+    <value>301, 14</value>
   </data>
   <data name="RecieverBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="RecieverBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 31</value>
+    <value>131, 31</value>
   </data>
   <data name="RecieverBtnMenu.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
@@ -834,7 +834,7 @@
     <value>2</value>
   </data>
   <data name="DonorBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="DonorBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>182, 14</value>
@@ -864,7 +864,7 @@
     <value>3</value>
   </data>
   <data name="QueueBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="QueueBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>423, 14</value>
@@ -894,7 +894,7 @@
     <value>4</value>
   </data>
   <data name="HistoryBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="HistoryBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>542, 14</value>
@@ -924,7 +924,7 @@
     <value>5</value>
   </data>
   <data name="DashboardBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="DashboardBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 14</value>
@@ -954,7 +954,7 @@
     <value>6</value>
   </data>
   <data name="LogoutBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2000008pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="LogoutBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>879, 11</value>
