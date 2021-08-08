@@ -147,8 +147,9 @@ Public Class Donor_form
         cmd1.ExecuteNonQuery()
         donor_history.Refresh()
         Dashboard.Refresh()
-        MsgBox("Donor Registered")
         con.Close()
+        donor_success.Show()
+        Me.Hide()
         'End If
 
     End Sub
