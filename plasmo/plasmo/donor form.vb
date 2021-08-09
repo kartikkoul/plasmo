@@ -73,7 +73,13 @@ Public Class donorForm
     End Function
 
     Public Function GenerateDonorID() As String
-        Dim ID = "E080" + GenerateID()
+        Dim ID
+        If antibody.SelectedItem = "Y" Then
+            ID = "E080" + GenerateID()
+        Else
+            ID = "E060" + GenerateID()
+        End If
+
 
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         con.Open()
