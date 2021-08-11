@@ -129,8 +129,10 @@ Public Class Dashboard
 
 
 
-    Private Sub Guna2CircleProgressBar4_ValueChanged(sender As Object, e As EventArgs) Handles APlusCircle.ValueChanged
-
+    Private Sub Guna2CircleProgressBar4_ValueChanged(sender As Object, e As EventArgs) Handles APlusCircle.Click
+        CategoryDetail.type.Text = "A+"
+        CategoryDetail.Show()
+        Me.Hide()
     End Sub
 
 
@@ -180,11 +182,15 @@ Public Class Dashboard
     End Sub
 
     Private Sub Guna2CircleProgressBar8_ValueChanged(sender As Object, e As EventArgs) Handles OPlusCircle.ValueChanged
-
+        CategoryDetail.type.Text = "O+"
+        CategoryDetail.Show()
+        Me.Hide()
     End Sub
 
     Private Sub BMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BMinusCircle.ValueChanged
-
+        CategoryDetail.type.Text = "B-"
+        CategoryDetail.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
@@ -196,15 +202,21 @@ Public Class Dashboard
     End Sub
 
     Private Sub OMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles OMinusCircle.ValueChanged
-
+        CategoryDetail.type.Text = "O-"
+        CategoryDetail.Show()
+        Me.Hide()
     End Sub
 
     Private Sub ABPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABPlusCircle.ValueChanged
-
+        CategoryDetail.type.Text = "AB+"
+        CategoryDetail.Show()
+        Me.Hide()
     End Sub
 
     Private Sub AMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles AMinusCircle.ValueChanged
-
+        CategoryDetail.type.Text = "A-"
+        CategoryDetail.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
@@ -212,7 +224,9 @@ Public Class Dashboard
     End Sub
 
     Private Sub BPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BPlusCircle.ValueChanged
-
+        CategoryDetail.type.Text = "B+"
+        CategoryDetail.Show()
+        Me.Hide()
     End Sub
 
     Private Sub Label7_Click_1(sender As Object, e As EventArgs) Handles Label7.Click
@@ -232,6 +246,8 @@ Public Class Dashboard
     End Sub
 
     Private Sub ABMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABMinusCircle.ValueChanged
-
+        CategoryDetail.type.Text = "AB-"
+        CategoryDetail.Show()
+        Me.Hide()
     End Sub
 End Class
