@@ -53,6 +53,9 @@ Public Class CategoryDetail
         ds.Clear()
         con.Close()
 
+        antibodyCountTextbox.Text = countAntibody
+        nonAntiBodyCountTextBox.Text = countNonAntibody
+
         ''-------------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX------------------------------------------
 
         con.Open()

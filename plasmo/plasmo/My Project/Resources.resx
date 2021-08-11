@@ -136,6 +136,9 @@
   <data name="Component 3 (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Component 3 (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Yes_Antibody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yes_Antibody.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Component 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Component 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -175,11 +178,17 @@
   <data name="Success Circle" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Success Circle.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="No_Antibody" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\No_Antibody.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="eye" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\eye.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 124" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 124.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="arrow-right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\arrow-right1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="Group 125" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 125.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -199,7 +208,7 @@
   <data name="arrow-left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow-left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="arrow-right1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\arrow-right1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Yes_Antibody1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yes_Antibody1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
