@@ -94,6 +94,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CategoryDetail.Designer.vb">
+      <DependentUpon>CategoryDetail.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CategoryDetail.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Dashboard.Designer.vb">
       <DependentUpon>Dashboard.vb</DependentUpon>
     </Compile>
@@ -179,6 +185,9 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="CategoryDetail.resx">
+      <DependentUpon>CategoryDetail.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="donor_history.resx">
       <DependentUpon>donor_history.vb</DependentUpon>
     </EmbeddedResource>

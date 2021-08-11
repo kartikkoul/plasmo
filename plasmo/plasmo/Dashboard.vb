@@ -1,14 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Public Class Dashboard
-    Private Sub Label5_Click(sender As Object, e As EventArgs) Handles Label5.Click
-
-    End Sub
-
-    Private Sub Label7_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
 
@@ -108,13 +100,6 @@ Public Class Dashboard
 
     End Sub
 
-    Private Sub Guna2Button2_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
-
-    End Sub
-
-    Private Sub PictureBox1_Click(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
@@ -136,11 +121,6 @@ Public Class Dashboard
     End Sub
 
 
-
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
-
-    End Sub
-
     Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -149,9 +129,6 @@ Public Class Dashboard
         Application.Exit()
     End Sub
 
-    Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
-
-    End Sub
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
         donorForm.Show()
         Me.Hide()
@@ -173,79 +150,45 @@ Public Class Dashboard
         Me.Hide()
     End Sub
 
-    Private Sub Guna2Panel1_Paint(sender As Object, e As PaintEventArgs) Handles Guna2Panel1.Paint
 
-    End Sub
-
-    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
-
-    End Sub
-
-    Private Sub Guna2CircleProgressBar8_ValueChanged(sender As Object, e As EventArgs) Handles OPlusCircle.ValueChanged
+    Private Sub Guna2CircleProgressBar8_ValueChanged(sender As Object, e As EventArgs) Handles OPlusCircle.Click
         CategoryDetail.type.Text = "O+"
         CategoryDetail.Show()
         Me.Hide()
     End Sub
 
-    Private Sub BMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BMinusCircle.ValueChanged
+    Private Sub BMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BMinusCircle.Click
         CategoryDetail.type.Text = "B-"
         CategoryDetail.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Label4_Click(sender As Object, e As EventArgs) Handles Label4.Click
-
-    End Sub
-
-    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
-
-    End Sub
-
-    Private Sub OMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles OMinusCircle.ValueChanged
+    Private Sub OMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles OMinusCircle.Click
         CategoryDetail.type.Text = "O-"
         CategoryDetail.Show()
         Me.Hide()
     End Sub
 
-    Private Sub ABPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABPlusCircle.ValueChanged
+    Private Sub ABPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABPlusCircle.Click
         CategoryDetail.type.Text = "AB+"
         CategoryDetail.Show()
         Me.Hide()
     End Sub
 
-    Private Sub AMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles AMinusCircle.ValueChanged
+    Private Sub AMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles AMinusCircle.Click
         CategoryDetail.type.Text = "A-"
         CategoryDetail.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Label6_Click(sender As Object, e As EventArgs) Handles Label6.Click
 
-    End Sub
-
-    Private Sub BPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BPlusCircle.ValueChanged
+    Private Sub BPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BPlusCircle.Click
         CategoryDetail.type.Text = "B+"
         CategoryDetail.Show()
         Me.Hide()
     End Sub
 
-    Private Sub Label7_Click_1(sender As Object, e As EventArgs) Handles Label7.Click
-
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-
-    End Sub
-
-    Private Sub Label3_Click(sender As Object, e As EventArgs) Handles Label3.Click
-
-    End Sub
-
-    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
-
-    End Sub
-
-    Private Sub ABMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABMinusCircle.ValueChanged
+    Private Sub ABMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABMinusCircle.Click
         CategoryDetail.type.Text = "AB-"
         CategoryDetail.Show()
         Me.Hide()

@@ -82,3 +82,4 @@ D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.donorForm.r
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.donor_reciept.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.PlasmaNotAvailable.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.reciever_reciept.resources
+D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.CategoryDetail.resources
