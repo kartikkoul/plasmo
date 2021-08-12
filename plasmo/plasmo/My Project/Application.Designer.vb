@@ -32,7 +32,7 @@ Namespace My
         
         <Global.System.Diagnostics.DebuggerStepThroughAttribute()>  _
         Protected Overrides Sub OnCreateMainForm()
-            Me.MainForm = Global.plasmo.queue
+            Me.MainForm = Global.plasmo.MasterControl
         End Sub
     End Class
 End Namespace

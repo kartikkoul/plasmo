@@ -131,7 +131,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1082, 624</value>
+    <value>1082, 514</value>
   </data>
   <metadata name="Guna2Transition1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>228, 17</value>
@@ -171,74 +171,20 @@
         d2luZy5Qb2ludEYCAAAAAXgBeQAACwsCAAAAAAAAAAAAAAAL
 </value>
   </data>
-  <data name="Guna2CircleButton2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="Guna2CircleButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>994, 10</value>
-  </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Guna2CircleButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="Guna2CircleButton2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 32</value>
-  </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="Guna2CircleButton2.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="&gt;&gt;Guna2CircleButton2.Name" xml:space="preserve">
-    <value>Guna2CircleButton2</value>
-  </data>
-  <data name="&gt;&gt;Guna2CircleButton2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CircleButton, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Guna2CircleButton2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Guna2CircleButton2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="CloseButton.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
-  </data>
-  <data name="CloseButton.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1041, 10</value>
-  </data>
-  <data name="CloseButton.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="CloseButton.Size" type="System.Drawing.Size, System.Drawing">
-    <value>30, 32</value>
-  </data>
-  <data name="CloseButton.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
-  </data>
-  <data name="&gt;&gt;CloseButton.Name" xml:space="preserve">
-    <value>CloseButton</value>
-  </data>
-  <data name="&gt;&gt;CloseButton.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2CircleButton, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;CloseButton.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;CloseButton.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="ABMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
   </data>
   <data name="ABMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 417</value>
+    <value>787, 306</value>
   </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ABMinusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
   <data name="ABMinusCircle.Size" type="System.Drawing.Size, System.Drawing">
     <value>128, 128</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="ABMinusCircle.TabIndex" type="System.Int32, mscorlib">
     <value>79</value>
   </data>
@@ -255,13 +201,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ABMinusCircle.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>0</value>
   </data>
   <data name="BMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
   </data>
   <data name="BMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>778, 218</value>
+    <value>787, 107</value>
   </data>
   <data name="BMinusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -285,7 +231,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BMinusCircle.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>1</value>
   </data>
   <data name="Label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -297,7 +243,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>807, 371</value>
+    <value>816, 260</value>
   </data>
   <data name="Label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -321,7 +267,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label4.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>2</value>
   </data>
   <data name="Label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -333,7 +279,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>812, 172</value>
+    <value>821, 61</value>
   </data>
   <data name="Label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -357,13 +303,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label2.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>3</value>
   </data>
   <data name="OMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
   </data>
   <data name="OMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 417</value>
+    <value>389, 306</value>
   </data>
   <data name="OMinusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -387,13 +333,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OMinusCircle.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>4</value>
   </data>
   <data name="ABPlusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
   </data>
   <data name="ABPlusCircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>577, 417</value>
+    <value>586, 306</value>
   </data>
   <data name="ABPlusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -417,13 +363,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;ABPlusCircle.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>5</value>
   </data>
   <data name="AMinusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
   </data>
   <data name="AMinusCircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>380, 218</value>
+    <value>389, 107</value>
   </data>
   <data name="AMinusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -447,7 +393,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;AMinusCircle.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>6</value>
   </data>
   <data name="Label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -459,7 +405,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 371</value>
+    <value>422, 260</value>
   </data>
   <data name="Label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -483,13 +429,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label6.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>7</value>
   </data>
   <data name="BPlusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
   </data>
   <data name="BPlusCircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>577, 218</value>
+    <value>586, 107</value>
   </data>
   <data name="BPlusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -513,7 +459,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;BPlusCircle.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>8</value>
   </data>
   <data name="Label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -525,7 +471,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>606, 371</value>
+    <value>615, 260</value>
   </data>
   <data name="Label7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -549,7 +495,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label7.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>9</value>
   </data>
   <data name="Label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -561,7 +507,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>413, 172</value>
+    <value>422, 61</value>
   </data>
   <data name="Label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -585,13 +531,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label1.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>10</value>
   </data>
   <data name="OPlusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
   </data>
   <data name="OPlusCircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 417</value>
+    <value>189, 306</value>
   </data>
   <data name="OPlusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -615,7 +561,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;OPlusCircle.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>11</value>
   </data>
   <data name="Label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -627,7 +573,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>610, 172</value>
+    <value>619, 61</value>
   </data>
   <data name="Label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -651,7 +597,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label3.ZOrder" xml:space="preserve">
-    <value>14</value>
+    <value>12</value>
   </data>
   <data name="Label8.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -663,7 +609,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>213, 371</value>
+    <value>222, 260</value>
   </data>
   <data name="Label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -687,13 +633,13 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label8.ZOrder" xml:space="preserve">
-    <value>15</value>
+    <value>13</value>
   </data>
   <data name="APlusCircle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins, 18pt</value>
   </data>
   <data name="APlusCircle.Location" type="System.Drawing.Point, System.Drawing">
-    <value>180, 218</value>
+    <value>189, 107</value>
   </data>
   <data name="APlusCircle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
@@ -717,7 +663,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;APlusCircle.ZOrder" xml:space="preserve">
-    <value>16</value>
+    <value>14</value>
   </data>
   <data name="Label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -729,7 +675,7 @@
     <value>NoControl</value>
   </data>
   <data name="Label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>214, 172</value>
+    <value>223, 61</value>
   </data>
   <data name="Label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 0, 2, 0</value>
@@ -753,356 +699,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
-    <value>17</value>
-  </data>
-  <data name="Guna2PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        Qk32AgAAAAAAADYAAAAoAAAADgAAABAAAAABABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
-        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEgoTGw8bGw8bGw8bGw8bGw8bGw8bG
-        w8bGw8bGw8bGw8bGw8bGw8YAAAAAAISChP///////////////////////////////////////////8bD
-        xgAAAAAAhIKE////////////////////////////////////////////xsPGAAAAAACEgoT/////////
-        ///////////////////////////////////Gw8YAAAAAAISChP//////////////////////////////
-        /////////////8bDxgAAAAAAhIKE////////////AAD/AAD/////////AAD/AAD/////////xsPGAAAA
-        AACEgoT///////////////8AAP8AAP8AAP8AAP/////////////Gw8YAAAAAAISChP//////////////
-        /////wAA/wAA/////////////////8bDxgAAAAAAhIKE////////////////AAD/AAD/AAD/AAD/////
-        ////////xsPGAAAAAACEgoT///////////8AAP8AAP////////8AAP8AAP/////////Gw8YAAAAAAISC
-        hP///////////////////////////////////////////8bDxgAAAAAAhIKE////////////////////
-        ////////////////////////xsPGAAAAAACEgoT/////////////////////////////////////////
-        ///Gw8YAAAAAAISChP///////////////////////////////////////////8bDxgAAAAAAhIKEhIKE
-        hIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEAAA=
-</value>
-  </data>
-  <data name="Guna2PictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Guna2PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1017, 20</value>
-  </data>
-  <data name="Guna2PictureBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="Guna2PictureBox2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>20, 27</value>
-  </data>
-  <data name="Guna2PictureBox2.TabIndex" type="System.Int32, mscorlib">
-    <value>89</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox2.Name" xml:space="preserve">
-    <value>Guna2PictureBox2</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox2.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox2.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Guna2Panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>47, 42</value>
-  </data>
-  <data name="Guna2Panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="Guna2Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 3</value>
-  </data>
-  <data name="Guna2Panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel2.Name" xml:space="preserve">
-    <value>Guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel2.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
-  <data name="RecieverBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="RecieverBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>301, 14</value>
-  </data>
-  <data name="RecieverBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="RecieverBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>131, 31</value>
-  </data>
-  <data name="RecieverBtnMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>84</value>
-  </data>
-  <data name="RecieverBtnMenu.Text" xml:space="preserve">
-    <value>RECIEVER</value>
-  </data>
-  <data name="&gt;&gt;RecieverBtnMenu.Name" xml:space="preserve">
-    <value>RecieverBtnMenu</value>
-  </data>
-  <data name="&gt;&gt;RecieverBtnMenu.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;RecieverBtnMenu.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;RecieverBtnMenu.ZOrder" xml:space="preserve">
-    <value>2</value>
-  </data>
-  <data name="DonorBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="DonorBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>182, 14</value>
-  </data>
-  <data name="DonorBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="DonorBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 31</value>
-  </data>
-  <data name="DonorBtnMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
-  </data>
-  <data name="DonorBtnMenu.Text" xml:space="preserve">
-    <value>DONOR</value>
-  </data>
-  <data name="&gt;&gt;DonorBtnMenu.Name" xml:space="preserve">
-    <value>DonorBtnMenu</value>
-  </data>
-  <data name="&gt;&gt;DonorBtnMenu.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DonorBtnMenu.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;DonorBtnMenu.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="QueueBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="QueueBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>423, 14</value>
-  </data>
-  <data name="QueueBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="QueueBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 31</value>
-  </data>
-  <data name="QueueBtnMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
-  </data>
-  <data name="QueueBtnMenu.Text" xml:space="preserve">
-    <value>QUEUE</value>
-  </data>
-  <data name="&gt;&gt;QueueBtnMenu.Name" xml:space="preserve">
-    <value>QueueBtnMenu</value>
-  </data>
-  <data name="&gt;&gt;QueueBtnMenu.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;QueueBtnMenu.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;QueueBtnMenu.ZOrder" xml:space="preserve">
-    <value>4</value>
-  </data>
-  <data name="HistoryBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="HistoryBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>542, 14</value>
-  </data>
-  <data name="HistoryBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="HistoryBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 31</value>
-  </data>
-  <data name="HistoryBtnMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>81</value>
-  </data>
-  <data name="HistoryBtnMenu.Text" xml:space="preserve">
-    <value>HISTORY</value>
-  </data>
-  <data name="&gt;&gt;HistoryBtnMenu.Name" xml:space="preserve">
-    <value>HistoryBtnMenu</value>
-  </data>
-  <data name="&gt;&gt;HistoryBtnMenu.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;HistoryBtnMenu.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;HistoryBtnMenu.ZOrder" xml:space="preserve">
-    <value>5</value>
-  </data>
-  <data name="DashboardBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="DashboardBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 14</value>
-  </data>
-  <data name="DashboardBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="DashboardBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>163, 31</value>
-  </data>
-  <data name="DashboardBtnMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>11</value>
-  </data>
-  <data name="DashboardBtnMenu.Text" xml:space="preserve">
-    <value>DASHBOARD</value>
-  </data>
-  <data name="&gt;&gt;DashboardBtnMenu.Name" xml:space="preserve">
-    <value>DashboardBtnMenu</value>
-  </data>
-  <data name="&gt;&gt;DashboardBtnMenu.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;DashboardBtnMenu.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;DashboardBtnMenu.ZOrder" xml:space="preserve">
-    <value>6</value>
-  </data>
-  <data name="LogoutBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
-  </data>
-  <data name="LogoutBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
-    <value>879, 11</value>
-  </data>
-  <data name="LogoutBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="LogoutBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>188, 42</value>
-  </data>
-  <data name="LogoutBtnMenu.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="LogoutBtnMenu.Text" xml:space="preserve">
-    <value>LOGOUT</value>
-  </data>
-  <data name="&gt;&gt;LogoutBtnMenu.Name" xml:space="preserve">
-    <value>LogoutBtnMenu</value>
-  </data>
-  <data name="&gt;&gt;LogoutBtnMenu.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;LogoutBtnMenu.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;LogoutBtnMenu.ZOrder" xml:space="preserve">
-    <value>7</value>
-  </data>
-  <data name="Guna2Panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 73</value>
-  </data>
-  <data name="Guna2Panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="Guna2Panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1082, 58</value>
-  </data>
-  <data name="Guna2Panel1.TabIndex" type="System.Int32, mscorlib">
-    <value>56</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel1.Name" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel1.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
-  <data name="Guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        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
-</value>
-  </data>
-  <data name="Guna2PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
-  </data>
-  <data name="Guna2PictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>26, 11</value>
-  </data>
-  <data name="Guna2PictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="Guna2PictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>201, 58</value>
-  </data>
-  <data name="Guna2PictureBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>83</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox1.Name" xml:space="preserve">
-    <value>Guna2PictureBox1</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox1.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2PictureBox, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox1.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;Guna2PictureBox1.ZOrder" xml:space="preserve">
-    <value>19</value>
+    <value>15</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
