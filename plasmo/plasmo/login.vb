@@ -34,7 +34,7 @@ Public Class login
                 If dr.HasRows Then
                     While (dr.Read())
                         Dashboard.Show()
-                        Me.Hide()
+                        Me.Close()
                         UserIDTextBox.Clear()
                         PasswordTextBox.Clear()
 
@@ -47,7 +47,8 @@ Public Class login
                     PasswordTextBox.Clear()
                 End If
             Catch ex As Exception
-                MessageBox.Show(ex.Message)
+                UserIDTextBox.BorderColor = Color.Red
+                PasswordTextBox.BorderColor = Color.Red
             End Try
 
         End If

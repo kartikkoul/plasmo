@@ -34,7 +34,7 @@ Public Class CategoryDetail
 
         '-------------------------For Information Of Total Number Of Antibody and Non-Antibody Plasma------------------------------------------
         If con.State = 1 Then con.Close()
-        Dim countAntibodyQuery As New SqlCommand("select * from donor_records  where anti_body= '" & "Y" & "' AND sold='" & "N" & "'", con)
+        Dim countAntibodyQuery As New SqlCommand("select plasma_id from donor_records  where anti_body= '" & "Y" & "' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = countAntibodyQuery
         adapter.Fill(ds, "donor_records")
@@ -44,7 +44,7 @@ Public Class CategoryDetail
         con.Close()
 
         If con.State = 1 Then con.Close()
-        Dim countNonAntibodyQuery As New SqlCommand("select * from donor_records  where anti_body= '" & "N" & "' AND sold='" & "N" & "'", con)
+        Dim countNonAntibodyQuery As New SqlCommand("select plasma_id from donor_records  where anti_body= '" & "N" & "' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = countNonAntibodyQuery
         adapter.Fill(ds, "donor_records")

@@ -54,6 +54,8 @@ Partial Class donor_history
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.totalDonors = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.totalRecievers = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -385,9 +387,9 @@ Partial Class donor_history
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
         Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(567, 162)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(83, 27)
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(89, 27)
         Me.Guna2HtmlLabel2.TabIndex = 88
-        Me.Guna2HtmlLabel2.Text = "RECIEVER"
+        Me.Guna2HtmlLabel2.Text = "RECIEVERS"
         '
         'Guna2HtmlLabel1
         '
@@ -396,11 +398,11 @@ Partial Class donor_history
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins SemiBold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(459, 162)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(450, 162)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(60, 27)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(69, 27)
         Me.Guna2HtmlLabel1.TabIndex = 87
-        Me.Guna2HtmlLabel1.Text = "DONOR"
+        Me.Guna2HtmlLabel1.Text = "DONORS"
         '
         'Guna2PictureBox3
         '
@@ -487,12 +489,42 @@ Partial Class donor_history
         Me.Guna2PictureBox1.TabIndex = 5
         Me.Guna2PictureBox1.TabStop = False
         '
+        'totalDonors
+        '
+        Me.totalDonors.AutoSize = False
+        Me.totalDonors.AutoSizeHeightOnly = True
+        Me.totalDonors.BackColor = System.Drawing.Color.Transparent
+        Me.totalDonors.Font = New System.Drawing.Font("Poppins", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalDonors.ForeColor = System.Drawing.Color.FromArgb(CType(CType(27, Byte), Integer), CType(CType(75, Byte), Integer), CType(CType(121, Byte), Integer))
+        Me.totalDonors.Location = New System.Drawing.Point(450, 180)
+        Me.totalDonors.Name = "totalDonors"
+        Me.totalDonors.Size = New System.Drawing.Size(73, 23)
+        Me.totalDonors.TabIndex = 90
+        Me.totalDonors.Text = "(123)"
+        Me.totalDonors.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        '
+        'totalRecievers
+        '
+        Me.totalRecievers.AutoSize = False
+        Me.totalRecievers.AutoSizeHeightOnly = True
+        Me.totalRecievers.BackColor = System.Drawing.Color.Transparent
+        Me.totalRecievers.Font = New System.Drawing.Font("Poppins", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.totalRecievers.ForeColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(74, Byte), Integer), CType(CType(74, Byte), Integer))
+        Me.totalRecievers.Location = New System.Drawing.Point(564, 180)
+        Me.totalRecievers.Name = "totalRecievers"
+        Me.totalRecievers.Size = New System.Drawing.Size(73, 23)
+        Me.totalRecievers.TabIndex = 91
+        Me.totalRecievers.Text = "(123)"
+        Me.totalRecievers.TextAlignment = System.Drawing.ContentAlignment.TopCenter
+        '
         'donor_history
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1082, 624)
+        Me.Controls.Add(Me.totalRecievers)
+        Me.Controls.Add(Me.totalDonors)
         Me.Controls.Add(Me.Guna2PictureBox3)
         Me.Controls.Add(Me.Guna2HtmlLabel2)
         Me.Controls.Add(Me.Guna2HtmlLabel1)
@@ -544,4 +576,6 @@ Partial Class donor_history
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents totalRecievers As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents totalDonors As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

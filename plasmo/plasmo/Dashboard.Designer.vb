@@ -28,7 +28,6 @@ Partial Class Dashboard
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -52,9 +51,10 @@ Partial Class Dashboard
         Me.OPlusCircle = New Guna.UI2.WinForms.Guna2CircleProgressBar()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Guna2Transition1 = New Guna.UI2.WinForms.Guna2Transition()
-        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -87,16 +87,6 @@ Partial Class Dashboard
         resources.ApplyResources(Me.Guna2Panel1, "Guna2Panel1")
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        resources.ApplyResources(Me.Guna2PictureBox2, "Guna2PictureBox2")
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.TabStop = False
         '
         'Guna2Panel2
         '
@@ -460,16 +450,6 @@ Partial Class Dashboard
         Animation1.TransparencyCoeff = 0!
         Me.Guna2Transition1.DefaultAnimation = Animation1
         '
-        'Guna2PictureBox1
-        '
-        Me.Guna2Transition1.SetDecoration(Me.Guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None)
-        Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
-        Me.Guna2PictureBox1.ImageRotate = 0!
-        resources.ApplyResources(Me.Guna2PictureBox1, "Guna2PictureBox1")
-        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
-        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
-        Me.Guna2PictureBox1.TabStop = False
-        '
         'Guna2CircleButton2
         '
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
@@ -524,6 +504,24 @@ Partial Class Dashboard
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2Transition1.SetDecoration(Me.Guna2PictureBox2, Guna.UI2.AnimatorNS.DecorationType.None)
+        resources.ApplyResources(Me.Guna2PictureBox2, "Guna2PictureBox2")
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.TabStop = False
+        '
+        'Guna2PictureBox1
+        '
+        Me.Guna2Transition1.SetDecoration(Me.Guna2PictureBox1, Guna.UI2.AnimatorNS.DecorationType.None)
+        resources.ApplyResources(Me.Guna2PictureBox1, "Guna2PictureBox1")
+        Me.Guna2PictureBox1.ImageRotate = 0!
+        Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
+        Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
+        Me.Guna2PictureBox1.TabStop = False
         '
         'Dashboard
         '

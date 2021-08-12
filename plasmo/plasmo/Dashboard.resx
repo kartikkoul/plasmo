@@ -755,6 +755,26 @@
   <data name="&gt;&gt;Label5.ZOrder" xml:space="preserve">
     <value>17</value>
   </data>
+  <data name="Guna2PictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        Qk32AgAAAAAAADYAAAAoAAAADgAAABAAAAABABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+        AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACEgoTGw8bGw8bGw8bGw8bGw8bGw8bG
+        w8bGw8bGw8bGw8bGw8bGw8YAAAAAAISChP///////////////////////////////////////////8bD
+        xgAAAAAAhIKE////////////////////////////////////////////xsPGAAAAAACEgoT/////////
+        ///////////////////////////////////Gw8YAAAAAAISChP//////////////////////////////
+        /////////////8bDxgAAAAAAhIKE////////////AAD/AAD/////////AAD/AAD/////////xsPGAAAA
+        AACEgoT///////////////8AAP8AAP8AAP8AAP/////////////Gw8YAAAAAAISChP//////////////
+        /////wAA/wAA/////////////////8bDxgAAAAAAhIKE////////////////AAD/AAD/AAD/AAD/////
+        ////////xsPGAAAAAACEgoT///////////8AAP8AAP////////8AAP8AAP/////////Gw8YAAAAAAISC
+        hP///////////////////////////////////////////8bDxgAAAAAAhIKE////////////////////
+        ////////////////////////xsPGAAAAAACEgoT/////////////////////////////////////////
+        ///Gw8YAAAAAAISChP///////////////////////////////////////////8bDxgAAAAAAhIKEhIKE
+        hIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEhIKEAAA=
+</value>
+  </data>
+  <data name="Guna2PictureBox2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
   <data name="Guna2PictureBox2.Location" type="System.Drawing.Point, System.Drawing">
     <value>1017, 20</value>
   </data>
@@ -1006,6 +1026,56 @@
   </data>
   <data name="&gt;&gt;Guna2Panel1.ZOrder" xml:space="preserve">
     <value>18</value>
+  </data>
+  <data name="Guna2PictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
   </data>
   <data name="Guna2PictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
@@ -2559,6 +2629,9 @@
         4AD////////////////////////gAP///////////////////////+AA////////////////////////
         4AA=
 </value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>

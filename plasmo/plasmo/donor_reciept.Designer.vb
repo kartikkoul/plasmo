@@ -43,7 +43,6 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Namelabel = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -59,6 +58,7 @@ Partial Class donor_reciept
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.SubmitButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -241,7 +241,7 @@ Partial Class donor_reciept
         Me.Namelabel.Font = New System.Drawing.Font("Poppins Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Namelabel.Location = New System.Drawing.Point(256, 273)
         Me.Namelabel.Name = "Namelabel"
-        Me.Namelabel.Size = New System.Drawing.Size(3, 2)
+        Me.Namelabel.Size = New System.Drawing.Size(55, 36)
         Me.Namelabel.TabIndex = 119
         Me.Namelabel.Text = "NaME"
         '
@@ -255,16 +255,6 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(70, 36)
         Me.Guna2HtmlLabel1.TabIndex = 118
         Me.Guna2HtmlLabel1.Text = "Name :"
-        '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Location = New System.Drawing.Point(327, 41)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.Size = New System.Drawing.Size(64, 3)
-        Me.Guna2Panel2.TabIndex = 80
         '
         'RecieverBtnMenu
         '
@@ -281,7 +271,7 @@ Partial Class donor_reciept
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
-        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
@@ -303,7 +293,7 @@ Partial Class donor_reciept
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
-        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.DonorBtnMenu.Name = "DonorBtnMenu"
         Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
@@ -325,7 +315,7 @@ Partial Class donor_reciept
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
-        Me.QueueBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.QueueBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.QueueBtnMenu.Name = "QueueBtnMenu"
         Me.QueueBtnMenu.ShadowDecoration.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Size = New System.Drawing.Size(125, 31)
@@ -347,7 +337,7 @@ Partial Class donor_reciept
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
-        Me.HistoryBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.HistoryBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.HistoryBtnMenu.Name = "HistoryBtnMenu"
         Me.HistoryBtnMenu.ShadowDecoration.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Size = New System.Drawing.Size(125, 31)
@@ -369,7 +359,7 @@ Partial Class donor_reciept
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
-        Me.DashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.DashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.DashboardBtnMenu.Name = "DashboardBtnMenu"
         Me.DashboardBtnMenu.ShadowDecoration.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Size = New System.Drawing.Size(163, 31)
@@ -391,7 +381,7 @@ Partial Class donor_reciept
         Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
-        Me.LogoutBtnMenu.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.LogoutBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.LogoutBtnMenu.Name = "LogoutBtnMenu"
         Me.LogoutBtnMenu.ShadowDecoration.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Size = New System.Drawing.Size(188, 42)
@@ -402,8 +392,8 @@ Partial Class donor_reciept
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
+        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel3)
         Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox2)
-        Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
         Me.Guna2Panel1.Controls.Add(Me.RecieverBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.DonorBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.QueueBtnMenu)
@@ -411,7 +401,7 @@ Partial Class donor_reciept
         Me.Guna2Panel1.Controls.Add(Me.DashboardBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.LogoutBtnMenu)
         Me.Guna2Panel1.Location = New System.Drawing.Point(-1, 74)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2Panel1.Name = "Guna2Panel1"
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
@@ -422,7 +412,7 @@ Partial Class donor_reciept
         Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
         Me.Guna2PictureBox2.ImageRotate = 0!
         Me.Guna2PictureBox2.Location = New System.Drawing.Point(1014, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
@@ -467,7 +457,7 @@ Partial Class donor_reciept
         Me.Guna2CircleButton2.Image = Global.plasmo.My.Resources.Resources.Line_9
         Me.Guna2CircleButton2.ImageSize = New System.Drawing.Size(18, 3)
         Me.Guna2CircleButton2.Location = New System.Drawing.Point(993, 10)
-        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2CircleButton2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2CircleButton2.Name = "Guna2CircleButton2"
         Me.Guna2CircleButton2.PressedColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
@@ -497,7 +487,7 @@ Partial Class donor_reciept
         Me.CloseButton.Image = Global.plasmo.My.Resources.Resources.Component_21
         Me.CloseButton.ImageSize = New System.Drawing.Size(28, 28)
         Me.CloseButton.Location = New System.Drawing.Point(1040, 10)
-        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.CloseButton.Margin = New System.Windows.Forms.Padding(2)
         Me.CloseButton.Name = "CloseButton"
         Me.CloseButton.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
@@ -509,7 +499,7 @@ Partial Class donor_reciept
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
         Me.Guna2PictureBox1.ImageRotate = 0!
         Me.Guna2PictureBox1.Location = New System.Drawing.Point(25, 11)
-        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.Guna2PictureBox1.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox1.Name = "Guna2PictureBox1"
         Me.Guna2PictureBox1.ShadowDecoration.Parent = Me.Guna2PictureBox1
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
@@ -531,7 +521,7 @@ Partial Class donor_reciept
         Me.SubmitButton.ForeColor = System.Drawing.Color.White
         Me.SubmitButton.HoverState.Parent = Me.SubmitButton
         Me.SubmitButton.Location = New System.Drawing.Point(441, 559)
-        Me.SubmitButton.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
+        Me.SubmitButton.Margin = New System.Windows.Forms.Padding(2)
         Me.SubmitButton.Name = "SubmitButton"
         Me.SubmitButton.ShadowDecoration.Parent = Me.SubmitButton
         Me.SubmitButton.Size = New System.Drawing.Size(188, 42)
@@ -547,6 +537,16 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(77, 36)
         Me.Guna2HtmlLabel3.TabIndex = 138
         Me.Guna2HtmlLabel3.Text = "PLASMO"
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel3.Location = New System.Drawing.Point(209, 41)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
+        Me.Guna2Panel3.Size = New System.Drawing.Size(51, 3)
+        Me.Guna2Panel3.TabIndex = 81
         '
         'donor_reciept
         '
@@ -615,7 +615,6 @@ Partial Class donor_reciept
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DonorBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents QueueBtnMenu As Guna.UI2.WinForms.Guna2Button
@@ -626,4 +625,5 @@ Partial Class donor_reciept
     Friend WithEvents Guna2BorderlessForm2 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents SubmitButton As Guna.UI2.WinForms.Guna2Button
     Public WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
 End Class

@@ -142,6 +142,12 @@
   <data name="Component 2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Component 2.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="Not Found" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Not Found.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Yes_Antibody1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Yes_Antibody1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="Group 126" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\Group 126.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -208,7 +214,7 @@
   <data name="arrow-left1" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\arrow-left1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="Yes_Antibody1" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\Yes_Antibody1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="Not Foung" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\Not Foung.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

@@ -11,40 +11,37 @@ Public Class donorForm
 
     End Sub
 
-    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
-        Application.Exit()
-    End Sub
-
     Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub Guna2Button7_Click(sender As Object, e As EventArgs)
-        login.Show()
-        Me.Hide()
+    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
+        Application.Exit()
     End Sub
+
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
         Dashboard.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
+
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
 
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
 
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
@@ -123,7 +120,7 @@ Public Class donorForm
         End If
         Dim time As Date = Date.UtcNow
         Dim donor_id As String = GenerateDonorID()
-        donor_reciept.plasmaIDLabel.Text = donor_id
+        donor_reciept.plasmaIDLabel.Text = "(" + donor_id + ")"
 
         Dim selected_blood_group As String = bgroup.SelectedItem
         Dim blood_group As String = "AP"

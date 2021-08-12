@@ -26,7 +26,6 @@ Partial Class PlasmaNotAvailable
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(PlasmaNotAvailable))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -34,16 +33,18 @@ Partial Class PlasmaNotAvailable
         Me.HistoryBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2PictureBox4 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Button2 = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Guna2BorderlessForm1
@@ -68,18 +69,6 @@ Partial Class PlasmaNotAvailable
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel1.TabIndex = 91
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1014, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
-        Me.Guna2PictureBox2.TabIndex = 88
-        Me.Guna2PictureBox2.TabStop = False
         '
         'Guna2Panel2
         '
@@ -223,6 +212,29 @@ Partial Class PlasmaNotAvailable
         Me.LogoutBtnMenu.TabIndex = 10
         Me.LogoutBtnMenu.Text = "LOGOUT"
         '
+        'Guna2PictureBox3
+        '
+        Me.Guna2PictureBox3.Image = Global.plasmo.My.Resources.Resources.Not_Foung
+        Me.Guna2PictureBox3.ImageRotate = 0!
+        Me.Guna2PictureBox3.Location = New System.Drawing.Point(316, 199)
+        Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
+        Me.Guna2PictureBox3.ShadowDecoration.Parent = Me.Guna2PictureBox3
+        Me.Guna2PictureBox3.Size = New System.Drawing.Size(487, 309)
+        Me.Guna2PictureBox3.TabIndex = 92
+        Me.Guna2PictureBox3.TabStop = False
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1014, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
+        Me.Guna2PictureBox2.TabIndex = 88
+        Me.Guna2PictureBox2.TabStop = False
+        '
         'Guna2CircleButton2
         '
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
@@ -296,61 +308,40 @@ Partial Class PlasmaNotAvailable
         Me.Guna2PictureBox1.TabIndex = 88
         Me.Guna2PictureBox1.TabStop = False
         '
-        'Guna2HtmlLabel3
+        'Guna2HtmlLabel1
         '
-        Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Poppins", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(306, 288)
-        Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(474, 64)
-        Me.Guna2HtmlLabel3.TabIndex = 140
-        Me.Guna2HtmlLabel3.Text = "CURRENTLY NOT IN STOCK :("
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(449, 514)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(234, 25)
+        Me.Guna2HtmlLabel1.TabIndex = 93
+        Me.Guna2HtmlLabel1.Text = "PLASMA NOT AVAILABLE RIGHT NOW"
         '
-        'Guna2PictureBox4
+        'Guna2HtmlLabel2
         '
-        Me.Guna2PictureBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2PictureBox4.FillColor = System.Drawing.Color.Transparent
-        Me.Guna2PictureBox4.Image = Global.plasmo.My.Resources.Resources.arrow_left1
-        Me.Guna2PictureBox4.ImageRotate = 0!
-        Me.Guna2PictureBox4.Location = New System.Drawing.Point(463, 423)
-        Me.Guna2PictureBox4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox4.Name = "Guna2PictureBox4"
-        Me.Guna2PictureBox4.ShadowDecoration.Parent = Me.Guna2PictureBox4
-        Me.Guna2PictureBox4.Size = New System.Drawing.Size(19, 17)
-        Me.Guna2PictureBox4.TabIndex = 141
-        Me.Guna2PictureBox4.TabStop = False
+        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(488, 545)
+        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
+        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(164, 36)
+        Me.Guna2HtmlLabel2.TabIndex = 94
+        Me.Guna2HtmlLabel2.Text = "ADDED TO QUEUE"
         '
-        'Guna2Button2
+        'Timer1
         '
-        Me.Guna2Button2.BorderRadius = 6
-        Me.Guna2Button2.CheckedState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.CustomImages.Parent = Me.Guna2Button2
-        Me.Guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.Guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.Guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.Guna2Button2.DisabledState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2Button2.Font = New System.Drawing.Font("Poppins", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2Button2.ForeColor = System.Drawing.Color.White
-        Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(454, 417)
-        Me.Guna2Button2.Name = "Guna2Button2"
-        Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Size = New System.Drawing.Size(212, 33)
-        Me.Guna2Button2.TabIndex = 142
-        Me.Guna2Button2.Text = "BACK TO DASHBOARD"
-        Me.Guna2Button2.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.Guna2Button2.TextOffset = New System.Drawing.Point(0, 1)
+        Me.Timer1.Interval = 5000
         '
         'PlasmaNotAvailable
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1082, 624)
-        Me.Controls.Add(Me.Guna2PictureBox4)
-        Me.Controls.Add(Me.Guna2Button2)
-        Me.Controls.Add(Me.Guna2HtmlLabel3)
+        Me.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Controls.Add(Me.Guna2HtmlLabel1)
+        Me.Controls.Add(Me.Guna2PictureBox3)
         Me.Controls.Add(Me.Guna2Panel1)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
@@ -361,9 +352,9 @@ Partial Class PlasmaNotAvailable
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "PlasmaNotAvailable"
         Me.Guna2Panel1.ResumeLayout(False)
+        CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -382,7 +373,8 @@ Partial Class PlasmaNotAvailable
     Friend WithEvents Guna2CircleButton2 As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
-    Public WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2PictureBox4 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Button2 As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Timer1 As Timer
 End Class

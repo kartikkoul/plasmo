@@ -1,15 +1,31 @@
-﻿Imports System.Data
+﻿
+Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
-Public Class reciever_reciept
-    Private Sub reciever_reciept_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        Dim reciever_id = recieverIDLabel.Text
+Public Class queue
+    Private Sub queue_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
+        Dim adapter As New SqlDataAdapter
+        Dim ds As New DataSet
+
+        If con.State = 1 Then
+            con.Close()
+        End If
+        Dim countQueueCmd As New SqlCommand("select reciever_id from reciever_records where recieved='" & "N" & "'", con)
         con.Open()
-        Dim cmd As New SqlCommand("select first_name, last_name, phone_number, age, address, blood_group, sex, email, transaction_time,anti_body, price from reciever_records where reciever_id='" & recieverIDLabel.Text & "'", con)
+        adapter.SelectCommand = countQueueCmd
+        adapter.Fill(ds, "reciever_records")
+        Dim countQueue As Integer = ds.Tables(0).Rows.Count
+        queueCount.Text = countQueue
+        adapter.Dispose()
+        ds.Clear()
+
+
+        Dim cmd As New SqlCommand("select RECIEVER_ID, first_name, last_name, age, blood_group, demand from reciever_records where recieved='" & "N" & "'", con)
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
 
+        Guna2DataGridView1.Rows.Clear()
 
         While dr.Read
 
@@ -40,25 +56,21 @@ Public Class reciever_reciept
                     blood_group = "O-"
             End Select
 
+            Dim demand As String = dr("demand")
+            Select Case demand
+                Case "1"
+                    demand = "Antibody"
+                Case "0"
+                    demand = "Without Antibody"
+                Case Else
+                    demand = "With/Without Antibody"
+            End Select
 
 
-
-            Namelabel.Text = "(" + dr("first_name") + " " + dr("last_name") + ")"
-            ageLabel.Text = dr("age")
-            phNumberLabel.Text = dr("phone_number")
-            addressLabel.Text = dr("address")
-            sexLabel.Text = dr("sex")
-            emailLabel.Text = dr("email")
-            bloodGroupLabel.Text = blood_group
-            dateLabel.Text = dr("transaction_time")
-            antiBodyLabel.Text = dr("anti_body")
-            costLabel.Text = "₹ " + dr("price").ToString()
+            Dim name As String = dr("first_name") + " " + dr("last_name")
+            Guna2DataGridView1.Rows.Add(dr("reciever_id"), name, dr("age"), blood_group, demand)
         End While
         con.Close()
-    End Sub
-
-    Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
-
     End Sub
 
     Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
@@ -84,8 +96,7 @@ Public Class reciever_reciept
         Me.Close()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
-        queue.Show()
-        Me.Close()
+
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
@@ -94,13 +105,5 @@ Public Class reciever_reciept
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
         Me.Close()
-    End Sub
-
-    Private Sub bloodGroupLabel_Click(sender As Object, e As EventArgs) Handles bloodGroupLabel.Click
-
-    End Sub
-
-    Private Sub emailLabel_Click(sender As Object, e As EventArgs) Handles emailLabel.Click
-
     End Sub
 End Class

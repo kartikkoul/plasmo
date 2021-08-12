@@ -19,6 +19,31 @@ Public Class donor_history
     Private Sub DonorHistory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
+        Dim adapter As New SqlDataAdapter
+        Dim ds As New DataSet
+
+        If con.State = 1 Then con.Close()
+        Dim countDonorsCmd As New SqlCommand("select plasma_id from donor_records", con)
+        con.Open()
+        adapter.SelectCommand = countDonorsCmd
+        adapter.Fill(ds, "donor_records")
+        Dim countDonors As Integer = ds.Tables(0).Rows.Count
+        adapter.Dispose()
+        ds.Clear()
+        con.Close()
+        totalDonors.Text = countDonors
+
+        If con.State = 1 Then con.Close()
+        Dim countRecieversCmd As New SqlCommand("select * from reciever_records where recieved='" & "Y" & "'", con)
+        con.Open()
+        adapter.SelectCommand = countRecieversCmd
+        adapter.Fill(ds, "reciever_records")
+        Dim countRecievers As Integer = ds.Tables(0).Rows.Count
+        adapter.Dispose()
+        ds.Clear()
+        con.Close()
+        totalRecievers.Text = countRecievers
+
         con.Open()
         Dim cmd As New SqlCommand("select plasma_id, first_name, last_name, age, blood_group, anti_body, transaction_time from donor_records", con)
         Dim dr As SqlDataReader
@@ -68,27 +93,37 @@ Public Class donor_history
 
     End Sub
 
+    Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
+        Me.WindowState = FormWindowState.Minimized
+    End Sub
+
+    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
+        Application.Exit()
+    End Sub
+
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles dashboardBtnMenu.Click
         Dashboard.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
+
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles donorBtnMenu.Click
         donorForm.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles recieverBtnMenu.Click
         Reciever_form.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles queueBtnMenu.Click
-
+        queue.Show()
+        Me.Close()
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles logoutBtnMenu.Click
         login.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
-    Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
+    Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles historyBtnMenu.Click
 
     End Sub
 

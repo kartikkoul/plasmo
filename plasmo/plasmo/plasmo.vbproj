@@ -165,6 +165,12 @@
     <Compile Include="PlasmaNotAvailable.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="queue.Designer.vb">
+      <DependentUpon>queue.vb</DependentUpon>
+    </Compile>
+    <Compile Include="queue.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Reciever form.Designer.vb">
       <DependentUpon>Reciever form.vb</DependentUpon>
     </Compile>
@@ -214,6 +220,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PlasmaNotAvailable.resx">
       <DependentUpon>PlasmaNotAvailable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="queue.resx">
+      <DependentUpon>queue.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Reciever form.resx">
       <DependentUpon>Reciever form.vb</DependentUpon>
@@ -280,6 +289,11 @@
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
     <Content Include="Frame 214.ico" />
+    <None Include="Resources\Not Foung.png" />
+    <None Include="Resources\Not Found.png" />
+    <None Include="Resources\Yes_Antibody1.png" />
+    <None Include="Resources\No_Antibody.png" />
+    <None Include="Resources\Yes_Antibody.png" />
     <None Include="Resources\arrow-right1.png" />
     <None Include="Resources\arrow-right.png" />
     <None Include="Resources\arrow-left1.png" />

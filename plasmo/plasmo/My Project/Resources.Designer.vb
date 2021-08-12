@@ -263,6 +263,26 @@ Namespace My.Resources
         '''<summary>
         '''  Looks up a localized resource of type System.Drawing.Bitmap.
         '''</summary>
+        Friend ReadOnly Property Not_Found() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Not Found", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
+        Friend ReadOnly Property Not_Foung() As System.Drawing.Bitmap
+            Get
+                Dim obj As Object = ResourceManager.GetObject("Not Foung", resourceCulture)
+                Return CType(obj,System.Drawing.Bitmap)
+            End Get
+        End Property
+        
+        '''<summary>
+        '''  Looks up a localized resource of type System.Drawing.Bitmap.
+        '''</summary>
         Friend ReadOnly Property Plasmo_Logo() As System.Drawing.Bitmap
             Get
                 Dim obj As Object = ResourceManager.GetObject("Plasmo Logo", resourceCulture)

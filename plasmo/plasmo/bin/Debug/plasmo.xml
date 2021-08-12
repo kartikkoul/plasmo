@@ -117,6 +117,21 @@ plasmo
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:plasmo.My.Resources.Resources.No_Antibody">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Not_Found">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Not_Foung">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:plasmo.My.Resources.Resources.Plasmo_Logo">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
@@ -158,6 +173,16 @@ plasmo
 </summary>
 </member>
 <member name="P:plasmo.My.Resources.Resources.Switch__1_">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Yes_Antibody">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:plasmo.My.Resources.Resources.Yes_Antibody1">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
