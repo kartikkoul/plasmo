@@ -104,6 +104,6 @@ Public Class queue
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 End Class

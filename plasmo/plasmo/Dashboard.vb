@@ -101,36 +101,36 @@ Public Class Dashboard
     End Sub
 
 
-    Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
+    Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs)
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
+    Private Sub CloseButton_Click(sender As Object, e As EventArgs)
         Application.Exit()
     End Sub
 
-    Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
+    Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs)
 
     End Sub
 
-    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
+    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs)
         donorForm.Show()
         Me.Close()
     End Sub
 
-    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
+    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs)
         Reciever_form.Show()
         Me.Close()
     End Sub
-    Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
+    Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs)
         queue.Show()
         Me.Close()
     End Sub
-    Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
+    Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs)
         login.Show()
         Me.Close()
     End Sub
-    Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
+    Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs)
         donor_history.Show()
         Me.Close()
     End Sub
