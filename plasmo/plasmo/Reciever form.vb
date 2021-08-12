@@ -142,13 +142,10 @@ Public Class Reciever_form
         Else
             con.Close()
             PlasmaNotAvailable.Show()
-            Me.Show()
+            Me.Hide()
         End If
     End Sub
 
-    Private Sub Guna2Button6_Click(sender As Object, e As EventArgs)
-        Me.Show()
-    End Sub
 
     Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs)
 
@@ -168,12 +165,12 @@ Public Class Reciever_form
 
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
         Dashboard.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
         donorForm.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
@@ -181,15 +178,15 @@ Public Class Reciever_form
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
         queue.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub Reciever_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load

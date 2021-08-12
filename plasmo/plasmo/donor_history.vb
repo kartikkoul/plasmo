@@ -4,13 +4,7 @@ Imports System.Data.SqlClient.SqlCommand
 
 Public Class donor_history
 
-    Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
-        Me.WindowState = FormWindowState.Minimized
-    End Sub
 
-    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
-        Application.Exit()
-    End Sub
 
     Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles dashboardBtnMenu.Click
 
@@ -103,25 +97,25 @@ Public Class donor_history
 
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles dashboardBtnMenu.Click
         Dashboard.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles donorBtnMenu.Click
         donorForm.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles recieverBtnMenu.Click
         Reciever_form.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles queueBtnMenu.Click
         queue.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles logoutBtnMenu.Click
         login.Show()
-        Me.Close()
+        Me.Hide()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles historyBtnMenu.Click
 

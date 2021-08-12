@@ -31,11 +31,13 @@ Partial Class CategoryDetail
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CategoryDetail))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.HistoryBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
@@ -45,19 +47,18 @@ Partial Class CategoryDetail
         Me.price = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.type = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.antibodyCountTextbox = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.nonAntiBodyCountTextBox = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.Guna2HtmlLabel5 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel6 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.Guna2HtmlLabel7 = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.antibodyCountTextbox = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.nonAntiBodyCountTextBox = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel1.SuspendLayout()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -84,6 +85,17 @@ Partial Class CategoryDetail
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel1.TabIndex = 88
+        '
+        'Guna2HtmlLabel4
+        '
+        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins Medium", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
+        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(821, 60)
+        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(24, 21)
+        Me.Guna2HtmlLabel4.TabIndex = 149
+        Me.Guna2HtmlLabel4.Text = "100"
         '
         'Guna2Panel2
         '
@@ -183,6 +195,19 @@ Partial Class CategoryDetail
         Me.HistoryBtnMenu.TabIndex = 81
         Me.HistoryBtnMenu.Text = "HISTORY"
         '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
+        Me.Guna2PictureBox2.TabIndex = 80
+        Me.Guna2PictureBox2.TabStop = False
+        '
         'DashboardBtnMenu
         '
         Me.DashboardBtnMenu.BorderRadius = 6
@@ -241,7 +266,7 @@ Partial Class CategoryDetail
         Me.Guna2DataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill
         Me.Guna2DataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells
         Me.Guna2DataGridView1.BackgroundColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        Me.Guna2DataGridView1.BorderStyle = System.Windows.Forms.BorderStyle.None
         Me.Guna2DataGridView1.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal
         Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
@@ -348,46 +373,13 @@ Partial Class CategoryDetail
         'type
         '
         Me.type.BackColor = System.Drawing.Color.Transparent
-        Me.type.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.type.Font = New System.Drawing.Font("Poppins SemiBold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.type.ForeColor = System.Drawing.Color.Black
-        Me.type.Location = New System.Drawing.Point(86, 153)
+        Me.type.Location = New System.Drawing.Point(618, 129)
         Me.type.Name = "type"
-        Me.type.Size = New System.Drawing.Size(42, 30)
+        Me.type.Size = New System.Drawing.Size(40, 28)
         Me.type.TabIndex = 143
         Me.type.Text = "Type"
-        '
-        'Guna2HtmlLabel1
-        '
-        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(769, 153)
-        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(88, 30)
-        Me.Guna2HtmlLabel1.TabIndex = 144
-        Me.Guna2HtmlLabel1.Text = "Antibodies "
-        '
-        'Guna2HtmlLabel2
-        '
-        Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(879, 129)
-        Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
-        Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(29, 30)
-        Me.Guna2HtmlLabel2.TabIndex = 145
-        Me.Guna2HtmlLabel2.Text = "YES"
-        '
-        'Guna2HtmlLabel3
-        '
-        Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel3.ForeColor = System.Drawing.Color.Black
-        Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(939, 129)
-        Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(27, 30)
-        Me.Guna2HtmlLabel3.TabIndex = 146
-        Me.Guna2HtmlLabel3.Text = "NO"
         '
         'Guna2CircleButton2
         '
@@ -420,19 +412,6 @@ Partial Class CategoryDetail
         Me.Guna2CircleButton2.ShadowDecoration.Parent = Me.Guna2CircleButton2
         Me.Guna2CircleButton2.Size = New System.Drawing.Size(30, 32)
         Me.Guna2CircleButton2.TabIndex = 90
-        '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
-        Me.Guna2PictureBox2.TabIndex = 80
-        Me.Guna2PictureBox2.TabStop = False
         '
         'CloseButton
         '
@@ -475,88 +454,83 @@ Partial Class CategoryDetail
         Me.Guna2PictureBox1.TabIndex = 87
         Me.Guna2PictureBox1.TabStop = False
         '
-        'Guna2HtmlLabel4
+        'Guna2HtmlLabel5
         '
-        Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins Medium", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
-        Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(821, 60)
-        Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(24, 21)
-        Me.Guna2HtmlLabel4.TabIndex = 149
-        Me.Guna2HtmlLabel4.Text = "100"
+        Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Poppins SemiBold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black
+        Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(489, 129)
+        Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(120, 28)
+        Me.Guna2HtmlLabel5.TabIndex = 149
+        Me.Guna2HtmlLabel5.Text = "BLOOD GROUP :"
+        '
+        'Guna2HtmlLabel1
+        '
+        Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(414, 164)
+        Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(123, 25)
+        Me.Guna2HtmlLabel1.TabIndex = 144
+        Me.Guna2HtmlLabel1.Text = "WITH ANTIBODIES :"
+        '
+        'Guna2HtmlLabel6
+        '
+        Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(573, 164)
+        Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(9, 25)
+        Me.Guna2HtmlLabel6.TabIndex = 150
+        Me.Guna2HtmlLabel6.Text = "•"
+        '
+        'Guna2HtmlLabel7
+        '
+        Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(589, 164)
+        Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(150, 25)
+        Me.Guna2HtmlLabel7.TabIndex = 151
+        Me.Guna2HtmlLabel7.Text = "WITHOUT ANTIBODIES :"
         '
         'antibodyCountTextbox
         '
-        Me.antibodyCountTextbox.BorderColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.antibodyCountTextbox.BorderRadius = 6
-        Me.antibodyCountTextbox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.antibodyCountTextbox.DefaultText = "100"
-        Me.antibodyCountTextbox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.antibodyCountTextbox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.antibodyCountTextbox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.antibodyCountTextbox.DisabledState.Parent = Me.antibodyCountTextbox
-        Me.antibodyCountTextbox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.antibodyCountTextbox.FillColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(188, Byte), Integer), CType(CType(21, Byte), Integer))
-        Me.antibodyCountTextbox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.antibodyCountTextbox.FocusedState.Parent = Me.antibodyCountTextbox
-        Me.antibodyCountTextbox.Font = New System.Drawing.Font("Poppins Medium", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.antibodyCountTextbox.ForeColor = System.Drawing.Color.White
-        Me.antibodyCountTextbox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.antibodyCountTextbox.HoverState.Parent = Me.antibodyCountTextbox
-        Me.antibodyCountTextbox.Location = New System.Drawing.Point(872, 158)
-        Me.antibodyCountTextbox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.antibodyCountTextbox.BackColor = System.Drawing.Color.Transparent
+        Me.antibodyCountTextbox.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.antibodyCountTextbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.antibodyCountTextbox.Location = New System.Drawing.Point(543, 164)
         Me.antibodyCountTextbox.Name = "antibodyCountTextbox"
-        Me.antibodyCountTextbox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.antibodyCountTextbox.PlaceholderForeColor = System.Drawing.Color.White
-        Me.antibodyCountTextbox.PlaceholderText = ""
-        Me.antibodyCountTextbox.SelectedText = ""
-        Me.antibodyCountTextbox.SelectionStart = 3
-        Me.antibodyCountTextbox.ShadowDecoration.Parent = Me.antibodyCountTextbox
-        Me.antibodyCountTextbox.Size = New System.Drawing.Size(45, 18)
-        Me.antibodyCountTextbox.TabIndex = 147
-        Me.antibodyCountTextbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.antibodyCountTextbox.Size = New System.Drawing.Size(24, 25)
+        Me.antibodyCountTextbox.TabIndex = 152
+        Me.antibodyCountTextbox.Text = "100"
         '
         'nonAntiBodyCountTextBox
         '
-        Me.nonAntiBodyCountTextBox.BorderColor = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer))
-        Me.nonAntiBodyCountTextBox.BorderRadius = 6
-        Me.nonAntiBodyCountTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.nonAntiBodyCountTextBox.DefaultText = "100"
-        Me.nonAntiBodyCountTextBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.nonAntiBodyCountTextBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.nonAntiBodyCountTextBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.nonAntiBodyCountTextBox.DisabledState.Parent = Me.nonAntiBodyCountTextBox
-        Me.nonAntiBodyCountTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.nonAntiBodyCountTextBox.FillColor = System.Drawing.Color.FromArgb(CType(CType(198, Byte), Integer), CType(CType(27, Byte), Integer), CType(CType(27, Byte), Integer))
-        Me.nonAntiBodyCountTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.nonAntiBodyCountTextBox.FocusedState.Parent = Me.nonAntiBodyCountTextBox
-        Me.nonAntiBodyCountTextBox.Font = New System.Drawing.Font("Poppins Medium", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.nonAntiBodyCountTextBox.ForeColor = System.Drawing.Color.White
-        Me.nonAntiBodyCountTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.nonAntiBodyCountTextBox.HoverState.Parent = Me.nonAntiBodyCountTextBox
-        Me.nonAntiBodyCountTextBox.Location = New System.Drawing.Point(930, 158)
-        Me.nonAntiBodyCountTextBox.Margin = New System.Windows.Forms.Padding(3, 4, 3, 4)
+        Me.nonAntiBodyCountTextBox.BackColor = System.Drawing.Color.Transparent
+        Me.nonAntiBodyCountTextBox.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nonAntiBodyCountTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.nonAntiBodyCountTextBox.Location = New System.Drawing.Point(745, 164)
         Me.nonAntiBodyCountTextBox.Name = "nonAntiBodyCountTextBox"
-        Me.nonAntiBodyCountTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.nonAntiBodyCountTextBox.PlaceholderForeColor = System.Drawing.Color.White
-        Me.nonAntiBodyCountTextBox.PlaceholderText = ""
-        Me.nonAntiBodyCountTextBox.SelectedText = ""
-        Me.nonAntiBodyCountTextBox.SelectionStart = 3
-        Me.nonAntiBodyCountTextBox.ShadowDecoration.Parent = Me.nonAntiBodyCountTextBox
-        Me.nonAntiBodyCountTextBox.Size = New System.Drawing.Size(45, 18)
-        Me.nonAntiBodyCountTextBox.TabIndex = 148
-        Me.nonAntiBodyCountTextBox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
+        Me.nonAntiBodyCountTextBox.Size = New System.Drawing.Size(24, 25)
+        Me.nonAntiBodyCountTextBox.TabIndex = 153
+        Me.nonAntiBodyCountTextBox.Text = "100"
         '
         'CategoryDetail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1082, 624)
         Me.Controls.Add(Me.nonAntiBodyCountTextBox)
         Me.Controls.Add(Me.antibodyCountTextbox)
-        Me.Controls.Add(Me.Guna2HtmlLabel3)
-        Me.Controls.Add(Me.Guna2HtmlLabel2)
+        Me.Controls.Add(Me.Guna2HtmlLabel7)
+        Me.Controls.Add(Me.Guna2HtmlLabel6)
+        Me.Controls.Add(Me.Guna2HtmlLabel5)
         Me.Controls.Add(Me.Guna2HtmlLabel1)
         Me.Controls.Add(Me.type)
         Me.Controls.Add(Me.Guna2CircleButton2)
@@ -570,8 +544,8 @@ Partial Class CategoryDetail
         Me.Text = "CategoryDetail"
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
@@ -598,10 +572,11 @@ Partial Class CategoryDetail
     Friend WithEvents anti_body As DataGridViewTextBoxColumn
     Friend WithEvents age As DataGridViewTextBoxColumn
     Friend WithEvents price As DataGridViewTextBoxColumn
-    Friend WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel2 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel4 As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents nonAntiBodyCountTextBox As Guna.UI2.WinForms.Guna2TextBox
-    Friend WithEvents antibodyCountTextbox As Guna.UI2.WinForms.Guna2TextBox
+    Friend WithEvents Guna2HtmlLabel5 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents nonAntiBodyCountTextBox As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents antibodyCountTextbox As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel7 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel6 As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

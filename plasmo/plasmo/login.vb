@@ -34,7 +34,7 @@ Public Class login
                 If dr.HasRows Then
                     While (dr.Read())
                         Dashboard.Show()
-                        Me.Close()
+                        Me.Hide()
                         UserIDTextBox.Clear()
                         PasswordTextBox.Clear()
 

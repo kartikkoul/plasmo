@@ -50,6 +50,7 @@ Partial Class donor_reciept
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
@@ -58,7 +59,6 @@ Partial Class donor_reciept
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.SubmitButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -407,6 +407,16 @@ Partial Class donor_reciept
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel1.TabIndex = 117
         '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel3.Location = New System.Drawing.Point(209, 41)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
+        Me.Guna2Panel3.Size = New System.Drawing.Size(51, 3)
+        Me.Guna2Panel3.TabIndex = 81
+        '
         'Guna2PictureBox2
         '
         Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
@@ -538,20 +548,11 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel3.TabIndex = 138
         Me.Guna2HtmlLabel3.Text = "PLASMO"
         '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel3.Location = New System.Drawing.Point(209, 41)
-        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
-        Me.Guna2Panel3.Size = New System.Drawing.Size(51, 3)
-        Me.Guna2Panel3.TabIndex = 81
-        '
         'donor_reciept
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
+        Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1082, 624)
         Me.Controls.Add(Me.Guna2HtmlLabel3)
         Me.Controls.Add(Me.SubmitButton)

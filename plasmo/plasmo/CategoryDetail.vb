@@ -38,7 +38,8 @@ Public Class CategoryDetail
         con.Open()
         adapter.SelectCommand = countAntibodyQuery
         adapter.Fill(ds, "donor_records")
-        Dim countAntibody As Integer = ds.Tables(0).Rows.Count
+        Dim countAntibody = ds.Tables(0).Rows.Count
+        antibodyCountTextbox.Text = countAntibody
         adapter.Dispose()
         ds.Clear()
         con.Close()
@@ -48,13 +49,14 @@ Public Class CategoryDetail
         con.Open()
         adapter.SelectCommand = countNonAntibodyQuery
         adapter.Fill(ds, "donor_records")
-        Dim countNonAntibody As Integer = ds.Tables(0).Rows.Count
+        Dim countNonAntibody = ds.Tables(0).Rows.Count
+        nonAntiBodyCountTextBox.Text = countNonAntibody
         adapter.Dispose()
         ds.Clear()
         con.Close()
 
-        antibodyCountTextbox.Text = countAntibody
-        nonAntiBodyCountTextBox.Text = countNonAntibody
+
+
 
         ''-------------------------XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX------------------------------------------
 
@@ -106,5 +108,13 @@ Public Class CategoryDetail
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Guna2HtmlLabel1_Click_1(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
+
+    End Sub
+
+    Private Sub antibodyCountTextbox_Click(sender As Object, e As EventArgs) Handles antibodyCountTextbox.Click
+
     End Sub
 End Class
