@@ -106,4 +106,13 @@ Public Class queue
         donor_history.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
+        If e.RowIndex >= 0 Then
+            Dim row As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
+            assign.reciever_id.Text = row.Cells(0).Value.ToString
+            assign.Show()
+            Me.Hide()
+        End If
+    End Sub
 End Class
