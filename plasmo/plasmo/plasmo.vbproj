@@ -137,12 +137,6 @@
     <Compile Include="donor_history.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MasterControl.Designer.vb">
-      <DependentUpon>MasterControl.vb</DependentUpon>
-    </Compile>
-    <Compile Include="MasterControl.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="Module1.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -217,9 +211,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="login.resx">
       <DependentUpon>login.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="MasterControl.resx">
-      <DependentUpon>MasterControl.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
