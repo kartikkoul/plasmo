@@ -3,12 +3,7 @@ Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 
 Public Class donor_history
-<<<<<<< HEAD
 
-
-
-=======
->>>>>>> 98d4baa8d5854f514066acfd23126061ffaa278e
     Private Sub Guna2Button8_Click(sender As Object, e As EventArgs) Handles dashboardBtnMenu.Click
 
     End Sub

@@ -200,6 +200,30 @@
   <data name="&gt;&gt;Guna2CircleButton2.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
+  <data name="Guna2Panel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 42</value>
+  </data>
+  <data name="Guna2Panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
+  </data>
+  <data name="Guna2Panel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 3</value>
+  </data>
+  <data name="Guna2Panel3.TabIndex" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="&gt;&gt;Guna2Panel3.Name" xml:space="preserve">
+    <value>Guna2Panel3</value>
+  </data>
+  <data name="&gt;&gt;Guna2Panel3.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;Guna2Panel3.Parent" xml:space="preserve">
+    <value>Guna2Panel1</value>
+  </data>
+  <data name="&gt;&gt;Guna2Panel3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
   <data name="Guna2HtmlLabel4.Font" type="System.Drawing.Font, System.Drawing">
     <value>Poppins Medium, 8.25pt, style=Bold</value>
   </data>
@@ -225,64 +249,40 @@
     <value>Guna2Panel1</value>
   </data>
   <data name="&gt;&gt;Guna2HtmlLabel4.ZOrder" xml:space="preserve">
-    <value>0</value>
-  </data>
-  <data name="Guna2Panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>567, 41</value>
-  </data>
-  <data name="Guna2Panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>2, 2, 2, 2</value>
-  </data>
-  <data name="Guna2Panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 3</value>
-  </data>
-  <data name="Guna2Panel2.TabIndex" type="System.Int32, mscorlib">
-    <value>80</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel2.Name" xml:space="preserve">
-    <value>Guna2Panel2</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel2.Type" xml:space="preserve">
-    <value>Guna.UI2.WinForms.Guna2Panel, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel2.Parent" xml:space="preserve">
-    <value>Guna2Panel1</value>
-  </data>
-  <data name="&gt;&gt;Guna2Panel2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="RecieverBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2pt, style=Bold</value>
+  <data name="DonorBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
-  <data name="RecieverBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="DonorBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>182, 14</value>
   </data>
-  <data name="RecieverBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="DonorBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="RecieverBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="DonorBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 31</value>
   </data>
-  <data name="RecieverBtnMenu.TabIndex" type="System.Int32, mscorlib">
+  <data name="DonorBtnMenu.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
   </data>
-  <data name="RecieverBtnMenu.Text" xml:space="preserve">
-    <value>RECEIVER</value>
+  <data name="DonorBtnMenu.Text" xml:space="preserve">
+    <value>DONOR</value>
   </data>
-  <data name="&gt;&gt;RecieverBtnMenu.Name" xml:space="preserve">
-    <value>RecieverBtnMenu</value>
+  <data name="&gt;&gt;DonorBtnMenu.Name" xml:space="preserve">
+    <value>DonorBtnMenu</value>
   </data>
-  <data name="&gt;&gt;RecieverBtnMenu.Type" xml:space="preserve">
+  <data name="&gt;&gt;DonorBtnMenu.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;RecieverBtnMenu.Parent" xml:space="preserve">
+  <data name="&gt;&gt;DonorBtnMenu.Parent" xml:space="preserve">
     <value>Guna2Panel1</value>
   </data>
-  <data name="&gt;&gt;RecieverBtnMenu.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;DonorBtnMenu.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
   <data name="QueueBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="QueueBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>423, 14</value>
@@ -311,38 +311,38 @@
   <data name="&gt;&gt;QueueBtnMenu.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="DonorBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2pt, style=Bold</value>
+  <data name="RecieverBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
-  <data name="DonorBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
+  <data name="RecieverBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>304, 14</value>
   </data>
-  <data name="DonorBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+  <data name="RecieverBtnMenu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>
   </data>
-  <data name="DonorBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
-    <value>125, 31</value>
+  <data name="RecieverBtnMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>134, 31</value>
   </data>
-  <data name="DonorBtnMenu.TabIndex" type="System.Int32, mscorlib">
+  <data name="RecieverBtnMenu.TabIndex" type="System.Int32, mscorlib">
     <value>84</value>
   </data>
-  <data name="DonorBtnMenu.Text" xml:space="preserve">
-    <value>DONOR</value>
+  <data name="RecieverBtnMenu.Text" xml:space="preserve">
+    <value>RECIEVER</value>
   </data>
-  <data name="&gt;&gt;DonorBtnMenu.Name" xml:space="preserve">
-    <value>DonorBtnMenu</value>
+  <data name="&gt;&gt;RecieverBtnMenu.Name" xml:space="preserve">
+    <value>RecieverBtnMenu</value>
   </data>
-  <data name="&gt;&gt;DonorBtnMenu.Type" xml:space="preserve">
+  <data name="&gt;&gt;RecieverBtnMenu.Type" xml:space="preserve">
     <value>Guna.UI2.WinForms.Guna2Button, Guna.UI2, Version=1.0.1.7, Culture=neutral, PublicKeyToken=null</value>
   </data>
-  <data name="&gt;&gt;DonorBtnMenu.Parent" xml:space="preserve">
+  <data name="&gt;&gt;RecieverBtnMenu.Parent" xml:space="preserve">
     <value>Guna2Panel1</value>
   </data>
-  <data name="&gt;&gt;DonorBtnMenu.ZOrder" xml:space="preserve">
+  <data name="&gt;&gt;RecieverBtnMenu.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
   <data name="HistoryBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="HistoryBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>542, 14</value>
@@ -399,7 +399,7 @@
     <value>6</value>
   </data>
   <data name="DashboardBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="DashboardBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>24, 14</value>
@@ -429,7 +429,7 @@
     <value>7</value>
   </data>
   <data name="LogoutBtnMenu.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Microsoft Sans Serif, 13.2pt, style=Bold</value>
+    <value>Poppins SemiBold, 14.25pt, style=Bold</value>
   </data>
   <data name="LogoutBtnMenu.Location" type="System.Drawing.Point, System.Drawing">
     <value>879, 11</value>
@@ -2586,9 +2586,6 @@
         4AD////////////////////////gAP///////////////////////+AA////////////////////////
         4AA=
 </value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
   </data>
   <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>2, 2, 2, 2</value>

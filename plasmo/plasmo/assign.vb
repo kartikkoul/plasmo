@@ -6,11 +6,11 @@ Public Class assign
     Private Sub assign_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=True")
         con.Open()
-        Dim cmd As New SqlCommand("Select * from reciever_records where reciever_id='" & reciever_id.Text & "'")
+        Dim cmd As New SqlCommand("Select * from reciever_records where reciever_id='" & reciever_id.Text & "'", con)
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
 
-        If dr.HasRows Then
+        While dr.Read
             fname.Text = dr("first_name")
             lname.Text = dr("last_name")
             age.Text = dr("age")
@@ -53,9 +53,10 @@ Public Class assign
                 Case "OM"
                     bgroup.Text = "O-"
             End Select
-        Else
-                    MsgBox("Something went wrong :(")
-        End If
+        End While
+
+
+
 
 
     End Sub
@@ -134,7 +135,7 @@ Public Class assign
 
         Select Case demands
             Case "Doesn't Matter"
-                demands = vbNull
+                demands = ""
 
             Case "Yes"
                 demands = 1
@@ -218,5 +219,37 @@ Public Class assign
             con.Close()
             PlasmaNotAvailable.Show()
             Me.Hide()
+        End If
+
+    End Sub
+
+    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
+        Application.Exit()
+    End Sub
+
+    Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
+        Dashboard.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
+        donorForm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
+        Reciever_form.Show()
+        Me.Hide()
+    End Sub
+    Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
+        queue.Show()
+    End Sub
+    Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
+        login.Show()
+        Me.Hide()
+    End Sub
+    Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
+        donor_history.Show()
+        Me.Hide()
     End Sub
 End Class

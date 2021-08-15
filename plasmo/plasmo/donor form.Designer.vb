@@ -501,10 +501,7 @@ Partial Class donorForm
         Me.lNameErrorText.TabIndex = 72
         Me.lNameErrorText.Text = "This field can't be empty"
         Me.lNameErrorText.Visible = False
-        '
-        'ageErrorText
-        '
-<<<<<<< HEAD
+
         Me.RecieverBtnMenu.BorderRadius = 6
         Me.RecieverBtnMenu.CheckedState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.CustomImages.Parent = Me.RecieverBtnMenu
@@ -524,7 +521,7 @@ Partial Class donorForm
         Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.RecieverBtnMenu.TabIndex = 84
         Me.RecieverBtnMenu.Text = "RECIEVER"
-=======
+
         Me.ageErrorText.BackColor = System.Drawing.Color.Transparent
         Me.ageErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.ageErrorText.ForeColor = System.Drawing.Color.Red
@@ -536,11 +533,7 @@ Partial Class donorForm
         Me.ageErrorText.TabIndex = 73
         Me.ageErrorText.Text = "Age must be between 17-71"
         Me.ageErrorText.Visible = False
->>>>>>> 98d4baa8d5854f514066acfd23126061ffaa278e
-        '
-        'phNumberErrorText
-        '
-<<<<<<< HEAD
+
         Me.DonorBtnMenu.BorderRadius = 6
         Me.DonorBtnMenu.CheckedState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.CustomImages.Parent = Me.DonorBtnMenu
@@ -560,7 +553,7 @@ Partial Class donorForm
         Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.DonorBtnMenu.TabIndex = 83
         Me.DonorBtnMenu.Text = "DONOR"
-=======
+
         Me.phNumberErrorText.BackColor = System.Drawing.Color.Transparent
         Me.phNumberErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.phNumberErrorText.ForeColor = System.Drawing.Color.Red
@@ -572,11 +565,7 @@ Partial Class donorForm
         Me.phNumberErrorText.TabIndex = 74
         Me.phNumberErrorText.Text = "Please enter a valid phone number"
         Me.phNumberErrorText.Visible = False
->>>>>>> 98d4baa8d5854f514066acfd23126061ffaa278e
-        '
-        'emailErrortext
-        '
-<<<<<<< HEAD
+
         Me.QueueBtnMenu.BorderRadius = 6
         Me.QueueBtnMenu.CheckedState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.CustomImages.Parent = Me.QueueBtnMenu
@@ -596,7 +585,7 @@ Partial Class donorForm
         Me.QueueBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.QueueBtnMenu.TabIndex = 82
         Me.QueueBtnMenu.Text = "QUEUE"
-=======
+
         Me.emailErrortext.BackColor = System.Drawing.Color.Transparent
         Me.emailErrortext.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.emailErrortext.ForeColor = System.Drawing.Color.Red
@@ -608,11 +597,7 @@ Partial Class donorForm
         Me.emailErrortext.TabIndex = 75
         Me.emailErrortext.Text = "Please enter a valid email address"
         Me.emailErrortext.Visible = False
->>>>>>> 98d4baa8d5854f514066acfd23126061ffaa278e
-        '
-        'cityErrorText
-        '
-<<<<<<< HEAD
+
         Me.HistoryBtnMenu.BorderRadius = 6
         Me.HistoryBtnMenu.CheckedState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.CustomImages.Parent = Me.HistoryBtnMenu
@@ -632,7 +617,7 @@ Partial Class donorForm
         Me.HistoryBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.HistoryBtnMenu.TabIndex = 81
         Me.HistoryBtnMenu.Text = "HISTORY"
-=======
+
         Me.cityErrorText.BackColor = System.Drawing.Color.Transparent
         Me.cityErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.cityErrorText.ForeColor = System.Drawing.Color.Red
@@ -644,11 +629,7 @@ Partial Class donorForm
         Me.cityErrorText.TabIndex = 76
         Me.cityErrorText.Text = "This field can't be empty"
         Me.cityErrorText.Visible = False
->>>>>>> 98d4baa8d5854f514066acfd23126061ffaa278e
-        '
-        'addressErrorText
-        '
-<<<<<<< HEAD
+
         Me.DashboardBtnMenu.BorderRadius = 6
         Me.DashboardBtnMenu.CheckedState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.CustomImages.Parent = Me.DashboardBtnMenu
@@ -668,7 +649,7 @@ Partial Class donorForm
         Me.DashboardBtnMenu.Size = New System.Drawing.Size(163, 31)
         Me.DashboardBtnMenu.TabIndex = 11
         Me.DashboardBtnMenu.Text = "DASHBOARD"
-=======
+
         Me.addressErrorText.BackColor = System.Drawing.Color.Transparent
         Me.addressErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.addressErrorText.ForeColor = System.Drawing.Color.Red
@@ -680,11 +661,7 @@ Partial Class donorForm
         Me.addressErrorText.TabIndex = 77
         Me.addressErrorText.Text = "This field can't be empty"
         Me.addressErrorText.Visible = False
->>>>>>> 98d4baa8d5854f514066acfd23126061ffaa278e
-        '
-        'CloseButton
-        '
-<<<<<<< HEAD
+
         Me.LogoutBtnMenu.BorderRadius = 6
         Me.LogoutBtnMenu.CheckedState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.CustomImages.Parent = Me.LogoutBtnMenu
@@ -704,7 +681,7 @@ Partial Class donorForm
         Me.LogoutBtnMenu.Size = New System.Drawing.Size(188, 42)
         Me.LogoutBtnMenu.TabIndex = 10
         Me.LogoutBtnMenu.Text = "LOGOUT"
-=======
+
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.CheckedState.Parent = Me.CloseButton
         Me.CloseButton.CustomImages.Parent = Me.CloseButton
@@ -731,7 +708,7 @@ Partial Class donorForm
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
         Me.CloseButton.Size = New System.Drawing.Size(30, 32)
         Me.CloseButton.TabIndex = 67
->>>>>>> 98d4baa8d5854f514066acfd23126061ffaa278e
+
         '
         'Guna2CircleButton2
         '
