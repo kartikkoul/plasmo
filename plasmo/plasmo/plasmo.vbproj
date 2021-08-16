@@ -171,6 +171,12 @@
     <Compile Include="PlasmaNotAvailable.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="PlasmaStillNotAvailable.Designer.vb">
+      <DependentUpon>PlasmaStillNotAvailable.vb</DependentUpon>
+    </Compile>
+    <Compile Include="PlasmaStillNotAvailable.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="queue.Designer.vb">
       <DependentUpon>queue.vb</DependentUpon>
     </Compile>
@@ -229,6 +235,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PlasmaNotAvailable.resx">
       <DependentUpon>PlasmaNotAvailable.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PlasmaStillNotAvailable.resx">
+      <DependentUpon>PlasmaStillNotAvailable.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="queue.resx">
       <DependentUpon>queue.vb</DependentUpon>

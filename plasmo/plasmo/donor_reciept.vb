@@ -7,13 +7,12 @@ Public Class donor_reciept
     Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         con.Open()
-        Dim cmd As New SqlCommand("select first_name, last_name, phone_number, age, address, blood_group, sex, email, transaction_time from donor_records where plasma_id='" & plasmaIDLabel.Text & "'", con)
+        Dim cmd As New SqlCommand("select * from donor_records where plasma_id='" & plasmaIDLabel.Text & "'", con)
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
 
 
         While dr.Read
-
             Dim blood_group As String = dr("blood_group")
 
             Select Case dr("blood_group")
@@ -44,6 +43,7 @@ Public Class donor_reciept
 
 
             Dim name As String = dr("first_name") + " " + dr("last_name")
+            plasmaIDLabel.Text = "(" + plasmaIDLabel.Text + ")"
             Namelabel.Text = name
             ageLabel.Text = dr("age")
             phNumberLabel.Text = dr("phone_number")
@@ -52,6 +52,7 @@ Public Class donor_reciept
             emailLabel.Text = dr("email")
             bloodGroupLabel.Text = blood_group
             dateLabel.Text = dr("transaction_time")
+            Exit While
         End While
         con.Close()
     End Sub

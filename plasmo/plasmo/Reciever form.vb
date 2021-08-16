@@ -136,7 +136,7 @@ Public Class Reciever_form
             updateRecieverQuery.ExecuteNonQuery()
             updateDonorQuery.ExecuteNonQuery()
             con.Close()
-            reciever_reciept.recieverIDLabel.Text = "(" + reciever_id + ")"
+            reciever_reciept.recieverIDLabel.Text = reciever_id
             reciever_reciept.Show()
             Me.Hide()
         Else

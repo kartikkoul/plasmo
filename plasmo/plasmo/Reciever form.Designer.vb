@@ -26,7 +26,6 @@ Partial Class Reciever_form
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Reciever_form))
         Me.cityErrorText = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -65,6 +64,7 @@ Partial Class Reciever_form
         Me.lname = New Guna.UI2.WinForms.Guna2TextBox()
         Me.fname = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel3.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -96,16 +96,6 @@ Partial Class Reciever_form
         Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
         Me.Guna2PictureBox2.TabIndex = 90
         Me.Guna2PictureBox2.TabStop = False
-        '
-        'Guna2Panel4
-        '
-        Me.Guna2Panel4.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel4.Location = New System.Drawing.Point(210, 41)
-        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.ShadowDecoration.Parent = Me.Guna2Panel4
-        Me.Guna2Panel4.Size = New System.Drawing.Size(64, 3)
-        Me.Guna2Panel4.TabIndex = 80
         '
         'RecieverBtnMenu
         '
@@ -327,8 +317,8 @@ Partial Class Reciever_form
         '
         Me.Guna2Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2Panel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
+        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel1)
         Me.Guna2Panel3.Controls.Add(Me.Guna2PictureBox2)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel4)
         Me.Guna2Panel3.Controls.Add(Me.RecieverBtnMenu)
         Me.Guna2Panel3.Controls.Add(Me.DonorBtnMenu)
         Me.Guna2Panel3.Controls.Add(Me.QueueBtnMenu)
@@ -819,6 +809,16 @@ Partial Class Reciever_form
         Me.Guna2PictureBox1.TabIndex = 78
         Me.Guna2PictureBox1.TabStop = False
         '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel1.Location = New System.Drawing.Point(329, 41)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(64, 3)
+        Me.Guna2Panel1.TabIndex = 81
+        '
         'Reciever_form
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -873,7 +873,6 @@ Partial Class Reciever_form
 
     Friend WithEvents cityErrorText As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DonorBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents QueueBtnMenu As Guna.UI2.WinForms.Guna2Button
@@ -912,4 +911,5 @@ Partial Class Reciever_form
     Friend WithEvents lname As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents fname As Guna.UI2.WinForms.Guna2TextBox
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
 End Class

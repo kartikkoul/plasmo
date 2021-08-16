@@ -34,23 +34,34 @@ Public Class CategoryDetail
 
         '-------------------------For Information Of Total Number Of Antibody and Non-Antibody Plasma------------------------------------------
         If con.State = 1 Then con.Close()
-        Dim countAntibodyQuery As New SqlCommand("select plasma_id from donor_records  where anti_body= '" & "Y" & "' AND sold='" & "N" & "'", con)
+        Dim countAntibodyQuery As New SqlCommand("select plasma_id from donor_records  where blood_group='" & bloodGroup & "' and anti_body= '" & "Y" & "' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = countAntibodyQuery
         adapter.Fill(ds, "donor_records")
         Dim countAntibody = ds.Tables(0).Rows.Count
-        antibodyCountTextbox.Text = countAntibody
+        If countAntibody > 0 Then
+            antibodyCountTextbox.Text = countAntibody
+
+        Else
+            antibodyCountTextbox.Text = 0
+        End If
         adapter.Dispose()
         ds.Clear()
         con.Close()
 
         If con.State = 1 Then con.Close()
-        Dim countNonAntibodyQuery As New SqlCommand("select plasma_id from donor_records  where anti_body= '" & "N" & "' AND sold='" & "N" & "'", con)
+        Dim countNonAntibodyQuery As New SqlCommand("select plasma_id from donor_records  where blood_group='" & bloodGroup & "'and anti_body= '" & "N" & "' AND sold='" & "N" & "'", con)
         con.Open()
         adapter.SelectCommand = countNonAntibodyQuery
         adapter.Fill(ds, "donor_records")
         Dim countNonAntibody = ds.Tables(0).Rows.Count
-        nonAntiBodyCountTextBox.Text = countNonAntibody
+        If countNonAntibody > 0 Then
+            nonAntiBodyCountTextBox.Text = countNonAntibody
+
+        Else
+            nonAntiBodyCountTextBox.Text = 0
+        End If
+
         adapter.Dispose()
         ds.Clear()
         con.Close()

@@ -3,7 +3,6 @@ Imports System.Data.SqlClient
 Public Class Dashboard
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
-
         Dim con As New SqlConnection("Server=DESKTOP-5GP20F1\SQLEXPRESS;Database=plasmo;Integrated Security=true")
         Dim adapter As New SqlDataAdapter
         Dim ds As New DataSet
@@ -110,12 +109,12 @@ Public Class Dashboard
     End Sub
 
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
-        donorForm.Show()
+        Reciever_form.Show()
         Me.Hide()
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
-        Reciever_form.Show()
+        donorForm.Show()
         Me.Hide()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
@@ -172,5 +171,15 @@ Public Class Dashboard
         CategoryDetail.type.Text = "AB-"
         CategoryDetail.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub APlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles APlusCircle.Click
+        CategoryDetail.type.Text = "A+"
+        CategoryDetail.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub BMinusCircle_ValueChanged_1(sender As Object, e As EventArgs) Handles BMinusCircle.ValueChanged
+
     End Sub
 End Class

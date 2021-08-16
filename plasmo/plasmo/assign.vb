@@ -212,12 +212,12 @@ Public Class assign
             updateRecieverQuery.ExecuteNonQuery()
             updateDonorQuery.ExecuteNonQuery()
             con.Close()
-            reciever_reciept.recieverIDLabel.Text = "(" + reciever_id.Text + ")"
+            reciever_reciept.recieverIDLabel.Text = reciever_id.Text
             reciever_reciept.Show()
             Me.Hide()
         Else
             con.Close()
-            PlasmaNotAvailable.Show()
+            PlasmaStillNotAvailable.Show()
             Me.Hide()
         End If
 

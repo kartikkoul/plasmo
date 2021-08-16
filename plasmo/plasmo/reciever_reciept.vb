@@ -4,6 +4,7 @@ Imports System.Data.SqlClient.SqlCommand
 Public Class reciever_reciept
     Private Sub reciever_reciept_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim reciever_id = recieverIDLabel.Text
+        recieverIDLabel.Text = "(" + recieverIDLabel.Text + ")"
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         con.Open()
         Dim cmd As New SqlCommand("select first_name, last_name, phone_number, age, address, blood_group, sex, email, transaction_time,anti_body, price from reciever_records where reciever_id='" & recieverIDLabel.Text & "'", con)

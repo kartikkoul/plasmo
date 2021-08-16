@@ -81,7 +81,7 @@ Partial Class queue
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Size = New System.Drawing.Size(131, 31)
         Me.RecieverBtnMenu.TabIndex = 83
-        Me.RecieverBtnMenu.Text = "RECEIVER"
+        Me.RecieverBtnMenu.Text = "DONOR"
         '
         'QueueBtnMenu
         '
@@ -125,7 +125,7 @@ Partial Class queue
         Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.DonorBtnMenu.TabIndex = 84
-        Me.DonorBtnMenu.Text = "DONOR"
+        Me.DonorBtnMenu.Text = "RECIEVER"
         '
         'HistoryBtnMenu
         '

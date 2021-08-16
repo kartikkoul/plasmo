@@ -108,7 +108,7 @@ Partial Class assign
         Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
         Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(20, 27)
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(24, 27)
         Me.Guna2PictureBox2.TabIndex = 90
         Me.Guna2PictureBox2.TabStop = False
         '
