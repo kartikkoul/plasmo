@@ -4,7 +4,7 @@ Imports System.Data.SqlClient.SqlCommand
 Public Class donorForm
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs)
         Reciever_form.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Donor_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -21,7 +21,7 @@ Public Class donorForm
 
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
         Dashboard.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
@@ -30,18 +30,19 @@ Public Class donorForm
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
-
+        queue.Show()
+        Me.Close()
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
@@ -168,7 +169,7 @@ Public Class donorForm
         Dashboard.Refresh()
         con.Close()
         donor_success.Show()
-        Me.Hide()
+        Me.Close()
         'End If
 
     End Sub

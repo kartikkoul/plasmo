@@ -39,6 +39,7 @@ Partial Class Reciever_form
         Me.lNameErrorText = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.fNameErrorText = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.demand = New Guna.UI2.WinForms.Guna2ComboBox()
@@ -64,7 +65,6 @@ Partial Class Reciever_form
         Me.lname = New Guna.UI2.WinForms.Guna2TextBox()
         Me.fname = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel3.SuspendLayout()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -108,7 +108,7 @@ Partial Class Reciever_form
         Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
@@ -130,7 +130,7 @@ Partial Class Reciever_form
         Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
@@ -152,7 +152,7 @@ Partial Class Reciever_form
         Me.QueueBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.QueueBtnMenu.DisabledState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
@@ -174,7 +174,7 @@ Partial Class Reciever_form
         Me.HistoryBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.HistoryBtnMenu.DisabledState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
@@ -196,7 +196,7 @@ Partial Class Reciever_form
         Me.DashboardBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DashboardBtnMenu.DisabledState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
@@ -218,7 +218,7 @@ Partial Class Reciever_form
         Me.LogoutBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.LogoutBtnMenu.DisabledState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
@@ -331,6 +331,16 @@ Partial Class Reciever_form
         Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
         Me.Guna2Panel3.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel3.TabIndex = 102
+        '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel1.Location = New System.Drawing.Point(329, 41)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(64, 3)
+        Me.Guna2Panel1.TabIndex = 81
         '
         'Guna2CircleButton2
         '
@@ -808,16 +818,6 @@ Partial Class Reciever_form
         Me.Guna2PictureBox1.Size = New System.Drawing.Size(201, 58)
         Me.Guna2PictureBox1.TabIndex = 78
         Me.Guna2PictureBox1.TabStop = False
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel1.Location = New System.Drawing.Point(329, 41)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(64, 3)
-        Me.Guna2Panel1.TabIndex = 81
         '
         'Reciever_form
         '

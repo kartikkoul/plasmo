@@ -7,7 +7,7 @@ Public Class reciever_reciept
         recieverIDLabel.Text = "(" + recieverIDLabel.Text + ")"
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         con.Open()
-        Dim cmd As New SqlCommand("select first_name, last_name, phone_number, age, address, blood_group, sex, email, transaction_time,anti_body, price from reciever_records where reciever_id='" & recieverIDLabel.Text & "'", con)
+        Dim cmd As New SqlCommand("select first_name, last_name, phone_number, age, address, blood_group, sex, email, transaction_time,anti_body, price from reciever_records where reciever_id='" & reciever_id & "'", con)
         Dim dr As SqlDataReader
         dr = cmd.ExecuteReader
 
@@ -72,29 +72,29 @@ Public Class reciever_reciept
 
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
         Dashboard.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
         donorForm.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
         queue.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub bloodGroupLabel_Click(sender As Object, e As EventArgs) Handles bloodGroupLabel.Click

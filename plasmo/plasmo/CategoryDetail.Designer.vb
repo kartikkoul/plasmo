@@ -31,11 +31,13 @@ Partial Class CategoryDetail
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(CategoryDetail))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2HtmlLabel4 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.HistoryBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
@@ -52,13 +54,11 @@ Partial Class CategoryDetail
         Me.antibodyCountTextbox = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.nonAntiBodyCountTextBox = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel1.SuspendLayout()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -85,6 +85,16 @@ Partial Class CategoryDetail
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel1.TabIndex = 88
+        '
+        'Guna2Panel3
+        '
+        Me.Guna2Panel3.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel3.Location = New System.Drawing.Point(47, 42)
+        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel3.Name = "Guna2Panel3"
+        Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
+        Me.Guna2Panel3.Size = New System.Drawing.Size(100, 3)
+        Me.Guna2Panel3.TabIndex = 154
         '
         'Guna2HtmlLabel4
         '
@@ -184,6 +194,19 @@ Partial Class CategoryDetail
         Me.HistoryBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.HistoryBtnMenu.TabIndex = 81
         Me.HistoryBtnMenu.Text = "HISTORY"
+        '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
+        Me.Guna2PictureBox2.TabIndex = 80
+        Me.Guna2PictureBox2.TabStop = False
         '
         'DashboardBtnMenu
         '
@@ -456,19 +479,6 @@ Partial Class CategoryDetail
         Me.Guna2CircleButton2.Size = New System.Drawing.Size(30, 32)
         Me.Guna2CircleButton2.TabIndex = 90
         '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
-        Me.Guna2PictureBox2.TabIndex = 80
-        Me.Guna2PictureBox2.TabStop = False
-        '
         'CloseButton
         '
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
@@ -510,16 +520,6 @@ Partial Class CategoryDetail
         Me.Guna2PictureBox1.TabIndex = 87
         Me.Guna2PictureBox1.TabStop = False
         '
-        'Guna2Panel3
-        '
-        Me.Guna2Panel3.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel3.Location = New System.Drawing.Point(47, 42)
-        Me.Guna2Panel3.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel3.Name = "Guna2Panel3"
-        Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
-        Me.Guna2Panel3.Size = New System.Drawing.Size(100, 3)
-        Me.Guna2Panel3.TabIndex = 154
-        '
         'CategoryDetail
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -544,8 +544,8 @@ Partial Class CategoryDetail
         Me.Text = "CategoryDetail"
         Me.Guna2Panel1.ResumeLayout(False)
         Me.Guna2Panel1.PerformLayout()
-        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

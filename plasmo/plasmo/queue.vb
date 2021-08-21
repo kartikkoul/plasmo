@@ -83,28 +83,28 @@ Public Class queue
 
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
         Dashboard.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
         donorForm.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
 
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
@@ -112,7 +112,7 @@ Public Class queue
             Dim row As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
             assign.reciever_id.Text = row.Cells(0).Value.ToString
             assign.Show()
-            Me.Hide()
+            Me.Close()
         End If
     End Sub
 End Class

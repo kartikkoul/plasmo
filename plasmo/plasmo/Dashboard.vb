@@ -110,73 +110,74 @@ Public Class Dashboard
 
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
         donorForm.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
-
+        queue.Show()
+        Me.Close()
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
 
     Private Sub Guna2CircleProgressBar8_ValueChanged(sender As Object, e As EventArgs) Handles OPlusCircle.Click
         CategoryDetail.type.Text = "O+"
         CategoryDetail.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BMinusCircle.Click
         CategoryDetail.type.Text = "B-"
         CategoryDetail.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub OMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles OMinusCircle.Click
         CategoryDetail.type.Text = "O-"
         CategoryDetail.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub ABPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABPlusCircle.Click
         CategoryDetail.type.Text = "AB+"
         CategoryDetail.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub AMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles AMinusCircle.Click
         CategoryDetail.type.Text = "A-"
         CategoryDetail.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
 
     Private Sub BPlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles BPlusCircle.Click
         CategoryDetail.type.Text = "B+"
         CategoryDetail.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub ABMinusCircle_ValueChanged(sender As Object, e As EventArgs) Handles ABMinusCircle.Click
         CategoryDetail.type.Text = "AB-"
         CategoryDetail.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub APlusCircle_ValueChanged(sender As Object, e As EventArgs) Handles APlusCircle.Click
         CategoryDetail.type.Text = "A+"
         CategoryDetail.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub BMinusCircle_ValueChanged_1(sender As Object, e As EventArgs) Handles BMinusCircle.ValueChanged

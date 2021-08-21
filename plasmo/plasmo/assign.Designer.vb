@@ -29,7 +29,6 @@ Partial Class assign
         Me.Guna2BorderlessForm3 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -62,6 +61,7 @@ Partial Class assign
         Me.address = New System.Windows.Forms.Label()
         Me.sex = New System.Windows.Forms.Label()
         Me.reciever_id = New System.Windows.Forms.Label()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -84,8 +84,8 @@ Partial Class assign
         '
         Me.Guna2Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2Panel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
+        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel1)
         Me.Guna2Panel3.Controls.Add(Me.Guna2PictureBox2)
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel4)
         Me.Guna2Panel3.Controls.Add(Me.RecieverBtnMenu)
         Me.Guna2Panel3.Controls.Add(Me.DonorBtnMenu)
         Me.Guna2Panel3.Controls.Add(Me.QueueBtnMenu)
@@ -112,16 +112,6 @@ Partial Class assign
         Me.Guna2PictureBox2.TabIndex = 90
         Me.Guna2PictureBox2.TabStop = False
         '
-        'Guna2Panel4
-        '
-        Me.Guna2Panel4.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel4.Location = New System.Drawing.Point(210, 41)
-        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.ShadowDecoration.Parent = Me.Guna2Panel4
-        Me.Guna2Panel4.Size = New System.Drawing.Size(64, 3)
-        Me.Guna2Panel4.TabIndex = 80
-        '
         'RecieverBtnMenu
         '
         Me.RecieverBtnMenu.BorderRadius = 6
@@ -133,7 +123,7 @@ Partial Class assign
         Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
@@ -155,7 +145,7 @@ Partial Class assign
         Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
@@ -177,7 +167,7 @@ Partial Class assign
         Me.QueueBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.QueueBtnMenu.DisabledState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
@@ -199,7 +189,7 @@ Partial Class assign
         Me.HistoryBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.HistoryBtnMenu.DisabledState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
@@ -221,7 +211,7 @@ Partial Class assign
         Me.DashboardBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DashboardBtnMenu.DisabledState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
@@ -243,7 +233,7 @@ Partial Class assign
         Me.LogoutBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.LogoutBtnMenu.DisabledState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
@@ -362,7 +352,7 @@ Partial Class assign
         Me.SubmitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.SubmitButton.DisabledState.Parent = Me.SubmitButton
         Me.SubmitButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.SubmitButton.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SubmitButton.Font = New System.Drawing.Font("Poppins SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SubmitButton.ForeColor = System.Drawing.Color.White
         Me.SubmitButton.HoverState.Parent = Me.SubmitButton
         Me.SubmitButton.Location = New System.Drawing.Point(440, 541)
@@ -626,6 +616,16 @@ Partial Class assign
         Me.reciever_id.TabIndex = 144
         Me.reciever_id.Text = "(R0801003)"
         '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel1.Location = New System.Drawing.Point(458, 42)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(42, 3)
+        Me.Guna2Panel1.TabIndex = 145
+        '
         'assign
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -676,7 +676,6 @@ Partial Class assign
     Friend WithEvents Guna2BorderlessForm2 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
-    Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DonorBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents QueueBtnMenu As Guna.UI2.WinForms.Guna2Button
@@ -710,4 +709,5 @@ Partial Class assign
     Friend WithEvents fname As Label
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents reciever_id As Label
+    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
 End Class

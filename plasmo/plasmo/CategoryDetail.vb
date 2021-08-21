@@ -100,25 +100,28 @@ Public Class CategoryDetail
         Application.Exit()
     End Sub
 
+
+
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
         donorForm.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
-
+        queue.Show()
+        Me.Close()
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Guna2HtmlLabel1_Click_1(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
@@ -127,5 +130,10 @@ Public Class CategoryDetail
 
     Private Sub antibodyCountTextbox_Click(sender As Object, e As EventArgs) Handles antibodyCountTextbox.Click
 
+    End Sub
+
+    Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
+        Dashboard.Show()
+        Me.Close()
     End Sub
 End Class

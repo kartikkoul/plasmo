@@ -138,11 +138,11 @@ Public Class Reciever_form
             con.Close()
             reciever_reciept.recieverIDLabel.Text = reciever_id
             reciever_reciept.Show()
-            Me.Hide()
+            Me.Close()
         Else
             con.Close()
             PlasmaNotAvailable.Show()
-            Me.Hide()
+            Me.Close()
         End If
     End Sub
 
@@ -165,12 +165,12 @@ Public Class Reciever_form
 
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
         Dashboard.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
         donorForm.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
@@ -178,15 +178,15 @@ Public Class Reciever_form
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
         queue.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
-        Me.Hide()
+        Me.Close()
     End Sub
 
     Private Sub Reciever_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
