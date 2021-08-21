@@ -3,7 +3,7 @@ Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 Public Class reciever_history
     Private Sub reciever_history_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
+        Guna2DataGridView1.ClearSelection()
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         Dim adapter As New SqlDataAdapter
         Dim ds As New DataSet
@@ -20,12 +20,14 @@ Public Class reciever_history
         totalDonors.Text = countDonors
 
         Dim countRecieversCmd As New SqlCommand("select * from reciever_records where recieved='" & "Y" & "'", con)
+        Dim ad As New SqlDataAdapter
+        Dim ds2 As New DataSet
         con.Open()
-        adapter.SelectCommand = countRecieversCmd
-        adapter.Fill(ds, "reciever_records")
-        Dim countRecievers As Integer = ds.Tables(0).Rows.Count
-        adapter.Dispose()
-        ds.Dispose()
+        ad.SelectCommand = countRecieversCmd
+        ad.Fill(ds2, "reciever_records")
+        Dim countRecievers As Integer = ds2.Tables(0).Rows.Count
+        ad.Dispose()
+        ds2.Dispose()
         con.Close()
         totalRecievers.Text = countRecievers
 
@@ -142,5 +144,22 @@ Public Class reciever_history
             RecieverDetails.Show()
             Me.Close()
         End If
+    End Sub
+
+    Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseEnter
+        If e.RowIndex > 0 Then
+            Dim row = Guna2DataGridView1.Rows(e.RowIndex)
+            row.DefaultCellStyle.BackColor = Color.White
+        End If
+        Me.Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Guna2DataGridView1_CellMouseLeave(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseLeave
+        If e.RowIndex > 0 Then
+            Dim row = Guna2DataGridView1.Rows(e.RowIndex)
+            row.DefaultCellStyle.BackColor = Color.FromArgb(240, 240, 240)
+        End If
+        Me.Cursor = Cursors.Default
+
     End Sub
 End Class
