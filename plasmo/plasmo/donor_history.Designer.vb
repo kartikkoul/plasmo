@@ -301,6 +301,7 @@ Partial Class donor_history
         DataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.White
         DataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.Black
         Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
+        Me.Guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
         Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 427)
         Me.Guna2DataGridView1.TabIndex = 71

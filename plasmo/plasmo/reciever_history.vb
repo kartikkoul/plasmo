@@ -8,25 +8,26 @@ Public Class reciever_history
         Dim adapter As New SqlDataAdapter
         Dim ds As New DataSet
 
-        If con.State = 1 Then
-            con.Close()
-        End If
+        If con.State = 1 Then con.Close()
         Dim countDonorsCmd As New SqlCommand("select plasma_id from donor_records", con)
-        Dim countRecieversCmd As New SqlCommand("select reciever_id from reciever_records where recieved='" & "Y" & "'", con)
         con.Open()
         adapter.SelectCommand = countDonorsCmd
         adapter.Fill(ds, "donor_records")
         Dim countDonors As Integer = ds.Tables(0).Rows.Count
-        totalDonors.Text = countDonors
         adapter.Dispose()
-        ds.Clear()
+        ds.Dispose()
+        con.Close()
+        totalDonors.Text = countDonors
+
+        Dim countRecieversCmd As New SqlCommand("select * from reciever_records where recieved='" & "Y" & "'", con)
+        con.Open()
         adapter.SelectCommand = countRecieversCmd
         adapter.Fill(ds, "reciever_records")
         Dim countRecievers As Integer = ds.Tables(0).Rows.Count
-        totalRecievers.Text = countRecievers
         adapter.Dispose()
-        ds.Clear()
+        ds.Dispose()
         con.Close()
+        totalRecievers.Text = countRecievers
 
 
 
