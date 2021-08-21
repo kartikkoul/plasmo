@@ -12,12 +12,38 @@ Public Class login
     End Sub
 
     Public Sub Guna2TextBox3_TextChanged_1(sender As Object, e As EventArgs) Handles PasswordTextBox.TextChanged
-
+        PasswordTextBox.BorderColor = Color.FromArgb(64, 64, 64)
+        PasswordTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+        PasswordTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        passError.Visible = False
+        InvalidCredentials.Visible = False
     End Sub
 
     Public Sub LoginValidation()
-        If UserIDTextBox.Text = "" Or PasswordTextBox.Text = "" Then
-            MsgBox("User ID and Password cannot be empty")
+        If UserIDTextBox.Text.Trim.Length = 0 Or PasswordTextBox.Text.Trim.Length = 0 Then
+            If UserIDTextBox.Text.Trim.Length = 0 And PasswordTextBox.Text.Trim.Length = 0 Then
+                userIdError.Visible = True
+                UserIDTextBox.BorderColor = Color.Red
+                UserIDTextBox.FocusedState.BorderColor = Color.Red
+                UserIDTextBox.HoverState.BorderColor = Color.Red
+                passError.Visible = True
+                PasswordTextBox.BorderColor = Color.Red
+                PasswordTextBox.FocusedState.BorderColor = Color.Red
+                PasswordTextBox.HoverState.BorderColor = Color.Red
+
+            ElseIf UserIDTextBox.Text.Trim.Length = 0 Then
+                userIdError.Visible = True
+                UserIDTextBox.BorderColor = Color.Red
+                UserIDTextBox.FocusedState.BorderColor = Color.Red
+                UserIDTextBox.HoverState.BorderColor = Color.Red
+
+            Else
+                passError.Visible = True
+                PasswordTextBox.BorderColor = Color.Red
+                PasswordTextBox.FocusedState.BorderColor = Color.Red
+                PasswordTextBox.HoverState.BorderColor = Color.Red
+
+            End If
         Else
             conn = New SqlConnection("Data Source = DESKTOP-5GP20F1\SQLEXPRESS; Initial Catalog = plasmo; Integrated Security = True;MultipleActiveResultSets=true;")
 
@@ -42,13 +68,13 @@ Public Class login
                     conn.Close()
                 Else
                     conn.Close()
-                    MsgBox("Invalid Credentials")
                     UserIDTextBox.Clear()
                     PasswordTextBox.Clear()
+                    InvalidCredentials.Visible = True
                 End If
             Catch ex As Exception
-                UserIDTextBox.BorderColor = Color.Red
-                PasswordTextBox.BorderColor = Color.Red
+                InvalidCredentials.Text = ex.ToString
+                InvalidCredentials.Visible = True
             End Try
 
         End If
@@ -110,5 +136,17 @@ Public Class login
 
     Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
 
+    End Sub
+
+    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles userIdError.Click
+
+    End Sub
+
+    Private Sub UserIDTextBox_TextChanged(sender As Object, e As EventArgs) Handles UserIDTextBox.TextChanged
+        UserIDTextBox.BorderColor = Color.FromArgb(64, 64, 64)
+        UserIDTextBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+        UserIDTextBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        userIdError.Visible = False
+        InvalidCredentials.Visible = False
     End Sub
 End Class

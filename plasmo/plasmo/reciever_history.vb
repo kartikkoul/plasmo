@@ -133,4 +133,13 @@ Public Class reciever_history
     Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
 
     End Sub
+
+    Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
+        If e.RowIndex >= 0 Then
+            Dim row As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
+            RecieverDetails.reciever_id.Text = row.Cells(0).Value.ToString
+            RecieverDetails.Show()
+            Me.Close()
+        End If
+    End Sub
 End Class

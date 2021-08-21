@@ -86,3 +86,5 @@ D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.CategoryDet
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.queue.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.assign.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.PlasmaStillNotAvailable.resources
+D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.DonorDetails.resources
+D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.RecieverDetails.resources

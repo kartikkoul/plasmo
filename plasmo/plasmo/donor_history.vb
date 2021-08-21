@@ -150,4 +150,13 @@ Public Class donor_history
         reciever_history.Show()
         Me.Close()
     End Sub
+
+    Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
+        If e.RowIndex >= 0 Then
+            Dim row As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
+            DonorDetails.plasma_id.Text = row.Cells(0).Value.ToString
+            DonorDetails.Show()
+            Me.Close()
+        End If
+    End Sub
 End Class

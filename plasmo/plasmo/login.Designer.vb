@@ -45,6 +45,9 @@ Partial Class login
         Me.EyeOpen = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.userIdError = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.passError = New Guna.UI2.WinForms.Guna2HtmlLabel()
+        Me.InvalidCredentials = New Guna.UI2.WinForms.Guna2HtmlLabel()
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EyeClosed, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -66,7 +69,7 @@ Partial Class login
         Me.UserIDTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.UserIDTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.UserIDTextBox.FocusedState.Parent = Me.UserIDTextBox
-        Me.UserIDTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.UserIDTextBox.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.UserIDTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.UserIDTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.UserIDTextBox.HoverState.Parent = Me.UserIDTextBox
@@ -84,44 +87,44 @@ Partial Class login
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 24.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Poppins SemiBold", 24.0!, System.Drawing.FontStyle.Bold)
         Me.Label1.Location = New System.Drawing.Point(74, 129)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(208, 37)
+        Me.Label1.Size = New System.Drawing.Size(228, 56)
         Me.Label1.TabIndex = 3
         Me.Label1.Text = "Admin Login"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.Label2.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.Label2.Location = New System.Drawing.Point(81, 177)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(153, 20)
+        Me.Label2.Size = New System.Drawing.Size(175, 28)
         Me.Label2.TabIndex = 4
         Me.Label2.Text = "Welcome to Plasmo!"
         '
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.Label3.Location = New System.Drawing.Point(81, 254)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(61, 20)
+        Me.Label3.Size = New System.Drawing.Size(66, 28)
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "User Id"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.Label4.Location = New System.Drawing.Point(83, 376)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(78, 20)
+        Me.Label4.Size = New System.Drawing.Size(88, 28)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Password"
         '
@@ -136,7 +139,7 @@ Partial Class login
         Me.LoginButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.LoginButton.DisabledState.Parent = Me.LoginButton
         Me.LoginButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.LoginButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LoginButton.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.LoginButton.ForeColor = System.Drawing.Color.White
         Me.LoginButton.HoverState.Parent = Me.LoginButton
         Me.LoginButton.Location = New System.Drawing.Point(147, 518)
@@ -160,7 +163,7 @@ Partial Class login
         Me.PasswordTextBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.PasswordTextBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PasswordTextBox.FocusedState.Parent = Me.PasswordTextBox
-        Me.PasswordTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
+        Me.PasswordTextBox.Font = New System.Drawing.Font("Poppins", 12.0!)
         Me.PasswordTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.PasswordTextBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.PasswordTextBox.HoverState.Parent = Me.PasswordTextBox
@@ -351,6 +354,42 @@ Partial Class login
         Me.Guna2PictureBox1.TabIndex = 0
         Me.Guna2PictureBox1.TabStop = False
         '
+        'userIdError
+        '
+        Me.userIdError.BackColor = System.Drawing.Color.Transparent
+        Me.userIdError.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.userIdError.ForeColor = System.Drawing.Color.Red
+        Me.userIdError.Location = New System.Drawing.Point(88, 348)
+        Me.userIdError.Name = "userIdError"
+        Me.userIdError.Size = New System.Drawing.Size(158, 25)
+        Me.userIdError.TabIndex = 67
+        Me.userIdError.Text = "This field can't be empty"
+        Me.userIdError.Visible = False
+        '
+        'passError
+        '
+        Me.passError.BackColor = System.Drawing.Color.Transparent
+        Me.passError.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.passError.ForeColor = System.Drawing.Color.Red
+        Me.passError.Location = New System.Drawing.Point(88, 474)
+        Me.passError.Name = "passError"
+        Me.passError.Size = New System.Drawing.Size(158, 25)
+        Me.passError.TabIndex = 68
+        Me.passError.Text = "This field can't be empty"
+        Me.passError.Visible = False
+        '
+        'InvalidCredentials
+        '
+        Me.InvalidCredentials.BackColor = System.Drawing.Color.Transparent
+        Me.InvalidCredentials.Font = New System.Drawing.Font("Poppins SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.InvalidCredentials.ForeColor = System.Drawing.Color.Red
+        Me.InvalidCredentials.Location = New System.Drawing.Point(84, 221)
+        Me.InvalidCredentials.Name = "InvalidCredentials"
+        Me.InvalidCredentials.Size = New System.Drawing.Size(172, 30)
+        Me.InvalidCredentials.TabIndex = 69
+        Me.InvalidCredentials.Text = "Invalid Credentials !!"
+        Me.InvalidCredentials.Visible = False
+        '
         'login
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -358,6 +397,9 @@ Partial Class login
         Me.AutoScroll = True
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1082, 624)
+        Me.Controls.Add(Me.InvalidCredentials)
+        Me.Controls.Add(Me.passError)
+        Me.Controls.Add(Me.userIdError)
         Me.Controls.Add(Me.Guna2CircleButton2)
         Me.Controls.Add(Me.CloseButton)
         Me.Controls.Add(Me.EyeButton)
@@ -410,4 +452,7 @@ Partial Class login
     Friend WithEvents Guna2BorderlessForm3 As Guna.UI2.WinForms.Guna2BorderlessForm
     Friend WithEvents Guna2CircleButton2 As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
+    Friend WithEvents userIdError As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents InvalidCredentials As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents passError As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

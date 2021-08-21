@@ -96,8 +96,7 @@ Public Class donorForm
 
 
     Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
-        'Dim isInvalid As Boolean = fname.Text.Trim.Length == 0 Or lname.Text.Trim.Length = 0 Or (age.Text < 17 Or age.Text > 71 Or age.Text.Trim.Length = 0)
-        'If isInvalid Then
+        'If fname.Text.Trim.Length = 0 Or lname.Text.Trim.Length = 0 Or age.Text < 17 Or age.Text > 71 Or age.Text.Trim.Length = 0 Then
         '    If fname.Text.Trim.Length = 0 Then
         '        fNameErrorText.Visible = True
         '        fname.BorderColor = Color.Red
@@ -155,16 +154,6 @@ Public Class donorForm
         Dim cmd1 As New SqlCommand("insert into donor_records(plasma_id,first_name,last_name,age,phone_number,email,city,address,blood_group,sex,anti_body,price,sold,transaction_time) values('" & donor_id & "','" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & anti & "','" & price & "','" & "N" & "','" & time & "')", con)
         con.Open()
         cmd1.ExecuteNonQuery()
-        donor_history.Refresh()
-
-
-
-
-
-
-
-
-
 
         Dashboard.Refresh()
         con.Close()
