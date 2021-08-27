@@ -1,6 +1,8 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
+Imports System.Text.RegularExpressions
+
 Public Class donorForm
     Private Sub Guna2Button6_Click(sender As Object, e As EventArgs)
         Reciever_form.Show()
@@ -96,20 +98,59 @@ Public Class donorForm
 
 
     Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
-        'If fname.Text.Trim.Length = 0 Or lname.Text.Trim.Length = 0 Or age.Text < 17 Or age.Text > 71 Or age.Text.Trim.Length = 0 Then
-        '    If fname.Text.Trim.Length = 0 Then
-        '        fNameErrorText.Visible = True
-        '        fname.BorderColor = Color.Red
+        If fname.Text = "" Then
+            MsgBox("Enter First Name")
+            fname.Focus()
+        ElseIf lname.Text = "" Then
+            MsgBox("Enter Last Name")
+            lname.Focus()
+        ElseIf age.Text = "" Then
+            MsgBox("Enter Age")
+            age.Focus()
+        ElseIf age.Text.Length <> 2 Then
+            MsgBox("INVALID!!! Please enter valid age")
+            age.Focus()
+        ElseIf pnumber.Text = "" Then
+            MsgBox("Enter a valid Contact No.")
+            pnumber.Focus()
+        ElseIf pnumber.Text.Length <> 10 Then
+            MsgBox("INVALID CONTACT NO.")
+            pnumber.Focus()
+        ElseIf mail.Text = "" Then
+            MsgBox("Enter email address")
+            mail.Focus()
+        ElseIf city.Text = "" Then
+            MsgBox("Enter City")
+            city.Focus()
+        ElseIf address.Text = "" Then
+            MsgBox("Enter Address")
+            address.Focus()
+        Else
+            Validatemail()
+        End If
+    End Sub
+    Sub Validatemail()
+        Dim email As String = mail.Text
+        If EmailAddresscheck(email) = False Then
+            MsgBox("The email address you entered is not valid")
+            mail.Focus()
+        Else
+            Insert()
 
-        '    ElseIf lname.Text.Trim.Length = 0 Then
-        '        lNameErrorText.Visible = True
-        '        lname.BorderColor = Color.Red
+        End If
+    End Sub
+    Function EmailAddresscheck(ByVal emailaddress As String) As Boolean
+        Dim pttern As String = "^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+        Dim emailAddressMatch As Match = Regex.Match(emailaddress, pttern)
+        If emailAddressMatch.Success Then
+            EmailAddresscheck = True
+        Else
+            EmailAddresscheck = False
 
-        '    ElseIf (age.Text < 17 Or age.Text > 71 Or age.Text.Trim.Length = 0) Then
-        '        ageErrorText.Visible = True
-        '        age.BorderColor = Color.Red
-        '    End If
-        'Else
+        End If
+
+    End Function
+    Sub Insert()
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
         Dim anti As Char = Truncate(antibody.SelectedItem, 1)
         Dim price As Integer = 0
@@ -160,9 +201,7 @@ Public Class donorForm
         donor_success.Show()
         Me.Close()
         'End If
-
     End Sub
-
     Private Sub Label11_Click(sender As Object, e As EventArgs)
 
     End Sub
@@ -177,5 +216,52 @@ Public Class donorForm
 
     Private Sub Guna2HtmlLabel5_Click(sender As Object, e As EventArgs) Handles emailErrortext.Click
 
+    End Sub
+
+    Private Sub fname_KeyPress(sender As Object, e As KeyPressEventArgs) Handles fname.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Not ((Asc(e.KeyChar) <= 122 And Asc(e.KeyChar) >= 97) Or (Asc(e.KeyChar) <= 90 And Asc(e.KeyChar) >= 65) Or Asc(e.KeyChar) = 32) Then
+                e.Handled = True
+                MsgBox("Only Characters are Valid")
+            End If
+        End If
+    End Sub
+
+    Private Sub lname_TextChanged(sender As Object, e As EventArgs) Handles lname.TextChanged
+
+    End Sub
+
+    Private Sub lname_KeyPress(sender As Object, e As KeyPressEventArgs) Handles lname.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Not ((Asc(e.KeyChar) <= 122 And Asc(e.KeyChar) >= 97) Or (Asc(e.KeyChar) <= 90 And Asc(e.KeyChar) >= 65) Or Asc(e.KeyChar) = 32) Then
+                e.Handled = True
+                MsgBox("Only Characters are Valid")
+            End If
+        End If
+    End Sub
+
+    Private Sub city_TextChanged(sender As Object, e As EventArgs) Handles city.TextChanged
+
+    End Sub
+
+    Private Sub city_KeyPress(sender As Object, e As KeyPressEventArgs) Handles city.KeyPress
+        If Asc(e.KeyChar) <> 8 Then
+            If Not ((Asc(e.KeyChar) <= 122 And Asc(e.KeyChar) >= 97) Or (Asc(e.KeyChar) <= 90 And Asc(e.KeyChar) >= 65) Or Asc(e.KeyChar) = 32) Then
+                e.Handled = True
+                MsgBox("Only Characters are Valid")
+            End If
+        End If
+    End Sub
+
+    Private Sub age_TextChanged(sender As Object, e As EventArgs) Handles age.TextChanged
+
+    End Sub
+
+    Private Sub age_Leave(sender As Object, e As EventArgs) Handles age.Leave
+        If age.Text < 17 Or age.Text > 71 Then
+            MsgBox("Sorry!!! You are Not allowed")
+            age.Focus()
+
+        End If
     End Sub
 End Class

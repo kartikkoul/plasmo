@@ -184,7 +184,7 @@ Public Class assign
             cmd = New SqlCommand("select plasma_id, price, anti_body from donor_records where blood_group='" & blood_group & "' AND sold='" & "N" & "'", con)
 
         Else
-            cmd = New SqlCommand("select plasma_id, price, anti_body from donor_records where blood_group='" & blood_group & "' AND anti_body='" & wantAntibody & "' AND sold='" & "N" & "'", con)
+            cmd = New SqlCommand("select plasma_id, price, anti_body from donor_records where blood_group='" & blood_group & "', anti_body='" & wantAntibody & "' AND sold='" & "N" & "'", con)
         End If
 
 

@@ -99,11 +99,11 @@ Partial Class CategoryDetail
         'Guna2HtmlLabel4
         '
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins Medium", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel4.ForeColor = System.Drawing.Color.White
         Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(821, 60)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(24, 21)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(24, 15)
         Me.Guna2HtmlLabel4.TabIndex = 149
         Me.Guna2HtmlLabel4.Text = "100"
         '
@@ -118,14 +118,14 @@ Partial Class CategoryDetail
         Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Location = New System.Drawing.Point(182, 14)
+        Me.RecieverBtnMenu.Location = New System.Drawing.Point(169, 14)
         Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Size = New System.Drawing.Size(131, 31)
+        Me.RecieverBtnMenu.Size = New System.Drawing.Size(146, 31)
         Me.RecieverBtnMenu.TabIndex = 83
         Me.RecieverBtnMenu.Text = "RECEIVER"
         '
@@ -140,7 +140,7 @@ Partial Class CategoryDetail
         Me.QueueBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.QueueBtnMenu.DisabledState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.QueueBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
@@ -162,7 +162,7 @@ Partial Class CategoryDetail
         Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.DonorBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Location = New System.Drawing.Point(304, 14)
@@ -184,7 +184,7 @@ Partial Class CategoryDetail
         Me.HistoryBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.HistoryBtnMenu.DisabledState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
@@ -219,7 +219,7 @@ Partial Class CategoryDetail
         Me.DashboardBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DashboardBtnMenu.DisabledState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
@@ -241,7 +241,7 @@ Partial Class CategoryDetail
         Me.LogoutBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.LogoutBtnMenu.DisabledState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold)
+        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold)
         Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
@@ -271,7 +271,7 @@ Partial Class CategoryDetail
         Me.Guna2DataGridView1.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None
         DataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft
         DataGridViewCellStyle2.BackColor = System.Drawing.Color.White
-        DataGridViewCellStyle2.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black
         DataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.White
         DataGridViewCellStyle2.SelectionForeColor = System.Drawing.Color.Black
@@ -307,7 +307,7 @@ Partial Class CategoryDetail
         Me.Guna2DataGridView1.RowHeadersVisible = False
         Me.Guna2DataGridView1.RowHeadersWidth = 42
         DataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        DataGridViewCellStyle5.Font = New System.Drawing.Font("Poppins", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        DataGridViewCellStyle5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         DataGridViewCellStyle5.ForeColor = System.Drawing.Color.Black
         Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle5
         Me.Guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
@@ -373,77 +373,77 @@ Partial Class CategoryDetail
         'type
         '
         Me.type.BackColor = System.Drawing.Color.Transparent
-        Me.type.Font = New System.Drawing.Font("Poppins SemiBold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.type.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.type.ForeColor = System.Drawing.Color.Black
         Me.type.Location = New System.Drawing.Point(618, 129)
         Me.type.Name = "type"
-        Me.type.Size = New System.Drawing.Size(40, 28)
+        Me.type.Size = New System.Drawing.Size(39, 20)
         Me.type.TabIndex = 143
         Me.type.Text = "Type"
         '
         'Guna2HtmlLabel5
         '
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Poppins SemiBold", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(489, 129)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(120, 28)
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(137, 20)
         Me.Guna2HtmlLabel5.TabIndex = 149
         Me.Guna2HtmlLabel5.Text = "BLOOD GROUP :"
         '
         'Guna2HtmlLabel1
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(414, 164)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(123, 25)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(145, 18)
         Me.Guna2HtmlLabel1.TabIndex = 144
         Me.Guna2HtmlLabel1.Text = "WITH ANTIBODIES :"
         '
         'Guna2HtmlLabel6
         '
         Me.Guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2HtmlLabel6.Location = New System.Drawing.Point(573, 164)
         Me.Guna2HtmlLabel6.Name = "Guna2HtmlLabel6"
-        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(9, 25)
+        Me.Guna2HtmlLabel6.Size = New System.Drawing.Size(11, 18)
         Me.Guna2HtmlLabel6.TabIndex = 150
         Me.Guna2HtmlLabel6.Text = "•"
         '
         'Guna2HtmlLabel7
         '
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(589, 164)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(150, 25)
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(177, 18)
         Me.Guna2HtmlLabel7.TabIndex = 151
         Me.Guna2HtmlLabel7.Text = "WITHOUT ANTIBODIES :"
         '
         'antibodyCountTextbox
         '
         Me.antibodyCountTextbox.BackColor = System.Drawing.Color.Transparent
-        Me.antibodyCountTextbox.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.antibodyCountTextbox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.antibodyCountTextbox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.antibodyCountTextbox.Location = New System.Drawing.Point(543, 164)
         Me.antibodyCountTextbox.Name = "antibodyCountTextbox"
-        Me.antibodyCountTextbox.Size = New System.Drawing.Size(24, 25)
+        Me.antibodyCountTextbox.Size = New System.Drawing.Size(27, 18)
         Me.antibodyCountTextbox.TabIndex = 152
         Me.antibodyCountTextbox.Text = "100"
         '
         'nonAntiBodyCountTextBox
         '
         Me.nonAntiBodyCountTextBox.BackColor = System.Drawing.Color.Transparent
-        Me.nonAntiBodyCountTextBox.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.nonAntiBodyCountTextBox.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.nonAntiBodyCountTextBox.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.nonAntiBodyCountTextBox.Location = New System.Drawing.Point(745, 164)
         Me.nonAntiBodyCountTextBox.Name = "nonAntiBodyCountTextBox"
-        Me.nonAntiBodyCountTextBox.Size = New System.Drawing.Size(24, 25)
+        Me.nonAntiBodyCountTextBox.Size = New System.Drawing.Size(27, 18)
         Me.nonAntiBodyCountTextBox.TabIndex = 153
         Me.nonAntiBodyCountTextBox.Text = "100"
         '

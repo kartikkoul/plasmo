@@ -50,6 +50,7 @@ Partial Class donor_reciept
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
@@ -58,7 +59,8 @@ Partial Class donor_reciept
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.SubmitButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -71,188 +73,188 @@ Partial Class donor_reciept
         'plasmaIDLabel
         '
         Me.plasmaIDLabel.BackColor = System.Drawing.Color.Transparent
-        Me.plasmaIDLabel.Font = New System.Drawing.Font("Poppins Light", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.plasmaIDLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.plasmaIDLabel.Location = New System.Drawing.Point(490, 220)
         Me.plasmaIDLabel.Name = "plasmaIDLabel"
-        Me.plasmaIDLabel.Size = New System.Drawing.Size(68, 25)
+        Me.plasmaIDLabel.Size = New System.Drawing.Size(69, 18)
         Me.plasmaIDLabel.TabIndex = 136
         Me.plasmaIDLabel.Text = "(E0801001)"
         '
         'dateLabel
         '
         Me.dateLabel.BackColor = System.Drawing.Color.Transparent
-        Me.dateLabel.Font = New System.Drawing.Font("Poppins Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dateLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.dateLabel.Location = New System.Drawing.Point(768, 465)
         Me.dateLabel.Name = "dateLabel"
-        Me.dateLabel.Size = New System.Drawing.Size(177, 36)
+        Me.dateLabel.Size = New System.Drawing.Size(163, 26)
         Me.dateLabel.TabIndex = 135
         Me.dateLabel.Text = "Guna2HtmlLabel16"
         '
         'Guna2HtmlLabel17
         '
         Me.Guna2HtmlLabel17.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel17.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel17.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel17.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel17.Location = New System.Drawing.Point(620, 465)
         Me.Guna2HtmlLabel17.Name = "Guna2HtmlLabel17"
-        Me.Guna2HtmlLabel17.Size = New System.Drawing.Size(126, 36)
+        Me.Guna2HtmlLabel17.Size = New System.Drawing.Size(115, 26)
         Me.Guna2HtmlLabel17.TabIndex = 134
         Me.Guna2HtmlLabel17.Text = "Donated On :"
         '
         'bloodGroupLabel
         '
         Me.bloodGroupLabel.BackColor = System.Drawing.Color.Transparent
-        Me.bloodGroupLabel.Font = New System.Drawing.Font("Poppins Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bloodGroupLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bloodGroupLabel.Location = New System.Drawing.Point(310, 469)
         Me.bloodGroupLabel.Name = "bloodGroupLabel"
-        Me.bloodGroupLabel.Size = New System.Drawing.Size(177, 36)
+        Me.bloodGroupLabel.Size = New System.Drawing.Size(163, 26)
         Me.bloodGroupLabel.TabIndex = 133
         Me.bloodGroupLabel.Text = "Guna2HtmlLabel14"
         '
         'Guna2HtmlLabel15
         '
         Me.Guna2HtmlLabel15.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel15.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel15.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel15.Location = New System.Drawing.Point(172, 470)
         Me.Guna2HtmlLabel15.Name = "Guna2HtmlLabel15"
-        Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(130, 36)
+        Me.Guna2HtmlLabel15.Size = New System.Drawing.Size(120, 26)
         Me.Guna2HtmlLabel15.TabIndex = 132
         Me.Guna2HtmlLabel15.Text = "Blood Group :"
         '
         'emailLabel
         '
         Me.emailLabel.BackColor = System.Drawing.Color.Transparent
-        Me.emailLabel.Font = New System.Drawing.Font("Poppins Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.emailLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.emailLabel.Location = New System.Drawing.Point(704, 401)
         Me.emailLabel.Name = "emailLabel"
-        Me.emailLabel.Size = New System.Drawing.Size(171, 36)
+        Me.emailLabel.Size = New System.Drawing.Size(153, 26)
         Me.emailLabel.TabIndex = 131
         Me.emailLabel.Text = "Guna2HtmlLabel8"
         '
         'Guna2HtmlLabel9
         '
         Me.Guna2HtmlLabel9.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel9.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel9.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel9.Location = New System.Drawing.Point(621, 401)
         Me.Guna2HtmlLabel9.Name = "Guna2HtmlLabel9"
-        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(60, 36)
+        Me.Guna2HtmlLabel9.Size = New System.Drawing.Size(55, 26)
         Me.Guna2HtmlLabel9.TabIndex = 130
         Me.Guna2HtmlLabel9.Text = "Email:"
         '
         'addressLabel
         '
         Me.addressLabel.BackColor = System.Drawing.Color.Transparent
-        Me.addressLabel.Font = New System.Drawing.Font("Poppins Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.addressLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.addressLabel.Location = New System.Drawing.Point(730, 332)
         Me.addressLabel.Name = "addressLabel"
-        Me.addressLabel.Size = New System.Drawing.Size(177, 36)
+        Me.addressLabel.Size = New System.Drawing.Size(163, 26)
         Me.addressLabel.TabIndex = 129
         Me.addressLabel.Text = "Guna2HtmlLabel10"
         '
         'Guna2HtmlLabel11
         '
         Me.Guna2HtmlLabel11.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel11.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel11.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel11.Location = New System.Drawing.Point(621, 332)
         Me.Guna2HtmlLabel11.Name = "Guna2HtmlLabel11"
-        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(90, 36)
+        Me.Guna2HtmlLabel11.Size = New System.Drawing.Size(83, 26)
         Me.Guna2HtmlLabel11.TabIndex = 128
         Me.Guna2HtmlLabel11.Text = "Address :"
         '
         'phNumberLabel
         '
         Me.phNumberLabel.BackColor = System.Drawing.Color.Transparent
-        Me.phNumberLabel.Font = New System.Drawing.Font("Poppins Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.phNumberLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.phNumberLabel.Location = New System.Drawing.Point(792, 273)
         Me.phNumberLabel.Name = "phNumberLabel"
-        Me.phNumberLabel.Size = New System.Drawing.Size(176, 36)
+        Me.phNumberLabel.Size = New System.Drawing.Size(163, 26)
         Me.phNumberLabel.TabIndex = 127
         Me.phNumberLabel.Text = "Guna2HtmlLabel12"
         '
         'Guna2HtmlLabel13
         '
         Me.Guna2HtmlLabel13.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel13.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel13.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel13.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel13.Location = New System.Drawing.Point(621, 273)
         Me.Guna2HtmlLabel13.Name = "Guna2HtmlLabel13"
-        Me.Guna2HtmlLabel13.Size = New System.Drawing.Size(148, 36)
+        Me.Guna2HtmlLabel13.Size = New System.Drawing.Size(138, 26)
         Me.Guna2HtmlLabel13.TabIndex = 126
         Me.Guna2HtmlLabel13.Text = "Phone Number:"
         '
         'sexLabel
         '
         Me.sexLabel.BackColor = System.Drawing.Color.Transparent
-        Me.sexLabel.Font = New System.Drawing.Font("Poppins Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.sexLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.sexLabel.Location = New System.Drawing.Point(229, 402)
         Me.sexLabel.Name = "sexLabel"
-        Me.sexLabel.Size = New System.Drawing.Size(171, 36)
+        Me.sexLabel.Size = New System.Drawing.Size(153, 26)
         Me.sexLabel.TabIndex = 125
         Me.sexLabel.Text = "Guna2HtmlLabel6"
         '
         'Guna2HtmlLabel7
         '
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel7.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(173, 403)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
-        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(44, 36)
+        Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(46, 26)
         Me.Guna2HtmlLabel7.TabIndex = 124
         Me.Guna2HtmlLabel7.Text = "Sex :"
         '
         'ageLabel
         '
         Me.ageLabel.BackColor = System.Drawing.Color.Transparent
-        Me.ageLabel.Font = New System.Drawing.Font("Poppins Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.ageLabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.ageLabel.Location = New System.Drawing.Point(229, 335)
         Me.ageLabel.Name = "ageLabel"
-        Me.ageLabel.Size = New System.Drawing.Size(170, 36)
+        Me.ageLabel.Size = New System.Drawing.Size(153, 26)
         Me.ageLabel.TabIndex = 123
         Me.ageLabel.Text = "Guna2HtmlLabel3"
         '
         'Guna2HtmlLabel5
         '
         Me.Guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel5.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel5.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel5.Location = New System.Drawing.Point(173, 336)
         Me.Guna2HtmlLabel5.Name = "Guna2HtmlLabel5"
-        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(50, 36)
+        Me.Guna2HtmlLabel5.Size = New System.Drawing.Size(48, 26)
         Me.Guna2HtmlLabel5.TabIndex = 122
         Me.Guna2HtmlLabel5.Text = "Age :"
         '
         'Guna2HtmlLabel4
         '
         Me.Guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel4.Location = New System.Drawing.Point(377, 188)
         Me.Guna2HtmlLabel4.Name = "Guna2HtmlLabel4"
-        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(333, 36)
+        Me.Guna2HtmlLabel4.Size = New System.Drawing.Size(297, 26)
         Me.Guna2HtmlLabel4.TabIndex = 121
         Me.Guna2HtmlLabel4.Text = "Thanks for your generous donation"
         '
         'Namelabel
         '
         Me.Namelabel.BackColor = System.Drawing.Color.Transparent
-        Me.Namelabel.Font = New System.Drawing.Font("Poppins Light", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Namelabel.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Namelabel.Location = New System.Drawing.Point(256, 273)
         Me.Namelabel.Name = "Namelabel"
-        Me.Namelabel.Size = New System.Drawing.Size(55, 36)
+        Me.Namelabel.Size = New System.Drawing.Size(56, 26)
         Me.Namelabel.TabIndex = 119
         Me.Namelabel.Text = "NaME"
         '
         'Guna2HtmlLabel1
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel1.ForeColor = System.Drawing.Color.Black
         Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(173, 273)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
-        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(70, 36)
+        Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(64, 26)
         Me.Guna2HtmlLabel1.TabIndex = 118
         Me.Guna2HtmlLabel1.Text = "Name :"
         '
@@ -267,7 +269,7 @@ Partial Class donor_reciept
         Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
@@ -289,7 +291,7 @@ Partial Class donor_reciept
         Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DonorBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
@@ -311,7 +313,7 @@ Partial Class donor_reciept
         Me.QueueBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.QueueBtnMenu.DisabledState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.QueueBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
@@ -333,7 +335,7 @@ Partial Class donor_reciept
         Me.HistoryBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.HistoryBtnMenu.DisabledState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
@@ -355,7 +357,7 @@ Partial Class donor_reciept
         Me.DashboardBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DashboardBtnMenu.DisabledState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
@@ -377,7 +379,7 @@ Partial Class donor_reciept
         Me.LogoutBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.LogoutBtnMenu.DisabledState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
@@ -406,6 +408,16 @@ Partial Class donor_reciept
         Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel1.TabIndex = 117
+        '
+        'Guna2Panel4
+        '
+        Me.Guna2Panel4.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel4.Location = New System.Drawing.Point(210, 41)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.ShadowDecoration.Parent = Me.Guna2Panel4
+        Me.Guna2Panel4.Size = New System.Drawing.Size(64, 3)
+        Me.Guna2Panel4.TabIndex = 139
         '
         'Guna2PictureBox2
         '
@@ -517,7 +529,7 @@ Partial Class donor_reciept
         Me.SubmitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.SubmitButton.DisabledState.Parent = Me.SubmitButton
         Me.SubmitButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.SubmitButton.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SubmitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SubmitButton.ForeColor = System.Drawing.Color.White
         Me.SubmitButton.HoverState.Parent = Me.SubmitButton
         Me.SubmitButton.Location = New System.Drawing.Point(441, 559)
@@ -531,22 +543,25 @@ Partial Class donor_reciept
         'Guna2HtmlLabel3
         '
         Me.Guna2HtmlLabel3.BackColor = System.Drawing.Color.Transparent
-        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Guna2HtmlLabel3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel3.Location = New System.Drawing.Point(490, 156)
         Me.Guna2HtmlLabel3.Name = "Guna2HtmlLabel3"
-        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(77, 36)
+        Me.Guna2HtmlLabel3.Size = New System.Drawing.Size(81, 26)
         Me.Guna2HtmlLabel3.TabIndex = 138
         Me.Guna2HtmlLabel3.Text = "PLASMO"
         '
-        'Guna2Panel4
+        'PrintPreviewDialog1
         '
-        Me.Guna2Panel4.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel4.Location = New System.Drawing.Point(210, 41)
-        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.ShadowDecoration.Parent = Me.Guna2Panel4
-        Me.Guna2Panel4.Size = New System.Drawing.Size(64, 3)
-        Me.Guna2Panel4.TabIndex = 139
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
+        '
+        'PrintDocument1
+        '
         '
         'donor_reciept
         '
@@ -627,4 +642,6 @@ Partial Class donor_reciept
     Friend WithEvents SubmitButton As Guna.UI2.WinForms.Guna2Button
     Public WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class

@@ -88,3 +88,36 @@ D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.assign.reso
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.PlasmaStillNotAvailable.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.DonorDetails.resources
 D:\COLLEGE FUN\6th Sem\Project\plasmo\plasmo\plasmo\obj\Debug\plasmo.RecieverDetails.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\bin\Debug\Database1.mdf
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\bin\Debug\Database1_log.ldf
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\bin\Debug\Database2.mdf
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\bin\Debug\Database2_log.ldf
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\bin\Debug\plasmo.exe.config
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\bin\Debug\plasmo.exe
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\bin\Debug\plasmo.pdb
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\bin\Debug\plasmo.xml
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\bin\Debug\Guna.UI2.dll
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.vbprojAssemblyReference.cache
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.assign.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.CategoryDetail.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.DonorDetails.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.donor_history.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.Dashboard.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.donorForm.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.donor_success.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.donor_reciept.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.login.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.Resources.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.PlasmaNotAvailable.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.PlasmaStillNotAvailable.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.queue.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.Reciever_form.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.RecieverDetails.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.reciever_history.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.reciever_reciept.resources
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.vbproj.GenerateResource.cache
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.vbproj.CoreCompileInputs.cache
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.vbproj.CopyComplete
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.exe
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.xml
+C:\Users\Hp\Desktop\plasmo-main\plasmo\plasmo\obj\Debug\plasmo.pdb

@@ -84,7 +84,7 @@ Partial Class donorForm
         Me.gender.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.gender.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.gender.FocusedState.Parent = Me.gender
-        Me.gender.Font = New System.Drawing.Font("Poppins", 10.2!)
+        Me.gender.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!)
         Me.gender.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.gender.HoverState.Parent = Me.gender
         Me.gender.ItemHeight = 30
@@ -109,7 +109,7 @@ Partial Class donorForm
         Me.SubmitButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.SubmitButton.DisabledState.Parent = Me.SubmitButton
         Me.SubmitButton.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.SubmitButton.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.SubmitButton.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.SubmitButton.ForeColor = System.Drawing.Color.White
         Me.SubmitButton.HoverState.Parent = Me.SubmitButton
         Me.SubmitButton.Location = New System.Drawing.Point(440, 559)
@@ -123,11 +123,11 @@ Partial Class donorForm
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(715, 356)
         Me.Label10.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(71, 28)
+        Me.Label10.Size = New System.Drawing.Size(63, 20)
         Me.Label10.TabIndex = 61
         Me.Label10.Text = "Gender"
         '
@@ -144,7 +144,7 @@ Partial Class donorForm
         Me.address.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.address.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.address.FocusedState.Parent = Me.address
-        Me.address.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.address.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.address.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.address.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.address.HoverState.Parent = Me.address
@@ -162,11 +162,11 @@ Partial Class donorForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(435, 354)
         Me.Label4.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(77, 28)
+        Me.Label4.Size = New System.Drawing.Size(68, 20)
         Me.Label4.TabIndex = 59
         Me.Label4.Text = "Address"
         '
@@ -183,7 +183,7 @@ Partial Class donorForm
         Me.city.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.city.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.city.FocusedState.Parent = Me.city
-        Me.city.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.city.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.city.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.city.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.city.HoverState.Parent = Me.city
@@ -201,22 +201,22 @@ Partial Class donorForm
         'Label3
         '
         Me.Label3.AutoSize = True
-        Me.Label3.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label3.Location = New System.Drawing.Point(148, 354)
         Me.Label3.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(43, 28)
+        Me.Label3.Size = New System.Drawing.Size(35, 20)
         Me.Label3.TabIndex = 57
         Me.Label3.Text = "City" & Global.Microsoft.VisualBasic.ChrW(13) & Global.Microsoft.VisualBasic.ChrW(10)
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label2.Location = New System.Drawing.Point(715, 246)
         Me.Label2.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(110, 28)
+        Me.Label2.Size = New System.Drawing.Size(99, 20)
         Me.Label2.TabIndex = 56
         Me.Label2.Text = "Blood Group"
         '
@@ -247,33 +247,33 @@ Partial Class donorForm
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label5.Location = New System.Drawing.Point(434, 244)
         Me.Label5.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(64, 28)
+        Me.Label5.Size = New System.Drawing.Size(53, 20)
         Me.Label5.TabIndex = 48
         Me.Label5.Text = "E-mail"
         '
         'Label8
         '
         Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label8.Location = New System.Drawing.Point(148, 244)
         Me.Label8.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(129, 28)
+        Me.Label8.Size = New System.Drawing.Size(115, 20)
         Me.Label8.TabIndex = 52
         Me.Label8.Text = "Phone Number"
         '
         'Label7
         '
         Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(435, 143)
         Me.Label7.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(96, 28)
+        Me.Label7.Size = New System.Drawing.Size(86, 20)
         Me.Label7.TabIndex = 54
         Me.Label7.Text = "Last Name"
         '
@@ -290,7 +290,7 @@ Partial Class donorForm
         Me.mail.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.mail.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.mail.FocusedState.Parent = Me.mail
-        Me.mail.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.mail.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.mail.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.mail.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.mail.HoverState.Parent = Me.mail
@@ -308,11 +308,11 @@ Partial Class donorForm
         'Label6
         '
         Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(715, 143)
         Me.Label6.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(44, 28)
+        Me.Label6.Size = New System.Drawing.Size(38, 20)
         Me.Label6.TabIndex = 50
         Me.Label6.Text = "Age"
         '
@@ -329,7 +329,7 @@ Partial Class donorForm
         Me.pnumber.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.pnumber.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.pnumber.FocusedState.Parent = Me.pnumber
-        Me.pnumber.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.pnumber.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.pnumber.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.pnumber.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.pnumber.HoverState.Parent = Me.pnumber
@@ -347,11 +347,11 @@ Partial Class donorForm
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label1.Location = New System.Drawing.Point(148, 143)
         Me.Label1.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(96, 28)
+        Me.Label1.Size = New System.Drawing.Size(86, 20)
         Me.Label1.TabIndex = 46
         Me.Label1.Text = "First Name"
         '
@@ -368,7 +368,7 @@ Partial Class donorForm
         Me.age.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.age.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.age.FocusedState.Parent = Me.age
-        Me.age.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.age.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.age.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.age.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.age.HoverState.Parent = Me.age
@@ -396,7 +396,7 @@ Partial Class donorForm
         Me.lname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.lname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.lname.FocusedState.Parent = Me.lname
-        Me.lname.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.lname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.lname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.lname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.lname.HoverState.Parent = Me.lname
@@ -424,7 +424,7 @@ Partial Class donorForm
         Me.fname.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
         Me.fname.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.fname.FocusedState.Parent = Me.fname
-        Me.fname.Font = New System.Drawing.Font("Poppins Light", 12.0!)
+        Me.fname.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!)
         Me.fname.ForeColor = System.Drawing.Color.FromArgb(CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer), CType(CType(34, Byte), Integer))
         Me.fname.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.fname.HoverState.Parent = Me.fname
@@ -449,7 +449,7 @@ Partial Class donorForm
         Me.antibody.FocusedColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.antibody.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.antibody.FocusedState.Parent = Me.antibody
-        Me.antibody.Font = New System.Drawing.Font("Poppins", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.antibody.Font = New System.Drawing.Font("Microsoft Sans Serif", 10.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.antibody.ForeColor = System.Drawing.Color.FromArgb(CType(CType(68, Byte), Integer), CType(CType(88, Byte), Integer), CType(CType(112, Byte), Integer))
         Me.antibody.HoverState.Parent = Me.antibody
         Me.antibody.ItemHeight = 30
@@ -466,24 +466,24 @@ Partial Class donorForm
         'Label9
         '
         Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Poppins", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label9.Location = New System.Drawing.Point(148, 462)
         Me.Label9.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(197, 28)
+        Me.Label9.Size = New System.Drawing.Size(172, 20)
         Me.Label9.TabIndex = 64
         Me.Label9.Text = "Did you ever get covid?"
         '
         'fNameErrorText
         '
         Me.fNameErrorText.BackColor = System.Drawing.Color.Transparent
-        Me.fNameErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.fNameErrorText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.fNameErrorText.ForeColor = System.Drawing.Color.Red
         Me.fNameErrorText.Location = New System.Drawing.Point(154, 228)
         Me.fNameErrorText.Margin = New System.Windows.Forms.Padding(2)
         Me.fNameErrorText.MaximumSize = New System.Drawing.Size(150, 21)
         Me.fNameErrorText.Name = "fNameErrorText"
-        Me.fNameErrorText.Size = New System.Drawing.Size(137, 21)
+        Me.fNameErrorText.Size = New System.Drawing.Size(117, 15)
         Me.fNameErrorText.TabIndex = 71
         Me.fNameErrorText.Text = "This field can't be empty"
         Me.fNameErrorText.Visible = False
@@ -491,197 +491,89 @@ Partial Class donorForm
         'lNameErrorText
         '
         Me.lNameErrorText.BackColor = System.Drawing.Color.Transparent
-        Me.lNameErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.lNameErrorText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.lNameErrorText.ForeColor = System.Drawing.Color.Red
         Me.lNameErrorText.Location = New System.Drawing.Point(431, 228)
         Me.lNameErrorText.Margin = New System.Windows.Forms.Padding(2)
         Me.lNameErrorText.MaximumSize = New System.Drawing.Size(150, 21)
         Me.lNameErrorText.Name = "lNameErrorText"
-        Me.lNameErrorText.Size = New System.Drawing.Size(137, 21)
+        Me.lNameErrorText.Size = New System.Drawing.Size(117, 15)
         Me.lNameErrorText.TabIndex = 72
         Me.lNameErrorText.Text = "This field can't be empty"
         Me.lNameErrorText.Visible = False
-
-        Me.RecieverBtnMenu.BorderRadius = 6
-        Me.RecieverBtnMenu.CheckedState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.CustomImages.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.RecieverBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.RecieverBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
-        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
-        Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.RecieverBtnMenu.TabIndex = 84
-        Me.RecieverBtnMenu.Text = "RECIEVER"
-
+        '
+        'ageErrorText
+        '
         Me.ageErrorText.BackColor = System.Drawing.Color.Transparent
-        Me.ageErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.ageErrorText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.ageErrorText.ForeColor = System.Drawing.Color.Red
         Me.ageErrorText.Location = New System.Drawing.Point(720, 228)
         Me.ageErrorText.Margin = New System.Windows.Forms.Padding(2)
         Me.ageErrorText.MaximumSize = New System.Drawing.Size(190, 21)
         Me.ageErrorText.Name = "ageErrorText"
-        Me.ageErrorText.Size = New System.Drawing.Size(152, 21)
+        Me.ageErrorText.Size = New System.Drawing.Size(136, 15)
         Me.ageErrorText.TabIndex = 73
         Me.ageErrorText.Text = "Age must be between 17-71"
         Me.ageErrorText.Visible = False
-
-        Me.DonorBtnMenu.BorderRadius = 6
-        Me.DonorBtnMenu.CheckedState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.CustomImages.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.DonorBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.DonorBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
-        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.DonorBtnMenu.Name = "DonorBtnMenu"
-        Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.DonorBtnMenu.TabIndex = 83
-        Me.DonorBtnMenu.Text = "DONOR"
-
+        '
+        'phNumberErrorText
+        '
         Me.phNumberErrorText.BackColor = System.Drawing.Color.Transparent
-        Me.phNumberErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.phNumberErrorText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.phNumberErrorText.ForeColor = System.Drawing.Color.Red
         Me.phNumberErrorText.Location = New System.Drawing.Point(152, 331)
         Me.phNumberErrorText.Margin = New System.Windows.Forms.Padding(2)
         Me.phNumberErrorText.MaximumSize = New System.Drawing.Size(200, 21)
         Me.phNumberErrorText.Name = "phNumberErrorText"
-        Me.phNumberErrorText.Size = New System.Drawing.Size(194, 21)
+        Me.phNumberErrorText.Size = New System.Drawing.Size(167, 15)
         Me.phNumberErrorText.TabIndex = 74
         Me.phNumberErrorText.Text = "Please enter a valid phone number"
         Me.phNumberErrorText.Visible = False
-
-        Me.QueueBtnMenu.BorderRadius = 6
-        Me.QueueBtnMenu.CheckedState.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.CustomImages.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.QueueBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.QueueBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.QueueBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.QueueBtnMenu.DisabledState.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
-        Me.QueueBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.QueueBtnMenu.Name = "QueueBtnMenu"
-        Me.QueueBtnMenu.ShadowDecoration.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.QueueBtnMenu.TabIndex = 82
-        Me.QueueBtnMenu.Text = "QUEUE"
-
+        '
+        'emailErrortext
+        '
         Me.emailErrortext.BackColor = System.Drawing.Color.Transparent
-        Me.emailErrortext.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.emailErrortext.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.emailErrortext.ForeColor = System.Drawing.Color.Red
         Me.emailErrortext.Location = New System.Drawing.Point(431, 336)
         Me.emailErrortext.Margin = New System.Windows.Forms.Padding(2)
         Me.emailErrortext.MaximumSize = New System.Drawing.Size(200, 21)
         Me.emailErrortext.Name = "emailErrortext"
-        Me.emailErrortext.Size = New System.Drawing.Size(191, 21)
+        Me.emailErrortext.Size = New System.Drawing.Size(163, 15)
         Me.emailErrortext.TabIndex = 75
         Me.emailErrortext.Text = "Please enter a valid email address"
         Me.emailErrortext.Visible = False
-
-        Me.HistoryBtnMenu.BorderRadius = 6
-        Me.HistoryBtnMenu.CheckedState.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.CustomImages.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.HistoryBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.HistoryBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.HistoryBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.HistoryBtnMenu.DisabledState.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
-        Me.HistoryBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.HistoryBtnMenu.Name = "HistoryBtnMenu"
-        Me.HistoryBtnMenu.ShadowDecoration.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.HistoryBtnMenu.TabIndex = 81
-        Me.HistoryBtnMenu.Text = "HISTORY"
-
+        '
+        'cityErrorText
+        '
         Me.cityErrorText.BackColor = System.Drawing.Color.Transparent
-        Me.cityErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.cityErrorText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.cityErrorText.ForeColor = System.Drawing.Color.Red
         Me.cityErrorText.Location = New System.Drawing.Point(152, 439)
         Me.cityErrorText.Margin = New System.Windows.Forms.Padding(2)
         Me.cityErrorText.MaximumSize = New System.Drawing.Size(150, 21)
         Me.cityErrorText.Name = "cityErrorText"
-        Me.cityErrorText.Size = New System.Drawing.Size(137, 21)
+        Me.cityErrorText.Size = New System.Drawing.Size(117, 15)
         Me.cityErrorText.TabIndex = 76
         Me.cityErrorText.Text = "This field can't be empty"
         Me.cityErrorText.Visible = False
-
-        Me.DashboardBtnMenu.BorderRadius = 6
-        Me.DashboardBtnMenu.CheckedState.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.CustomImages.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.DashboardBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.DashboardBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.DashboardBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.DashboardBtnMenu.DisabledState.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
-        Me.DashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.DashboardBtnMenu.Name = "DashboardBtnMenu"
-        Me.DashboardBtnMenu.ShadowDecoration.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Size = New System.Drawing.Size(163, 31)
-        Me.DashboardBtnMenu.TabIndex = 11
-        Me.DashboardBtnMenu.Text = "DASHBOARD"
-
+        '
+        'addressErrorText
+        '
         Me.addressErrorText.BackColor = System.Drawing.Color.Transparent
-        Me.addressErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
+        Me.addressErrorText.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.0!)
         Me.addressErrorText.ForeColor = System.Drawing.Color.Red
         Me.addressErrorText.Location = New System.Drawing.Point(431, 439)
         Me.addressErrorText.Margin = New System.Windows.Forms.Padding(2)
         Me.addressErrorText.MaximumSize = New System.Drawing.Size(150, 21)
         Me.addressErrorText.Name = "addressErrorText"
-        Me.addressErrorText.Size = New System.Drawing.Size(137, 21)
+        Me.addressErrorText.Size = New System.Drawing.Size(117, 15)
         Me.addressErrorText.TabIndex = 77
         Me.addressErrorText.Text = "This field can't be empty"
         Me.addressErrorText.Visible = False
-
-        Me.LogoutBtnMenu.BorderRadius = 6
-        Me.LogoutBtnMenu.CheckedState.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.CustomImages.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.LogoutBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.LogoutBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.LogoutBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.LogoutBtnMenu.DisabledState.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
-        Me.LogoutBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.LogoutBtnMenu.Name = "LogoutBtnMenu"
-        Me.LogoutBtnMenu.ShadowDecoration.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.Size = New System.Drawing.Size(188, 42)
-        Me.LogoutBtnMenu.TabIndex = 10
-        Me.LogoutBtnMenu.Text = "LOGOUT"
-
+        '
+        'CloseButton
+        '
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.CheckedState.Parent = Me.CloseButton
         Me.CloseButton.CustomImages.Parent = Me.CloseButton
@@ -708,7 +600,6 @@ Partial Class donorForm
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
         Me.CloseButton.Size = New System.Drawing.Size(30, 32)
         Me.CloseButton.TabIndex = 67
-
         '
         'Guna2CircleButton2
         '
@@ -753,7 +644,7 @@ Partial Class donorForm
         Me.LogoutBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.LogoutBtnMenu.DisabledState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
         Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
@@ -775,7 +666,7 @@ Partial Class donorForm
         Me.DashboardBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DashboardBtnMenu.DisabledState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
@@ -797,7 +688,7 @@ Partial Class donorForm
         Me.HistoryBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.HistoryBtnMenu.DisabledState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
@@ -819,7 +710,7 @@ Partial Class donorForm
         Me.QueueBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.QueueBtnMenu.DisabledState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.QueueBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
@@ -841,7 +732,7 @@ Partial Class donorForm
         Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.DonorBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
@@ -863,7 +754,7 @@ Partial Class donorForm
         Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
         Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins Medium", 13.2!, System.Drawing.FontStyle.Bold)
+        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.2!, System.Drawing.FontStyle.Bold)
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
