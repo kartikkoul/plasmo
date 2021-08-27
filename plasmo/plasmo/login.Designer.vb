@@ -58,6 +58,7 @@ Partial Class login
         '
         'UserIDTextBox
         '
+        Me.UserIDTextBox.Animated = True
         Me.UserIDTextBox.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.UserIDTextBox.BorderRadius = 10
         Me.UserIDTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -130,6 +131,7 @@ Partial Class login
         '
         'LoginButton
         '
+        Me.LoginButton.Animated = True
         Me.LoginButton.BorderRadius = 6
         Me.LoginButton.CheckedState.Parent = Me.LoginButton
         Me.LoginButton.CustomImages.Parent = Me.LoginButton
@@ -152,6 +154,7 @@ Partial Class login
         '
         'PasswordTextBox
         '
+        Me.PasswordTextBox.Animated = True
         Me.PasswordTextBox.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.PasswordTextBox.BorderRadius = 10
         Me.PasswordTextBox.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -243,6 +246,7 @@ Partial Class login
         '
         'Guna2CircleButton2
         '
+        Me.Guna2CircleButton2.Animated = True
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.CheckedState.Parent = Me.Guna2CircleButton2
@@ -275,6 +279,7 @@ Partial Class login
         '
         'CloseButton
         '
+        Me.CloseButton.Animated = True
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.CheckedState.Parent = Me.CloseButton
         Me.CloseButton.CustomImages.Parent = Me.CloseButton

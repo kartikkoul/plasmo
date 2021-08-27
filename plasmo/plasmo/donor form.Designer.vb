@@ -100,6 +100,7 @@ Partial Class donorForm
         '
         'SubmitButton
         '
+        Me.SubmitButton.Animated = True
         Me.SubmitButton.BorderRadius = 6
         Me.SubmitButton.CheckedState.Parent = Me.SubmitButton
         Me.SubmitButton.CustomImages.Parent = Me.SubmitButton
@@ -133,6 +134,7 @@ Partial Class donorForm
         '
         'address
         '
+        Me.address.Animated = True
         Me.address.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.address.BorderRadius = 10
         Me.address.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -172,6 +174,7 @@ Partial Class donorForm
         '
         'city
         '
+        Me.city.Animated = True
         Me.city.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.city.BorderRadius = 10
         Me.city.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -279,6 +282,7 @@ Partial Class donorForm
         '
         'mail
         '
+        Me.mail.Animated = True
         Me.mail.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.mail.BorderRadius = 10
         Me.mail.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -318,6 +322,7 @@ Partial Class donorForm
         '
         'pnumber
         '
+        Me.pnumber.Animated = True
         Me.pnumber.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.pnumber.BorderRadius = 10
         Me.pnumber.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -357,6 +362,7 @@ Partial Class donorForm
         '
         'age
         '
+        Me.age.Animated = True
         Me.age.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.age.BorderRadius = 10
         Me.age.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -385,6 +391,7 @@ Partial Class donorForm
         '
         'lname
         '
+        Me.lname.Animated = True
         Me.lname.BorderColor = System.Drawing.Color.FromArgb(CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lname.BorderRadius = 10
         Me.lname.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -413,6 +420,7 @@ Partial Class donorForm
         '
         'fname
         '
+        Me.fname.Animated = True
         Me.fname.BorderColor = System.Drawing.Color.Black
         Me.fname.BorderRadius = 10
         Me.fname.Cursor = System.Windows.Forms.Cursors.IBeam
@@ -501,27 +509,9 @@ Partial Class donorForm
         Me.lNameErrorText.TabIndex = 72
         Me.lNameErrorText.Text = "This field can't be empty"
         Me.lNameErrorText.Visible = False
-
-        Me.RecieverBtnMenu.BorderRadius = 6
-        Me.RecieverBtnMenu.CheckedState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.CustomImages.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.RecieverBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.RecieverBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
-        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
-        Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.RecieverBtnMenu.TabIndex = 84
-        Me.RecieverBtnMenu.Text = "RECIEVER"
-
+        '
+        'ageErrorText
+        '
         Me.ageErrorText.BackColor = System.Drawing.Color.Transparent
         Me.ageErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.ageErrorText.ForeColor = System.Drawing.Color.Red
@@ -533,27 +523,9 @@ Partial Class donorForm
         Me.ageErrorText.TabIndex = 73
         Me.ageErrorText.Text = "Age must be between 17-71"
         Me.ageErrorText.Visible = False
-
-        Me.DonorBtnMenu.BorderRadius = 6
-        Me.DonorBtnMenu.CheckedState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.CustomImages.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.DonorBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.DonorBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
-        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.DonorBtnMenu.Name = "DonorBtnMenu"
-        Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.DonorBtnMenu.TabIndex = 83
-        Me.DonorBtnMenu.Text = "DONOR"
-
+        '
+        'phNumberErrorText
+        '
         Me.phNumberErrorText.BackColor = System.Drawing.Color.Transparent
         Me.phNumberErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.phNumberErrorText.ForeColor = System.Drawing.Color.Red
@@ -565,27 +537,9 @@ Partial Class donorForm
         Me.phNumberErrorText.TabIndex = 74
         Me.phNumberErrorText.Text = "Please enter a valid phone number"
         Me.phNumberErrorText.Visible = False
-
-        Me.QueueBtnMenu.BorderRadius = 6
-        Me.QueueBtnMenu.CheckedState.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.CustomImages.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.QueueBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.QueueBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.QueueBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.QueueBtnMenu.DisabledState.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
-        Me.QueueBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.QueueBtnMenu.Name = "QueueBtnMenu"
-        Me.QueueBtnMenu.ShadowDecoration.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.QueueBtnMenu.TabIndex = 82
-        Me.QueueBtnMenu.Text = "QUEUE"
-
+        '
+        'emailErrortext
+        '
         Me.emailErrortext.BackColor = System.Drawing.Color.Transparent
         Me.emailErrortext.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.emailErrortext.ForeColor = System.Drawing.Color.Red
@@ -597,27 +551,9 @@ Partial Class donorForm
         Me.emailErrortext.TabIndex = 75
         Me.emailErrortext.Text = "Please enter a valid email address"
         Me.emailErrortext.Visible = False
-
-        Me.HistoryBtnMenu.BorderRadius = 6
-        Me.HistoryBtnMenu.CheckedState.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.CustomImages.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.HistoryBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.HistoryBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.HistoryBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.HistoryBtnMenu.DisabledState.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
-        Me.HistoryBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.HistoryBtnMenu.Name = "HistoryBtnMenu"
-        Me.HistoryBtnMenu.ShadowDecoration.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.HistoryBtnMenu.TabIndex = 81
-        Me.HistoryBtnMenu.Text = "HISTORY"
-
+        '
+        'cityErrorText
+        '
         Me.cityErrorText.BackColor = System.Drawing.Color.Transparent
         Me.cityErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.cityErrorText.ForeColor = System.Drawing.Color.Red
@@ -629,27 +565,9 @@ Partial Class donorForm
         Me.cityErrorText.TabIndex = 76
         Me.cityErrorText.Text = "This field can't be empty"
         Me.cityErrorText.Visible = False
-
-        Me.DashboardBtnMenu.BorderRadius = 6
-        Me.DashboardBtnMenu.CheckedState.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.CustomImages.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.DashboardBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.DashboardBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.DashboardBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.DashboardBtnMenu.DisabledState.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
-        Me.DashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.DashboardBtnMenu.Name = "DashboardBtnMenu"
-        Me.DashboardBtnMenu.ShadowDecoration.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Size = New System.Drawing.Size(163, 31)
-        Me.DashboardBtnMenu.TabIndex = 11
-        Me.DashboardBtnMenu.Text = "DASHBOARD"
-
+        '
+        'addressErrorText
+        '
         Me.addressErrorText.BackColor = System.Drawing.Color.Transparent
         Me.addressErrorText.Font = New System.Drawing.Font("Poppins", 8.0!)
         Me.addressErrorText.ForeColor = System.Drawing.Color.Red
@@ -661,27 +579,9 @@ Partial Class donorForm
         Me.addressErrorText.TabIndex = 77
         Me.addressErrorText.Text = "This field can't be empty"
         Me.addressErrorText.Visible = False
-
-        Me.LogoutBtnMenu.BorderRadius = 6
-        Me.LogoutBtnMenu.CheckedState.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.CustomImages.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.LogoutBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.LogoutBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.LogoutBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.LogoutBtnMenu.DisabledState.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.LogoutBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.LogoutBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.LogoutBtnMenu.HoverState.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.Location = New System.Drawing.Point(879, 11)
-        Me.LogoutBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.LogoutBtnMenu.Name = "LogoutBtnMenu"
-        Me.LogoutBtnMenu.ShadowDecoration.Parent = Me.LogoutBtnMenu
-        Me.LogoutBtnMenu.Size = New System.Drawing.Size(188, 42)
-        Me.LogoutBtnMenu.TabIndex = 10
-        Me.LogoutBtnMenu.Text = "LOGOUT"
-
+        '
+        'CloseButton
+        '
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.CheckedState.Parent = Me.CloseButton
         Me.CloseButton.CustomImages.Parent = Me.CloseButton
@@ -708,7 +608,6 @@ Partial Class donorForm
         Me.CloseButton.ShadowDecoration.Parent = Me.CloseButton
         Me.CloseButton.Size = New System.Drawing.Size(30, 32)
         Me.CloseButton.TabIndex = 67
-
         '
         'Guna2CircleButton2
         '
@@ -744,6 +643,7 @@ Partial Class donorForm
         '
         'LogoutBtnMenu
         '
+        Me.LogoutBtnMenu.Animated = True
         Me.LogoutBtnMenu.BorderRadius = 6
         Me.LogoutBtnMenu.CheckedState.Parent = Me.LogoutBtnMenu
         Me.LogoutBtnMenu.CustomImages.Parent = Me.LogoutBtnMenu
@@ -766,6 +666,7 @@ Partial Class donorForm
         '
         'DashboardBtnMenu
         '
+        Me.DashboardBtnMenu.Animated = True
         Me.DashboardBtnMenu.BorderRadius = 6
         Me.DashboardBtnMenu.CheckedState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.CustomImages.Parent = Me.DashboardBtnMenu
@@ -788,6 +689,7 @@ Partial Class donorForm
         '
         'HistoryBtnMenu
         '
+        Me.HistoryBtnMenu.Animated = True
         Me.HistoryBtnMenu.BorderRadius = 6
         Me.HistoryBtnMenu.CheckedState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.CustomImages.Parent = Me.HistoryBtnMenu
@@ -810,6 +712,7 @@ Partial Class donorForm
         '
         'QueueBtnMenu
         '
+        Me.QueueBtnMenu.Animated = True
         Me.QueueBtnMenu.BorderRadius = 6
         Me.QueueBtnMenu.CheckedState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.CustomImages.Parent = Me.QueueBtnMenu
@@ -832,6 +735,7 @@ Partial Class donorForm
         '
         'DonorBtnMenu
         '
+        Me.DonorBtnMenu.Animated = True
         Me.DonorBtnMenu.BorderRadius = 6
         Me.DonorBtnMenu.CheckedState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.CustomImages.Parent = Me.DonorBtnMenu
@@ -854,6 +758,7 @@ Partial Class donorForm
         '
         'RecieverBtnMenu
         '
+        Me.RecieverBtnMenu.Animated = True
         Me.RecieverBtnMenu.BorderRadius = 6
         Me.RecieverBtnMenu.CheckedState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.CustomImages.Parent = Me.RecieverBtnMenu

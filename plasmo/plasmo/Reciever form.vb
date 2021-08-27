@@ -1,6 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
+Imports System.Text.RegularExpressions
 Public Class Reciever_form
     Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs)
 
@@ -50,7 +51,100 @@ Public Class Reciever_form
         Return ID
     End Function
 
+    Public Function EmailAddresscheck(ByVal emailaddress As String) As Boolean
+        Dim pttern As String = "^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
+        Dim emailAddressMatch As Match = Regex.Match(emailaddress, pttern)
+        If emailAddressMatch.Success Then
+            EmailAddresscheck = True
+        Else
+            EmailAddresscheck = False
+
+        End If
+    End Function
+
+    Public Sub Validatemail()
+        Dim email As String = mail.Text
+        If EmailAddresscheck(email) = False Then
+            mail.BorderColor = Color.Red
+            emailErrortext.Visible = True
+            Exit Sub
+        End If
+    End Sub
+
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
+        Dim valid = True
+        If fname.Text.Trim.Length = 0 Then
+            fname.BorderColor = Color.Red
+            fname.HoverState.BorderColor = Color.Red
+            fname.FocusedState.BorderColor = Color.Red
+            fNameErrorText.Visible = True
+            valid = False
+        End If
+
+        If lname.Text = "" Then
+            lname.BorderColor = Color.Red
+            lname.HoverState.BorderColor = Color.Red
+            lname.FocusedState.BorderColor = Color.Red
+            lNameErrorText.Visible = True
+            valid = False
+        End If
+
+
+        If age.Text.Trim.Length = 0 Then
+            age.BorderColor = Color.Red
+            age.HoverState.BorderColor = Color.Red
+            age.FocusedState.BorderColor = Color.Red
+            ageErrorText.Visible = True
+            valid = False
+        Else
+            Dim ageInput As Integer = age.Text
+            If ageInput < 17 Or ageInput > 71 Then
+                age.BorderColor = Color.Red
+                age.HoverState.BorderColor = Color.Red
+                age.FocusedState.BorderColor = Color.Red
+                ageErrorText.Visible = True
+                valid = False
+            End If
+        End If
+
+        If pnumber.Text.Trim.Length = 0 Or pnumber.Text.Length <> 10 Then
+            pnumber.BorderColor = Color.Red
+            pnumber.HoverState.BorderColor = Color.Red
+            pnumber.FocusedState.BorderColor = Color.Red
+            phNumberErrorText.Visible = True
+            valid = False
+        End If
+
+        If mail.Text.Trim.Length = 0 Then
+            mail.BorderColor = Color.Red
+            mail.HoverState.BorderColor = Color.Red
+            mail.FocusedState.BorderColor = Color.Red
+            emailErrortext.Visible = True
+            valid = False
+        End If
+
+        If city.Text.Trim.Length = 0 Then
+            city.BorderColor = Color.Red
+            city.HoverState.BorderColor = Color.Red
+            city.FocusedState.BorderColor = Color.Red
+            cityErrorText.Visible = True
+            valid = False
+        End If
+
+        If address.Text.Trim.Length = 0 Then
+            address.BorderColor = Color.Red
+            address.HoverState.BorderColor = Color.Red
+            address.FocusedState.BorderColor = Color.Red
+            addressErrorText.Visible = True
+            valid = False
+        End If
+        Validatemail()
+
+
+        If valid = False Then
+            Exit Sub
+        End If
+
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
         Dim reciever_id As String = GenerateRecieverID()
         Dim demands = demand.SelectedItem
@@ -122,7 +216,7 @@ Public Class Reciever_form
             While dr.Read
                 plasmaID = dr("plasma_id")
                 price = dr("price")
-                antiBody=dr("anti_body")
+                antiBody = dr("anti_body")
                 Exit While
             End While
             Dim time As Date = Date.UtcNow
@@ -189,7 +283,78 @@ Public Class Reciever_form
         Me.Close()
     End Sub
 
-    Private Sub Reciever_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+    Private Sub fname_TextChanged(sender As Object, e As EventArgs) Handles fname.TextChanged
+        fname.BorderColor = Color.Black
+        fname.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        fname.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        fname.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+        fNameErrorText.Visible = False
+    End Sub
+    Private Sub lname_TextChanged(sender As Object, e As EventArgs) Handles lname.TextChanged
+        lname.BorderColor = Color.Black
+        lname.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        lname.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        lname.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+        lNameErrorText.Visible = False
+    End Sub
 
+    Private Sub age_TextChanged(sender As Object, e As EventArgs) Handles age.TextChanged
+        age.BorderColor = Color.Black
+        age.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        age.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        age.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+        ageErrorText.Visible = False
+    End Sub
+
+    Private Sub pnumber_TextChanged(sender As Object, e As EventArgs) Handles pnumber.TextChanged
+        pnumber.BorderColor = Color.Black
+        pnumber.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        pnumber.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        pnumber.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+        phNumberErrorText.Visible = False
+    End Sub
+
+    Private Sub mail_TextChanged(sender As Object, e As EventArgs) Handles mail.TextChanged
+        mail.BorderColor = Color.Black
+        mail.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        mail.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        mail.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+        emailErrortext.Visible = False
+    End Sub
+
+    Private Sub city_TextChanged(sender As Object, e As EventArgs) Handles city.TextChanged
+        city.BorderColor = Color.Black
+        city.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        city.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        city.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+        cityErrorText.Visible = False
+    End Sub
+
+    Private Sub address_TextChanged(sender As Object, e As EventArgs) Handles address.TextChanged
+        address.BorderColor = Color.Black
+        address.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        address.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+        address.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+        addressErrorText.Visible = False
+    End Sub
+
+    Private Sub age_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles age.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) And age.Text.Trim.Length < 2 Then
+
+            Else
+                e.Handled = True
+            End If
+        End If
+    End Sub
+
+    Private Sub phone_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles pnumber.KeyPress
+        If e.KeyChar <> ChrW(Keys.Back) Then
+            If Char.IsNumber(e.KeyChar) And pnumber.Text.Trim.Length < 10 Then
+
+            Else
+                e.Handled = True
+            End If
+        End If
     End Sub
 End Class
