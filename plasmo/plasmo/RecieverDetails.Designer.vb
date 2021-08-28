@@ -122,7 +122,7 @@ Partial Class RecieverDetails
         Me.Guna2PictureBox4.FillColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox4.Image = Global.plasmo.My.Resources.Resources.arrow_left1
         Me.Guna2PictureBox4.ImageRotate = 0!
-        Me.Guna2PictureBox4.Location = New System.Drawing.Point(450, 572)
+        Me.Guna2PictureBox4.Location = New System.Drawing.Point(444, 572)
         Me.Guna2PictureBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox4.Name = "Guna2PictureBox4"
         Me.Guna2PictureBox4.ShadowDecoration.Parent = Me.Guna2PictureBox4
@@ -151,7 +151,7 @@ Partial Class RecieverDetails
         Me.backBtn.ShadowDecoration.Parent = Me.backBtn
         Me.backBtn.Size = New System.Drawing.Size(177, 33)
         Me.backBtn.TabIndex = 207
-        Me.backBtn.Text = "BACK TO QUEUE"
+        Me.backBtn.Text = "BACK TO HISTORY"
         Me.backBtn.TextAlign = System.Windows.Forms.HorizontalAlignment.Right
         Me.backBtn.TextOffset = New System.Drawing.Point(0, 1)
         '
@@ -451,6 +451,7 @@ Partial Class RecieverDetails
         '
         'Guna2CircleButton2
         '
+        Me.Guna2CircleButton2.Animated = True
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.CheckedState.Parent = Me.Guna2CircleButton2
@@ -483,6 +484,7 @@ Partial Class RecieverDetails
         '
         'CloseButton
         '
+        Me.CloseButton.Animated = True
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.CheckedState.Parent = Me.CloseButton
         Me.CloseButton.CustomImages.Parent = Me.CloseButton

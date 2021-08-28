@@ -389,6 +389,7 @@ Partial Class queue
         '
         'Guna2CircleButton2
         '
+        Me.Guna2CircleButton2.Animated = True
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.CheckedState.Parent = Me.Guna2CircleButton2
@@ -421,6 +422,7 @@ Partial Class queue
         '
         'CloseButton
         '
+        Me.CloseButton.Animated = True
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.CheckedState.Parent = Me.CloseButton
         Me.CloseButton.CustomImages.Parent = Me.CloseButton

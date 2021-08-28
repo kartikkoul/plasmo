@@ -50,6 +50,7 @@ Partial Class donor_reciept
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
@@ -58,7 +59,8 @@ Partial Class donor_reciept
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.SubmitButton = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2HtmlLabel3 = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.Guna2Panel4 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.PrintPreviewDialog1 = New System.Windows.Forms.PrintPreviewDialog()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -407,6 +409,16 @@ Partial Class donor_reciept
         Me.Guna2Panel1.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel1.TabIndex = 117
         '
+        'Guna2Panel4
+        '
+        Me.Guna2Panel4.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel4.Location = New System.Drawing.Point(210, 41)
+        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel4.Name = "Guna2Panel4"
+        Me.Guna2Panel4.ShadowDecoration.Parent = Me.Guna2Panel4
+        Me.Guna2Panel4.Size = New System.Drawing.Size(64, 3)
+        Me.Guna2Panel4.TabIndex = 139
+        '
         'Guna2PictureBox2
         '
         Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__3_
@@ -435,6 +447,7 @@ Partial Class donor_reciept
         '
         'Guna2CircleButton2
         '
+        Me.Guna2CircleButton2.Animated = True
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.CheckedState.Parent = Me.Guna2CircleButton2
@@ -467,6 +480,7 @@ Partial Class donor_reciept
         '
         'CloseButton
         '
+        Me.CloseButton.Animated = True
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.CheckedState.Parent = Me.CloseButton
         Me.CloseButton.CustomImages.Parent = Me.CloseButton
@@ -508,6 +522,7 @@ Partial Class donor_reciept
         '
         'SubmitButton
         '
+        Me.SubmitButton.Animated = True
         Me.SubmitButton.BorderRadius = 6
         Me.SubmitButton.CheckedState.Parent = Me.SubmitButton
         Me.SubmitButton.CustomImages.Parent = Me.SubmitButton
@@ -538,15 +553,18 @@ Partial Class donor_reciept
         Me.Guna2HtmlLabel3.TabIndex = 138
         Me.Guna2HtmlLabel3.Text = "PLASMO"
         '
-        'Guna2Panel4
+        'PrintDocument1
         '
-        Me.Guna2Panel4.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel4.Location = New System.Drawing.Point(210, 41)
-        Me.Guna2Panel4.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel4.Name = "Guna2Panel4"
-        Me.Guna2Panel4.ShadowDecoration.Parent = Me.Guna2Panel4
-        Me.Guna2Panel4.Size = New System.Drawing.Size(64, 3)
-        Me.Guna2Panel4.TabIndex = 139
+        '
+        'PrintPreviewDialog1
+        '
+        Me.PrintPreviewDialog1.AutoScrollMargin = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.AutoScrollMinSize = New System.Drawing.Size(0, 0)
+        Me.PrintPreviewDialog1.ClientSize = New System.Drawing.Size(400, 300)
+        Me.PrintPreviewDialog1.Enabled = True
+        Me.PrintPreviewDialog1.Icon = CType(resources.GetObject("PrintPreviewDialog1.Icon"), System.Drawing.Icon)
+        Me.PrintPreviewDialog1.Name = "PrintPreviewDialog1"
+        Me.PrintPreviewDialog1.Visible = False
         '
         'donor_reciept
         '
@@ -627,4 +645,6 @@ Partial Class donor_reciept
     Friend WithEvents SubmitButton As Guna.UI2.WinForms.Guna2Button
     Public WithEvents Guna2HtmlLabel3 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel4 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
+    Friend WithEvents PrintPreviewDialog1 As PrintPreviewDialog
 End Class

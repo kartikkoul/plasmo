@@ -112,11 +112,11 @@ Partial Class donor_history
         Me.recieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.recieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.recieverBtnMenu.HoverState.Parent = Me.recieverBtnMenu
-        Me.recieverBtnMenu.Location = New System.Drawing.Point(286, 14)
+        Me.recieverBtnMenu.Location = New System.Drawing.Point(283, 14)
         Me.recieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.recieverBtnMenu.Name = "recieverBtnMenu"
         Me.recieverBtnMenu.ShadowDecoration.Parent = Me.recieverBtnMenu
-        Me.recieverBtnMenu.Size = New System.Drawing.Size(133, 31)
+        Me.recieverBtnMenu.Size = New System.Drawing.Size(147, 31)
         Me.recieverBtnMenu.TabIndex = 83
         Me.recieverBtnMenu.Text = "RECEIVER"
         '
@@ -420,6 +420,7 @@ Partial Class donor_history
         '
         'Guna2CircleButton2
         '
+        Me.Guna2CircleButton2.Animated = True
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.CheckedState.Parent = Me.Guna2CircleButton2
@@ -452,6 +453,7 @@ Partial Class donor_history
         '
         'CloseButton
         '
+        Me.CloseButton.Animated = True
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.CheckedState.Parent = Me.CloseButton
         Me.CloseButton.CustomImages.Parent = Me.CloseButton

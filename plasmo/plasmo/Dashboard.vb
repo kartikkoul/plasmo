@@ -19,6 +19,9 @@ Public Class Dashboard
         ds.Clear()
         con.Close()
         APlusCircle.Value = Aplus
+        If APlusCircle.Value < 5 Then
+            APlusCircle.ForeColor = Color.Red
+        End If
 
         If con.State = 1 Then con.Close()
         Dim aminus_cmd As New SqlCommand("select * from donor_records where blood_group='AM' AND sold='" & "N" & "'", con)
@@ -30,6 +33,9 @@ Public Class Dashboard
         ds.Clear()
         con.Close()
         AMinusCircle.Value = AMinus
+        If AMinusCircle.Value < 5 Then
+            AMinusCircle.ForeColor = Color.Red
+        End If
 
         If con.State = 1 Then con.Close()
         Dim bplus_cmd As New SqlCommand("select * from donor_records  where blood_group='BP' AND sold='" & "N" & "'", con)
@@ -41,6 +47,9 @@ Public Class Dashboard
         ds.Clear()
         con.Close()
         BPlusCircle.Value = BPlus
+        If BPlusCircle.Value < 5 Then
+            BPlusCircle.ForeColor = Color.Red
+        End If
 
         If con.State = 1 Then con.Close()
         Dim bminus_cmd As New SqlCommand("select * from donor_records  where blood_group='BM' AND sold='" & "N" & "'", con)
@@ -52,6 +61,9 @@ Public Class Dashboard
         ds.Clear()
         con.Close()
         BMinusCircle.Value = BMinus
+        If BMinusCircle.Value < 5 Then
+            BMinusCircle.ForeColor = Color.Red
+        End If
 
         If con.State = 1 Then con.Close()
         Dim abplus_cmd As New SqlCommand("select * from donor_records  where blood_group='ABP' AND sold='" & "N" & "'", con)
@@ -63,6 +75,9 @@ Public Class Dashboard
         ds.Clear()
         con.Close()
         ABPlusCircle.Value = ABPlus
+        If ABPlusCircle.Value < 5 Then
+            ABPlusCircle.ForeColor = Color.Red
+        End If
 
         If con.State = 1 Then con.Close()
         Dim abminus_cmd As New SqlCommand("select * from donor_records where blood_group='ABM' AND sold='" & "N" & "'", con)
@@ -74,6 +89,9 @@ Public Class Dashboard
         ds.Clear()
         con.Close()
         ABMinusCircle.Value = ABMinus
+        If ABMinusCircle.Value < 5 Then
+            ABMinusCircle.ForeColor = Color.Red
+        End If
 
         If con.State = 1 Then con.Close()
         Dim oplus_cmd As New SqlCommand("select * from donor_records  where blood_group='OP' AND sold='" & "N" & "'", con)
@@ -85,6 +103,9 @@ Public Class Dashboard
         ds.Clear()
         con.Close()
         OPlusCircle.Value = OPlus
+        If OPlusCircle.Value < 5 Then
+            OPlusCircle.ForeColor = Color.Red
+        End If
 
         If con.State = 1 Then con.Close()
         Dim ominus_cmd As New SqlCommand("select * from donor_records where blood_group='OM' AND sold='" & "N" & "'", con)
@@ -96,6 +117,9 @@ Public Class Dashboard
         ds.Clear()
         con.Close()
         OMinusCircle.Value = OMinus
+        If OMinusCircle.Value < 5 Then
+            OMinusCircle.ForeColor = Color.Red
+        End If
 
     End Sub
 

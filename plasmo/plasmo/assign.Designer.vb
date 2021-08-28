@@ -28,6 +28,7 @@ Partial Class assign
         Me.Guna2BorderlessForm2 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2BorderlessForm3 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -61,7 +62,6 @@ Partial Class assign
         Me.address = New System.Windows.Forms.Label()
         Me.sex = New System.Windows.Forms.Label()
         Me.reciever_id = New System.Windows.Forms.Label()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -99,6 +99,16 @@ Partial Class assign
         Me.Guna2Panel3.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel3.TabIndex = 134
         '
+        'Guna2Panel1
+        '
+        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel1.Location = New System.Drawing.Point(458, 42)
+        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel1.Name = "Guna2Panel1"
+        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
+        Me.Guna2Panel1.Size = New System.Drawing.Size(42, 3)
+        Me.Guna2Panel1.TabIndex = 145
+        '
         'Guna2PictureBox2
         '
         Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
@@ -114,6 +124,7 @@ Partial Class assign
         '
         'RecieverBtnMenu
         '
+        Me.RecieverBtnMenu.Animated = True
         Me.RecieverBtnMenu.BorderRadius = 6
         Me.RecieverBtnMenu.CheckedState.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.CustomImages.Parent = Me.RecieverBtnMenu
@@ -126,16 +137,18 @@ Partial Class assign
         Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
         Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Location = New System.Drawing.Point(307, 14)
+        Me.RecieverBtnMenu.Location = New System.Drawing.Point(305, 14)
         Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.RecieverBtnMenu.Size = New System.Drawing.Size(127, 31)
         Me.RecieverBtnMenu.TabIndex = 84
         Me.RecieverBtnMenu.Text = "RECIEVER"
+        Me.RecieverBtnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'DonorBtnMenu
         '
+        Me.DonorBtnMenu.Animated = True
         Me.DonorBtnMenu.BorderRadius = 6
         Me.DonorBtnMenu.CheckedState.Parent = Me.DonorBtnMenu
         Me.DonorBtnMenu.CustomImages.Parent = Me.DonorBtnMenu
@@ -148,16 +161,18 @@ Partial Class assign
         Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
+        Me.DonorBtnMenu.Location = New System.Drawing.Point(195, 14)
         Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.DonorBtnMenu.Name = "DonorBtnMenu"
         Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.DonorBtnMenu.Size = New System.Drawing.Size(106, 31)
         Me.DonorBtnMenu.TabIndex = 83
         Me.DonorBtnMenu.Text = "DONOR"
+        Me.DonorBtnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'QueueBtnMenu
         '
+        Me.QueueBtnMenu.Animated = True
         Me.QueueBtnMenu.BorderRadius = 6
         Me.QueueBtnMenu.CheckedState.Parent = Me.QueueBtnMenu
         Me.QueueBtnMenu.CustomImages.Parent = Me.QueueBtnMenu
@@ -170,16 +185,18 @@ Partial Class assign
         Me.QueueBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.QueueBtnMenu.ForeColor = System.Drawing.Color.White
         Me.QueueBtnMenu.HoverState.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Location = New System.Drawing.Point(423, 14)
+        Me.QueueBtnMenu.Location = New System.Drawing.Point(436, 14)
         Me.QueueBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.QueueBtnMenu.Name = "QueueBtnMenu"
         Me.QueueBtnMenu.ShadowDecoration.Parent = Me.QueueBtnMenu
-        Me.QueueBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.QueueBtnMenu.Size = New System.Drawing.Size(106, 31)
         Me.QueueBtnMenu.TabIndex = 82
         Me.QueueBtnMenu.Text = "QUEUE"
+        Me.QueueBtnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'HistoryBtnMenu
         '
+        Me.HistoryBtnMenu.Animated = True
         Me.HistoryBtnMenu.BorderRadius = 6
         Me.HistoryBtnMenu.CheckedState.Parent = Me.HistoryBtnMenu
         Me.HistoryBtnMenu.CustomImages.Parent = Me.HistoryBtnMenu
@@ -192,16 +209,18 @@ Partial Class assign
         Me.HistoryBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.HistoryBtnMenu.ForeColor = System.Drawing.Color.White
         Me.HistoryBtnMenu.HoverState.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Location = New System.Drawing.Point(542, 14)
+        Me.HistoryBtnMenu.Location = New System.Drawing.Point(544, 14)
         Me.HistoryBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.HistoryBtnMenu.Name = "HistoryBtnMenu"
         Me.HistoryBtnMenu.ShadowDecoration.Parent = Me.HistoryBtnMenu
-        Me.HistoryBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.HistoryBtnMenu.Size = New System.Drawing.Size(117, 31)
         Me.HistoryBtnMenu.TabIndex = 81
         Me.HistoryBtnMenu.Text = "HISTORY"
+        Me.HistoryBtnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'DashboardBtnMenu
         '
+        Me.DashboardBtnMenu.Animated = True
         Me.DashboardBtnMenu.BorderRadius = 6
         Me.DashboardBtnMenu.CheckedState.Parent = Me.DashboardBtnMenu
         Me.DashboardBtnMenu.CustomImages.Parent = Me.DashboardBtnMenu
@@ -214,13 +233,14 @@ Partial Class assign
         Me.DashboardBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.DashboardBtnMenu.ForeColor = System.Drawing.Color.White
         Me.DashboardBtnMenu.HoverState.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Location = New System.Drawing.Point(24, 14)
+        Me.DashboardBtnMenu.Location = New System.Drawing.Point(26, 14)
         Me.DashboardBtnMenu.Margin = New System.Windows.Forms.Padding(2)
         Me.DashboardBtnMenu.Name = "DashboardBtnMenu"
         Me.DashboardBtnMenu.ShadowDecoration.Parent = Me.DashboardBtnMenu
-        Me.DashboardBtnMenu.Size = New System.Drawing.Size(163, 31)
+        Me.DashboardBtnMenu.Size = New System.Drawing.Size(165, 31)
         Me.DashboardBtnMenu.TabIndex = 11
         Me.DashboardBtnMenu.Text = "DASHBOARD"
+        Me.DashboardBtnMenu.TextAlign = System.Windows.Forms.HorizontalAlignment.Left
         '
         'LogoutBtnMenu
         '
@@ -246,6 +266,7 @@ Partial Class assign
         '
         'Guna2CircleButton2
         '
+        Me.Guna2CircleButton2.Animated = True
         Me.Guna2CircleButton2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.BorderColor = System.Drawing.Color.Transparent
         Me.Guna2CircleButton2.CheckedState.Parent = Me.Guna2CircleButton2
@@ -278,6 +299,7 @@ Partial Class assign
         '
         'CloseButton
         '
+        Me.CloseButton.Animated = True
         Me.CloseButton.BackColor = System.Drawing.Color.Transparent
         Me.CloseButton.CheckedState.Parent = Me.CloseButton
         Me.CloseButton.CustomImages.Parent = Me.CloseButton
@@ -343,6 +365,7 @@ Partial Class assign
         '
         'SubmitButton
         '
+        Me.SubmitButton.Animated = True
         Me.SubmitButton.BorderRadius = 6
         Me.SubmitButton.CheckedState.Parent = Me.SubmitButton
         Me.SubmitButton.CustomImages.Parent = Me.SubmitButton
@@ -615,16 +638,6 @@ Partial Class assign
         Me.reciever_id.Size = New System.Drawing.Size(78, 22)
         Me.reciever_id.TabIndex = 144
         Me.reciever_id.Text = "(R0801003)"
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel1.Location = New System.Drawing.Point(458, 42)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(42, 3)
-        Me.Guna2Panel1.TabIndex = 145
         '
         'assign
         '

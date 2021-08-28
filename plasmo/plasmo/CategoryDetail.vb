@@ -7,6 +7,7 @@ Public Class CategoryDetail
     End Sub
 
     Private Sub CategoryDetail_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
         Dim bloodGroup = type.Text
 
         Select Case bloodGroup
@@ -102,13 +103,13 @@ Public Class CategoryDetail
 
 
 
-    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
-        donorForm.Show()
+    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
+        Reciever_form.Show()
         Me.Close()
     End Sub
 
-    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
-        Reciever_form.Show()
+    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
+        donorForm.Show()
         Me.Close()
     End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
@@ -135,5 +136,22 @@ Public Class CategoryDetail
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
         Dashboard.Show()
         Me.Close()
+    End Sub
+
+    Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseEnter
+        If e.RowIndex > -1 Then
+            Dim row = Guna2DataGridView1.Rows(e.RowIndex)
+            row.DefaultCellStyle.BackColor = Color.White
+        End If
+        Me.Cursor = Cursors.Hand
+    End Sub
+
+    Private Sub Guna2DataGridView1_CellMouseLeave(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseLeave
+        If e.RowIndex > -1 Then
+            Dim row = Guna2DataGridView1.Rows(e.RowIndex)
+            row.DefaultCellStyle.BackColor = Color.FromArgb(240, 240, 240)
+        End If
+        Me.Cursor = Cursors.Default
+
     End Sub
 End Class

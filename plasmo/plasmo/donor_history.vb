@@ -170,7 +170,7 @@ Public Class donor_history
     End Sub
 
     Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseEnter
-        If e.RowIndex > 0 Then
+        If e.RowIndex > -1 Then
             Dim row = Guna2DataGridView1.Rows(e.RowIndex)
             row.DefaultCellStyle.BackColor = Color.White
         End If
@@ -178,7 +178,7 @@ Public Class donor_history
     End Sub
 
     Private Sub Guna2DataGridView1_CellMouseLeave(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseLeave
-        If e.RowIndex > 0 Then
+        If e.RowIndex > -1 Then
             Dim row = Guna2DataGridView1.Rows(e.RowIndex)
             row.DefaultCellStyle.BackColor = Color.FromArgb(240, 240, 240)
         End If
