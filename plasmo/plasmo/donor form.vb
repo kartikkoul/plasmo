@@ -1,4 +1,5 @@
-﻿Imports System.Data
+﻿'''''''''''''''''''''''''''''''''''''''''''''''''DONOR-FORM Form''''''''''''''''''''''''''''''''''
+Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 Imports System.Text.RegularExpressions
@@ -7,11 +8,6 @@ Public Class donorForm
         Reciever_form.Show()
         Me.Close()
     End Sub
-
-    Private Sub Donor_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-
-    End Sub
-
     Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -23,10 +19,6 @@ Public Class donorForm
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
         Dashboard.Show()
         Me.Close()
-    End Sub
-
-    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
-
     End Sub
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
@@ -46,10 +38,7 @@ Public Class donorForm
         Me.Close()
     End Sub
 
-    Private Sub Guna2PictureBox1_Click(sender As Object, e As EventArgs) Handles Guna2PictureBox1.Click
-
-    End Sub
-
+    '--------------TRUNCATE FUNCTION FOR SENDING APPROPRIATE VALUES TO DATABASE------------------'
     Public Function Truncate(value As String, length As Integer) As String
         If length > value.Length Then
             Return value
@@ -58,12 +47,9 @@ Public Class donorForm
         End If
     End Function
 
+    '--------------------------------------------------------------------------------------------'
 
-
-    Private Sub gender_SelectedIndexChanged(sender As Object, e As EventArgs) Handles gender.SelectedIndexChanged
-
-    End Sub
-
+    '------------------------AUTOMATIC GENERATION OF UNIQUE DONOR IDs-----------------------------'
     Public Function GenerateID() As String
         Dim Generator As System.Random = New System.Random()
         Return Generator.Next(999, 10000)
@@ -92,7 +78,9 @@ Public Class donorForm
         End While
         Return ID
     End Function
+    '---------------------------------------------------------------------------------------------'
 
+    '-------------------------------EMAIL VALIDATION USING REGEX----------------------------------'
     Public Function EmailAddresscheck(ByVal emailaddress As String) As Boolean
         Dim pttern As String = "^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
         Dim emailAddressMatch As Match = Regex.Match(emailaddress, pttern)
@@ -103,6 +91,8 @@ Public Class donorForm
 
         End If
     End Function
+    '---------------------------------------------------------------------------------------------'
+
 
     Public Sub Validatemail()
         Dim email As String = mail.Text
@@ -115,6 +105,8 @@ Public Class donorForm
 
     Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
         Dim valid = True
+
+        '-----------------------HANDLING INVALID INPUTS-------------------'
         If fname.Text.Trim.Length = 0 Then
             fname.BorderColor = Color.Red
             fname.HoverState.BorderColor = Color.Red
@@ -186,7 +178,10 @@ Public Class donorForm
         If valid = False Then
             Exit Sub
         End If
+        '---------------------------------------------------------------'
 
+
+        '------------------SENDING DATA TO THE DATABASE------------------'
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
         Dim anti As Char = Truncate(antibody.SelectedItem, 1)
         Dim price As Integer = 0
@@ -231,28 +226,11 @@ Public Class donorForm
         Dim cmd1 As New SqlCommand("insert into donor_records(plasma_id,first_name,last_name,age,phone_number,email,city,address,blood_group,sex,anti_body,price,sold,transaction_time) values('" & donor_id & "','" & fname.Text & "','" & lname.Text & "','" & age.Text & "','" & pnumber.Text & "','" & mail.Text & "','" & city.Text & "','" & address.Text & "','" & blood_group & "','" & gen & "','" & anti & "','" & price & "','" & "N" & "','" & time & "')", con)
         con.Open()
         cmd1.ExecuteNonQuery()
-
         Dashboard.Refresh()
         con.Close()
+        '----------------------------------------------------------------'
         donor_success.Show()
         Me.Close()
-        'End If
-
-    End Sub
-
-    Private Sub Label11_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles fNameErrorText.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel4_Click(sender As Object, e As EventArgs) Handles phNumberErrorText.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel5_Click(sender As Object, e As EventArgs) Handles emailErrortext.Click
 
     End Sub
 
@@ -311,6 +289,7 @@ Public Class donorForm
         addressErrorText.Visible = False
     End Sub
 
+    '---IN ORDER TO ALLOW ONLY NUMBERS AS INPUTS IN AGE AND PHONE_NUMBER TEXTBOX WITH THEIR APPROPRIATE LENGTHS RESPECTIVELY-------'
     Private Sub age_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles age.KeyPress
         If e.KeyChar <> ChrW(Keys.Back) Then
             If Char.IsNumber(e.KeyChar) And age.Text.Trim.Length < 2 Then
@@ -330,4 +309,6 @@ Public Class donorForm
             End If
         End If
     End Sub
+    '------------------------------------------------------------------------------------------------------------------------------'
+
 End Class

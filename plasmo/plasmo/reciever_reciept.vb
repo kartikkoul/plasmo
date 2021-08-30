@@ -1,4 +1,5 @@
-﻿Imports System.Data
+﻿'''''''''''''''''''''''''''RECIEVER RECIEPT FORM''''''''''''''''''''
+Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 Public Class reciever_reciept
@@ -93,14 +94,6 @@ Public Class reciever_reciept
         Me.Close()
     End Sub
 
-    Private Sub bloodGroupLabel_Click(sender As Object, e As EventArgs) Handles bloodGroupLabel.Click
-
-    End Sub
-
-    Private Sub emailLabel_Click(sender As Object, e As EventArgs) Handles emailLabel.Click
-
-    End Sub
-
     Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
         PrintPreviewDialog1.Document = Me.PrintDocument1
         PrintPreviewDialog1.ShowDialog()
@@ -119,7 +112,6 @@ Public Class reciever_reciept
         ydiff = 20
         ystart = 50
         g.DrawString("PLASMO ", Guna2HtmlLabel1.Font, Brushes.Black, 350, ystart + 20)
-        g.DrawString("Thanks for your generous donation ", Guna2HtmlLabel1.Font, Brushes.Black, 250, ystart + 40)
         g.DrawString(recieverIDLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 350, ystart + 60)
 
 
@@ -148,21 +140,11 @@ Public Class reciever_reciept
         g.DrawString(bloodGroupLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 240)
         g.DrawString(dateLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 260)
 
-
-
-
-
-
-
         ystart = 210
         xstart = 30
         ydiff = 20
 
-
-
         ystart = ystart + ydiff
-
-
 
     End Sub
 End Class

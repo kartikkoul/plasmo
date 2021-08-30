@@ -232,7 +232,7 @@ Partial Class donor_success
         '
         Me.Guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel7.Font = New System.Drawing.Font("Poppins", 20.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(461, 425)
+        Me.Guna2HtmlLabel7.Location = New System.Drawing.Point(446, 424)
         Me.Guna2HtmlLabel7.Name = "Guna2HtmlLabel7"
         Me.Guna2HtmlLabel7.Size = New System.Drawing.Size(125, 50)
         Me.Guna2HtmlLabel7.TabIndex = 99
@@ -253,7 +253,7 @@ Partial Class donor_success
         Me.Guna2Button2.Font = New System.Drawing.Font("Poppins", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button2.ForeColor = System.Drawing.Color.White
         Me.Guna2Button2.HoverState.Parent = Me.Guna2Button2
-        Me.Guna2Button2.Location = New System.Drawing.Point(279, 537)
+        Me.Guna2Button2.Location = New System.Drawing.Point(276, 535)
         Me.Guna2Button2.Name = "Guna2Button2"
         Me.Guna2Button2.ShadowDecoration.Parent = Me.Guna2Button2
         Me.Guna2Button2.Size = New System.Drawing.Size(212, 33)
@@ -277,7 +277,7 @@ Partial Class donor_success
         Me.Guna2Button1.Font = New System.Drawing.Font("Poppins", 11.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2Button1.ForeColor = System.Drawing.Color.White
         Me.Guna2Button1.HoverState.Parent = Me.Guna2Button1
-        Me.Guna2Button1.Location = New System.Drawing.Point(542, 537)
+        Me.Guna2Button1.Location = New System.Drawing.Point(539, 535)
         Me.Guna2Button1.Name = "Guna2Button1"
         Me.Guna2Button1.ShadowDecoration.Parent = Me.Guna2Button1
         Me.Guna2Button1.Size = New System.Drawing.Size(212, 33)
@@ -292,7 +292,7 @@ Partial Class donor_success
         Me.Guna2PictureBox5.FillColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox5.Image = Global.plasmo.My.Resources.Resources.arrow_right1
         Me.Guna2PictureBox5.ImageRotate = 0!
-        Me.Guna2PictureBox5.Location = New System.Drawing.Point(725, 543)
+        Me.Guna2PictureBox5.Location = New System.Drawing.Point(722, 541)
         Me.Guna2PictureBox5.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox5.Name = "Guna2PictureBox5"
         Me.Guna2PictureBox5.ShadowDecoration.Parent = Me.Guna2PictureBox5
@@ -306,7 +306,7 @@ Partial Class donor_success
         Me.Guna2PictureBox4.FillColor = System.Drawing.Color.Transparent
         Me.Guna2PictureBox4.Image = Global.plasmo.My.Resources.Resources.arrow_left1
         Me.Guna2PictureBox4.ImageRotate = 0!
-        Me.Guna2PictureBox4.Location = New System.Drawing.Point(288, 543)
+        Me.Guna2PictureBox4.Location = New System.Drawing.Point(285, 541)
         Me.Guna2PictureBox4.Margin = New System.Windows.Forms.Padding(2)
         Me.Guna2PictureBox4.Name = "Guna2PictureBox4"
         Me.Guna2PictureBox4.ShadowDecoration.Parent = Me.Guna2PictureBox4
@@ -318,7 +318,7 @@ Partial Class donor_success
         '
         Me.Guna2PictureBox3.Image = Global.plasmo.My.Resources.Resources.Success_Circle
         Me.Guna2PictureBox3.ImageRotate = 0!
-        Me.Guna2PictureBox3.Location = New System.Drawing.Point(438, 217)
+        Me.Guna2PictureBox3.Location = New System.Drawing.Point(423, 216)
         Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
         Me.Guna2PictureBox3.ShadowDecoration.Parent = Me.Guna2PictureBox3
         Me.Guna2PictureBox3.Size = New System.Drawing.Size(163, 166)

@@ -1,4 +1,6 @@
-﻿Imports System.Data
+﻿'''''''''''''''''''''''''''''''''DONOR RECIEPT''''''''''''''''''''''''''''''''
+
+Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 
@@ -57,12 +59,6 @@ Public Class donor_reciept
         con.Close()
     End Sub
 
-    Private Sub Namelabel_Click(sender As Object, e As EventArgs) Handles Namelabel.Click
-
-    End Sub
-
-
-
     Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
@@ -96,46 +92,6 @@ Public Class donor_reciept
     Private Sub HistoryBtnMenu_Click(sender As Object, e As EventArgs) Handles HistoryBtnMenu.Click
         donor_history.Show()
         Me.Close()
-    End Sub
-
-    Private Sub Guna2HtmlLabel7_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel7.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel5_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel5.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel15_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel15.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel11_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel11.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel9_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel9.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel13_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel13.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel17_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel17.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel4_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel4.Click
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel3_Click(sender As Object, e As EventArgs) Handles Guna2HtmlLabel3.Click
-
     End Sub
 
     Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
@@ -186,21 +142,11 @@ Public Class donor_reciept
         g.DrawString(dateLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 260)
 
 
-
-
-
-
-
         ystart = 210
         xstart = 30
         ydiff = 20
 
-
-
         ystart = ystart + ydiff
-
-
-
     End Sub
 
 

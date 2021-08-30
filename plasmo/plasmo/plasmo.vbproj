@@ -325,6 +325,7 @@
       <DependentUpon>Database2.mdf</DependentUpon>
     </Content>
     <Content Include="Frame 214.ico" />
+    <None Include="Resources\Search Icon.png" />
     <None Include="Resources\Not Foung.png" />
     <None Include="Resources\Not Found.png" />
     <None Include="Resources\Yes_Antibody1.png" />

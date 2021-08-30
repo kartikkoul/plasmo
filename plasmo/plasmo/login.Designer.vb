@@ -79,7 +79,7 @@ Partial Class login
         Me.UserIDTextBox.Name = "UserIDTextBox"
         Me.UserIDTextBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.UserIDTextBox.PlaceholderForeColor = System.Drawing.Color.Silver
-        Me.UserIDTextBox.PlaceholderText = "admin@plasmo"
+        Me.UserIDTextBox.PlaceholderText = "adminplasmo"
         Me.UserIDTextBox.SelectedText = ""
         Me.UserIDTextBox.ShadowDecoration.Parent = Me.UserIDTextBox
         Me.UserIDTextBox.Size = New System.Drawing.Size(327, 53)

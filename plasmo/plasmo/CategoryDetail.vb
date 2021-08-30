@@ -1,10 +1,9 @@
-﻿Imports System.Data
+﻿''''''''''''''''''''''''''''''''''''''''''''''''''''''CATEGORY DETAILS FORM''''''''''''''''''''''''''''''''''''''''
+Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 Public Class CategoryDetail
-    Private Sub Guna2HtmlLabel1_Click(sender As Object, e As EventArgs) Handles type.Click
 
-    End Sub
 
     Private Sub CategoryDetail_Load(sender As Object, e As EventArgs) Handles MyBase.Load
 
@@ -16,7 +15,8 @@ Public Class CategoryDetail
             Case "A-"
                 bloodGroup = "AM"
             Case "B+"
-                bloodGroup = "BP"
+                End
+        bloodGroup = "BP"
             Case "B-"
                 bloodGroup = "BM"
             Case "AB+"
@@ -79,6 +79,7 @@ Public Class CategoryDetail
 
         Guna2DataGridView1.Rows.Clear()
 
+        '--------------------------------LOADING DATA INTO DATA GRID IN THE FORM----------------------------'
         While dr.Read
             Dim anti_body As String
             If dr("anti_body") = "Y" Then
@@ -89,6 +90,8 @@ Public Class CategoryDetail
             End If
             Guna2DataGridView1.Rows.Add(dr("plasma_id"), anti_body, dr("age"), "₹ " + dr("price").ToString)
         End While
+        '---------------------------------------------------------------------------------------------------'
+
         con.Close()
 
     End Sub
@@ -100,8 +103,6 @@ Public Class CategoryDetail
     Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
         Application.Exit()
     End Sub
-
-
 
     Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
@@ -125,19 +126,13 @@ Public Class CategoryDetail
         Me.Close()
     End Sub
 
-    Private Sub Guna2HtmlLabel1_Click_1(sender As Object, e As EventArgs) Handles Guna2HtmlLabel1.Click
-
-    End Sub
-
-    Private Sub antibodyCountTextbox_Click(sender As Object, e As EventArgs) Handles antibodyCountTextbox.Click
-
-    End Sub
-
     Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
         Dashboard.Show()
         Me.Close()
     End Sub
 
+
+    '------------------------------------------FOR HOVER EFFECT ON ROWS----------------------------------------------'
     Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseEnter
         If e.RowIndex > -1 Then
             Dim row = Guna2DataGridView1.Rows(e.RowIndex)
@@ -154,4 +149,6 @@ Public Class CategoryDetail
         Me.Cursor = Cursors.Default
 
     End Sub
+    '----------------------------------------------------------------------------------------------------------------'
+
 End Class

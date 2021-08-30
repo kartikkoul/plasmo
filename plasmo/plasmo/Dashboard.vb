@@ -1,4 +1,5 @@
-﻿Imports System.Data
+﻿'''''''''''''''''''''''''''''''''DASHBOARD'''''''''''''''''''''''''''''''''''''
+Imports System.Data
 Imports System.Data.SqlClient
 Public Class Dashboard
     Private Sub Dashboard_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -7,6 +8,7 @@ Public Class Dashboard
         Dim adapter As New SqlDataAdapter
         Dim ds As New DataSet
 
+        '-------------------LOADING PERCENTAGE OF STOCKS AVAILABLE INTO CIRCULAR BARS------------------'
 
         If con.State = 1 Then con.Close()
 
@@ -20,7 +22,7 @@ Public Class Dashboard
         con.Close()
         APlusCircle.Value = Aplus
         If APlusCircle.Value < 5 Then
-            APlusCircle.ForeColor = Color.Red
+            APlusCircle.ForeColor = Color.FromArgb(237, 69, 78)
         End If
 
         If con.State = 1 Then con.Close()
@@ -34,7 +36,7 @@ Public Class Dashboard
         con.Close()
         AMinusCircle.Value = AMinus
         If AMinusCircle.Value < 5 Then
-            AMinusCircle.ForeColor = Color.Red
+            AMinusCircle.ForeColor = Color.FromArgb(237, 69, 78)
         End If
 
         If con.State = 1 Then con.Close()
@@ -48,7 +50,7 @@ Public Class Dashboard
         con.Close()
         BPlusCircle.Value = BPlus
         If BPlusCircle.Value < 5 Then
-            BPlusCircle.ForeColor = Color.Red
+            BPlusCircle.ForeColor = Color.FromArgb(237, 69, 78)
         End If
 
         If con.State = 1 Then con.Close()
@@ -62,7 +64,7 @@ Public Class Dashboard
         con.Close()
         BMinusCircle.Value = BMinus
         If BMinusCircle.Value < 5 Then
-            BMinusCircle.ForeColor = Color.Red
+            BMinusCircle.ForeColor = Color.FromArgb(237, 69, 78)
         End If
 
         If con.State = 1 Then con.Close()
@@ -76,7 +78,7 @@ Public Class Dashboard
         con.Close()
         ABPlusCircle.Value = ABPlus
         If ABPlusCircle.Value < 5 Then
-            ABPlusCircle.ForeColor = Color.Red
+            ABPlusCircle.ForeColor = Color.FromArgb(237, 69, 78)
         End If
 
         If con.State = 1 Then con.Close()
@@ -90,7 +92,7 @@ Public Class Dashboard
         con.Close()
         ABMinusCircle.Value = ABMinus
         If ABMinusCircle.Value < 5 Then
-            ABMinusCircle.ForeColor = Color.Red
+            ABMinusCircle.ForeColor = Color.FromArgb(237, 69, 78)
         End If
 
         If con.State = 1 Then con.Close()
@@ -104,7 +106,7 @@ Public Class Dashboard
         con.Close()
         OPlusCircle.Value = OPlus
         If OPlusCircle.Value < 5 Then
-            OPlusCircle.ForeColor = Color.Red
+            OPlusCircle.ForeColor = Color.FromArgb(237, 69, 78)
         End If
 
         If con.State = 1 Then con.Close()
@@ -118,20 +120,21 @@ Public Class Dashboard
         con.Close()
         OMinusCircle.Value = OMinus
         If OMinusCircle.Value < 5 Then
-            OMinusCircle.ForeColor = Color.Red
+            OMinusCircle.ForeColor = Color.FromArgb(237, 69, 78)
         End If
 
-    End Sub
+        '----------------------------------------------------------------------------------------------'
 
+
+    End Sub
 
     Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
         Application.Exit()
     End Sub
 
-    Private Sub DashboardBtnMenu_Click(sender As Object, e As EventArgs) Handles DashboardBtnMenu.Click
 
-    End Sub
 
+    '----------------------------------------NAVBAR CONTROLS-------------------------------------------'
     Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         Reciever_form.Show()
         Me.Close()
@@ -153,6 +156,9 @@ Public Class Dashboard
         donor_history.Show()
         Me.Close()
     End Sub
+
+    '--------------------------------------------------------------------------------------------------'
+
 
 
     Private Sub Guna2CircleProgressBar8_ValueChanged(sender As Object, e As EventArgs) Handles OPlusCircle.Click
@@ -204,7 +210,7 @@ Public Class Dashboard
         Me.Close()
     End Sub
 
-    Private Sub BMinusCircle_ValueChanged_1(sender As Object, e As EventArgs) Handles BMinusCircle.ValueChanged
-
+    Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
+        Me.WindowState = FormWindowState.Minimized
     End Sub
 End Class

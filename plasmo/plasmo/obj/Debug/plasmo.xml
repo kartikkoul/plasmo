@@ -167,6 +167,11 @@ plasmo
   Looks up a localized resource of type System.Drawing.Bitmap.
 </summary>
 </member>
+<member name="P:plasmo.My.Resources.Resources.Search_Icon">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 <member name="P:plasmo.My.Resources.Resources.Success_Circle">
 <summary>
   Looks up a localized resource of type System.Drawing.Bitmap.

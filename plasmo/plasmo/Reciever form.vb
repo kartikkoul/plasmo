@@ -1,25 +1,12 @@
-﻿Imports System.Data
+﻿''''''''''''''''''''''''''''''RECIEVER-FORM FORM''''''''''''''''''''''''''''
+
+Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 Imports System.Text.RegularExpressions
 Public Class Reciever_form
-    Private Sub Guna2TextBox1_TextChanged(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub Label1_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label1_Click_1(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Label5_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-
+    '-----------IN ORDER TO TRUNCATE THE INPUTS INTO APPROPRIATE VALUES THAT DATABASE EXPECTS------------------'
     Public Function Truncate(value As String, length As Integer) As String
         If length > value.Length Then
             Return value
@@ -27,7 +14,9 @@ Public Class Reciever_form
             Return value.Substring(0, length)
         End If
     End Function
+    '----------------------------------------------------------------------------------------------------------'
 
+    '-----------------------------AUTOMATIC GENERATION OF UNIQUE RECIEVER IDs----------------------------------'
     Public Function GenerateID() As String
         Dim Generator As System.Random = New System.Random()
         Return Generator.Next(999, 10000)
@@ -50,7 +39,10 @@ Public Class Reciever_form
         End While
         Return ID
     End Function
+    '----------------------------------------------------------------------------------------------------------'
 
+
+    '----------------------EMAIL INPUT VALIDATION-------------------'
     Public Function EmailAddresscheck(ByVal emailaddress As String) As Boolean
         Dim pttern As String = "^([0-9a-zA-Z]([-\.\w]*[0-9a-zA-Z])*@([0-9a-zA-Z][-\w]*[0-9a-zA-Z]\.)+[a-zA-Z]{2,9})$"
         Dim emailAddressMatch As Match = Regex.Match(emailaddress, pttern)
@@ -70,9 +62,13 @@ Public Class Reciever_form
             Exit Sub
         End If
     End Sub
+    '---------------------------------------------------------------'
+
 
     Private Sub Guna2Button1_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
         Dim valid = True
+        '----------------------INPUTS VALIDATION--------------------'
+
         If fname.Text.Trim.Length = 0 Then
             fname.BorderColor = Color.Red
             fname.HoverState.BorderColor = Color.Red
@@ -144,6 +140,9 @@ Public Class Reciever_form
         If valid = False Then
             Exit Sub
         End If
+        '-----------------------------------------------------------'
+
+
 
         Dim gen As Char = Truncate(gender.SelectedItem, 1)
         Dim reciever_id As String = GenerateRecieverID()
@@ -213,6 +212,7 @@ Public Class Reciever_form
         Dim price As Integer = 0
         Dim antiBody As String = ""
         If dr.HasRows Then
+            '----------------------SENDING DATA TO DATABASE IF STOCK AVAILABLE--------------------'
             While dr.Read
                 plasmaID = dr("plasma_id")
                 price = dr("price")
@@ -230,23 +230,18 @@ Public Class Reciever_form
             updateRecieverQuery.ExecuteNonQuery()
             updateDonorQuery.ExecuteNonQuery()
             con.Close()
+            '---------------------------------------------------------------------------------------'
             reciever_reciept.recieverIDLabel.Text = reciever_id
             reciever_reciept.Show()
             Me.Close()
         Else
             con.Close()
+            '---------------------INCASE STOCK IS NOT AVAILABLE--------------------'
             PlasmaNotAvailable.Show()
             Me.Close()
+            '----------------------------------------------------------------------'
+
         End If
-    End Sub
-
-
-    Private Sub Guna2TextBox2_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Guna2Button4_Click(sender As Object, e As EventArgs)
-
     End Sub
 
     Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
@@ -267,9 +262,6 @@ Public Class Reciever_form
         Me.Close()
     End Sub
 
-    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
-
-    End Sub
     Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
         queue.Show()
         Me.Close()
@@ -338,6 +330,7 @@ Public Class Reciever_form
         addressErrorText.Visible = False
     End Sub
 
+    '---IN ORDER TO ALLOW ONLY NUMBERS AS INPUTS IN AGE AND PHONE_NUMBER TEXTBOX WITH THEIR APPROPRIATE LENGTHS RESPECTIVELY-------'
     Private Sub age_KeyPress(ByVal sender As Object, ByVal e As System.Windows.Forms.KeyPressEventArgs) Handles age.KeyPress
         If e.KeyChar <> ChrW(Keys.Back) Then
             If Char.IsNumber(e.KeyChar) And age.Text.Trim.Length < 2 Then
@@ -357,4 +350,5 @@ Public Class Reciever_form
             End If
         End If
     End Sub
+    '------------------------------------------------------------------------------------------------------------------------------'
 End Class
