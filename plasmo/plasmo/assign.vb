@@ -1,4 +1,5 @@
-﻿Imports System.Data
+﻿'''''''''''''''''''''''''''ASSIGN FORM (For Assigning Plasma To Queue Members)'''''''''''''''''''''
+Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 
@@ -54,80 +55,9 @@ Public Class assign
                     bgroup.Text = "O-"
             End Select
         End While
-
-
-
-
-
     End Sub
 
-    Private Sub lname_TextChanged(sender As Object, e As EventArgs)
 
-    End Sub
-
-    Private Sub age_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub pnumber_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub mail_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub bgroup_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub city_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub address_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub fname_TextChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub gender_SelectedIndexChanged(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub ageErrorText_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub phNumberErrorText_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub emailErrortext_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub addressErrorText_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub cityErrorText_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub fNameErrorText_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub lNameErrorText_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub lNameErrorText_Click_1(sender As Object, e As EventArgs)
-
-    End Sub
 
     Private Sub SubmitButton_Click(sender As Object, e As EventArgs) Handles SubmitButton.Click
         Dim demands = demand.SelectedItem

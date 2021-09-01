@@ -35,6 +35,7 @@ Partial Class donor_history
         Me.queueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.donorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.historyBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.dashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.logoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Newdataset = New plasmo.newdataset()
@@ -51,19 +52,18 @@ Partial Class donor_history
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.totalDonors = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.totalRecievers = New Guna.UI2.WinForms.Guna2HtmlLabel()
-        Me.searchBox = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.SearchBn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
-        Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.searchBox = New Guna.UI2.WinForms.Guna2TextBox()
+        Me.SearchBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -188,6 +188,19 @@ Partial Class donor_history
         Me.historyBtnMenu.TabIndex = 81
         Me.historyBtnMenu.Text = "HISTORY"
         '
+        'Guna2PictureBox2
+        '
+        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
+        Me.Guna2PictureBox2.ImageRotate = 0!
+        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
+        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
+        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
+        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
+        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
+        Me.Guna2PictureBox2.TabIndex = 80
+        Me.Guna2PictureBox2.TabStop = False
+        '
         'dashboardBtnMenu
         '
         Me.dashboardBtnMenu.BorderRadius = 6
@@ -282,7 +295,7 @@ Partial Class donor_history
         Me.Guna2DataGridView1.DefaultCellStyle = DataGridViewCellStyle3
         Me.Guna2DataGridView1.EnableHeadersVisualStyles = False
         Me.Guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.Guna2DataGridView1.Location = New System.Drawing.Point(81, 209)
+        Me.Guna2DataGridView1.Location = New System.Drawing.Point(72, 209)
         Me.Guna2DataGridView1.MultiSelect = False
         Me.Guna2DataGridView1.Name = "Guna2DataGridView1"
         Me.Guna2DataGridView1.RowHeadersVisible = False
@@ -293,7 +306,7 @@ Partial Class donor_history
         Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle4
         Me.Guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical
         Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 427)
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 415)
         Me.Guna2DataGridView1.TabIndex = 71
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -423,62 +436,6 @@ Partial Class donor_history
         Me.totalRecievers.Text = "(123)"
         Me.totalRecievers.TextAlignment = System.Drawing.ContentAlignment.TopCenter
         '
-        'searchBox
-        '
-        Me.searchBox.Animated = True
-        Me.searchBox.BorderColor = System.Drawing.Color.Silver
-        Me.searchBox.BorderRadius = 6
-        Me.searchBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.searchBox.DefaultText = ""
-        Me.searchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.searchBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.searchBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.searchBox.DisabledState.Parent = Me.searchBox
-        Me.searchBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.searchBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.searchBox.FocusedState.Parent = Me.searchBox
-        Me.searchBox.Font = New System.Drawing.Font("Poppins Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchBox.ForeColor = System.Drawing.Color.Black
-        Me.searchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.searchBox.HoverState.Parent = Me.searchBox
-        Me.searchBox.Location = New System.Drawing.Point(773, 184)
-        Me.searchBox.Margin = New System.Windows.Forms.Padding(5, 5, 5, 5)
-        Me.searchBox.Name = "searchBox"
-        Me.searchBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.searchBox.PlaceholderForeColor = System.Drawing.Color.Gray
-        Me.searchBox.PlaceholderText = "Search for ID, Name, etc..."
-        Me.searchBox.SelectedText = ""
-        Me.searchBox.ShadowDecoration.Parent = Me.searchBox
-        Me.searchBox.Size = New System.Drawing.Size(159, 19)
-        Me.searchBox.TabIndex = 92
-        '
-        'SearchBn
-        '
-        Me.SearchBn.BackColor = System.Drawing.Color.Transparent
-        Me.SearchBn.BorderRadius = 6
-        Me.SearchBn.CheckedState.Parent = Me.SearchBn
-        Me.SearchBn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SearchBn.CustomImages.Parent = Me.SearchBn
-        Me.SearchBn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.SearchBn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.SearchBn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.SearchBn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.SearchBn.DisabledState.Parent = Me.SearchBn
-        Me.SearchBn.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.SearchBn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.SearchBn.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.SearchBn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.SearchBn.HoverState.Parent = Me.SearchBn
-        Me.SearchBn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.SearchBn.ImageOffset = New System.Drawing.Point(-4, 0)
-        Me.SearchBn.ImageSize = New System.Drawing.Size(24, 24)
-        Me.SearchBn.Location = New System.Drawing.Point(940, 184)
-        Me.SearchBn.Name = "SearchBn"
-        Me.SearchBn.ShadowDecoration.Parent = Me.SearchBn
-        Me.SearchBn.Size = New System.Drawing.Size(71, 19)
-        Me.SearchBn.TabIndex = 93
-        Me.SearchBn.Text = "Search"
-        '
         'Guna2PictureBox3
         '
         Me.Guna2PictureBox3.Cursor = System.Windows.Forms.Cursors.Hand
@@ -554,19 +511,6 @@ Partial Class donor_history
         Me.CloseButton.Size = New System.Drawing.Size(30, 32)
         Me.CloseButton.TabIndex = 65
         '
-        'Guna2PictureBox2
-        '
-        Me.Guna2PictureBox2.Image = Global.plasmo.My.Resources.Resources.log_out__1_
-        Me.Guna2PictureBox2.ImageRotate = 0!
-        Me.Guna2PictureBox2.ImeMode = System.Windows.Forms.ImeMode.NoControl
-        Me.Guna2PictureBox2.Location = New System.Drawing.Point(1016, 20)
-        Me.Guna2PictureBox2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2PictureBox2.Name = "Guna2PictureBox2"
-        Me.Guna2PictureBox2.ShadowDecoration.Parent = Me.Guna2PictureBox2
-        Me.Guna2PictureBox2.Size = New System.Drawing.Size(21, 22)
-        Me.Guna2PictureBox2.TabIndex = 80
-        Me.Guna2PictureBox2.TabStop = False
-        '
         'Guna2PictureBox1
         '
         Me.Guna2PictureBox1.Image = Global.plasmo.My.Resources.Resources.Plasmo_Logo
@@ -579,13 +523,69 @@ Partial Class donor_history
         Me.Guna2PictureBox1.TabIndex = 5
         Me.Guna2PictureBox1.TabStop = False
         '
+        'searchBox
+        '
+        Me.searchBox.Animated = True
+        Me.searchBox.BorderColor = System.Drawing.Color.Silver
+        Me.searchBox.BorderRadius = 6
+        Me.searchBox.Cursor = System.Windows.Forms.Cursors.IBeam
+        Me.searchBox.DefaultText = ""
+        Me.searchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
+        Me.searchBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
+        Me.searchBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.searchBox.DisabledState.Parent = Me.searchBox
+        Me.searchBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
+        Me.searchBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.searchBox.FocusedState.Parent = Me.searchBox
+        Me.searchBox.Font = New System.Drawing.Font("Poppins Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.searchBox.ForeColor = System.Drawing.Color.Black
+        Me.searchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
+        Me.searchBox.HoverState.Parent = Me.searchBox
+        Me.searchBox.Location = New System.Drawing.Point(773, 184)
+        Me.searchBox.Margin = New System.Windows.Forms.Padding(5)
+        Me.searchBox.Name = "searchBox"
+        Me.searchBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
+        Me.searchBox.PlaceholderForeColor = System.Drawing.Color.Gray
+        Me.searchBox.PlaceholderText = "Search for ID, Name, etc..."
+        Me.searchBox.SelectedText = ""
+        Me.searchBox.ShadowDecoration.Parent = Me.searchBox
+        Me.searchBox.Size = New System.Drawing.Size(159, 19)
+        Me.searchBox.TabIndex = 92
+        '
+        'SearchBtn
+        '
+        Me.SearchBtn.BackColor = System.Drawing.Color.Transparent
+        Me.SearchBtn.BorderRadius = 6
+        Me.SearchBtn.CheckedState.Parent = Me.SearchBtn
+        Me.SearchBtn.Cursor = System.Windows.Forms.Cursors.Hand
+        Me.SearchBtn.CustomImages.Parent = Me.SearchBtn
+        Me.SearchBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.SearchBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.SearchBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.SearchBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.SearchBtn.DisabledState.Parent = Me.SearchBtn
+        Me.SearchBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.SearchBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
+        Me.SearchBtn.ForeColor = System.Drawing.Color.WhiteSmoke
+        Me.SearchBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.SearchBtn.HoverState.Parent = Me.SearchBtn
+        Me.SearchBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
+        Me.SearchBtn.ImageOffset = New System.Drawing.Point(-4, 0)
+        Me.SearchBtn.ImageSize = New System.Drawing.Size(24, 24)
+        Me.SearchBtn.Location = New System.Drawing.Point(940, 184)
+        Me.SearchBtn.Name = "SearchBtn"
+        Me.SearchBtn.ShadowDecoration.Parent = Me.SearchBtn
+        Me.SearchBtn.Size = New System.Drawing.Size(71, 19)
+        Me.SearchBtn.TabIndex = 93
+        Me.SearchBtn.Text = "Search"
+        '
         'donor_history
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1082, 624)
-        Me.Controls.Add(Me.SearchBn)
+        Me.Controls.Add(Me.SearchBtn)
         Me.Controls.Add(Me.searchBox)
         Me.Controls.Add(Me.totalRecievers)
         Me.Controls.Add(Me.totalDonors)
@@ -605,11 +605,11 @@ Partial Class donor_history
         Me.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen
         Me.Text = "Form2"
         Me.Guna2Panel1.ResumeLayout(False)
+        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TableBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox3, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Guna2PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
@@ -642,6 +642,6 @@ Partial Class donor_history
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents totalRecievers As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents totalDonors As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents SearchBn As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents SearchBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents searchBox As Guna.UI2.WinForms.Guna2TextBox
 End Class

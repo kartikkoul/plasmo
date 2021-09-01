@@ -35,7 +35,6 @@ Partial Class DonorDetails
         Me.lname = New System.Windows.Forms.Label()
         Me.fname = New System.Windows.Forms.Label()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -68,6 +67,7 @@ Partial Class DonorDetails
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.plasma_id = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -191,7 +191,7 @@ Partial Class DonorDetails
         '
         Me.Guna2Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2Panel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel1)
+        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel2)
         Me.Guna2Panel3.Controls.Add(Me.Guna2PictureBox2)
         Me.Guna2Panel3.Controls.Add(Me.RecieverBtnMenu)
         Me.Guna2Panel3.Controls.Add(Me.DonorBtnMenu)
@@ -205,16 +205,6 @@ Partial Class DonorDetails
         Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
         Me.Guna2Panel3.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel3.TabIndex = 161
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel1.Location = New System.Drawing.Point(458, 42)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(42, 3)
-        Me.Guna2Panel1.TabIndex = 145
         '
         'Guna2PictureBox2
         '
@@ -691,6 +681,16 @@ Partial Class DonorDetails
         Me.Label11.TabIndex = 180
         Me.Label11.Text = "ID"
         '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel2.Location = New System.Drawing.Point(567, 41)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
+        Me.Guna2Panel2.Size = New System.Drawing.Size(60, 3)
+        Me.Guna2Panel2.TabIndex = 181
+        '
         'DonorDetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -755,7 +755,6 @@ Partial Class DonorDetails
     Friend WithEvents lname As Label
     Friend WithEvents fname As Label
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DonorBtnMenu As Guna.UI2.WinForms.Guna2Button
@@ -787,4 +786,5 @@ Partial Class DonorDetails
     Friend WithEvents label As Label
     Friend WithEvents Label11 As Label
     Friend WithEvents plasma_id As Label
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
 End Class

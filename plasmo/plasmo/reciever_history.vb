@@ -1,4 +1,5 @@
-﻿Imports System.Data
+﻿'''''''''''''''''''''''''''''''''''RECIEVER HISTORY''''''''''''''''''''''''''
+Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 Public Class reciever_history
@@ -8,6 +9,7 @@ Public Class reciever_history
         Dim adapter As New SqlDataAdapter
         Dim ds As New DataSet
 
+        '------------TOTAL NUMBER OF DONORS AND RECIEVERS--------------'
         If con.State = 1 Then con.Close()
         Dim countDonorsCmd As New SqlCommand("select plasma_id from donor_records", con)
         con.Open()
@@ -30,10 +32,7 @@ Public Class reciever_history
         ds2.Dispose()
         con.Close()
         totalRecievers.Text = countRecievers
-
-
-
-
+        '--------------------------------------------------------------'
 
         con.Open()
         Dim cmd As New SqlCommand("select RECIEVER_ID, first_name, last_name, age, blood_group, plasma_id, transaction_time from reciever_records where recieved='" & "Y" & "'", con)
@@ -74,16 +73,13 @@ Public Class reciever_history
 
 
             Dim name As String = dr("first_name") + " " + dr("last_name")
+            '--------LOADS DATA INTO INDIVIDUAL ROW OF THE TABLE---------'
             Guna2DataGridView1.Rows.Add(dr("reciever_id"), name, dr("age"), blood_group, dr("plasma_id"), dr("transaction_time"))
+            '------------------------------------------------------------'
+
         End While
         con.Close()
     End Sub
-
-    Private Sub Guna2HtmlLabel2_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-
 
     Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
         Me.WindowState = FormWindowState.Minimized
@@ -120,21 +116,9 @@ Public Class reciever_history
         Me.Close()
     End Sub
 
-    Private Sub Guna2PictureBox3_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
-    Private Sub Guna2HtmlLabel2_Click_1(sender As Object, e As EventArgs) Handles Guna2HtmlLabel2.Click
-
-    End Sub
-
     Private Sub Guna2PictureBox3_Click_1(sender As Object, e As EventArgs) Handles Guna2PictureBox3.Click
         donor_history.Show()
         Me.Close()
-    End Sub
-
-    Private Sub Guna2DataGridView1_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellContentClick
-
     End Sub
 
     Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
@@ -146,6 +130,7 @@ Public Class reciever_history
         End If
     End Sub
 
+    '------------------------------------FOR HOVER EFFECTS OVER ROWS-------------------------------'
     Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseEnter
         If e.RowIndex > 0 Then
             Dim row = Guna2DataGridView1.Rows(e.RowIndex)
@@ -160,6 +145,7 @@ Public Class reciever_history
             row.DefaultCellStyle.BackColor = Color.FromArgb(240, 240, 240)
         End If
         Me.Cursor = Cursors.Default
-
     End Sub
+    '----------------------------------------------------------------------------------------------'
+
 End Class

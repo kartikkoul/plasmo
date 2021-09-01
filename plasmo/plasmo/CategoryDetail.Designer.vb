@@ -313,7 +313,7 @@ Partial Class CategoryDetail
         Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle5
         Me.Guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
         Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 442)
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 428)
         Me.Guna2DataGridView1.TabIndex = 93
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing

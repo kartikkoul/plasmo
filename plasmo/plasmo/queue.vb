@@ -1,4 +1,4 @@
-﻿
+﻿''''''''''''''''''''''''''''QUEUE''''''''''''''''''''''''
 Imports System.Data
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
@@ -9,6 +9,7 @@ Public Class queue
         Dim adapter As New SqlDataAdapter
         Dim ds As New DataSet
 
+        '--------------------COUNTS TOTAL NO. OF MEMBERS IN THE QUEUE----------'
         If con.State = 1 Then
             con.Close()
         End If
@@ -20,6 +21,7 @@ Public Class queue
         queueCount.Text = countQueue
         adapter.Dispose()
         ds.Clear()
+        '----------------------------------------------------------------------'
 
 
         Dim cmd As New SqlCommand("select RECIEVER_ID, first_name, last_name, age, blood_group, demand from reciever_records where recieved='" & "N" & "'", con)
@@ -69,7 +71,11 @@ Public Class queue
 
 
             Dim name As String = dr("first_name") + " " + dr("last_name")
+
+            '--------LOADS DATA INTO INDIVIDUAL ROW OF THE TABLE---------'
             Guna2DataGridView1.Rows.Add(dr("reciever_id"), name, dr("age"), blood_group, demand)
+            '------------------------------------------------------------'
+
         End While
         con.Close()
     End Sub
@@ -96,9 +102,7 @@ Public Class queue
         Reciever_form.Show()
         Me.Close()
     End Sub
-    Private Sub QueueBtnMenu_Click(sender As Object, e As EventArgs) Handles QueueBtnMenu.Click
 
-    End Sub
     Private Sub LogoutBtnMenu_Click(sender As Object, e As EventArgs) Handles LogoutBtnMenu.Click
         login.Show()
         Me.Close()
@@ -117,6 +121,7 @@ Public Class queue
         End If
     End Sub
 
+    '------------------------------------FOR HOVER EFFECTS OVER ROWS-------------------------------'
     Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseEnter
         If e.RowIndex > 0 Then
             Dim row = Guna2DataGridView1.Rows(e.RowIndex)
@@ -131,6 +136,6 @@ Public Class queue
             row.DefaultCellStyle.BackColor = Color.FromArgb(240, 240, 240)
         End If
         Me.Cursor = Cursors.Default
-
     End Sub
+    '----------------------------------------------------------------------------------------------'
 End Class

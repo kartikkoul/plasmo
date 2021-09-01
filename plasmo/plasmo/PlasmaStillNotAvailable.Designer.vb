@@ -223,7 +223,7 @@ Partial Class PlasmaStillNotAvailable
         '
         Me.Guna2PictureBox3.Image = Global.plasmo.My.Resources.Resources.Not_Foung
         Me.Guna2PictureBox3.ImageRotate = 0!
-        Me.Guna2PictureBox3.Location = New System.Drawing.Point(317, 216)
+        Me.Guna2PictureBox3.Location = New System.Drawing.Point(285, 214)
         Me.Guna2PictureBox3.Name = "Guna2PictureBox3"
         Me.Guna2PictureBox3.ShadowDecoration.Parent = Me.Guna2PictureBox3
         Me.Guna2PictureBox3.Size = New System.Drawing.Size(487, 309)
@@ -261,7 +261,7 @@ Partial Class PlasmaStillNotAvailable
         Me.Guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel2.Font = New System.Drawing.Font("Poppins", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(367, 562)
+        Me.Guna2HtmlLabel2.Location = New System.Drawing.Point(335, 560)
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(425, 36)
         Me.Guna2HtmlLabel2.TabIndex = 101
@@ -271,7 +271,7 @@ Partial Class PlasmaStillNotAvailable
         '
         Me.Guna2HtmlLabel1.BackColor = System.Drawing.Color.Transparent
         Me.Guna2HtmlLabel1.Font = New System.Drawing.Font("Poppins SemiBold", 9.75!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(445, 531)
+        Me.Guna2HtmlLabel1.Location = New System.Drawing.Point(413, 529)
         Me.Guna2HtmlLabel1.Name = "Guna2HtmlLabel1"
         Me.Guna2HtmlLabel1.Size = New System.Drawing.Size(269, 25)
         Me.Guna2HtmlLabel1.TabIndex = 100

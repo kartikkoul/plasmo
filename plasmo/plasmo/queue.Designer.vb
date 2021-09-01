@@ -30,9 +30,9 @@ Partial Class queue
         Dim DataGridViewCellStyle5 As System.Windows.Forms.DataGridViewCellStyle = New System.Windows.Forms.DataGridViewCellStyle()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(queue))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
-        Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
-        Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.HistoryBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -63,27 +63,27 @@ Partial Class queue
         '
         Me.Guna2BorderlessForm1.ContainerControl = Me
         '
-        'RecieverBtnMenu
+        'DonorBtnMenu
         '
-        Me.RecieverBtnMenu.BorderRadius = 6
-        Me.RecieverBtnMenu.CheckedState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.CustomImages.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.RecieverBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.RecieverBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Location = New System.Drawing.Point(182, 14)
-        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
-        Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Size = New System.Drawing.Size(131, 31)
-        Me.RecieverBtnMenu.TabIndex = 83
-        Me.RecieverBtnMenu.Text = "DONOR"
+        Me.DonorBtnMenu.BorderRadius = 6
+        Me.DonorBtnMenu.CheckedState.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.CustomImages.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.DonorBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.DonorBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
+        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.DonorBtnMenu.Name = "DonorBtnMenu"
+        Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.Size = New System.Drawing.Size(131, 31)
+        Me.DonorBtnMenu.TabIndex = 83
+        Me.DonorBtnMenu.Text = "DONOR"
         '
         'QueueBtnMenu
         '
@@ -107,27 +107,27 @@ Partial Class queue
         Me.QueueBtnMenu.TabIndex = 82
         Me.QueueBtnMenu.Text = "QUEUE"
         '
-        'DonorBtnMenu
+        'RecieverBtnMenu
         '
-        Me.DonorBtnMenu.BorderRadius = 6
-        Me.DonorBtnMenu.CheckedState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.CustomImages.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.DonorBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.DonorBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Location = New System.Drawing.Point(304, 14)
-        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.DonorBtnMenu.Name = "DonorBtnMenu"
-        Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.DonorBtnMenu.TabIndex = 84
-        Me.DonorBtnMenu.Text = "RECIEVER"
+        Me.RecieverBtnMenu.BorderRadius = 6
+        Me.RecieverBtnMenu.CheckedState.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.CustomImages.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.RecieverBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.RecieverBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.Location = New System.Drawing.Point(304, 14)
+        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
+        Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.RecieverBtnMenu.TabIndex = 84
+        Me.RecieverBtnMenu.Text = "RECIEVER"
         '
         'HistoryBtnMenu
         '
@@ -257,7 +257,7 @@ Partial Class queue
         Me.Guna2DataGridView1.RowsDefaultCellStyle = DataGridViewCellStyle5
         Me.Guna2DataGridView1.ScrollBars = System.Windows.Forms.ScrollBars.Horizontal
         Me.Guna2DataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect
-        Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 427)
+        Me.Guna2DataGridView1.Size = New System.Drawing.Size(939, 413)
         Me.Guna2DataGridView1.TabIndex = 100
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = Nothing
@@ -328,9 +328,9 @@ Partial Class queue
         Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel3)
-        Me.Guna2Panel1.Controls.Add(Me.RecieverBtnMenu)
-        Me.Guna2Panel1.Controls.Add(Me.QueueBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.DonorBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.QueueBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.RecieverBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.HistoryBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox2)
         Me.Guna2Panel1.Controls.Add(Me.DashboardBtnMenu)
@@ -559,9 +559,9 @@ Partial Class queue
     Friend WithEvents blood_group As DataGridViewTextBoxColumn
     Friend WithEvents plasma_id As DataGridViewTextBoxColumn
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents QueueBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DonorBtnMenu As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents QueueBtnMenu As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents HistoryBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents DashboardBtnMenu As Guna.UI2.WinForms.Guna2Button

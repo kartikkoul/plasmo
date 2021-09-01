@@ -25,7 +25,7 @@ Partial Class RecieverDetails
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(RecieverDetails))
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
-        Me.Label14 = New System.Windows.Forms.Label()
+        Me.transaction_time = New System.Windows.Forms.Label()
         Me.label01 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Guna2PictureBox4 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -42,7 +42,6 @@ Partial Class RecieverDetails
         Me.pnumber = New System.Windows.Forms.Label()
         Me.age = New System.Windows.Forms.Label()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -69,6 +68,7 @@ Partial Class RecieverDetails
         Me.Label7 = New System.Windows.Forms.Label()
         Me.plasma_id = New System.Windows.Forms.Label()
         Me.full_name = New System.Windows.Forms.Label()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel3.SuspendLayout()
@@ -80,17 +80,17 @@ Partial Class RecieverDetails
         '
         Me.Guna2BorderlessForm1.ContainerControl = Me
         '
-        'Label14
+        'transaction_time
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
-        Me.Label14.Font = New System.Drawing.Font("Poppins SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(721, 420)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(98, 28)
-        Me.Label14.TabIndex = 210
-        Me.Label14.Text = "06/10/2021"
+        Me.transaction_time.AutoSize = True
+        Me.transaction_time.BackColor = System.Drawing.Color.FromArgb(CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer), CType(CType(240, Byte), Integer))
+        Me.transaction_time.Font = New System.Drawing.Font("Poppins SemiBold", 12.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.transaction_time.Location = New System.Drawing.Point(721, 420)
+        Me.transaction_time.Margin = New System.Windows.Forms.Padding(2, 0, 2, 0)
+        Me.transaction_time.Name = "transaction_time"
+        Me.transaction_time.Size = New System.Drawing.Size(98, 28)
+        Me.transaction_time.TabIndex = 210
+        Me.transaction_time.Text = "06/10/2021"
         '
         'label01
         '
@@ -292,7 +292,7 @@ Partial Class RecieverDetails
         '
         Me.Guna2Panel3.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2Panel3.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
-        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel1)
+        Me.Guna2Panel3.Controls.Add(Me.Guna2Panel2)
         Me.Guna2Panel3.Controls.Add(Me.Guna2PictureBox2)
         Me.Guna2Panel3.Controls.Add(Me.RecieverBtnMenu)
         Me.Guna2Panel3.Controls.Add(Me.DonorBtnMenu)
@@ -306,16 +306,6 @@ Partial Class RecieverDetails
         Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
         Me.Guna2Panel3.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel3.TabIndex = 193
-        '
-        'Guna2Panel1
-        '
-        Me.Guna2Panel1.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel1.Location = New System.Drawing.Point(458, 42)
-        Me.Guna2Panel1.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel1.Name = "Guna2Panel1"
-        Me.Guna2Panel1.ShadowDecoration.Parent = Me.Guna2Panel1
-        Me.Guna2Panel1.Size = New System.Drawing.Size(42, 3)
-        Me.Guna2Panel1.TabIndex = 145
         '
         'RecieverBtnMenu
         '
@@ -699,6 +689,16 @@ Partial Class RecieverDetails
         Me.full_name.TabIndex = 194
         Me.full_name.Text = "Priya"
         '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel2.Location = New System.Drawing.Point(567, 41)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
+        Me.Guna2Panel2.Size = New System.Drawing.Size(60, 3)
+        Me.Guna2Panel2.TabIndex = 213
+        '
         'RecieverDetails
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -707,7 +707,7 @@ Partial Class RecieverDetails
         Me.ClientSize = New System.Drawing.Size(1082, 624)
         Me.Controls.Add(Me.plasma_id)
         Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label14)
+        Me.Controls.Add(Me.transaction_time)
         Me.Controls.Add(Me.label01)
         Me.Controls.Add(Me.Label13)
         Me.Controls.Add(Me.Guna2PictureBox4)
@@ -752,7 +752,7 @@ Partial Class RecieverDetails
     End Sub
 
     Friend WithEvents Guna2BorderlessForm1 As Guna.UI2.WinForms.Guna2BorderlessForm
-    Friend WithEvents Label14 As Label
+    Friend WithEvents transaction_time As Label
     Friend WithEvents label01 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Guna2PictureBox4 As Guna.UI2.WinForms.Guna2PictureBox
@@ -768,7 +768,6 @@ Partial Class RecieverDetails
     Friend WithEvents pnumber As Label
     Friend WithEvents age As Label
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DonorBtnMenu As Guna.UI2.WinForms.Guna2Button
@@ -796,4 +795,5 @@ Partial Class RecieverDetails
     Friend WithEvents plasma_id As Label
     Friend WithEvents Label7 As Label
     Friend WithEvents full_name As Label
+    Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
 End Class

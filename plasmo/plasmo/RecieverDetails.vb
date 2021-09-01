@@ -17,7 +17,7 @@ Public Class RecieverDetails
             email.Text = dr("email")
             city.Text = dr("city")
             address.Text = dr("address")
-            label01.Text = dr("transaction_time")
+            transaction_time.Text = dr("transaction_time")
             plasma_id.Text = dr("plasma_id")
             Select Case dr("blood_group")
                 Case "AP"
@@ -44,12 +44,12 @@ Public Class RecieverDetails
                     bgroup.Text = "O-"
             End Select
 
-            'Select Case dr("anti_body")
-            '    Case "Y"
-            '        antibody.Text = "Yes"
-            '    Case Else
-            '        antibody.Text = "No"
-            'End Select
+            Select Case dr("anti_body")
+                Case "Y"
+                    antibody.Text = "Yes"
+                Case Else
+                    antibody.Text = "No"
+            End Select
 
             Select Case dr("sex")
                 Case "M"
