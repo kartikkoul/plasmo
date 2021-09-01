@@ -2,6 +2,27 @@
 Imports System.Data.SqlClient
 Imports System.Data.SqlClient.SqlCommand
 Public Class reciever_history
+
+    Sub search()
+        Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
+        If con.State = 1 Then con.Close()
+        Dim countDonorsCmd As New SqlCommand("select * from donor_records where first_name='" & fname.Text & "'", con)
+        con.Open()
+        Dim dr As SqlDataReader
+        dr = countDonorsCmd.ExecuteReader
+        If dr.HasRows Then
+            adapter.SelectCommand = countDonorsCmd
+            adapter.Fill(ds, "donor_records")
+            Dim countDonors As Integer = ds.Tables(0).Rows.Count
+            adapter.Dispose()
+            ds.Dispose()
+            con.Close()
+            totalDonors.Text = countDonors
+        Else
+            MsgBox("No Such Record")
+        End If
+
+    End Sub
     Private Sub reciever_history_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Guna2DataGridView1.ClearSelection()
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
