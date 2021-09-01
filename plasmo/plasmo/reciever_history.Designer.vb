@@ -54,7 +54,6 @@ Partial Class reciever_history
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.SearchBn = New Guna.UI2.WinForms.Guna2Button()
         Me.searchBox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -518,33 +517,6 @@ Partial Class reciever_history
         Me.Guna2PictureBox1.TabIndex = 74
         Me.Guna2PictureBox1.TabStop = False
         '
-        'SearchBn
-        '
-        Me.SearchBn.BackColor = System.Drawing.Color.Transparent
-        Me.SearchBn.BorderRadius = 6
-        Me.SearchBn.CheckedState.Parent = Me.SearchBn
-        Me.SearchBn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SearchBn.CustomImages.Parent = Me.SearchBn
-        Me.SearchBn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.SearchBn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.SearchBn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.SearchBn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.SearchBn.DisabledState.Parent = Me.SearchBn
-        Me.SearchBn.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.SearchBn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.SearchBn.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.SearchBn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.SearchBn.HoverState.Parent = Me.SearchBn
-        Me.SearchBn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.SearchBn.ImageOffset = New System.Drawing.Point(-4, 0)
-        Me.SearchBn.ImageSize = New System.Drawing.Size(24, 24)
-        Me.SearchBn.Location = New System.Drawing.Point(940, 184)
-        Me.SearchBn.Name = "SearchBn"
-        Me.SearchBn.ShadowDecoration.Parent = Me.SearchBn
-        Me.SearchBn.Size = New System.Drawing.Size(71, 19)
-        Me.SearchBn.TabIndex = 95
-        Me.SearchBn.Text = "Search"
-        '
         'searchBox
         '
         Me.searchBox.Animated = True
@@ -563,7 +535,7 @@ Partial Class reciever_history
         Me.searchBox.ForeColor = System.Drawing.Color.Black
         Me.searchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.searchBox.HoverState.Parent = Me.searchBox
-        Me.searchBox.Location = New System.Drawing.Point(773, 184)
+        Me.searchBox.Location = New System.Drawing.Point(804, 182)
         Me.searchBox.Margin = New System.Windows.Forms.Padding(5)
         Me.searchBox.Name = "searchBox"
         Me.searchBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -571,7 +543,7 @@ Partial Class reciever_history
         Me.searchBox.PlaceholderText = "Search for ID, Name, etc..."
         Me.searchBox.SelectedText = ""
         Me.searchBox.ShadowDecoration.Parent = Me.searchBox
-        Me.searchBox.Size = New System.Drawing.Size(159, 19)
+        Me.searchBox.Size = New System.Drawing.Size(197, 19)
         Me.searchBox.TabIndex = 94
         '
         'reciever_history
@@ -580,7 +552,6 @@ Partial Class reciever_history
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1082, 624)
-        Me.Controls.Add(Me.SearchBn)
         Me.Controls.Add(Me.searchBox)
         Me.Controls.Add(Me.totalRecievers)
         Me.Controls.Add(Me.totalDonors)
@@ -631,6 +602,5 @@ Partial Class reciever_history
     Friend WithEvents recieption_time As DataGridViewTextBoxColumn
     Friend WithEvents totalRecievers As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents totalDonors As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents SearchBn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents searchBox As Guna.UI2.WinForms.Guna2TextBox
 End Class

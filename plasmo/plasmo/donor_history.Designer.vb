@@ -57,7 +57,6 @@ Partial Class donor_history
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.searchBox = New Guna.UI2.WinForms.Guna2TextBox()
-        Me.SearchBtn = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Newdataset, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -541,7 +540,7 @@ Partial Class donor_history
         Me.searchBox.ForeColor = System.Drawing.Color.Black
         Me.searchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.searchBox.HoverState.Parent = Me.searchBox
-        Me.searchBox.Location = New System.Drawing.Point(773, 184)
+        Me.searchBox.Location = New System.Drawing.Point(804, 182)
         Me.searchBox.Margin = New System.Windows.Forms.Padding(5)
         Me.searchBox.Name = "searchBox"
         Me.searchBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
@@ -549,35 +548,8 @@ Partial Class donor_history
         Me.searchBox.PlaceholderText = "Search for ID, Name, etc..."
         Me.searchBox.SelectedText = ""
         Me.searchBox.ShadowDecoration.Parent = Me.searchBox
-        Me.searchBox.Size = New System.Drawing.Size(159, 19)
+        Me.searchBox.Size = New System.Drawing.Size(197, 19)
         Me.searchBox.TabIndex = 92
-        '
-        'SearchBtn
-        '
-        Me.SearchBtn.BackColor = System.Drawing.Color.Transparent
-        Me.SearchBtn.BorderRadius = 6
-        Me.SearchBtn.CheckedState.Parent = Me.SearchBtn
-        Me.SearchBtn.Cursor = System.Windows.Forms.Cursors.Hand
-        Me.SearchBtn.CustomImages.Parent = Me.SearchBtn
-        Me.SearchBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.SearchBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.SearchBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.SearchBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.SearchBtn.DisabledState.Parent = Me.SearchBtn
-        Me.SearchBtn.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.SearchBtn.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!)
-        Me.SearchBtn.ForeColor = System.Drawing.Color.WhiteSmoke
-        Me.SearchBtn.HoverState.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.SearchBtn.HoverState.Parent = Me.SearchBtn
-        Me.SearchBtn.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right
-        Me.SearchBtn.ImageOffset = New System.Drawing.Point(-4, 0)
-        Me.SearchBtn.ImageSize = New System.Drawing.Size(24, 24)
-        Me.SearchBtn.Location = New System.Drawing.Point(940, 184)
-        Me.SearchBtn.Name = "SearchBtn"
-        Me.SearchBtn.ShadowDecoration.Parent = Me.SearchBtn
-        Me.SearchBtn.Size = New System.Drawing.Size(71, 19)
-        Me.SearchBtn.TabIndex = 93
-        Me.SearchBtn.Text = "Search"
         '
         'donor_history
         '
@@ -585,7 +557,6 @@ Partial Class donor_history
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.White
         Me.ClientSize = New System.Drawing.Size(1082, 624)
-        Me.Controls.Add(Me.SearchBtn)
         Me.Controls.Add(Me.searchBox)
         Me.Controls.Add(Me.totalRecievers)
         Me.Controls.Add(Me.totalDonors)
@@ -642,6 +613,5 @@ Partial Class donor_history
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents totalRecievers As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents totalDonors As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents SearchBtn As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents searchBox As Guna.UI2.WinForms.Guna2TextBox
 End Class

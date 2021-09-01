@@ -132,7 +132,7 @@ Public Class reciever_history
 
     '------------------------------------FOR HOVER EFFECTS OVER ROWS-------------------------------'
     Private Sub Guna2DataGridView1_CellMouseEnter(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseEnter
-        If e.RowIndex > 0 Then
+        If e.RowIndex > -1 Then
             Dim row = Guna2DataGridView1.Rows(e.RowIndex)
             row.DefaultCellStyle.BackColor = Color.White
         End If
@@ -140,12 +140,52 @@ Public Class reciever_history
     End Sub
 
     Private Sub Guna2DataGridView1_CellMouseLeave(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellMouseLeave
-        If e.RowIndex > 0 Then
+        If e.RowIndex > -1 Then
             Dim row = Guna2DataGridView1.Rows(e.RowIndex)
             row.DefaultCellStyle.BackColor = Color.FromArgb(240, 240, 240)
         End If
         Me.Cursor = Cursors.Default
     End Sub
-    '----------------------------------------------------------------------------------------------'
+
+    '-----------------------IN ORDER TO ACHIEVE SEARCHING RECORDS----------------'
+    Public Sub search(id As String, firstName As String, lastName As String, value As String)
+        Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
+        If con.State = 1 Then con.Close()
+        Dim cmd As New SqlCommand("SELECT * FROM reciever_records WHERE reciever_id LIKE '%" & id & "%' OR first_name LIKE '%" & firstName & "%' OR last_name LIKE '%" & lastName & "%' OR CONCAT(plasma_id, first_name, last_name) LIKE '%" & value & "%' AND recieved='" & "Y" & "'", con)
+        con.Open()
+        Dim dr As SqlDataReader
+        dr = cmd.ExecuteReader
+        If dr.HasRows Then
+            searchBox.BorderColor = Color.Silver
+            searchBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+            searchBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+            'adapter.SelectCommand = cmd
+            'adapter.Fill(ds, "donor_records")
+            'Dim countDonors As Integer = ds.Tables(0).Rows.Count
+            'adapter.Dispose()
+            'ds.Dispose()
+            con.Close()
+        Else
+            If searchBox.Text.Trim.Length = 0 Then
+                searchBox.BorderColor = Color.Silver
+                searchBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
+                searchBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
+            Else
+                searchBox.BorderColor = Color.Red
+                searchBox.HoverState.BorderColor = Color.Red
+                searchBox.FocusedState.BorderColor = Color.Red
+            End If
+        End If
+    End Sub
+    '----------------------------------------------------------------------------'
+
+
+    Private Sub searchBox_TextChanged(sender As Object, e As EventArgs) Handles searchBox.TextChanged
+        Dim id As String = searchBox.Text.Trim
+        Dim first_name As String = searchBox.Text.Trim
+        Dim last_name As String = searchBox.Text.Trim
+        Dim value As String = searchBox.Text
+        search(id, first_name, last_name, value)
+    End Sub
 
 End Class
