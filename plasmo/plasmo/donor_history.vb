@@ -41,8 +41,16 @@ Public Class donor_history
         con.Open()
         Dim cmd As New SqlCommand("select plasma_id, first_name, last_name, age, blood_group, anti_body, transaction_time from donor_records", con)
         Dim dr As SqlDataReader
-        dr = cmd.ExecuteReader
+        Dim ad3 As New SqlDataAdapter
+        Dim dt As New DataTable
+        dt.Columns.Add("ID")
+        dt.Columns.Add("Name")
+        dt.Columns.Add("Age")
+        dt.Columns.Add("Blood_Group")
+        dt.Columns.Add("Anti_Body")
+        dt.Columns.Add("Transaction_Time")
 
+        dr = cmd.ExecuteReader
         While dr.Read
 
             Dim blood_group As String = dr("blood_group")
@@ -75,12 +83,15 @@ Public Class donor_history
 
 
             Dim name As String = dr("first_name") + " " + dr("last_name")
+            dt.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
             '--------LOADS DATA INTO INDIVIDUAL ROW OF THE TABLE---------'
-            Guna2DataGridView1.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
+            'Guna2DataGridView1.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
             '------------------------------------------------------------'
 
         End While
         con.Close()
+        ad3.SelectCommand = cmd
+        Guna2DataGridView1.DataSource = ad3.Fill(dt)
 
 
     End Sub
@@ -139,7 +150,7 @@ Public Class donor_history
     Private Sub Guna2DataGridView1_CellClick(sender As Object, e As DataGridViewCellEventArgs) Handles Guna2DataGridView1.CellClick
         If e.RowIndex >= 0 Then
             Dim row As DataGridViewRow = Guna2DataGridView1.Rows(e.RowIndex)
-            DonorDetails.plasma_id.Text = row.Cells(0).Value.ToString
+            DonorDetails.plasma_id.Text = row.Cells(0).Value
             DonorDetails.Show()
             Me.Close()
         End If
@@ -224,23 +235,62 @@ Public Class donor_history
 
 
     '-----------------------IN ORDER TO ACHIEVE SEARCHING RECORDS----------------'
-    Public Sub search(id As String, firstName As String, lastName As String, value As String)
+    Public Sub search(value As String)
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         If con.State = 1 Then con.Close()
-        Dim cmd As New SqlCommand("SELECT * FROM donor_records WHERE plasma_id LIKE '%" & id & "%' OR first_name LIKE '%" & firstName & "%' OR last_name LIKE '%" & lastName & "%' OR CONCAT(plasma_id, first_name, last_name) LIKE '%" & value & "%'", con)
+        Dim cmdSearch As New SqlCommand("SELECT * FROM donor_records WHERE  CONCAT(plasma_id, first_name, last_name) LIKE '%" & value & "%'", con)
         con.Open()
         Dim dr As SqlDataReader
-        dr = cmd.ExecuteReader
+        Dim ad3 As New SqlDataAdapter
+        Dim dt As New DataTable
+        dr = cmdSearch.ExecuteReader
         If dr.HasRows Then
-            searchBox.BorderColor = Color.Silver
-            searchBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
-            searchBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
-            'adapter.SelectCommand = cmd
-            'adapter.Fill(ds, "donor_records")
-            'Dim countDonors As Integer = ds.Tables(0).Rows.Count
-            'adapter.Dispose()
-            'ds.Dispose()
+            dt.Columns.Add("ID")
+            dt.Columns.Add("Name")
+            dt.Columns.Add("Age")
+            dt.Columns.Add("Blood_Group")
+            dt.Columns.Add("Anti_Body")
+            dt.Columns.Add("Transaction_Time")
+            While dr.Read
+
+                Dim blood_group As String = dr("blood_group")
+
+                Select Case dr("blood_group")
+                    Case "AP"
+                        blood_group = "A+"
+
+                    Case "AM"
+                        blood_group = "A-"
+
+                    Case "BP"
+                        blood_group = "B+"
+
+                    Case "BM"
+                        blood_group = "B-"
+
+                    Case "ABP"
+                        blood_group = "AB+"
+
+                    Case "ABM"
+                        blood_group = "AB-"
+
+                    Case "OP"
+                        blood_group = "O+"
+                    Case "OM"
+                        blood_group = "O-"
+                End Select
+
+
+
+                Dim name As String = dr("first_name") + " " + dr("last_name")
+                dt.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
+                '--------LOADS DATA INTO INDIVIDUAL ROW OF THE TABLE---------'
+                'Guna2DataGridView1.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
+                '------------------------------------------------------------'
+
+            End While
             con.Close()
+            Guna2DataGridView1.DataSource = dt
         Else
             If searchBox.Text.Trim.Length = 0 Then
                 searchBox.BorderColor = Color.Silver
@@ -257,10 +307,10 @@ Public Class donor_history
 
 
     Private Sub searchBox_TextChanged(sender As Object, e As EventArgs) Handles searchBox.TextChanged
-        Dim id As String = searchBox.Text.Trim
-        Dim first_name As String = searchBox.Text.Trim
-        Dim last_name As String = searchBox.Text.Trim
+        'Dim id As String = searchBox.Text.Trim
+        'Dim first_name As String = searchBox.Text.Trim
+        'Dim last_name As String = searchBox.Text.Trim
         Dim value As String = searchBox.Text
-        search(id, first_name, last_name, value)
+        search(value)
     End Sub
 End Class

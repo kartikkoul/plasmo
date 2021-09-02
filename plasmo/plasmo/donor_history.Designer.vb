@@ -540,15 +540,15 @@ Partial Class donor_history
         Me.searchBox.ForeColor = System.Drawing.Color.Black
         Me.searchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.searchBox.HoverState.Parent = Me.searchBox
-        Me.searchBox.Location = New System.Drawing.Point(804, 182)
+        Me.searchBox.Location = New System.Drawing.Point(768, 182)
         Me.searchBox.Margin = New System.Windows.Forms.Padding(5)
         Me.searchBox.Name = "searchBox"
         Me.searchBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
         Me.searchBox.PlaceholderForeColor = System.Drawing.Color.Gray
-        Me.searchBox.PlaceholderText = "Search for ID, Name, etc..."
+        Me.searchBox.PlaceholderText = "Search for ID, First Name or Last Name"
         Me.searchBox.SelectedText = ""
         Me.searchBox.ShadowDecoration.Parent = Me.searchBox
-        Me.searchBox.Size = New System.Drawing.Size(197, 19)
+        Me.searchBox.Size = New System.Drawing.Size(233, 19)
         Me.searchBox.TabIndex = 92
         '
         'donor_history
