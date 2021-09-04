@@ -7,7 +7,6 @@ Imports System.Data.SqlClient.SqlCommand
 Public Class donor_history
 
     Private Sub DonorHistory_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'FilterData("")
         Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
         Dim adapter As New SqlDataAdapter
         Dim ds As New DataSet
@@ -41,14 +40,6 @@ Public Class donor_history
         con.Open()
         Dim cmd As New SqlCommand("select plasma_id, first_name, last_name, age, blood_group, anti_body, transaction_time from donor_records", con)
         Dim dr As SqlDataReader
-        Dim ad3 As New SqlDataAdapter
-        Dim dt As New DataTable
-        dt.Columns.Add("ID")
-        dt.Columns.Add("Name")
-        dt.Columns.Add("Age")
-        dt.Columns.Add("Blood_Group")
-        dt.Columns.Add("Anti_Body")
-        dt.Columns.Add("Transaction_Time")
 
         dr = cmd.ExecuteReader
         While dr.Read
@@ -83,33 +74,15 @@ Public Class donor_history
 
 
             Dim name As String = dr("first_name") + " " + dr("last_name")
-            dt.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
+
             '--------LOADS DATA INTO INDIVIDUAL ROW OF THE TABLE---------'
-            'Guna2DataGridView1.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
+            Guna2DataGridView1.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
             '------------------------------------------------------------'
 
         End While
         con.Close()
-        ad3.SelectCommand = cmd
-        Guna2DataGridView1.DataSource = ad3.Fill(dt)
-
 
     End Sub
-
-    'Public Sub FilterData(valueToSearch As String)
-    '    'SELECT * From Users WHERE CONCAT(fname, lname, age) like '%F%'
-    '    Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
-    '    Dim searchQuery As String = "SELECT * From donor_records WHERE CONCAT(plasma_id, first_name, last_name, age) like '%" & valueToSearch & "%'"
-
-    '    Dim command As New SqlCommand(searchQuery, con)
-    '    Dim adapter As New SqlDataAdapter(command)
-    '    Dim table As New DataTable()
-
-    '    'adapter.Fill(table)
-
-    '    Guna2DataGridView1.DataSource = adapter.Fill(table)
-
-    'End Sub
 
     Private Sub Guna2CircleButton2_Click(sender As Object, e As EventArgs) Handles Guna2CircleButton2.Click
         Me.WindowState = FormWindowState.Minimized
@@ -173,144 +146,4 @@ Public Class donor_history
         Me.Cursor = Cursors.Default
     End Sub
     '----------------------------------------------------------------------------------------------'
-
-
-    Private Sub SearchBtn_Click(sender As Object, e As EventArgs)
-        Dim name As String
-        Dim id As String
-        If searchBox.Text.Trim.Length = 0 Then
-            name = searchBox.Text
-            id = searchBox.Text.Trim
-        Else
-            Exit Sub
-        End If
-        Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
-        Dim dr As SqlDataReader
-        Dim cmd As New SqlCommand("Select * from donor_records where plasma_id = '" & id & "' or first_name='" & name & "'", con)
-        con.Open()
-        dr = cmd.ExecuteReader
-        If dr.HasRows Then
-
-            While dr.Read
-                Dim blood_group As String = dr("blood_group")
-
-                Select Case dr("blood_group")
-                    Case "AP"
-                        blood_group = "A+"
-
-                    Case "AM"
-                        blood_group = "A-"
-
-                    Case "BP"
-                        blood_group = "B+"
-
-                    Case "BM"
-                        blood_group = "B-"
-
-                    Case "ABP"
-                        blood_group = "AB+"
-
-                    Case "ABM"
-                        blood_group = "AB-"
-
-                    Case "OP"
-                        blood_group = "O+"
-                    Case "OM"
-                        blood_group = "O-"
-                End Select
-
-
-
-                Dim name2 As String = dr("first_name") + " " + dr("last_name")
-                Guna2DataGridView1.Rows.Add(dr("plasma_id"), name2, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
-            End While
-            con.Close()
-        Else
-            con.Close()
-            searchBox.BorderColor = Color.Red
-            searchBox.HoverState.BorderColor = Color.Red
-            searchBox.FocusedState.BorderColor = Color.Red
-        End If
-    End Sub
-
-
-    '-----------------------IN ORDER TO ACHIEVE SEARCHING RECORDS----------------'
-    Public Sub search(value As String)
-        Dim con As New SqlConnection("server=DESKTOP-5GP20F1\SQLEXPRESS;database=plasmo;integrated security=true")
-        If con.State = 1 Then con.Close()
-        Dim cmdSearch As New SqlCommand("SELECT * FROM donor_records WHERE  CONCAT(plasma_id, first_name, last_name) LIKE '%" & value & "%'", con)
-        con.Open()
-        Dim dr As SqlDataReader
-        Dim ad3 As New SqlDataAdapter
-        Dim dt As New DataTable
-        dr = cmdSearch.ExecuteReader
-        If dr.HasRows Then
-            dt.Columns.Add("ID")
-            dt.Columns.Add("Name")
-            dt.Columns.Add("Age")
-            dt.Columns.Add("Blood_Group")
-            dt.Columns.Add("Anti_Body")
-            dt.Columns.Add("Transaction_Time")
-            While dr.Read
-
-                Dim blood_group As String = dr("blood_group")
-
-                Select Case dr("blood_group")
-                    Case "AP"
-                        blood_group = "A+"
-
-                    Case "AM"
-                        blood_group = "A-"
-
-                    Case "BP"
-                        blood_group = "B+"
-
-                    Case "BM"
-                        blood_group = "B-"
-
-                    Case "ABP"
-                        blood_group = "AB+"
-
-                    Case "ABM"
-                        blood_group = "AB-"
-
-                    Case "OP"
-                        blood_group = "O+"
-                    Case "OM"
-                        blood_group = "O-"
-                End Select
-
-
-
-                Dim name As String = dr("first_name") + " " + dr("last_name")
-                dt.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
-                '--------LOADS DATA INTO INDIVIDUAL ROW OF THE TABLE---------'
-                'Guna2DataGridView1.Rows.Add(dr("plasma_id"), name, dr("age"), blood_group, dr("anti_body"), dr("transaction_time"))
-                '------------------------------------------------------------'
-
-            End While
-            con.Close()
-            Guna2DataGridView1.DataSource = dt
-        Else
-            If searchBox.Text.Trim.Length = 0 Then
-                searchBox.BorderColor = Color.Silver
-                searchBox.HoverState.BorderColor = Color.FromArgb(94, 148, 255)
-                searchBox.FocusedState.BorderColor = Color.FromArgb(94, 148, 255)
-            Else
-                searchBox.BorderColor = Color.Red
-                searchBox.HoverState.BorderColor = Color.Red
-                searchBox.FocusedState.BorderColor = Color.Red
-            End If
-        End If
-    End Sub
-    '----------------------------------------------------------------------------'
-
-
-    Private Sub searchBox_TextChanged(sender As Object, e As EventArgs) Handles searchBox.TextChanged
-        'Dim id As String = searchBox.Text.Trim
-        'Dim first_name As String = searchBox.Text.Trim
-        'Dim last_name As String = searchBox.Text.Trim
-        Dim value As String = searchBox.Text
-        search(value)
-    End Sub
 End Class

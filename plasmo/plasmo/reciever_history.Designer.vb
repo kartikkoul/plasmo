@@ -54,7 +54,6 @@ Partial Class reciever_history
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
-        Me.searchBox = New Guna.UI2.WinForms.Guna2TextBox()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -517,42 +516,12 @@ Partial Class reciever_history
         Me.Guna2PictureBox1.TabIndex = 74
         Me.Guna2PictureBox1.TabStop = False
         '
-        'searchBox
-        '
-        Me.searchBox.Animated = True
-        Me.searchBox.BorderColor = System.Drawing.Color.Silver
-        Me.searchBox.BorderRadius = 6
-        Me.searchBox.Cursor = System.Windows.Forms.Cursors.IBeam
-        Me.searchBox.DefaultText = ""
-        Me.searchBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer), CType(CType(208, Byte), Integer))
-        Me.searchBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer), CType(CType(226, Byte), Integer))
-        Me.searchBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.searchBox.DisabledState.Parent = Me.searchBox
-        Me.searchBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer), CType(CType(138, Byte), Integer))
-        Me.searchBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.searchBox.FocusedState.Parent = Me.searchBox
-        Me.searchBox.Font = New System.Drawing.Font("Poppins Light", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.searchBox.ForeColor = System.Drawing.Color.Black
-        Me.searchBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(CType(CType(94, Byte), Integer), CType(CType(148, Byte), Integer), CType(CType(255, Byte), Integer))
-        Me.searchBox.HoverState.Parent = Me.searchBox
-        Me.searchBox.Location = New System.Drawing.Point(768, 182)
-        Me.searchBox.Margin = New System.Windows.Forms.Padding(5)
-        Me.searchBox.Name = "searchBox"
-        Me.searchBox.PasswordChar = Global.Microsoft.VisualBasic.ChrW(0)
-        Me.searchBox.PlaceholderForeColor = System.Drawing.Color.Gray
-        Me.searchBox.PlaceholderText = "Search for ID, First Name or Last Name"
-        Me.searchBox.SelectedText = ""
-        Me.searchBox.ShadowDecoration.Parent = Me.searchBox
-        Me.searchBox.Size = New System.Drawing.Size(233, 19)
-        Me.searchBox.TabIndex = 94
-        '
         'reciever_history
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer), CType(CType(250, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1082, 624)
-        Me.Controls.Add(Me.searchBox)
         Me.Controls.Add(Me.totalRecievers)
         Me.Controls.Add(Me.totalDonors)
         Me.Controls.Add(Me.Guna2PictureBox3)
@@ -602,5 +571,4 @@ Partial Class reciever_history
     Friend WithEvents recieption_time As DataGridViewTextBoxColumn
     Friend WithEvents totalRecievers As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents totalDonors As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents searchBox As Guna.UI2.WinForms.Guna2TextBox
 End Class
