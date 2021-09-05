@@ -400,7 +400,7 @@ Partial Class reciever_reciept
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.RecieverBtnMenu.TabIndex = 84
-        Me.RecieverBtnMenu.Text = "RECIEVER"
+        Me.RecieverBtnMenu.Text = "RECEIVER"
         '
         'Namelabel
         '

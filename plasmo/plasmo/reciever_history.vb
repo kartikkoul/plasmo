@@ -94,12 +94,12 @@ Public Class reciever_history
         Me.Close()
     End Sub
 
-    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
+    Private Sub DonorBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
         donorForm.Show()
         Me.Close()
     End Sub
 
-    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles RecieverBtnMenu.Click
+    Private Sub RecieverBtnMenu_Click(sender As Object, e As EventArgs) Handles DonorBtnMenu.Click
         Reciever_form.Show()
         Me.Close()
     End Sub

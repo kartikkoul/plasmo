@@ -37,11 +37,6 @@ Partial Class queue
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.LogoutBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.reciever_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.reciever_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.age = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.blood_group = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.plasma_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
@@ -51,6 +46,11 @@ Partial Class queue
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.reciever_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.reciever_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.age = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.blood_group = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.plasma_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -125,7 +125,7 @@ Partial Class queue
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
         Me.RecieverBtnMenu.TabIndex = 84
-        Me.RecieverBtnMenu.Text = "RECIEVER"
+        Me.RecieverBtnMenu.Text = "RECEIVER"
         '
         'HistoryBtnMenu
         '
@@ -279,48 +279,6 @@ Partial Class queue
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
         '
-        'reciever_id
-        '
-        Me.reciever_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.reciever_id.Frozen = True
-        Me.reciever_id.HeaderText = "RECIEVER ID"
-        Me.reciever_id.Name = "reciever_id"
-        Me.reciever_id.ReadOnly = True
-        Me.reciever_id.Width = 107
-        '
-        'reciever_name
-        '
-        Me.reciever_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.reciever_name.Frozen = True
-        Me.reciever_name.HeaderText = "RECIEVER NAME"
-        Me.reciever_name.Name = "reciever_name"
-        Me.reciever_name.ReadOnly = True
-        Me.reciever_name.Width = 156
-        '
-        'age
-        '
-        Me.age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.age.Frozen = True
-        Me.age.HeaderText = "AGE"
-        Me.age.Name = "age"
-        Me.age.ReadOnly = True
-        Me.age.Width = 157
-        '
-        'blood_group
-        '
-        Me.blood_group.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.blood_group.Frozen = True
-        Me.blood_group.HeaderText = "BLOOD GROUP"
-        Me.blood_group.Name = "blood_group"
-        Me.blood_group.ReadOnly = True
-        Me.blood_group.Width = 156
-        '
-        'plasma_id
-        '
-        Me.plasma_id.HeaderText = "DEMANDS"
-        Me.plasma_id.Name = "plasma_id"
-        Me.plasma_id.ReadOnly = True
-        '
         'Guna2Panel1
         '
         Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
@@ -462,6 +420,48 @@ Partial Class queue
         Me.Guna2PictureBox1.TabIndex = 94
         Me.Guna2PictureBox1.TabStop = False
         '
+        'reciever_id
+        '
+        Me.reciever_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.reciever_id.Frozen = True
+        Me.reciever_id.HeaderText = "RECEIVER ID"
+        Me.reciever_id.Name = "reciever_id"
+        Me.reciever_id.ReadOnly = True
+        Me.reciever_id.Width = 107
+        '
+        'reciever_name
+        '
+        Me.reciever_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.reciever_name.Frozen = True
+        Me.reciever_name.HeaderText = "RECEIVER NAME"
+        Me.reciever_name.Name = "reciever_name"
+        Me.reciever_name.ReadOnly = True
+        Me.reciever_name.Width = 156
+        '
+        'age
+        '
+        Me.age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.age.Frozen = True
+        Me.age.HeaderText = "AGE"
+        Me.age.Name = "age"
+        Me.age.ReadOnly = True
+        Me.age.Width = 157
+        '
+        'blood_group
+        '
+        Me.blood_group.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.blood_group.Frozen = True
+        Me.blood_group.HeaderText = "BLOOD GROUP"
+        Me.blood_group.Name = "blood_group"
+        Me.blood_group.ReadOnly = True
+        Me.blood_group.Width = 156
+        '
+        'plasma_id
+        '
+        Me.plasma_id.HeaderText = "DEMANDS"
+        Me.plasma_id.Name = "plasma_id"
+        Me.plasma_id.ReadOnly = True
+        '
         'queue
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -493,11 +493,6 @@ Partial Class queue
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents Guna2PictureBox1 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
-    Friend WithEvents reciever_id As DataGridViewTextBoxColumn
-    Friend WithEvents reciever_name As DataGridViewTextBoxColumn
-    Friend WithEvents age As DataGridViewTextBoxColumn
-    Friend WithEvents blood_group As DataGridViewTextBoxColumn
-    Friend WithEvents plasma_id As DataGridViewTextBoxColumn
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents DonorBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents QueueBtnMenu As Guna.UI2.WinForms.Guna2Button
@@ -510,4 +505,9 @@ Partial Class queue
     Friend WithEvents queueCount As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2Panel3 As Guna.UI2.WinForms.Guna2Panel
+    Friend WithEvents reciever_id As DataGridViewTextBoxColumn
+    Friend WithEvents reciever_name As DataGridViewTextBoxColumn
+    Friend WithEvents age As DataGridViewTextBoxColumn
+    Friend WithEvents blood_group As DataGridViewTextBoxColumn
+    Friend WithEvents plasma_id As DataGridViewTextBoxColumn
 End Class

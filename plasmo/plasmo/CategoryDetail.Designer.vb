@@ -171,7 +171,7 @@ Partial Class CategoryDetail
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Size = New System.Drawing.Size(138, 31)
         Me.RecieverBtnMenu.TabIndex = 84
-        Me.RecieverBtnMenu.Text = "RECIEVER"
+        Me.RecieverBtnMenu.Text = "RECEIVER"
         '
         'HistoryBtnMenu
         '

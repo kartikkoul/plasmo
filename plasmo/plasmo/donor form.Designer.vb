@@ -779,7 +779,7 @@ Partial Class donorForm
         Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
         Me.RecieverBtnMenu.Size = New System.Drawing.Size(139, 31)
         Me.RecieverBtnMenu.TabIndex = 84
-        Me.RecieverBtnMenu.Text = "RECIEVER"
+        Me.RecieverBtnMenu.Text = "RECEIVER"
         '
         'Guna2Panel4
         '

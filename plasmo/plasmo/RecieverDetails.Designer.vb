@@ -42,6 +42,7 @@ Partial Class RecieverDetails
         Me.pnumber = New System.Windows.Forms.Label()
         Me.age = New System.Windows.Forms.Label()
         Me.Guna2Panel3 = New Guna.UI2.WinForms.Guna2Panel()
+        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -68,7 +69,6 @@ Partial Class RecieverDetails
         Me.Label7 = New System.Windows.Forms.Label()
         Me.plasma_id = New System.Windows.Forms.Label()
         Me.full_name = New System.Windows.Forms.Label()
-        Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
         CType(Me.Guna2PictureBox4, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.Guna2Panel3.SuspendLayout()
@@ -102,7 +102,7 @@ Partial Class RecieverDetails
         Me.label01.Name = "label01"
         Me.label01.Size = New System.Drawing.Size(113, 28)
         Me.label01.TabIndex = 209
-        Me.label01.Text = "Recieved On"
+        Me.label01.Text = "Received On"
         '
         'Label13
         '
@@ -114,7 +114,7 @@ Partial Class RecieverDetails
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(141, 28)
         Me.Label13.TabIndex = 208
-        Me.Label13.Text = "Reciever Details"
+        Me.Label13.Text = "Receiver Details"
         '
         'Guna2PictureBox4
         '
@@ -306,6 +306,16 @@ Partial Class RecieverDetails
         Me.Guna2Panel3.ShadowDecoration.Parent = Me.Guna2Panel3
         Me.Guna2Panel3.Size = New System.Drawing.Size(1082, 58)
         Me.Guna2Panel3.TabIndex = 193
+        '
+        'Guna2Panel2
+        '
+        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
+        Me.Guna2Panel2.Location = New System.Drawing.Point(567, 41)
+        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
+        Me.Guna2Panel2.Name = "Guna2Panel2"
+        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
+        Me.Guna2Panel2.Size = New System.Drawing.Size(60, 3)
+        Me.Guna2Panel2.TabIndex = 213
         '
         'RecieverBtnMenu
         '
@@ -661,7 +671,7 @@ Partial Class RecieverDetails
         Me.Label7.Name = "Label7"
         Me.Label7.Size = New System.Drawing.Size(130, 28)
         Me.Label7.TabIndex = 211
-        Me.Label7.Text = "Recieved From"
+        Me.Label7.Text = "Received From"
         '
         'plasma_id
         '
@@ -688,16 +698,6 @@ Partial Class RecieverDetails
         Me.full_name.Size = New System.Drawing.Size(53, 28)
         Me.full_name.TabIndex = 194
         Me.full_name.Text = "Priya"
-        '
-        'Guna2Panel2
-        '
-        Me.Guna2Panel2.BackColor = System.Drawing.Color.White
-        Me.Guna2Panel2.Location = New System.Drawing.Point(567, 41)
-        Me.Guna2Panel2.Margin = New System.Windows.Forms.Padding(2)
-        Me.Guna2Panel2.Name = "Guna2Panel2"
-        Me.Guna2Panel2.ShadowDecoration.Parent = Me.Guna2Panel2
-        Me.Guna2Panel2.Size = New System.Drawing.Size(60, 3)
-        Me.Guna2Panel2.TabIndex = 213
         '
         'RecieverDetails
         '

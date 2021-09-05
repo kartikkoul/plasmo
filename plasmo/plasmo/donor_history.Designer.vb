@@ -391,7 +391,7 @@ Partial Class donor_history
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(89, 27)
         Me.Guna2HtmlLabel2.TabIndex = 88
-        Me.Guna2HtmlLabel2.Text = "RECIEVERS"
+        Me.Guna2HtmlLabel2.Text = "RECEIVERS"
         '
         'Guna2HtmlLabel1
         '

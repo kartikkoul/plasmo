@@ -32,9 +32,9 @@ Partial Class reciever_history
         Me.Guna2BorderlessForm1 = New Guna.UI2.WinForms.Guna2BorderlessForm(Me.components)
         Me.Guna2Panel1 = New Guna.UI2.WinForms.Guna2Panel()
         Me.Guna2Panel2 = New Guna.UI2.WinForms.Guna2Panel()
-        Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
-        Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.DonorBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.QueueBtnMenu = New Guna.UI2.WinForms.Guna2Button()
+        Me.RecieverBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.HistoryBtnMenu = New Guna.UI2.WinForms.Guna2Button()
         Me.Guna2PictureBox2 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.DashboardBtnMenu = New Guna.UI2.WinForms.Guna2Button()
@@ -42,18 +42,18 @@ Partial Class reciever_history
         Me.Guna2HtmlLabel2 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2HtmlLabel1 = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2DataGridView1 = New Guna.UI2.WinForms.Guna2DataGridView()
-        Me.reciever_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.reciever_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.age = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.blood_group = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.plasma_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.recieption_time = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.totalRecievers = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.totalDonors = New Guna.UI2.WinForms.Guna2HtmlLabel()
         Me.Guna2PictureBox3 = New Guna.UI2.WinForms.Guna2PictureBox()
         Me.Guna2CircleButton2 = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.CloseButton = New Guna.UI2.WinForms.Guna2CircleButton()
         Me.Guna2PictureBox1 = New Guna.UI2.WinForms.Guna2PictureBox()
+        Me.reciever_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.reciever_name = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.age = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.blood_group = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.plasma_id = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.recieption_time = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Guna2Panel1.SuspendLayout()
         CType(Me.Guna2PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Guna2DataGridView1, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -70,9 +70,9 @@ Partial Class reciever_history
         Me.Guna2Panel1.BackColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
         Me.Guna2Panel1.BorderStyle = System.Drawing.Drawing2D.DashStyle.DashDotDot
         Me.Guna2Panel1.Controls.Add(Me.Guna2Panel2)
-        Me.Guna2Panel1.Controls.Add(Me.RecieverBtnMenu)
-        Me.Guna2Panel1.Controls.Add(Me.QueueBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.DonorBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.QueueBtnMenu)
+        Me.Guna2Panel1.Controls.Add(Me.RecieverBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.HistoryBtnMenu)
         Me.Guna2Panel1.Controls.Add(Me.Guna2PictureBox2)
         Me.Guna2Panel1.Controls.Add(Me.DashboardBtnMenu)
@@ -94,27 +94,27 @@ Partial Class reciever_history
         Me.Guna2Panel2.Size = New System.Drawing.Size(60, 3)
         Me.Guna2Panel2.TabIndex = 80
         '
-        'RecieverBtnMenu
+        'DonorBtnMenu
         '
-        Me.RecieverBtnMenu.BorderRadius = 6
-        Me.RecieverBtnMenu.CheckedState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.CustomImages.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.RecieverBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.RecieverBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Location = New System.Drawing.Point(182, 14)
-        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
-        Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
-        Me.RecieverBtnMenu.Size = New System.Drawing.Size(131, 31)
-        Me.RecieverBtnMenu.TabIndex = 83
-        Me.RecieverBtnMenu.Text = "RECEIVER"
+        Me.DonorBtnMenu.BorderRadius = 6
+        Me.DonorBtnMenu.CheckedState.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.CustomImages.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.DonorBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.DonorBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.Location = New System.Drawing.Point(182, 14)
+        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.DonorBtnMenu.Name = "DonorBtnMenu"
+        Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
+        Me.DonorBtnMenu.Size = New System.Drawing.Size(131, 31)
+        Me.DonorBtnMenu.TabIndex = 83
+        Me.DonorBtnMenu.Text = "DONOR"
         '
         'QueueBtnMenu
         '
@@ -138,27 +138,27 @@ Partial Class reciever_history
         Me.QueueBtnMenu.TabIndex = 82
         Me.QueueBtnMenu.Text = "QUEUE"
         '
-        'DonorBtnMenu
+        'RecieverBtnMenu
         '
-        Me.DonorBtnMenu.BorderRadius = 6
-        Me.DonorBtnMenu.CheckedState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.CustomImages.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
-        Me.DonorBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
-        Me.DonorBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
-        Me.DonorBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
-        Me.DonorBtnMenu.DisabledState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
-        Me.DonorBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.DonorBtnMenu.ForeColor = System.Drawing.Color.White
-        Me.DonorBtnMenu.HoverState.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Location = New System.Drawing.Point(304, 14)
-        Me.DonorBtnMenu.Margin = New System.Windows.Forms.Padding(2)
-        Me.DonorBtnMenu.Name = "DonorBtnMenu"
-        Me.DonorBtnMenu.ShadowDecoration.Parent = Me.DonorBtnMenu
-        Me.DonorBtnMenu.Size = New System.Drawing.Size(125, 31)
-        Me.DonorBtnMenu.TabIndex = 84
-        Me.DonorBtnMenu.Text = "DONOR"
+        Me.RecieverBtnMenu.BorderRadius = 6
+        Me.RecieverBtnMenu.CheckedState.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.CustomImages.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.DisabledState.BorderColor = System.Drawing.Color.DarkGray
+        Me.RecieverBtnMenu.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray
+        Me.RecieverBtnMenu.DisabledState.FillColor = System.Drawing.Color.FromArgb(CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer), CType(CType(169, Byte), Integer))
+        Me.RecieverBtnMenu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer), CType(CType(141, Byte), Integer))
+        Me.RecieverBtnMenu.DisabledState.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.FillColor = System.Drawing.Color.FromArgb(CType(CType(237, Byte), Integer), CType(CType(68, Byte), Integer), CType(CType(78, Byte), Integer))
+        Me.RecieverBtnMenu.Font = New System.Drawing.Font("Poppins SemiBold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.RecieverBtnMenu.ForeColor = System.Drawing.Color.White
+        Me.RecieverBtnMenu.HoverState.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.Location = New System.Drawing.Point(304, 14)
+        Me.RecieverBtnMenu.Margin = New System.Windows.Forms.Padding(2)
+        Me.RecieverBtnMenu.Name = "RecieverBtnMenu"
+        Me.RecieverBtnMenu.ShadowDecoration.Parent = Me.RecieverBtnMenu
+        Me.RecieverBtnMenu.Size = New System.Drawing.Size(125, 31)
+        Me.RecieverBtnMenu.TabIndex = 84
+        Me.RecieverBtnMenu.Text = "RECEIVER"
         '
         'HistoryBtnMenu
         '
@@ -250,7 +250,7 @@ Partial Class reciever_history
         Me.Guna2HtmlLabel2.Name = "Guna2HtmlLabel2"
         Me.Guna2HtmlLabel2.Size = New System.Drawing.Size(83, 27)
         Me.Guna2HtmlLabel2.TabIndex = 84
-        Me.Guna2HtmlLabel2.Text = "RECIEVERS"
+        Me.Guna2HtmlLabel2.Text = "RECEIVERS"
         '
         'Guna2HtmlLabel1
         '
@@ -350,56 +350,6 @@ Partial Class reciever_history
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(CType(CType(231, Byte), Integer), CType(CType(229, Byte), Integer), CType(CType(255, Byte), Integer))
         Me.Guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(CType(CType(71, Byte), Integer), CType(CType(69, Byte), Integer), CType(CType(94, Byte), Integer))
-        '
-        'reciever_id
-        '
-        Me.reciever_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
-        Me.reciever_id.Frozen = True
-        Me.reciever_id.HeaderText = "RECIEVER ID"
-        Me.reciever_id.Name = "reciever_id"
-        Me.reciever_id.ReadOnly = True
-        Me.reciever_id.Width = 107
-        '
-        'reciever_name
-        '
-        Me.reciever_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.reciever_name.Frozen = True
-        Me.reciever_name.HeaderText = "RECIEVER NAME"
-        Me.reciever_name.Name = "reciever_name"
-        Me.reciever_name.ReadOnly = True
-        Me.reciever_name.Width = 156
-        '
-        'age
-        '
-        Me.age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.age.Frozen = True
-        Me.age.HeaderText = "AGE"
-        Me.age.Name = "age"
-        Me.age.ReadOnly = True
-        Me.age.Width = 157
-        '
-        'blood_group
-        '
-        Me.blood_group.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.blood_group.Frozen = True
-        Me.blood_group.HeaderText = "BLOOD GROUP"
-        Me.blood_group.Name = "blood_group"
-        Me.blood_group.ReadOnly = True
-        Me.blood_group.Width = 156
-        '
-        'plasma_id
-        '
-        Me.plasma_id.HeaderText = "PLASMA ID"
-        Me.plasma_id.Name = "plasma_id"
-        Me.plasma_id.ReadOnly = True
-        '
-        'recieption_time
-        '
-        Me.recieption_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
-        Me.recieption_time.HeaderText = "RECIEVED ON"
-        Me.recieption_time.Name = "recieption_time"
-        Me.recieption_time.ReadOnly = True
-        Me.recieption_time.Width = 156
         '
         'totalRecievers
         '
@@ -516,6 +466,56 @@ Partial Class reciever_history
         Me.Guna2PictureBox1.TabIndex = 74
         Me.Guna2PictureBox1.TabStop = False
         '
+        'reciever_id
+        '
+        Me.reciever_id.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.AllCells
+        Me.reciever_id.Frozen = True
+        Me.reciever_id.HeaderText = "RECEIVER ID"
+        Me.reciever_id.Name = "reciever_id"
+        Me.reciever_id.ReadOnly = True
+        Me.reciever_id.Width = 107
+        '
+        'reciever_name
+        '
+        Me.reciever_name.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.reciever_name.Frozen = True
+        Me.reciever_name.HeaderText = "RECEIVER NAME"
+        Me.reciever_name.Name = "reciever_name"
+        Me.reciever_name.ReadOnly = True
+        Me.reciever_name.Width = 156
+        '
+        'age
+        '
+        Me.age.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.age.Frozen = True
+        Me.age.HeaderText = "AGE"
+        Me.age.Name = "age"
+        Me.age.ReadOnly = True
+        Me.age.Width = 157
+        '
+        'blood_group
+        '
+        Me.blood_group.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.blood_group.Frozen = True
+        Me.blood_group.HeaderText = "BLOOD GROUP"
+        Me.blood_group.Name = "blood_group"
+        Me.blood_group.ReadOnly = True
+        Me.blood_group.Width = 156
+        '
+        'plasma_id
+        '
+        Me.plasma_id.HeaderText = "PLASMA ID"
+        Me.plasma_id.Name = "plasma_id"
+        Me.plasma_id.ReadOnly = True
+        '
+        'recieption_time
+        '
+        Me.recieption_time.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.None
+        Me.recieption_time.HeaderText = "RECEIVED ON"
+        Me.recieption_time.Name = "recieption_time"
+        Me.recieption_time.ReadOnly = True
+        Me.recieption_time.Width = 156
+        '
         'reciever_history
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -551,9 +551,9 @@ Partial Class reciever_history
     Friend WithEvents CloseButton As Guna.UI2.WinForms.Guna2CircleButton
     Friend WithEvents Guna2Panel1 As Guna.UI2.WinForms.Guna2Panel
     Friend WithEvents Guna2Panel2 As Guna.UI2.WinForms.Guna2Panel
-    Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
-    Friend WithEvents QueueBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents DonorBtnMenu As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents QueueBtnMenu As Guna.UI2.WinForms.Guna2Button
+    Friend WithEvents RecieverBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents HistoryBtnMenu As Guna.UI2.WinForms.Guna2Button
     Friend WithEvents Guna2PictureBox2 As Guna.UI2.WinForms.Guna2PictureBox
     Friend WithEvents DashboardBtnMenu As Guna.UI2.WinForms.Guna2Button
@@ -563,12 +563,12 @@ Partial Class reciever_history
     Friend WithEvents Guna2HtmlLabel1 As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents Guna2DataGridView1 As Guna.UI2.WinForms.Guna2DataGridView
     Friend WithEvents Guna2PictureBox3 As Guna.UI2.WinForms.Guna2PictureBox
+    Friend WithEvents totalRecievers As Guna.UI2.WinForms.Guna2HtmlLabel
+    Friend WithEvents totalDonors As Guna.UI2.WinForms.Guna2HtmlLabel
     Friend WithEvents reciever_id As DataGridViewTextBoxColumn
     Friend WithEvents reciever_name As DataGridViewTextBoxColumn
     Friend WithEvents age As DataGridViewTextBoxColumn
     Friend WithEvents blood_group As DataGridViewTextBoxColumn
     Friend WithEvents plasma_id As DataGridViewTextBoxColumn
     Friend WithEvents recieption_time As DataGridViewTextBoxColumn
-    Friend WithEvents totalRecievers As Guna.UI2.WinForms.Guna2HtmlLabel
-    Friend WithEvents totalDonors As Guna.UI2.WinForms.Guna2HtmlLabel
 End Class

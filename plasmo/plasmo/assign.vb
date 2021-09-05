@@ -22,9 +22,9 @@ Public Class assign
             sex.Text = dr("sex")
             Select Case dr("demand")
                 Case "1"
-                    demand.SelectedIndex = 2
-                Case "0"
                     demand.SelectedIndex = 1
+                Case "0"
+                    demand.SelectedIndex = 2
                 Case Else
                     demand.SelectedIndex = 0
             End Select
@@ -182,4 +182,5 @@ Public Class assign
         donor_history.Show()
         Me.Close()
     End Sub
+
 End Class

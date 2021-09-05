@@ -201,7 +201,7 @@ Public Class Reciever_form
             cmd = New SqlCommand("select plasma_id, price, anti_body from donor_records where blood_group='" & blood_group & "' AND sold='" & "N" & "'", con)
 
         Else
-            cmd = New SqlCommand("select plasma_id, price, anti_body from donor_records where blood_group='" & blood_group & "', anti_body='" & wantAntibody & "' AND sold='" & "N" & "'", con)
+            cmd = New SqlCommand("select plasma_id, price, anti_body from donor_records where blood_group='" & blood_group & "' AND anti_body='" & wantAntibody & "' AND sold='" & "N" & "'", con)
         End If
 
 
@@ -349,6 +349,10 @@ Public Class Reciever_form
                 e.Handled = True
             End If
         End If
+    End Sub
+
+    Private Sub Reciever_form_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
     '------------------------------------------------------------------------------------------------------------------------------'
 End Class

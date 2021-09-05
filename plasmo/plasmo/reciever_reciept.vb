@@ -109,36 +109,44 @@ Public Class reciever_reciept
         Dim ystart As New Int32
         Dim xstart As New Int32
 
+        Dim fontColor = New SolidBrush(Color.FromArgb(237, 68, 78))
+
         ydiff = 20
         ystart = 50
-        g.DrawString("PLASMO ", Guna2HtmlLabel1.Font, Brushes.Black, 350, ystart + 20)
-        g.DrawString(recieverIDLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 350, ystart + 60)
+        g.DrawString("PLASMO", Guna2HtmlLabel1.Font, fontColor, 370, ystart + 20)
+        g.DrawString(recieverIDLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 360, ystart + 60)
 
 
-        g.DrawString("Name................................................ ", Guna2HtmlLabel1.Font, Brushes.Black, 100, 120)
+        g.DrawString("Name................................................ ", Guna2HtmlLabel1.Font, Brushes.Black, 100, 150)
 
-        g.DrawString("Phone Number........................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 140)
+        g.DrawString("Phone Number........................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 200)
 
-        g.DrawString("Age.................................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 160)
+        g.DrawString("Age.................................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 250)
 
-        g.DrawString("Address............................................. ", Guna2HtmlLabel1.Font, Brushes.Black, 100, 180)
+        g.DrawString("Address............................................. ", Guna2HtmlLabel1.Font, Brushes.Black, 100, 300)
 
-        g.DrawString("Sex................................................. ", Guna2HtmlLabel1.Font, Brushes.Black, 100, 200)
+        g.DrawString("Sex................................................. ", Guna2HtmlLabel1.Font, Brushes.Black, 100, 350)
 
-        g.DrawString("Email...............................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 220)
+        g.DrawString("Email...............................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 400)
 
-        g.DrawString("Blood Group.........................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 240)
+        g.DrawString("Blood Group.........................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 450)
 
-        g.DrawString("Donated On..........................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 260)
+        g.DrawString("Antibodies.........................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 500)
 
-        g.DrawString(Namelabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 120)
-        g.DrawString(phNumberLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 140)
-        g.DrawString(ageLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 160)
-        g.DrawString(addressLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 180)
-        g.DrawString(sexLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 200)
-        g.DrawString(emailLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 220)
-        g.DrawString(bloodGroupLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 240)
-        g.DrawString(dateLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 260)
+        g.DrawString("Cost.........................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 550)
+
+        g.DrawString("Received On..........................................", Guna2HtmlLabel1.Font, Brushes.Black, 100, 600)
+
+        g.DrawString(Namelabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 150)
+        g.DrawString(phNumberLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 200)
+        g.DrawString(ageLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 250)
+        g.DrawString(addressLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 300)
+        g.DrawString(sexLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 350)
+        g.DrawString(emailLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 400)
+        g.DrawString(bloodGroupLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 450)
+        g.DrawString(antiBodyLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 500)
+        g.DrawString(costLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 550)
+        g.DrawString(dateLabel.Text, Guna2HtmlLabel1.Font, Brushes.Black, 500, 600)
 
         ystart = 210
         xstart = 30
